@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1FAAFB7F1BE85AEA007023B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFB7E1BE85AEA007023B7 /* AppDelegate.swift */; };
-		1FAAFB811BE85AEA007023B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFB801BE85AEA007023B7 /* ViewController.swift */; };
 		1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFB821BE85AEA007023B7 /* Main.storyboard */; };
 		1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFB851BE85AEA007023B7 /* Assets.xcassets */; };
-		1FAAFB891BE85AEA007023B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFB871BE85AEA007023B7 /* LaunchScreen.storyboard */; };
 		1FAAFB941BE85AEB007023B7 /* SwiftSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFB931BE85AEB007023B7 /* SwiftSumTests.swift */; };
 		1FAAFB9F1BE85AEB007023B7 /* SwiftSumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFB9E1BE85AEB007023B7 /* SwiftSumUITests.swift */; };
+		1FAAFBAD1BE85BE5007023B7 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBAC1BE85BE5007023B7 /* BaseNavigationController.swift */; };
+		1FAAFBB21BE85C3C007023B7 /* YYBaseDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBB11BE85C3C007023B7 /* YYBaseDemoController.swift */; };
+		1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */; };
+		1FAAFBBB1BE8878A007023B7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */; };
+		1FAAFBBD1BE88829007023B7 /* TheBasicsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBBC1BE88829007023B7 /* TheBasicsDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +39,8 @@
 /* Begin PBXFileReference section */
 		1FAAFB7B1BE85AEA007023B7 /* SwiftSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAAFB7E1BE85AEA007023B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FAAFB801BE85AEA007023B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FAAFB831BE85AEA007023B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FAAFB851BE85AEA007023B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1FAAFB881BE85AEA007023B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FAAFB8A1BE85AEA007023B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FAAFB8F1BE85AEB007023B7 /* SwiftSumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAAFB931BE85AEB007023B7 /* SwiftSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSumTests.swift; sourceTree = "<group>"; };
@@ -47,6 +48,11 @@
 		1FAAFB9A1BE85AEB007023B7 /* SwiftSumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAAFB9E1BE85AEB007023B7 /* SwiftSumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSumUITests.swift; sourceTree = "<group>"; };
 		1FAAFBA01BE85AEB007023B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FAAFBAC1BE85BE5007023B7 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		1FAAFBB11BE85C3C007023B7 /* YYBaseDemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseDemoController.swift; sourceTree = "<group>"; };
+		1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLearnDemo.swift; sourceTree = "<group>"; };
+		1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		1FAAFBBC1BE88829007023B7 /* TheBasicsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheBasicsDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				1FAAFB7E1BE85AEA007023B7 /* AppDelegate.swift */,
-				1FAAFB801BE85AEA007023B7 /* ViewController.swift */,
 				1FAAFB821BE85AEA007023B7 /* Main.storyboard */,
+				1FAAFBB71BE8878A007023B7 /* Service */,
+				1FAAFBAE1BE85BEB007023B7 /* Controller */,
 				1FAAFB851BE85AEA007023B7 /* Assets.xcassets */,
-				1FAAFB871BE85AEA007023B7 /* LaunchScreen.storyboard */,
 				1FAAFB8A1BE85AEA007023B7 /* Info.plist */,
 			);
 			path = SwiftSum;
@@ -123,6 +129,65 @@
 				1FAAFBA01BE85AEB007023B7 /* Info.plist */,
 			);
 			path = SwiftSumUITests;
+			sourceTree = "<group>";
+		};
+		1FAAFBAE1BE85BEB007023B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFBAF1BE85BFE007023B7 /* BaseViewController */,
+				1FAAFBB01BE85C14007023B7 /* SwiftLearn */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1FAAFBAF1BE85BFE007023B7 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFBAC1BE85BE5007023B7 /* BaseNavigationController.swift */,
+				1FAAFBB11BE85C3C007023B7 /* YYBaseDemoController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		1FAAFBB01BE85C14007023B7 /* SwiftLearn */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */,
+				1FAAFBBE1BE8883E007023B7 /* 基础部分 */,
+			);
+			path = SwiftLearn;
+			sourceTree = "<group>";
+		};
+		1FAAFBB71BE8878A007023B7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFBB81BE8878A007023B7 /* Categorys */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1FAAFBB81BE8878A007023B7 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFBB91BE8878A007023B7 /* UITableView */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		1FAAFBB91BE8878A007023B7 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		1FAAFBBE1BE8883E007023B7 /* 基础部分 */ = {
+			isa = PBXGroup;
+			children = (
+				1FAAFBBC1BE88829007023B7 /* TheBasicsDemo.swift */,
+			);
+			name = "基础部分";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +294,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FAAFB891BE85AEA007023B7 /* LaunchScreen.storyboard in Resources */,
 				1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */,
 				1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */,
 			);
@@ -256,8 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FAAFB811BE85AEA007023B7 /* ViewController.swift in Sources */,
 				1FAAFB7F1BE85AEA007023B7 /* AppDelegate.swift in Sources */,
+				1FAAFBBD1BE88829007023B7 /* TheBasicsDemo.swift in Sources */,
+				1FAAFBAD1BE85BE5007023B7 /* BaseNavigationController.swift in Sources */,
+				1FAAFBB21BE85C3C007023B7 /* YYBaseDemoController.swift in Sources */,
+				1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */,
+				1FAAFBBB1BE8878A007023B7 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +367,7 @@
 				1FAAFB831BE85AEA007023B7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1FAAFB871BE85AEA007023B7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FAAFB881BE85AEA007023B7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -398,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftSum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huan.SwiftSum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftSum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huan.SwiftSum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +545,7 @@
 				1FAAFBA51BE85AEB007023B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FAAFBA61BE85AEB007023B7 /* Build configuration list for PBXNativeTarget "SwiftSumTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +554,7 @@
 				1FAAFBA81BE85AEB007023B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FAAFBA91BE85AEB007023B7 /* Build configuration list for PBXNativeTarget "SwiftSumUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +563,7 @@
 				1FAAFBAB1BE85AEB007023B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
