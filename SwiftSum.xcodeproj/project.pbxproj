@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5D19E81BF036450049F342 /* FunctionsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D19E71BF036450049F342 /* FunctionsDemo.swift */; };
+		1FA4A5301BE993040076ECAA /* BasicOperatorsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA4A52F1BE993040076ECAA /* BasicOperatorsDemo.swift */; };
+		1FA4A5331BE9D0190076ECAA /* StringsAndCharactersDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA4A5321BE9D0190076ECAA /* StringsAndCharactersDemo.swift */; };
+		1FA4A5361BEB294A0076ECAA /* CollectionTypesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA4A5351BEB294A0076ECAA /* CollectionTypesDemo.swift */; };
 		1FAAFB7F1BE85AEA007023B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFB7E1BE85AEA007023B7 /* AppDelegate.swift */; };
 		1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFB821BE85AEA007023B7 /* Main.storyboard */; };
 		1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFB851BE85AEA007023B7 /* Assets.xcassets */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F5D19E71BF036450049F342 /* FunctionsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsDemo.swift; sourceTree = "<group>"; };
+		1FA4A52F1BE993040076ECAA /* BasicOperatorsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperatorsDemo.swift; sourceTree = "<group>"; };
+		1FA4A5321BE9D0190076ECAA /* StringsAndCharactersDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsAndCharactersDemo.swift; sourceTree = "<group>"; };
+		1FA4A5351BEB294A0076ECAA /* CollectionTypesDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTypesDemo.swift; sourceTree = "<group>"; };
 		1FAAFB7B1BE85AEA007023B7 /* SwiftSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAAFB7E1BE85AEA007023B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FAAFB831BE85AEA007023B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +88,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F5D19E91BF0366A0049F342 /* 函数 */ = {
+			isa = PBXGroup;
+			children = (
+				1F5D19E71BF036450049F342 /* FunctionsDemo.swift */,
+			);
+			name = "函数";
+			sourceTree = "<group>";
+		};
+		1FA4A5311BE993110076ECAA /* 运算符和控制流 */ = {
+			isa = PBXGroup;
+			children = (
+				1FA4A52F1BE993040076ECAA /* BasicOperatorsDemo.swift */,
+			);
+			name = "运算符和控制流";
+			sourceTree = "<group>";
+		};
+		1FA4A5341BE9D0210076ECAA /* 字符串和字符 */ = {
+			isa = PBXGroup;
+			children = (
+				1FA4A5321BE9D0190076ECAA /* StringsAndCharactersDemo.swift */,
+			);
+			name = "字符串和字符";
+			sourceTree = "<group>";
+		};
+		1FA4A5371BEB29520076ECAA /* 集合类型 */ = {
+			isa = PBXGroup;
+			children = (
+				1FA4A5351BEB294A0076ECAA /* CollectionTypesDemo.swift */,
+			);
+			name = "集合类型";
+			sourceTree = "<group>";
+		};
 		1FAAFB721BE85AEA007023B7 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +193,10 @@
 			isa = PBXGroup;
 			children = (
 				1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */,
+				1F5D19E91BF0366A0049F342 /* 函数 */,
+				1FA4A5371BEB29520076ECAA /* 集合类型 */,
+				1FA4A5341BE9D0210076ECAA /* 字符串和字符 */,
+				1FA4A5311BE993110076ECAA /* 运算符和控制流 */,
 				1FAAFBBE1BE8883E007023B7 /* 基础部分 */,
 			);
 			path = SwiftLearn;
@@ -322,6 +366,10 @@
 			files = (
 				1FAAFB7F1BE85AEA007023B7 /* AppDelegate.swift in Sources */,
 				1FAAFBBD1BE88829007023B7 /* TheBasicsDemo.swift in Sources */,
+				1F5D19E81BF036450049F342 /* FunctionsDemo.swift in Sources */,
+				1FA4A5301BE993040076ECAA /* BasicOperatorsDemo.swift in Sources */,
+				1FA4A5361BEB294A0076ECAA /* CollectionTypesDemo.swift in Sources */,
+				1FA4A5331BE9D0190076ECAA /* StringsAndCharactersDemo.swift in Sources */,
 				1FAAFBAD1BE85BE5007023B7 /* BaseNavigationController.swift in Sources */,
 				1FAAFBB21BE85C3C007023B7 /* YYBaseDemoController.swift in Sources */,
 				1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */,

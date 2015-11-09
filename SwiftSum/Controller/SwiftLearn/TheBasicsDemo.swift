@@ -16,15 +16,21 @@ class TheBasicsDemo: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    // MARK: - 声明常量和变量
+
     
-    /**
-    常量和变量必须在使用前声明，用let来声明常量，用var来声明变量。
-    */
+    
     func variableDemo() {
+        
+        // MARK: - 声明常量和变量
+        
+        /**
+        常量和变量必须在使用前声明，用let来声明常量，用var来声明变量。
+        */
+        
         let maximumNumberOfLoginAttempts = 10
         var currentLoginAttempt = 0
         var x = 0.0, y = 0.0, z = 0.0
+    
         
         // MARK: - 类型标注
         
@@ -212,6 +218,93 @@ class TheBasicsDemo: UIViewController {
         
         //作为函数返回值时，元组非常有用。
         //注意：元组在临时组织值的时候很有用，但是并不适合创建复杂的数据结构。
+        
+        // MARK: - 可选类型
+        
+        //使用可选类型（optionals）来处理值可能缺失的情况。可选类型表示：有值，等于 xxx  或者没有值
+        //C 和 Objective-C 中并没有可选类型这个概念。
+        let possibleNum = "123"
+        let convertedNum = Int(possibleNum)
+        // convertedNum 被推测为类型 "Int?"， 或者类型 "optional Int"
+        
+        let possibleNum2 = "hello"
+        var convertedNum2:Int? = Int(possibleNum2)
+//        var convertedNum3:Int = Int(possibleNum2)  //error
+
+        // MARK: - if 语句以及强制解析
+        //你可以使用if语句来判断一个可选是否包含值。如果可选类型有值，结果是true；如果没有值，结果是false。
+        if (convertedNum != nil) {
+            print("\(possibleNum) has an integer value of \(convertedNum!)")
+        }
+        //当你确定可选类型确实包含值之后，你可以在可选的名字后面加一个感叹号（!）来获取值。
+        //这个惊叹号表示“我知道这个可选有值，请使用它。”这被称为可选值的强制解析（forced unwrapping）：
+        
+        /**
+        *  注意：
+        使用!来获取一个不存在的可选值会导致运行时错误。使用!来强制解析值之前，一定要确定可选包含一个非nil的值。
+        */
+        
+        // MARK: - 可选绑定
+        //使用可选绑定（optional binding）来判断可选类型是否包含值，
+        if var actualNumber = Int(possibleNum) {
+            actualNumber = 11   //只能在这使用变量 actualNumber
+        } else {
+            //actualNumber = 11
+        }
+        
+        // MARK: - nil
+        //你可以给可选变量赋值为nil来表示它没有值：
+        var serverResponseCode: Int? = 404
+        serverResponseCode = nil
+        //注意：nil不能用于非可选的常量和变量。
+        
+        var serverResponseCode2 = 404
+        //serverResponseCode2 = nil error
+        var surveyAnswer: String?
+        // surveyAnswer 被自动设置为 nil
+        
+        /**
+        *  注意：
+        Swift 的nil和 Objective-C 中的nil并不一样。在 Objective-C 中，nil是一个指向不存在对象的指针。
+        在 Swift 中，nil不是指针——它是一个确定的值，用来表示值缺失。任何类型的可选状态都可以被设置为nil，不只是对象类型。
+        */
+        
+        
+        // MARK: - 隐式解析可选类型
+        /**
+        *  有时候在程序架构中，第一次被赋值之后，可以确定一个可选类型总会有值。
+        在这种情况下，每次都要判断和解析可选值是非常低效的，因为可以确定它总会有值
+        把想要用作可选的类型的后面的问号（String?）改成感叹号（String!）来声明一个隐式解析可选类型。
+        */
+        let possibleString: String? = "an option"
+        var possibleString2:String = possibleString! // 需要惊叹号来获取值
+        
+        
+        let assumedString: String! = " an implicite"
+        var assumedStirng2: String = assumedString  // 不需要感叹号
+        
+        let str1 = "nomal"
+        var str2 = str1
+        /**
+        *  注意：
+        如果你在隐式解析可选类型没有值的时候尝试取值，会触发运行时错误。和你在没有值的普通可选类型后面加一个惊叹号一样。
+        */
+
+         // MARK: - 断言
+         /**
+         *  可选类型可以让你判断值是否存在，你可以在代码中优雅地处理值缺失的情况。
+         然而，在某些情况下，如果值缺失或者值并不满足特定的条件，你的代码可能没办法继续执行。
+         这时，你可以在你的代码中触发一个断言（assertion）来结束代码运行并通过调试来找到值缺失的原因。
+         */
+        let agee = 3
+        assert(agee >= 0, "A person's age cannot be less than zero")
+        //向assert函数传入一个结果为true或者false的表达式以及一条信息，当表达式为false的时候这条信息会被显示：
+        
+        
+        //Metatype
+        print(String.StringLiteralType.self)
+        print(String.self)
+        let str3 = "nomal2"
     }
 }
 
