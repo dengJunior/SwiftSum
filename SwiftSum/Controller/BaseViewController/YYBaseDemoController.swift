@@ -8,6 +8,23 @@
 
 import UIKit
 
+// MARK: -  Swift 中使用associated
+
+var AssociatedObjectHandle: UInt8 = 0
+
+extension Int {
+    
+    var string: String {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedObjectHandle) as! String
+        }
+        
+        set {
+            objc_setAssociatedObject(self, &AssociatedObjectHandle, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+}
+
 class LibDemoInfo {
     var title:String!
     var desc:String!

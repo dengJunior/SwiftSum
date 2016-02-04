@@ -8,7 +8,23 @@
 
 import UIKit
 
-class SwiftLearnDemo: YYBaseDemoController {
+typealias DataResultBlock = (result: String, data: AnyObject!, errorMsg: String?) -> Void
+
+protocol Api {
+    func get(name: String)
+    func get(name: String, dict: [String: AnyObject])
+}
+
+extension Api {
+    func get(name: String, dict: [String: AnyObject]) {
+        print(name, dict)
+    }
+    func get(name: String) {
+        self.get(name, dict: ["key":"value"])
+    }
+}
+
+class SwiftLearnDemo: YYBaseDemoController, Api {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +32,11 @@ class SwiftLearnDemo: YYBaseDemoController {
         self.dataArray = [
             LibDemoInfo(title: "TheBasicsDemo", desc: "基础部分", controllerName: "TheBasicsDemo"),
         ]
+        
+        self.get("hello")
     }
     
     
 }
+
 

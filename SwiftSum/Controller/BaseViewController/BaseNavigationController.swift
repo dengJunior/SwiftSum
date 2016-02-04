@@ -21,7 +21,7 @@ class BaseNavigationController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
-// MARK: - Override
+    // MARK: - Override
     override func pushViewController(viewController: UIViewController, animated: Bool) {
         if (self.viewControllers.count > 0) {
             viewController.hidesBottomBarWhenPushed = true;
