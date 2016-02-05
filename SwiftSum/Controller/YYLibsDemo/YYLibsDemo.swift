@@ -14,7 +14,7 @@ class YYLibsDemo: YYBaseDemoController {
         super.viewDidLoad()
 
         self.dataArray = [
-            LibDemoInfo(title: "彻底解耦合的iOS架构", desc: "架构叫做EventMVVM。使用少量的MVVM架构", controllerName: "TodoStream"),
+            LibDemoInfo(title: "NetworkDemo", desc: "NetworkDemo", controllerName: "NetworkDemo"),
         ]
     }
 

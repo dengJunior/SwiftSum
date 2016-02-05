@@ -13,7 +13,7 @@ class NetworkDemo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        MllApi.getRecommend {  recommends in
+        YYApi.requestGoodDesignRecommends{  recommends in
             print(recommends);
         }
     }
