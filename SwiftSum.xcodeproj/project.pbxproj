@@ -25,7 +25,6 @@
 		1FDB55151BF0E60F0048E1F7 /* ClosuresDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDB55141BF0E60F0048E1F7 /* ClosuresDemo.swift */; };
 		1FF5D3E71BF9B841007F3766 /* EnumerationsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5D3E61BF9B841007F3766 /* EnumerationsDemo.swift */; };
 		E59CC62167A6C391DC87B3FC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4773DCA3BEA69320548ACD /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		EEB074661C6430F4001CB1ED /* FRPDemo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB074651C6430F4001CB1ED /* FRPDemo1.swift */; };
 		EEB074AA1C6445D6001CB1ED /* Observable+YYNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB074A91C6445D6001CB1ED /* Observable+YYNetworking.swift */; };
 		EEB074AC1C6446D4001CB1ED /* YYAppToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB074AB1C6446D4001CB1ED /* YYAppToken.swift */; };
 		EEB074AE1C644B99001CB1ED /* YYApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB074AD1C644B99001CB1ED /* YYApi.swift */; };
@@ -63,7 +62,10 @@
 
 /* Begin PBXFileReference section */
 		1F075BDE1C4B4F480013C815 /* YYLibsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLibsDemo.swift; sourceTree = "<group>"; };
+		1F12662B1C721C6200DD69E6 /* RxSwiftBasic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftBasic.playground; sourceTree = "<group>"; };
 		1F5D19E71BF036450049F342 /* FunctionsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsDemo.swift; sourceTree = "<group>"; };
+		1F8E96541C6D75C00038A6C9 /* FRP.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FRP.playground; sourceTree = "<group>"; };
+		1F8E96551C6D77620038A6C9 /* SwiftFunctional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftFunctional.playground; sourceTree = "<group>"; };
 		1FA4A52F1BE993040076ECAA /* BasicOperatorsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicOperatorsDemo.swift; sourceTree = "<group>"; };
 		1FA4A5321BE9D0190076ECAA /* StringsAndCharactersDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsAndCharactersDemo.swift; sourceTree = "<group>"; };
 		1FA4A5351BEB294A0076ECAA /* CollectionTypesDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTypesDemo.swift; sourceTree = "<group>"; };
@@ -88,7 +90,6 @@
 		419613F2F25E1121BB33A73B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BD4773DCA3BEA69320548ACD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6853BE454B388CA4C5AFB8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		EEB074651C6430F4001CB1ED /* FRPDemo1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRPDemo1.swift; sourceTree = "<group>"; };
 		EEB074A91C6445D6001CB1ED /* Observable+YYNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+YYNetworking.swift"; sourceTree = "<group>"; };
 		EEB074AB1C6446D4001CB1ED /* YYAppToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYAppToken.swift; sourceTree = "<group>"; };
 		EEB074AD1C644B99001CB1ED /* YYApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYApi.swift; sourceTree = "<group>"; };
@@ -142,12 +143,50 @@
 			path = YYLibsDemo;
 			sourceTree = "<group>";
 		};
+		1F12662A1C719E3800DD69E6 /* 2-函数式反应型编程FRP */ = {
+			isa = PBXGroup;
+			children = (
+				1F8E96541C6D75C00038A6C9 /* FRP.playground */,
+			);
+			name = "2-函数式反应型编程FRP";
+			sourceTree = "<group>";
+		};
+		1F12662C1C721C6E00DD69E6 /* 3-RxSwift基础概念 */ = {
+			isa = PBXGroup;
+			children = (
+				1F12662B1C721C6200DD69E6 /* RxSwiftBasic.playground */,
+			);
+			name = "3-RxSwift基础概念";
+			sourceTree = "<group>";
+		};
 		1F5D19E91BF0366A0049F342 /* 函数 */ = {
 			isa = PBXGroup;
 			children = (
 				1F5D19E71BF036450049F342 /* FunctionsDemo.swift */,
 			);
 			path = "函数";
+			sourceTree = "<group>";
+		};
+		1F8E96531C6D74830038A6C9 /* Swift官方指导 */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5D3E81BF9B844007F3766 /* 枚举 */,
+				1FDB55161BF0E6130048E1F7 /* 闭包 */,
+				1F5D19E91BF0366A0049F342 /* 函数 */,
+				1FA4A5371BEB29520076ECAA /* 集合类型 */,
+				1FA4A5341BE9D0210076ECAA /* 字符串和字符 */,
+				1FA4A5311BE993110076ECAA /* 运算符和控制流 */,
+				1FAAFBBE1BE8883E007023B7 /* 基础部分 */,
+			);
+			name = "Swift官方指导";
+			sourceTree = "<group>";
+		};
+		1F8E96561C6D77670038A6C9 /* 1-Swift数组高阶函数Map等使用 */ = {
+			isa = PBXGroup;
+			children = (
+				1F8E96551C6D77620038A6C9 /* SwiftFunctional.playground */,
+			);
+			name = "1-Swift数组高阶函数Map等使用";
 			sourceTree = "<group>";
 		};
 		1FA4A5311BE993110076ECAA /* 运算符和控制流 */ = {
@@ -253,13 +292,7 @@
 				1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */,
 				EEF281721C634F020004765A /* Swifter练习 */,
 				EEF281631C634EE30004765A /* 函数式编程 */,
-				1FF5D3E81BF9B844007F3766 /* 枚举 */,
-				1FDB55161BF0E6130048E1F7 /* 闭包 */,
-				1F5D19E91BF0366A0049F342 /* 函数 */,
-				1FA4A5371BEB29520076ECAA /* 集合类型 */,
-				1FA4A5341BE9D0210076ECAA /* 字符串和字符 */,
-				1FA4A5311BE993110076ECAA /* 运算符和控制流 */,
-				1FAAFBBE1BE8883E007023B7 /* 基础部分 */,
+				1F8E96531C6D74830038A6C9 /* Swift官方指导 */,
 			);
 			path = SwiftLearn;
 			sourceTree = "<group>";
@@ -347,7 +380,9 @@
 			isa = PBXGroup;
 			children = (
 				EEF281611C634EDC0004765A /* FuncProgramingDemo.swift */,
-				EEB074651C6430F4001CB1ED /* FRPDemo1.swift */,
+				1F12662C1C721C6E00DD69E6 /* 3-RxSwift基础概念 */,
+				1F8E96561C6D77670038A6C9 /* 1-Swift数组高阶函数Map等使用 */,
+				1F12662A1C719E3800DD69E6 /* 2-函数式反应型编程FRP */,
 			);
 			path = "函数式编程";
 			sourceTree = "<group>";
@@ -576,7 +611,6 @@
 				1FDB55151BF0E60F0048E1F7 /* ClosuresDemo.swift in Sources */,
 				1F075BDF1C4B4F480013C815 /* YYLibsDemo.swift in Sources */,
 				EEF2816F1C634EFD0004765A /* TypeIntroduction.swift in Sources */,
-				EEB074661C6430F4001CB1ED /* FRPDemo1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
