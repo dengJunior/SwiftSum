@@ -1,17 +1,18 @@
 PODS:
-  - Alamofire (3.1.5)
-  - Argo (2.2.0)
-  - Curry (1.4.0)
-  - Moya/Core (6.1.3):
+  - Alamofire (3.3.0)
+  - Argo (2.3.0)
+  - Curry (2.0.0)
+  - Moya/Core (6.3.1):
     - Alamofire (~> 3.0)
     - Result (~> 1.0)
-  - Moya/RxSwift (6.1.3):
+  - Moya/RxSwift (6.3.1):
     - Moya/Core
     - RxSwift (~> 2.0)
-  - Result (1.0.1)
-  - RxCocoa (2.1.0):
-    - RxSwift (~> 2.0)
-  - RxSwift (2.1.0)
+  - Result (1.0.2)
+  - RxCocoa (2.3.1):
+    - RxSwift (~> 2.3.1)
+  - RxSwift (2.3.1)
+  - SnapKit (0.20.0)
 
 DEPENDENCIES:
   - Argo
@@ -19,14 +20,18 @@ DEPENDENCIES:
   - Moya/RxSwift
   - RxCocoa
   - RxSwift
+  - SnapKit
 
 SPEC CHECKSUMS:
-  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
-  Argo: 4f52a32b4cd913c204e5a45f420b3fccad3e3f24
-  Curry: 294533187eedbf52db60a1e70c29b4f5c9f621c0
-  Moya: 26b290a8d675c167ea6229ba08e07dce562265a5
-  Result: caef80340451e1f07492fa1e89117f83613bce24
-  RxCocoa: 79b5feb8378545336e756a0a33fcf5e95050b71c
-  RxSwift: 110fb07f81c17c2c3b3254d168363057b1880d18
+  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
+  Argo: 3dbecf4204b1a3cdd1df88ebd5e23d01b652d34b
+  Curry: 5c5c5887d80fa22ca2133c7ea4d48c4d02283c0a
+  Moya: 852e26948a3771355ddf0f0109ac779b6fc30f28
+  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
+  RxCocoa: a2baaf3462b989559a51dce59d78fbebb8fe0afa
+  RxSwift: 829b2843e9eddc77a02cb3f5117f0d55f8f646f1
+  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
 
-COCOAPODS: 0.37.2
+PODFILE CHECKSUM: 3abf137bcccf8cd911f7feffc6d187173d461101
+
+COCOAPODS: 1.0.0.beta.4

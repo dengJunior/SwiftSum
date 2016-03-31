@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pZu-4Y-AHT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Gesture Demo-->
+        <scene sceneID="t8T-lZ-F8e">
+            <objects>
+                <viewController id="pZu-4Y-AHT" customClass="GestureDemo" customModule="SwiftSum" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vXZ-TY-Pod"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZyW-SG-6sy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iB0-xy-fZL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZH-z9-Y2b">
+                                <rect key="frame" x="20" y="120" width="560" height="480"/>
+                                <color key="backgroundColor" red="1" green="0.54754762589999995" blue="0.65394765070000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="VeO-x8-Jg0" kind="embed" id="sqq-5f-YWO"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="灰色是父controller的view，红色是子controller的view" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPz-qj-TIh">
+                                <rect key="frame" x="10" y="30" width="580" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SZH-z9-Y2b" firstAttribute="leading" secondItem="iB0-xy-fZL" secondAttribute="leading" constant="20" id="1eP-iM-tNC"/>
+                            <constraint firstItem="SZH-z9-Y2b" firstAttribute="top" secondItem="vXZ-TY-Pod" secondAttribute="bottom" constant="100" id="HZu-Zk-3KW"/>
+                            <constraint firstItem="ZyW-SG-6sy" firstAttribute="top" secondItem="SZH-z9-Y2b" secondAttribute="bottom" id="JTN-UI-pJC"/>
+                            <constraint firstAttribute="trailing" secondItem="SZH-z9-Y2b" secondAttribute="trailing" constant="20" id="bxe-j2-6Og"/>
+                            <constraint firstItem="BPz-qj-TIh" firstAttribute="leading" secondItem="iB0-xy-fZL" secondAttribute="leading" constant="10" id="c2V-Si-Bkx"/>
+                            <constraint firstItem="BPz-qj-TIh" firstAttribute="top" secondItem="vXZ-TY-Pod" secondAttribute="bottom" constant="10" id="gy2-ED-3xc"/>
+                            <constraint firstAttribute="trailing" secondItem="BPz-qj-TIh" secondAttribute="trailing" constant="10" id="rnC-mM-mw5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyk-wH-5dX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="424"/>
+        </scene>
+        <!--Gesture Demo Child-->
+        <scene sceneID="vZO-5N-Wtq">
+            <objects>
+                <viewController id="VeO-x8-Jg0" customClass="GestureDemoChild" customModule="SwiftSum" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tCG-bb-84a"/>
+                        <viewControllerLayoutGuide type="bottom" id="SMj-HJ-WVB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NB7-3Q-fFn">
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2W-Mg-Uxi" customClass="GestureTestView" customModule="SwiftSum" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="530" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="NL9-xw-Cxw"/>
+                                    <constraint firstAttribute="width" constant="124" id="fdF-dd-yqa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NL9-xw-Cxw"/>
+                                        <exclude reference="fdF-dd-yqa"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.54754762589999995" blue="0.65394765070000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="n2W-Mg-Uxi" firstAttribute="leading" secondItem="NB7-3Q-fFn" secondAttribute="leading" constant="10" id="Bum-2U-J45"/>
+                            <constraint firstItem="SMj-HJ-WVB" firstAttribute="top" secondItem="n2W-Mg-Uxi" secondAttribute="bottom" constant="100" id="MJR-YI-MXC"/>
+                            <constraint firstItem="SMj-HJ-WVB" firstAttribute="top" secondItem="n2W-Mg-Uxi" secondAttribute="bottom" constant="100" id="SDX-5X-FSs"/>
+                            <constraint firstAttribute="trailing" secondItem="n2W-Mg-Uxi" secondAttribute="trailing" constant="20" id="Upl-8a-di9"/>
+                            <constraint firstItem="n2W-Mg-Uxi" firstAttribute="top" secondItem="tCG-bb-84a" secondAttribute="bottom" constant="10" id="hjJ-Tj-rkP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MJR-YI-MXC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nwS-yq-w3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="355" y="-248"/>
+        </scene>
+    </scenes>
+</document>
