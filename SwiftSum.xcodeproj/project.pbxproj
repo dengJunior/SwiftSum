@@ -18,6 +18,7 @@
 		1F288D9B1CAD1FD000180316 /* rotation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D981CAD1FD000180316 /* rotation.png */; };
 		1F288D9C1CAD1FD000180316 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D991CAD1FD000180316 /* swipe.png */; };
 		1F288D9D1CAD1FD000180316 /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D9A1CAD1FD000180316 /* tap.png */; };
+		1F288DA01CAE623000180316 /* YYPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F288D9F1CAE622F00180316 /* YYPanGestureRecognizer.swift */; };
 		1F2F69291C9A7FC400A3F432 /* YYConfigurableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */; };
 		1F2F692F1C9A86D100A3F432 /* ImageCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */; };
 		1F2F69301C9A86D100A3F432 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */; };
@@ -109,6 +110,7 @@
 		1F288D981CAD1FD000180316 /* rotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotation.png; sourceTree = "<group>"; };
 		1F288D991CAD1FD000180316 /* swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe.png; sourceTree = "<group>"; };
 		1F288D9A1CAD1FD000180316 /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
+		1F288D9F1CAE622F00180316 /* YYPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYConfigurableTableViewController.swift; sourceTree = "<group>"; };
 		1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCellViewData.swift; sourceTree = "<group>"; };
 		1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				1F5B67CA1CACF3BC003CFD75 /* GestureDemo.swift */,
+				1F288D9F1CAE622F00180316 /* YYPanGestureRecognizer.swift */,
 				1F5B67CF1CAD019D003CFD75 /* GestureDemoChild.swift */,
 				1F5B67D11CAD02FB003CFD75 /* GestureTestView.swift */,
 				1F5B67DB1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift */,
@@ -877,6 +880,7 @@
 				1F075BDF1C4B4F480013C815 /* YYLibsDemo.swift in Sources */,
 				1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */,
 				EEF2816F1C634EFD0004765A /* TypeIntroduction.swift in Sources */,
+				1F288DA01CAE623000180316 /* YYPanGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

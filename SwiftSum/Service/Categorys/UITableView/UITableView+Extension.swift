@@ -16,5 +16,19 @@ extension UITableView {
         footerView.backgroundColor = UIColor.clearColor()
         self.tableFooterView = footerView
     }
+    
+    // MARK: - 简化dequeueReusableCellWithIdentifier的使用
+    /**
+     简化dequeueReusableCellWithIdentifier的使用
+     let cell = tableView.dequeueReusableCellWithIdentifier("XxxxxCell") as! XxxxxCell
+     
+     let cell = tableView.dequeueCell(RankingCell)
+     */
+    func dequeueCell<T: UITableViewCell>(cell: T.Type) -> T {
+        return dequeueReusableCellWithIdentifier(T.classNameString) as! T
+    }
 }
+
+
+
 

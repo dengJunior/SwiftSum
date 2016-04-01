@@ -9,9 +9,8 @@
 import UIKit
 
 extension NSObject {
-    
     // MARK: - 返回类名的String
-    static func classNameString() -> String {
+    static var classNameString: String {
         /**
          默认是这样的 "SwiftSum.SimpleGestureRecognizers"
          
@@ -21,13 +20,14 @@ extension NSObject {
          关于更多地关于 print 和 debugPrint 的细节，
          可以参考 http://swifter.tips/print/
          */
-//        return self.description()
+        //        return self.description()
         return NSStringFromClass(self).componentsSeparatedByString(".").last!
     }
-    func classNameString() -> String {
+    
+    var classNameString: String {
         /**
          使用dynamicType获取对象类型，http://swifter.tips/instance-type/
          */
-        return self.dynamicType.classNameString()
+        return self.dynamicType.classNameString
     }
 }
