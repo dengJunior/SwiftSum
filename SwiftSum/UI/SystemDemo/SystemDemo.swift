@@ -14,6 +14,7 @@ class SystemDemo: YYBaseDemoController {
         super.viewDidLoad()
         
         self.dataArray = [
+            LibDemoInfo(title: "RunLoopDemo", desc: "RunLoop相关", controllerName: "RunLoopDemo"),
             LibDemoInfo(title: "EventAndGestureDemo", desc: "手势和事件相关", controllerName: "EventAndGestureDemo"),
         ]
     }

@@ -19,6 +19,8 @@
 		1F288D9C1CAD1FD000180316 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D991CAD1FD000180316 /* swipe.png */; };
 		1F288D9D1CAD1FD000180316 /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D9A1CAD1FD000180316 /* tap.png */; };
 		1F288DA01CAE623000180316 /* YYPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F288D9F1CAE622F00180316 /* YYPanGestureRecognizer.swift */; };
+		1F288DA21CB1FD0600180316 /* DeliveryTouchesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F288DA11CB1FD0600180316 /* DeliveryTouchesDemo.swift */; };
+		1F288DA41CB216C800180316 /* YYCycleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F288DA31CB216C800180316 /* YYCycleGestureRecognizer.swift */; };
 		1F2F69291C9A7FC400A3F432 /* YYConfigurableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */; };
 		1F2F692F1C9A86D100A3F432 /* ImageCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */; };
 		1F2F69301C9A86D100A3F432 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */; };
@@ -58,6 +60,7 @@
 		1FAAFBBB1BE8878A007023B7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */; };
 		1FAAFBBD1BE88829007023B7 /* TheBasicsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBBC1BE88829007023B7 /* TheBasicsDemo.swift */; };
 		1FDB55151BF0E60F0048E1F7 /* ClosuresDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDB55141BF0E60F0048E1F7 /* ClosuresDemo.swift */; };
+		1FE864E11CB3819100E013A1 /* RunLoopDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE864E01CB3819100E013A1 /* RunLoopDemo.swift */; };
 		1FF5D3E71BF9B841007F3766 /* EnumerationsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5D3E61BF9B841007F3766 /* EnumerationsDemo.swift */; };
 		9165F9A41CF73485039B2659 /* Pods_SwiftSum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA32F90EF6765DEDBDFECA0 /* Pods_SwiftSum.framework */; };
 		EEB074AA1C6445D6001CB1ED /* Observable+YYNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB074A91C6445D6001CB1ED /* Observable+YYNetworking.swift */; };
@@ -111,6 +114,8 @@
 		1F288D991CAD1FD000180316 /* swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe.png; sourceTree = "<group>"; };
 		1F288D9A1CAD1FD000180316 /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
 		1F288D9F1CAE622F00180316 /* YYPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		1F288DA11CB1FD0600180316 /* DeliveryTouchesDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryTouchesDemo.swift; sourceTree = "<group>"; };
+		1F288DA31CB216C800180316 /* YYCycleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCycleGestureRecognizer.swift; sourceTree = "<group>"; };
 		1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYConfigurableTableViewController.swift; sourceTree = "<group>"; };
 		1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCellViewData.swift; sourceTree = "<group>"; };
 		1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -158,6 +163,7 @@
 		1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		1FAAFBBC1BE88829007023B7 /* TheBasicsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheBasicsDemo.swift; sourceTree = "<group>"; };
 		1FDB55141BF0E60F0048E1F7 /* ClosuresDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosuresDemo.swift; sourceTree = "<group>"; };
+		1FE864E01CB3819100E013A1 /* RunLoopDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLoopDemo.swift; sourceTree = "<group>"; };
 		1FF5D3E61BF9B841007F3766 /* EnumerationsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumerationsDemo.swift; sourceTree = "<group>"; };
 		4CA32F90EF6765DEDBDFECA0 /* Pods_SwiftSum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4773DCA3BEA69320548ACD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -285,6 +291,7 @@
 			children = (
 				1F5B67C91CACF376003CFD75 /* 事件和手势 */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
+				1FE864E21CB3819600E013A1 /* RunLoop相关 */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -357,6 +364,8 @@
 				1F5B67D11CAD02FB003CFD75 /* GestureTestView.swift */,
 				1F5B67DB1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift */,
 				1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */,
+				1F288DA11CB1FD0600180316 /* DeliveryTouchesDemo.swift */,
+				1F288DA31CB216C800180316 /* YYCycleGestureRecognizer.swift */,
 				1F288D9E1CAD1FDC00180316 /* images */,
 			);
 			path = "手势";
@@ -581,6 +590,14 @@
 				1FDB55141BF0E60F0048E1F7 /* ClosuresDemo.swift */,
 			);
 			path = "闭包";
+			sourceTree = "<group>";
+		};
+		1FE864E21CB3819600E013A1 /* RunLoop相关 */ = {
+			isa = PBXGroup;
+			children = (
+				1FE864E01CB3819100E013A1 /* RunLoopDemo.swift */,
+			);
+			name = "RunLoop相关";
 			sourceTree = "<group>";
 		};
 		1FF5D3E81BF9B844007F3766 /* 枚举 */ = {
@@ -825,6 +842,7 @@
 			files = (
 				1F139B491C814523005E89EB /* RxSwiftDemo.swift in Sources */,
 				1F5B67CD1CACF41C003CFD75 /* ViewController+YYKit.swift in Sources */,
+				1FE864E11CB3819100E013A1 /* RunLoopDemo.swift in Sources */,
 				1F5B67C81CACF36E003CFD75 /* EventAndGestureDemo.swift in Sources */,
 				EEF281761C6356170004765A /* Recommend.swift in Sources */,
 				1F5B67D21CAD02FB003CFD75 /* GestureTestView.swift in Sources */,
@@ -867,11 +885,13 @@
 				1F5B67C31CACF219003CFD75 /* MainController.swift in Sources */,
 				1F5B67C11CACF1A8003CFD75 /* YYBaseTabBarController.swift in Sources */,
 				1F5B67D01CAD019D003CFD75 /* GestureDemoChild.swift in Sources */,
+				1F288DA21CB1FD0600180316 /* DeliveryTouchesDemo.swift in Sources */,
 				1FF5D3E71BF9B841007F3766 /* EnumerationsDemo.swift in Sources */,
 				1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */,
 				1F5B67CB1CACF3BC003CFD75 /* GestureDemo.swift in Sources */,
 				1F87A2A01CA3B9EB0001519E /* AppConfig.swift in Sources */,
 				1FAAFBBB1BE8878A007023B7 /* UITableView+Extension.swift in Sources */,
+				1F288DA41CB216C800180316 /* YYCycleGestureRecognizer.swift in Sources */,
 				EEC450641C634B4700328F54 /* CommonDataSource.swift in Sources */,
 				1F2F69321C9A86D100A3F432 /* TextTableViewCell.swift in Sources */,
 				1F5B67D61CAD05BF003CFD75 /* UIView+YYKit.swift in Sources */,

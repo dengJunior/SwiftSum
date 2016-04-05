@@ -12,24 +12,19 @@ class GestureDemoChild: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.addTestView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func addTestView() {
+        let view = DeliveryTouchesDemo()
+        view.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(view)
+        view.snp_makeConstraints(closure: { (make) in
+            make.top.equalTo(10)
+            make.left.equalTo(10)
+            make.bottom.equalTo(-10)
+            make.right.equalTo(-10)
+        })
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

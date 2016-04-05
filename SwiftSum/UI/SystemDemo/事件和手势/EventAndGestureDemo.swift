@@ -8,6 +8,30 @@
 
 import UIKit
 
+extension UIGestureRecognizerState {
+    var stringValue: String {
+        switch self {
+        case UIGestureRecognizerState.Possible:
+            return "UIGestureRecognizerState.Possible"
+        case UIGestureRecognizerState.Began:
+            return "UIGestureRecognizerState.Began"
+        case UIGestureRecognizerState.Changed:
+            return "UIGestureRecognizerState.Changed"
+        case UIGestureRecognizerState.Ended:
+            return "UIGestureRecognizerState.Ended"
+        case UIGestureRecognizerState.Cancelled:
+            return "UIGestureRecognizerState.Cancelled"
+        case UIGestureRecognizerState.Failed:
+            return "UIGestureRecognizerState.Failed"
+            //        case UIGestureRecognizerState.Recognized:
+            //            return "UIGestureRecognizerState.Recognized"
+            //        default:
+            //            return "unkonwn"
+        }
+    }
+}
+
+
 class EventAndGestureDemo: UIViewController {
 
     override func viewDidLoad() {

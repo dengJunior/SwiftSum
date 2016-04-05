@@ -39,8 +39,8 @@ class SimpleGestureRecognizers: UIView, UIGestureRecognizerDelegate {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.addPanGesture()
         
-//        self.removeGestureRecognizer(tapRecognizer)
-//        self.removeGestureRecognizer(swipeLeftRecognizer)
+        //        self.removeGestureRecognizer(tapRecognizer)
+        //        self.removeGestureRecognizer(swipeLeftRecognizer)
         self.removeGestureRecognizer(swipeRightRecognizer)
         self.removeGestureRecognizer(rotateRecognizer)
         
@@ -87,7 +87,7 @@ class SimpleGestureRecognizers: UIView, UIGestureRecognizerDelegate {
         print(#function + " " + sender.state.stringValue)
         let location = sender.locationInView(self)
         self.drawImageForGestureRecognizer(sender, centerPoint: location)
-        UIView.animateWithDuration(0.5) { 
+        UIView.animateWithDuration(0.5) {
             self.imageView.alpha = 0.0
         }
     }
@@ -160,7 +160,7 @@ class SimpleGestureRecognizers: UIView, UIGestureRecognizerDelegate {
         imageView.image = UIImage.init(named: imageName)
         imageView.center = centerPoint
         imageView.alpha = 1.0
-}
+    }
     
     // MARK: - Public
     
@@ -206,13 +206,13 @@ class SimpleGestureRecognizers: UIView, UIGestureRecognizerDelegate {
     }
     
     //询问是否这个手势是通过otherGestureRecognizer手势的触发才失败
-//    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailByGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-//        if gestureRecognizer == panRecognizer && otherGestureRecognizer == swipeLeftRecognizer{
-//            return true
-//        }
-//        print(#function)
-//        return true;
-//    }
+    //    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailByGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    //        if gestureRecognizer == panRecognizer && otherGestureRecognizer == swipeLeftRecognizer{
+    //            return true
+    //        }
+    //        print(#function)
+    //        return true;
+    //    }
     
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, canBePreventedByGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         print(#function + ",gestureRecognizer=" + gestureRecognizer.classNameString + ",otherGestureRecognizer=" + otherGestureRecognizer.classNameString)
@@ -224,29 +224,6 @@ class SimpleGestureRecognizers: UIView, UIGestureRecognizerDelegate {
         return false
     }
     
-}
-
-extension UIGestureRecognizerState {
-    var stringValue: String {
-        switch self {
-        case UIGestureRecognizerState.Possible:
-            return "UIGestureRecognizerState.Possible"
-        case UIGestureRecognizerState.Began:
-            return "UIGestureRecognizerState.Began"
-        case UIGestureRecognizerState.Changed:
-            return "UIGestureRecognizerState.Changed"
-        case UIGestureRecognizerState.Ended:
-            return "UIGestureRecognizerState.Ended"
-        case UIGestureRecognizerState.Cancelled:
-            return "UIGestureRecognizerState.Cancelled"
-        case UIGestureRecognizerState.Failed:
-            return "UIGestureRecognizerState.Failed"
-//        case UIGestureRecognizerState.Recognized:
-//            return "UIGestureRecognizerState.Recognized"
-//        default:
-//            return "unkonwn"
-        }
-    }
 }
 
 
