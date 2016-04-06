@@ -8,13 +8,36 @@
 
 import UIKit
 
+// MARK: - Runloop的优点
+
+/*
+ 一般情况下，当我们使用NSRunLoop的时候，代码如下所示：
+ 
+ do {
+ 
+ [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopModebeforeDate:[NSDate distantFuture]];
+ 
+ } while (!done);
+ 
+ 在上面的代码中，参数done为NO的时候，当前runloop会一直接收处理其他输入源，处理输入源之后会再回到runloop中等待其他的输入源；
+ 除非done为YES，否则当前流程一直再runloop中。
+ */
 class RunLoopDemo: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         var buttonCount = 2;
         
+        self.addButtonToView("测试自定义runloop", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { (button) in
+            let testThread = RunLoopDemo1()
+            testThread.launch()
+        }
+        buttonCount += 1
+        
+        //启动一个线程，在while循环中等待线程执行完再接着往下运行。
         self.addButtonToView("buttonNormalThreadTestPressed", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { [unowned self] (button) in
             print("Enter buttonNormalThreadTestPressed")
             self.threadProcess1Finished = false
@@ -34,6 +57,7 @@ class RunLoopDemo: UIViewController {
         }
         buttonCount += 1
         
+        //启动一个线程，使用runloop，等待线程执行完再接着往下运行。
         self.addButtonToView("buttonRunloopPressed", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { [unowned self] (button) in
             print("Enter buttonRunloopPressed")
             self.threadProcess2Finished = false
@@ -55,6 +79,7 @@ class RunLoopDemo: UIViewController {
         }
         buttonCount += 1
         
+        //仅仅打印两条日志，用来测试UI是否能立即响应的。
         self.addButtonToView("buttonTestPressed", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { (button) in
             print("Enter buttonTestPressed")
             print("Exit buttonTestPressed")
