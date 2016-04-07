@@ -8,14 +8,21 @@
 
 import UIKit
 
-// MARK: - Runloop简单实例
+// MARK: - Runloop简单实例 
 
-class RunLoopDemo1: NSObject {
+class TestRunLoop: NSObject {
+    
+    /**
+     launch()方法在主线程中，通过NSThread类的类方法detachNewThreadSelector:toTarget:withObject:创建并启动一个二级线程，
+     将createAndConfigObserverInSecondaryThread()方法作为事件消息传入该二级线程，
+     这个方法的主要作用就是在二级线程中创建配置Run Loop观察者并启动Run Loop，
+     然后让主线程持续3秒，以便二级线程有足够的时间执行任务。
+     */
     func launch() -> Void {
         
         print("First event in Main Thread.")
         
-        NSThread.detachNewThreadSelector(#selector(RunLoopDemo1.newThreadProcess), toTarget: self, withObject: nil)
+        NSThread.detachNewThreadSelector(#selector(TestRunLoop.createAndConfigObserverInSecondaryThread), toTarget: self, withObject: nil)
         
         print(NSThread.isMultiThreaded())
         
@@ -57,8 +64,14 @@ class RunLoopDemo1: NSObject {
         
     }
     
-    func newThreadProcess() {
+    
+    func createAndConfigObserverInSecondaryThread() {
         autoreleasepool {
+            // MARK: - 配置Run Loop观察者
+            /*
+             在Cocoa框架中，并没有提供创建配置Run Loop观察者的相关接口，所以我们只能通过Core Foundation框架中提供的对象和方法创建并配置Run Loop观察者
+             */
+            
             //1. 获得当前thread的Runloop
             let currentRunLoop = NSRunLoop.currentRunLoop()
             
@@ -106,7 +119,9 @@ class RunLoopDemo1: NSObject {
              在配置Run Loop之前，我们必须添加一个事件源或者Timer source给它。如果Run Loop没有任何源需要监视的话，会立刻退出。同样的我们可以给Run Loop注册Observer。
              */
             if observer != nil {
-                // 5. 因为NSRunLoop没有提供操作观察者的接口，所以我们需要getCFRunLoop()方法获取到CFRunLoop对象。
+                /*
+                 5. 因为NSRunLoop没有提供操作观察者的接口，所以我们需要getCFRunLoop()方法获取到CFRunLoop对象。
+                 */
                 let cfRunLoop = currentRunLoop.getCFRunLoop()
                 
                 /**
@@ -121,7 +136,7 @@ class RunLoopDemo1: NSObject {
              另外前文中提到过，如果Run Loop中没有任何数据源，那么Run Loop启动后会立即退出，
              所以大家可以把这行注释了运行看看会有什么效果。（runloop启动后会马上退出）
              */
-            NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(RunLoopDemo1.timerProcess), userInfo: nil, repeats: true)
+            NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(TestRunLoop.timerProcess), userInfo: nil, repeats: true)
             
             
             /*

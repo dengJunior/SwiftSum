@@ -12,13 +12,11 @@ extension UIViewController {
     
     // MARK: - 根据类名从storyboard中返回对应ViewController
     static func newInstanceFromStoryboard(isInitial: Bool = true) -> UIViewController? {
-        let classString = NSStringFromClass(self)
-        return newInstanceFromStoryboard(classString, isInitial: isInitial)
+        return newInstanceFromStoryboard(self.classNameString, isInitial: isInitial)
     }
     
     static func newInstanceFromStoryboard(storyboardName: String, isInitial: Bool = true) -> UIViewController? {
-        let classString = NSStringFromClass(self)
-        return newInstanceFromStoryboard(storyboardName, storyboardId: classString, isInitial: isInitial)
+        return newInstanceFromStoryboard(storyboardName, storyboardId: self.classNameString, isInitial: isInitial)
     }
     
     static func newInstanceFromStoryboard(storyboardName: String, storyboardId: String) -> UIViewController? {

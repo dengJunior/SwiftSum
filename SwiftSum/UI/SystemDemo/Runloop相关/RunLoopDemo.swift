@@ -27,18 +27,25 @@ class RunLoopDemo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        view.backgroundColor = UIColor.whiteColor()
         
         var buttonCount = 2;
         
-        self.addButtonToView("测试自定义runloop", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { (button) in
-            let testThread = RunLoopDemo1()
-            testThread.launch()
+        self.addButtonToView("runloop添加观察者demo", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { (button) in
+            let testRunLoop = TestRunLoop()
+            testRunLoop.launch()
+        }
+        buttonCount += 1
+        
+        self.addButtonToView("runloop添加自定义事件源demo", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { (button) in
+            if let viewController = MainCollectionViewController.newInstanceFromStoryboard() {
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
         }
         buttonCount += 1
         
         //启动一个线程，在while循环中等待线程执行完再接着往下运行。
-        self.addButtonToView("buttonNormalThreadTestPressed", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { [unowned self] (button) in
+        self.addButtonToView("buttonNormalThreadTestPressed", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
             print("Enter buttonNormalThreadTestPressed")
             self.threadProcess1Finished = false
             print("Start a new thread.")

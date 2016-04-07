@@ -128,7 +128,7 @@
         <!--Item-->
         <scene sceneID="VzT-F5-Ls1">
             <objects>
-                <navigationController id="0Pc-0O-qth" sceneMemberID="viewController">
+                <navigationController id="0Pc-0O-qth" customClass="BaseNavigationController" customModule="SwiftSum" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="tIw-NV-wr5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FWZ-gs-iJd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -145,7 +145,7 @@
         <!--Item-->
         <scene sceneID="7G2-rW-jzX">
             <objects>
-                <navigationController id="pae-ig-1k8" sceneMemberID="viewController">
+                <navigationController id="pae-ig-1k8" customClass="BaseNavigationController" customModule="SwiftSum" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="uxR-7Q-Fsi"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eQP-9V-ved">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

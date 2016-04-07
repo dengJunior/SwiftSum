@@ -21,6 +21,12 @@ class ThreadDemo: UIViewController {
         }
         buttonCount += 1
 
+//        self.addButtonToView("RunLoopDemo", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { (button) in
+//            let viewController = RunLoopDemo()
+//            self.navigationController?.pushViewController(viewController, animated: true)
+//        }
+//        buttonCount += 1
+
     }
 
     override func didReceiveMemoryWarning() {
