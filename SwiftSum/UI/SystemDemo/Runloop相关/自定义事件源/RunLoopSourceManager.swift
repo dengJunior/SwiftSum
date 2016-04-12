@@ -20,6 +20,7 @@ class RunLoopSourceManager: NSObject {
      停止runloop
      */
     func stopSecondaryThreadRunloop() {
+        
         if let runloop = secondaryThreadRunloopSourceContext?.runloop {
             CFRunLoopStop(runloop)
         }

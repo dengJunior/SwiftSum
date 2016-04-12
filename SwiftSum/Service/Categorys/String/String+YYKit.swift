@@ -15,5 +15,9 @@ extension String {
         }
         return nil
     }
+    
+    static func documentPath() -> String {
+        return NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+    }
 }
 

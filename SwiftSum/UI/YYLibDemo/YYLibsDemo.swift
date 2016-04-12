@@ -15,6 +15,7 @@ class YYLibsDemo: YYBaseDemoController {
 
         self.dataArray = [
             LibDemoInfo(title: "NetworkDemo", desc: "NetworkDemo", controllerName: "NetworkDemo"),
+            LibDemoInfo(title: "YYLoggerDemo", desc: "显示日志", controllerName: "YYLoggerDemo"),
         ]
     }
 

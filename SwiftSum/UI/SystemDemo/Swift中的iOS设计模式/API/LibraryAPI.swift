@@ -6,7 +6,7 @@
 //  Copyright © 2016年 sihuan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - 创建单例模式的3种方式，都支持延迟初始化和线程安全。
 class LibraryAPI: NSObject {
@@ -53,6 +53,31 @@ class LibraryAPI: NSObject {
         httpClient = HTTPClient()
         isOnline = false
         super.init()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(LibraryAPI.downloadImage(_:)), name: "BLDownloadImageNotification", object: nil)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func downloadImage(notification: NSNotification) {
+        let userInfo = notification.userInfo as! [String: AnyObject]
+        let imgageView = userInfo["imageView"] as! UIImageView?
+        let coverUrl = userInfo["coverUrl"] as! String
+        
+        if let imageViewUnWrapped = imgageView {
+            imageViewUnWrapped.image = persistencyManager.getImage(coverUrl)
+            if imageViewUnWrapped.image == nil {
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                    let donwloadImage = self.httpClient.downloadImage(coverUrl)
+                    dispatch_sync(dispatch_get_main_queue(), {
+                        imageViewUnWrapped.image = donwloadImage
+                        self.persistencyManager.saveImage(donwloadImage, filename: coverUrl)
+                    })
+                })
+            }
+        }
     }
     
     func getAlbums() -> [Album] {
@@ -65,7 +90,7 @@ class LibraryAPI: NSObject {
     func addAlbum(album: Album, index: Int) {
         persistencyManager.addAlbum(album, index: index)
         if isOnline {
-            httpClient.postRequest("/api/addAlbum", body: album.description())
+            httpClient.postRequest("/api/addAlbum", body: album.description)
         }
     }
     
@@ -74,6 +99,10 @@ class LibraryAPI: NSObject {
         if isOnline {
             httpClient.postRequest("/api/addAlbum", body: "\(index)")
         }
+    }
+    
+    func saveAlbums() {
+        persistencyManager.saveAlbums()
     }
 
 }
@@ -88,31 +117,31 @@ class PersistencyManager: NSObject {
         let album1 = Album(title: "Best of Bowie",
                            artist: "David Bowie",
                            genre: "Pop",
-                           coverUrl: "http://www.coversproject.com/static/thumbs/album/album_david%20bowie_best%20of%20bowie.png",
+                           coverUrl: "http://images.meilele.com/images/201407/1405677273360287963.jpg",
                            year: "1992")
         
         let album2 = Album(title: "It's My Life",
                            artist: "No Doubt",
                            genre: "Pop",
-                           coverUrl: "http://www.coversproject.com/static/thumbs/album/album_no%20doubt_its%20my%20life%20%20bathwater.png",
+                           coverUrl: "http://images.meilele.com/images/201407/1405677273360287963.jpg",
                            year: "2003")
         
         let album3 = Album(title: "Nothing Like The Sun",
                            artist: "Sting",
                            genre: "Pop",
-                           coverUrl: "http://www.coversproject.com/static/thumbs/album/album_sting_nothing%20like%20the%20sun.png",
+                           coverUrl: "http://images.meilele.com/images/201407/1405677273360287963.jpg",
                            year: "1999")
         
         let album4 = Album(title: "Staring at the Sun",
                            artist: "U2",
                            genre: "Pop",
-                           coverUrl: "http://www.coversproject.com/static/thumbs/album/album_u2_staring%20at%20the%20sun.png",
+                           coverUrl: "http://images.meilele.com/images/201407/1405677273360287963.jpg",
                            year: "2000")
         
         let album5 = Album(title: "American Pie",
                            artist: "Madonna",
                            genre: "Pop",
-                           coverUrl: "http://www.coversproject.com/static/thumbs/album/album_madonna_american%20pie.png",
+                           coverUrl: "http://images.meilele.com/images/201407/1405677273360287963.jpg",
                            year: "2000")
         
         albums = [album1, album2, album3, album4, album5]
@@ -133,7 +162,54 @@ class PersistencyManager: NSObject {
     func deleteAlbumAtIndex(index: Int) {
         albums.removeAtIndex(index)
     }
+    
+    func getImage(filename: String) -> UIImage? {
+        let path = NSHomeDirectory().stringByAppendingString("/Documents/\(filename)")
+        
+        do {
+            let data = try NSData(contentsOfFile: path, options: .UncachedRead)
+            return UIImage(data: data)
+        } catch {
+            return nil
+        }
+    }
+    
+    func saveImage(image: UIImage, filename: String) {
+        let path = NSHomeDirectory().stringByAppendingString("/Documents/\(filename)")
+        let data = UIImagePNGRepresentation(image)
+        do {
+            try data?.writeToFile(path, options: .AtomicWrite)
+        } catch {
+            
+        }
+    }
+    
+    func saveAlbums() {
+        let filename = NSHomeDirectory().stringByAppendingString("/Documents/albums.bin")
+        let data = NSKeyedArchiver.archivedDataWithRootObject(albums)
+        do {
+            try data.writeToFile(filename, options: .AtomicWrite)
+        } catch {
+            
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

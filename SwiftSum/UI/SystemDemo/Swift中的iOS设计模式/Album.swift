@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Album {
+class Album: NSObject, NSCoding{
     var title : String!
     var artist : String!
     var genre : String!
@@ -19,7 +19,7 @@ struct Album {
      通过这个初始化方法，传入专辑名称、演唱者、风格、专辑封面图片的URL以及年份这些属性。
      */
     init(title: String, artist: String, genre: String, coverUrl: String, year: String) {
-        
+        super.init()
         self.title = title
         self.artist = artist
         self.genre = genre
@@ -27,7 +27,24 @@ struct Album {
         self.year = year
     }
     
-    func description() -> String {
+    required init(coder decoder: NSCoder) {
+        super.init()
+        self.title = decoder.decodeObjectForKey("title") as! String
+        self.artist = decoder.decodeObjectForKey("artist") as! String
+        self.genre = decoder.decodeObjectForKey("genre") as! String
+        self.coverUrl = decoder.decodeObjectForKey("cover_url") as! String
+        self.year = decoder.decodeObjectForKey("year") as! String
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(title, forKey: "title")
+        aCoder.encodeObject(artist, forKey: "artist")
+        aCoder.encodeObject(genre, forKey: "genre")
+        aCoder.encodeObject(coverUrl, forKey: "cover_url")
+        aCoder.encodeObject(year, forKey: "year")
+    }
+    
+    override var description: String {
         return "title: \(title)" +
             "artist: \(artist)" +
             "genre: \(genre)" +
