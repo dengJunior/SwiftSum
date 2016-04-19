@@ -21,28 +21,43 @@ class ThreadDemo: UIViewController {
         }
         buttonCount += 1
 
-//        self.addButtonToView("RunLoopDemo", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { (button) in
-//            let viewController = RunLoopDemo()
-//            self.navigationController?.pushViewController(viewController, animated: true)
-//        }
-//        buttonCount += 1
+        self.addButtonToView("TestBlockOperation", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { (button) in
+            let testBlockOperation = TestBlockOperation()
+            testBlockOperation.start()
+        }
+        buttonCount += 1
 
+        self.addButtonToView("测试自定义非并发Operation对象", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { (button) in
+            let testOperation = MyNonConcurrentOperation.init(withUrl: "http://www.baidu.com/s?wd=ios")
+            testOperation.start()
+        }
+        buttonCount += 1
+
+        self.addButtonToView("测试自定义并发Operation对象", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { (button) in
+            let testOperation = TestMyConcurrentOperation()
+            testOperation.launch()
+        }
+        buttonCount += 1
+        
+        self.addButtonToView("测试Operation对象之间的依赖", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { (button) in
+            let testOperation = TestOperationDependency()
+            testOperation.launch()
+        }
+        buttonCount += 1
+        
+        self.addButtonToView("测试OperationQueue", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { (button) in
+            let testOperation = TestOperationQueue()
+            testOperation.launch()
+        }
+        buttonCount += 1
+        
+        self.addButtonToView("测试队列的收尾工作", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { (button) in
+            let testOperation = TestDispatchQueueCleanUp()
+            testOperation.launch()
+        }
+        buttonCount += 1
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

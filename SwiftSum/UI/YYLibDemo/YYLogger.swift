@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// 显示log的黑板
+/// 显示log的黑板 参考https://github.com/DaMingShen/SULogger
 class YYLoggerBoard: UIView {
     /*
      * 追加要显示的log

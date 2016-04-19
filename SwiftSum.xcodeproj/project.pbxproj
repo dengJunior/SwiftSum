@@ -34,6 +34,7 @@
 		1F139B4C1C814844005E89EB /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B4B1C814844005E89EB /* Setting.swift */; };
 		1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B4E1C83449E005E89EB /* GitHubAPI.swift */; };
 		1F139B511C873655005E89EB /* String+YYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B501C873655005E89EB /* String+YYKit.swift */; };
+		1F1656841CBCCF740015F570 /* NSOperationQueueDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */; };
 		1F288D971CAD174500180316 /* SimpleGestureRecognizers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */; };
 		1F288D9B1CAD1FD000180316 /* rotation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D981CAD1FD000180316 /* rotation.png */; };
 		1F288D9C1CAD1FD000180316 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D991CAD1FD000180316 /* swipe.png */; };
@@ -41,12 +42,16 @@
 		1F288DA01CAE623000180316 /* YYPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F288D9F1CAE622F00180316 /* YYPanGestureRecognizer.swift */; };
 		1F288DA21CB1FD0600180316 /* DeliveryTouchesDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F288DA11CB1FD0600180316 /* DeliveryTouchesDemo.swift */; };
 		1F288DA41CB216C800180316 /* YYCycleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F288DA31CB216C800180316 /* YYCycleGestureRecognizer.swift */; };
+		1F289A001CC48A8100988E82 /* ViewGuideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2899FF1CC48A8100988E82 /* ViewGuideDemo.swift */; };
+		1F289A031CC48AE300988E82 /* AutoresizingMaskDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F289A021CC48AE300988E82 /* AutoresizingMaskDemo.swift */; };
 		1F2F69291C9A7FC400A3F432 /* YYConfigurableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */; };
 		1F2F692F1C9A86D100A3F432 /* ImageCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */; };
 		1F2F69301C9A86D100A3F432 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */; };
 		1F2F69311C9A86D100A3F432 /* TextCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692D1C9A86D000A3F432 /* TextCellViewData.swift */; };
 		1F2F69321C9A86D100A3F432 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692E1C9A86D000A3F432 /* TextTableViewCell.swift */; };
 		1F2F69341C9A86DA00A3F432 /* UITableViewCell+Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F69331C9A86DA00A3F432 /* UITableViewCell+Margins.swift */; };
+		1F5A731F1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A731E1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift */; };
+		1F5A73231CBE178E002B0D19 /* GCDDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A73221CBE178E002B0D19 /* GCDDemo.swift */; };
 		1F5B67BE1CACF0D6003CFD75 /* SystemDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */; };
 		1F5B67C11CACF1A8003CFD75 /* YYBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67C01CACF1A8003CFD75 /* YYBaseTabBarController.swift */; };
 		1F5B67C31CACF219003CFD75 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67C21CACF219003CFD75 /* MainController.swift */; };
@@ -153,6 +158,7 @@
 		1F139B4B1C814844005E89EB /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		1F139B4E1C83449E005E89EB /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		1F139B501C873655005E89EB /* String+YYKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+YYKit.swift"; sourceTree = "<group>"; };
+		1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOperationQueueDemo.swift; sourceTree = "<group>"; };
 		1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleGestureRecognizers.xib; sourceTree = "<group>"; };
 		1F288D981CAD1FD000180316 /* rotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotation.png; sourceTree = "<group>"; };
 		1F288D991CAD1FD000180316 /* swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe.png; sourceTree = "<group>"; };
@@ -160,12 +166,16 @@
 		1F288D9F1CAE622F00180316 /* YYPanGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		1F288DA11CB1FD0600180316 /* DeliveryTouchesDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryTouchesDemo.swift; sourceTree = "<group>"; };
 		1F288DA31CB216C800180316 /* YYCycleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCycleGestureRecognizer.swift; sourceTree = "<group>"; };
+		1F2899FF1CC48A8100988E82 /* ViewGuideDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewGuideDemo.swift; sourceTree = "<group>"; };
+		1F289A021CC48AE300988E82 /* AutoresizingMaskDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoresizingMaskDemo.swift; sourceTree = "<group>"; };
 		1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYConfigurableTableViewController.swift; sourceTree = "<group>"; };
 		1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCellViewData.swift; sourceTree = "<group>"; };
 		1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		1F2F692D1C9A86D000A3F432 /* TextCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCellViewData.swift; sourceTree = "<group>"; };
 		1F2F692E1C9A86D000A3F432 /* TextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		1F2F69331C9A86DA00A3F432 /* UITableViewCell+Margins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Margins.swift"; sourceTree = "<group>"; };
+		1F5A731E1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOperationSettingDemo.swift; sourceTree = "<group>"; };
+		1F5A73221CBE178E002B0D19 /* GCDDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDDemo.swift; sourceTree = "<group>"; };
 		1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemDemo.swift; sourceTree = "<group>"; };
 		1F5B67C01CACF1A8003CFD75 /* YYBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseTabBarController.swift; sourceTree = "<group>"; };
 		1F5B67C21CACF219003CFD75 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -272,9 +282,10 @@
 		1F00971D1CB4A4CC003A063F /* 多线程相关 */ = {
 			isa = PBXGroup;
 			children = (
-				1F00971E1CB4A4F0003A063F /* TestThread.swift */,
 				1F00971B1CB4A4C6003A063F /* ThreadDemo.swift */,
-				1FAF60261CB940AD0046CF3D /* ThreadSafeDemo.swift */,
+				1F5A73241CBE1792002B0D19 /* GCD */,
+				1F5A73211CBDDF2E002B0D19 /* NSThread */,
+				1F5A73201CBDDF19002B0D19 /* NSOperationQueue */,
 			);
 			path = "多线程相关";
 			sourceTree = "<group>";
@@ -378,6 +389,15 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		1F289A011CC48A9600988E82 /* View和Window相关 */ = {
+			isa = PBXGroup;
+			children = (
+				1F2899FF1CC48A8100988E82 /* ViewGuideDemo.swift */,
+				1F289A021CC48AE300988E82 /* AutoresizingMaskDemo.swift */,
+			);
+			name = "View和Window相关";
+			sourceTree = "<group>";
+		};
 		1F2F692A1C9A7FC900A3F432 /* 类型化的TableViewController  */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +409,32 @@
 				1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */,
 			);
 			path = "类型化的TableViewController ";
+			sourceTree = "<group>";
+		};
+		1F5A73201CBDDF19002B0D19 /* NSOperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */,
+				1F5A731E1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift */,
+			);
+			name = NSOperationQueue;
+			sourceTree = "<group>";
+		};
+		1F5A73211CBDDF2E002B0D19 /* NSThread */ = {
+			isa = PBXGroup;
+			children = (
+				1F00971E1CB4A4F0003A063F /* TestThread.swift */,
+				1FAF60261CB940AD0046CF3D /* ThreadSafeDemo.swift */,
+			);
+			name = NSThread;
+			sourceTree = "<group>";
+		};
+		1F5A73241CBE1792002B0D19 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				1F5A73221CBE178E002B0D19 /* GCDDemo.swift */,
+			);
+			name = GCD;
 			sourceTree = "<group>";
 		};
 		1F5B67BC1CACF08C003CFD75 /* NetworkDemo */ = {
@@ -407,6 +453,7 @@
 				1F5B67C91CACF376003CFD75 /* 事件和手势 */,
 				1F00971D1CB4A4CC003A063F /* 多线程相关 */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
+				1F289A011CC48A9600988E82 /* View和Window相关 */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -972,6 +1019,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5A731F1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift in Sources */,
 				1F0097211CB56037003A063F /* DesignPatternDemo.swift in Sources */,
 				1F139B491C814523005E89EB /* RxSwiftDemo.swift in Sources */,
 				1F5B67CD1CACF41C003CFD75 /* ViewController+YYKit.swift in Sources */,
@@ -997,6 +1045,7 @@
 				EEF2816B1C634EFD0004765A /* SwifterController.swift in Sources */,
 				1F792CBA1C8991A900EE70D4 /* ValidationResult.swift in Sources */,
 				1F5D19E81BF036450049F342 /* FunctionsDemo.swift in Sources */,
+				1F1656841CBCCF740015F570 /* NSOperationQueueDemo.swift in Sources */,
 				1F5B67DC1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift in Sources */,
 				1FA4A5301BE993040076ECAA /* BasicOperatorsDemo.swift in Sources */,
 				1F0097331CB60D75003A063F /* MainCollectionViewController.swift in Sources */,
@@ -1014,6 +1063,7 @@
 				1FA4A5331BE9D0190076ECAA /* StringsAndCharactersDemo.swift in Sources */,
 				1F2F69341C9A86DA00A3F432 /* UITableViewCell+Margins.swift in Sources */,
 				1FAF603B1CBB30E20046CF3D /* YYLoggerDemo.swift in Sources */,
+				1F289A001CC48A8100988E82 /* ViewGuideDemo.swift in Sources */,
 				EEB074AC1C6446D4001CB1ED /* YYAppToken.swift in Sources */,
 				1F2F69291C9A7FC400A3F432 /* YYConfigurableTableViewController.swift in Sources */,
 				1F139B401C8141CE005E89EB /* ThirdLibDemo.swift in Sources */,
@@ -1027,6 +1077,7 @@
 				EEB074AA1C6445D6001CB1ED /* Observable+YYNetworking.swift in Sources */,
 				1F0097451CB8EF71003A063F /* TestTimer.swift in Sources */,
 				EEF2817A1C63567C0004765A /* NetworkDemo.swift in Sources */,
+				1F289A031CC48AE300988E82 /* AutoresizingMaskDemo.swift in Sources */,
 				EEB074AE1C644B99001CB1ED /* YYApi.swift in Sources */,
 				EEC450621C634B1D00328F54 /* main1.swift in Sources */,
 				1F5B67C31CACF219003CFD75 /* MainController.swift in Sources */,
@@ -1041,6 +1092,7 @@
 				1F5B67CB1CACF3BC003CFD75 /* GestureDemo.swift in Sources */,
 				1F87A2A01CA3B9EB0001519E /* AppConfig.swift in Sources */,
 				1FAAFBBB1BE8878A007023B7 /* UITableView+Extension.swift in Sources */,
+				1F5A73231CBE178E002B0D19 /* GCDDemo.swift in Sources */,
 				1F288DA41CB216C800180316 /* YYCycleGestureRecognizer.swift in Sources */,
 				EEC450641C634B4700328F54 /* CommonDataSource.swift in Sources */,
 				1F2F69321C9A86D100A3F432 /* TextTableViewCell.swift in Sources */,
