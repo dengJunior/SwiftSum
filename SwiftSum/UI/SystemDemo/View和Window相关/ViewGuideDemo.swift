@@ -32,6 +32,18 @@ class ViewGuideDemo: UIViewController {
             view.changeSubViewMask()
         }
         buttonCount += 1
+        
+        self.addButtonToView("AnimationsDemo", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) {  (button) in
+            let demo = AnimationsDemo()
+            demo.launch()
+        }
+        buttonCount += 1
+        
+        self.addButtonToView("transitionTest", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) {  (button) in
+            let demo = AnimationsDemo()
+            demo.transitionTest()
+        }
+        buttonCount += 1
     }
 
     override func didReceiveMemoryWarning() {
