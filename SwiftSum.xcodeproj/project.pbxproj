@@ -494,8 +494,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
 			<key>path</key>
 			<string>View</string>
 			<key>sourceTree</key>
@@ -549,8 +547,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>&#37197;&#32622;&#22522;&#20110;&#31471;&#21475;&#30340;&#20107;&#20214;&#28304;</string>
 			<key>path</key>
 			<string>&#37197;&#32622;&#22522;&#20110;&#31471;&#21475;&#30340;&#20107;&#20214;&#28304;</string>
 			<key>sourceTree</key>
@@ -580,8 +576,10 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>1FB394AE1CCEF4F0005C1B0E</string>
 				<string>1F5B67BC1CACF08C003CFD75</string>
 				<string>1FAF60391CBB30C70046CF3D</string>
+				<string>1FB394A71CCE06DD005C1B0E</string>
 				<string>1F2F692A1C9A7FC900A3F432</string>
 				<string>1F075BDE1C4B4F480013C815</string>
 			</array>
@@ -983,9 +981,9 @@
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>View&#21644;Window&#30456;&#20851;</string>
+			<string>ViewGuide</string>
 			<key>path</key>
-			<string>View&#21644;Window&#30456;&#20851;</string>
+			<string>ViewGuide</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1196,8 +1194,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>NSOperationQueue</string>
 			<key>path</key>
 			<string>NSOperationQueue</string>
 			<key>sourceTree</key>
@@ -1212,8 +1208,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>NSThread</string>
 			<key>path</key>
 			<string>NSThread</string>
 			<key>sourceTree</key>
@@ -1247,8 +1241,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GCD</string>
 			<key>path</key>
 			<string>GCD</string>
 			<key>sourceTree</key>
@@ -1293,6 +1285,7 @@
 			<array>
 				<string>1FE864E21CB3819600E013A1</string>
 				<string>1F0097221CB56051003A063F</string>
+				<string>1FF133DB1CCB25FC00AD6822</string>
 				<string>1F289A011CC48A9600988E82</string>
 				<string>1F5B67C91CACF376003CFD75</string>
 				<string>1F00971D1CB4A4CC003A063F</string>
@@ -2104,6 +2097,7 @@
 				<string>1FE864E11CB3819100E013A1</string>
 				<string>1F0097421CB6A629003A063F</string>
 				<string>1F0097361CB60DBD003A063F</string>
+				<string>1FB394AB1CCE098C005C1B0E</string>
 				<string>1F5B67C81CACF36E003CFD75</string>
 				<string>1F00972F1CB5EBD2003A063F</string>
 				<string>EEF281761C6356170004765A</string>
@@ -2132,6 +2126,7 @@
 				<string>EEF2816C1C634EFD0004765A</string>
 				<string>1FA4A5361BEB294A0076ECAA</string>
 				<string>1F5B67D81CAD0773003CFD75</string>
+				<string>1FF133E11CCB266100AD6822</string>
 				<string>1F0097381CB60DF5003A063F</string>
 				<string>1F5B67BE1CACF0D6003CFD75</string>
 				<string>EEF281621C634EDC0004765A</string>
@@ -2148,10 +2143,12 @@
 				<string>1F0097471CB8F2B0003A063F</string>
 				<string>1FAAFBAD1BE85BE5007023B7</string>
 				<string>1F00971F1CB4A4F0003A063F</string>
+				<string>1FB394A91CCE096F005C1B0E</string>
 				<string>EEF2816D1C634EFD0004765A</string>
 				<string>1F2F69311C9A86D100A3F432</string>
 				<string>1F87A2A11CA3B9EB0001519E</string>
 				<string>1FAAFBB21BE85C3C007023B7</string>
+				<string>1FB394A61CCE06C0005C1B0E</string>
 				<string>EEB074AA1C6445D6001CB1ED</string>
 				<string>1F0097451CB8EF71003A063F</string>
 				<string>EEF2817A1C63567C0004765A</string>
@@ -2172,6 +2169,7 @@
 				<string>1FAAFBBB1BE8878A007023B7</string>
 				<string>1F5A73231CBE178E002B0D19</string>
 				<string>1F288DA41CB216C800180316</string>
+				<string>1FF133DF1CCB265500AD6822</string>
 				<string>EEC450641C634B4700328F54</string>
 				<string>1F2F69321C9A86D100A3F432</string>
 				<string>1F5B67D61CAD05BF003CFD75</string>
@@ -2180,10 +2178,13 @@
 				<string>1F792CB81C89761A00EE70D4</string>
 				<string>1F075BDF1C4B4F480013C815</string>
 				<string>1F139B4F1C83449E005E89EB</string>
+				<string>1FF133DA1CCB25F600AD6822</string>
 				<string>1F00973E1CB60E57003A063F</string>
 				<string>1FAF60361CBA9FC80046CF3D</string>
+				<string>1FB394AD1CCE5867005C1B0E</string>
 				<string>EEF2816F1C634EFD0004765A</string>
 				<string>1F0C134A1CB38C050045FCB7</string>
+				<string>1FB394961CCC6EC0005C1B0E</string>
 				<string>1F288DA01CAE623000180316</string>
 			</array>
 			<key>isa</key>
@@ -3128,6 +3129,7 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>1FB394971CCC7273005C1B0E</string>
 				<string>1F5B67DA1CAD0A6E003CFD75</string>
 				<string>1F5B67D31CAD059D003CFD75</string>
 				<string>1F5B67D41CAD05A5003CFD75</string>
@@ -3290,8 +3292,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>YYLoggerDemo</string>
 			<key>path</key>
 			<string>YYLoggerDemo</string>
 			<key>sourceTree</key>
@@ -3316,6 +3316,153 @@
 			<string>1FAF603A1CBB30E20046CF3D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FB394951CCC6EC0005C1B0E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>NSDate+YYKit.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FB394961CCC6EC0005C1B0E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FB394951CCC6EC0005C1B0E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FB394971CCC7273005C1B0E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FB394951CCC6EC0005C1B0E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>NSDate</string>
+			<key>path</key>
+			<string>NSDate</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FB394A51CCE06C0005C1B0E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>GoodsDetailViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FB394A61CCE06C0005C1B0E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FB394A51CCE06C0005C1B0E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FB394A71CCE06DD005C1B0E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FB394AA1CCE098C005C1B0E</string>
+				<string>1FB394A51CCE06C0005C1B0E</string>
+				<string>1FB394A81CCE096F005C1B0E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>&#20223;&#28120;&#23453;&#21830;&#21697;&#35814;&#24773;</string>
+			<key>path</key>
+			<string>&#20223;&#28120;&#23453;&#21830;&#21697;&#35814;&#24773;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FB394A81CCE096F005C1B0E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>GoodsViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FB394A91CCE096F005C1B0E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FB394A81CCE096F005C1B0E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FB394AA1CCE098C005C1B0E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>GoodsDetailGraphicViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FB394AB1CCE098C005C1B0E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FB394AA1CCE098C005C1B0E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FB394AC1CCE5867005C1B0E</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>NetworkController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FB394AD1CCE5867005C1B0E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FB394AC1CCE5867005C1B0E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FB394AE1CCEF4F0005C1B0E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FB394AC1CCE5867005C1B0E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MVC-N&#27169;&#24335;</string>
+			<key>path</key>
+			<string>MVC-N&#27169;&#24335;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1FDB55141BF0E60F0048E1F7</key>
 		<dict>
@@ -3388,6 +3535,83 @@
 			<string>Runloop&#30456;&#20851;</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FF133D91CCB25F600AD6822</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewControllerGuideDemo.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FF133DA1CCB25F600AD6822</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FF133D91CCB25F600AD6822</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FF133DB1CCB25FC00AD6822</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1FF133DE1CCB265500AD6822</string>
+				<string>1FF133E01CCB266100AD6822</string>
+				<string>1FF133D91CCB25F600AD6822</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ViewControllerGuide</string>
+			<key>path</key>
+			<string>ViewControllerGuide</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FF133DE1CCB265500AD6822</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TableViewController1.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FF133DF1CCB265500AD6822</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FF133DE1CCB265500AD6822</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1FF133E01CCB266100AD6822</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ViewController1.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FF133E11CCB266100AD6822</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1FF133E01CCB266100AD6822</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>1FF5D3E61BF9B841007F3766</key>
 		<dict>

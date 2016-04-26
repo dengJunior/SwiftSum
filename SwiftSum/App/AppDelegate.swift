@@ -41,6 +41,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // MARK: - UI的状态保持和恢复
+    /**
+     *  为了实现点击Home键使程序退出，可以在设置属性*-info.plist修改Application does not run in background属性值为YES
+     
+     为实现UI的状态保持和恢复，包括APP层面和storyboard层面，首要条件就是需要在AppDelegate.m文件添加以下两个方法。
+     */
+    func application(application: UIApplication, shouldSaveApplicationState coder: NSCoder) -> Bool {
+        return true
+    }
+    
+    func application(application: UIApplication, shouldRestoreApplicationState coder: NSCoder) -> Bool {
+        return true
+    }
 
+    let lastShutDownTimeKey = "lastShutDownTime"
+    func application(application: UIApplication, willEncodeRestorableStateWithCoder coder: NSCoder) {
+        let currentDateString = NSDate().stringFromFormatDefault();
+        coder.encodeObject(currentDateString, forKey: lastShutDownTimeKey)
+        print("application willEncodeRestorableStateWithCoder 时间为:\(currentDateString)")
+    }
+    
+    func application(application: UIApplication, didDecodeRestorableStateWithCoder coder: NSCoder) {
+        if let currentDateString = coder.decodeObjectForKey(lastShutDownTimeKey) as? String {
+            let alert = UIAlertView(title: "上次关闭时间", message: currentDateString, delegate: nil, cancelButtonTitle: "OK")
+            alert.show()
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

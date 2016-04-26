@@ -1,0 +1,2 @@
+/Users/sihuan/Library/Developer/Xcode/DerivedData/SwiftSum-hjfvdxgfheqzscecasxkarbdttmw/Build/Products/Debug-iphonesimulator/SwiftSum.app
+

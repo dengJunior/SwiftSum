@@ -24,7 +24,21 @@ extension UIView {
     }
 }
 
-
+extension UIView {
+    /**
+     添加填满父view的约束
+     */
+    func addConstraintFillParent() {
+        if self.superview != nil {
+            self.snp_makeConstraints { (make) in
+                make.top.equalTo(0)
+                make.left.equalTo(0)
+                make.bottom.equalTo(0)
+                make.right.equalTo(0)
+            }
+        }
+    }
+}
 
 
 

@@ -35,9 +35,11 @@ extension YYApi {
     static func requestGoodDesignRecommends(completion: [Recommend] -> Void) {
         yyProvider.request(YYApi.GoodDesignRecommends)
             .mapSuccessfulHTTPToObjectArray(Recommend)
-            .subscribe(onNext: { items in completion(items); }, onError: { (ErrorType) -> Void in
-                print(ErrorType)
-                })
+            .subscribe(
+                onNext: { items in completion(items); },
+                onError: { (ErrorType) -> Void in
+                    print(ErrorType)
+            })
             .addDisposableTo(disposeBag);
     }
 }
@@ -88,11 +90,11 @@ class YYProvider<T where T: TargetType>: RxMoyaProvider<T> {
     var autoToken: YYAppToken?
     
     override init(endpointClosure: EndpointClosure = MoyaProvider.DefaultEndpointMapping,
-        requestClosure: RequestClosure = MoyaProvider.DefaultRequestMapping,
-        stubClosure: StubClosure = MoyaProvider.NeverStub,
-        manager: Manager = RxMoyaProvider<T>.DefaultAlamofireManager(),
-        plugins: [PluginType] = []) {
-            super.init(endpointClosure: endpointClosure, requestClosure: requestClosure, stubClosure: stubClosure, manager: manager, plugins: plugins)
+                  requestClosure: RequestClosure = MoyaProvider.DefaultRequestMapping,
+                  stubClosure: StubClosure = MoyaProvider.NeverStub,
+                  manager: Manager = RxMoyaProvider<T>.DefaultAlamofireManager(),
+                  plugins: [PluginType] = []) {
+        super.init(endpointClosure: endpointClosure, requestClosure: requestClosure, stubClosure: stubClosure, manager: manager, plugins: plugins)
     }
     
     // We always use xapp auth, logging in is handled by

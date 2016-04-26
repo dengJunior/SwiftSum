@@ -9,7 +9,30 @@
 import UIKit
 
 extension UIViewController {
-    
+    func extendedLayoutNone() {
+        self.edgesForExtendedLayout = .None
+        self.automaticallyAdjustsScrollViewInsets = false
+    }
+}
+
+// MARK: - ChildVC相关
+extension UIViewController {
+    func addChildViewControllerWithFillViewConstraint(childController: UIViewController) {
+        //addChildViewController会自动调用willMoveToParentViewController
+        self.addChildViewController(childController)
+        self.view.addSubview(childController.view)
+        childController.didMoveToParentViewController(self)
+        childController.view.addConstraintFillParent()
+    }
+    func addChildViewControllerWithView(childController: UIViewController) {
+        self.addChildViewController(childController)
+        self.view.addSubview(childController.view)
+        childController.didMoveToParentViewController(self)
+    }
+}
+
+// MARK: - 初始化相关
+extension UIViewController {
     // MARK: - 根据类名从storyboard中返回对应ViewController
     static func newInstanceFromStoryboard(isInitial: Bool = true) -> UIViewController? {
         return newInstanceFromStoryboard(self.classNameString, isInitial: isInitial)
@@ -27,8 +50,6 @@ extension UIViewController {
         let storyboard = UIStoryboard.init(name: storyboardName, bundle: nil)
         return isInitial ? storyboard.instantiateInitialViewController() : storyboard.instantiateViewControllerWithIdentifier(storyboardId)
     }
-    
-    
 }
 
 
