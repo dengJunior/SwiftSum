@@ -141,6 +141,7 @@ extension GoodsDetailGraphicViewController: UIScrollViewDelegate {
     }
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if -scrollView.contentOffset.y >=  GoodsPullEventTriggerdOffset {
+            scrollView.decelerationRate = 1
             trigerEvent(.pullDown)
         }
     }

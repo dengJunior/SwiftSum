@@ -40,6 +40,7 @@ class GoodsViewController: UIPageViewController {
     
     var dataArray = []
     weak var innerScrollView: UIScrollView!
+    
     // MARK: - Life cycle
     
     override func viewDidLoad() {
@@ -68,7 +69,6 @@ class GoodsViewController: UIPageViewController {
     }
     
     // MARK: - Initialization
-    
     init() {
         super.init(transitionStyle: .Scroll, navigationOrientation: .Vertical, options: nil)
     }
@@ -83,13 +83,7 @@ class GoodsViewController: UIPageViewController {
     
     func setupUI() {
         self.title = "商品详情"
-        dataSource = self
-        delegate = self
-        for subView in self.view.subviews {
-            if let scrollView = subView as? UIScrollView {
-                innerScrollView = scrollView
-            }
-        }
+        setupViewController()
         showGoodsController()
     }
     
@@ -109,13 +103,15 @@ class GoodsViewController: UIPageViewController {
     // MARK: - Private
     
     func showGoodsController() {
-        setViewControllers([goodsDetailViewController], direction: UIPageViewControllerNavigationDirection.Reverse, animated: true, completion: nil)
-//        innerScrollView.scrollEnabled = true
+        setViewControllers([goodsDetailViewController], direction: UIPageViewControllerNavigationDirection.Reverse, animated: true) { _ in
+//            self.innerScrollView.scrollEnabled = true
+        }
     }
     
     func showGoodsGrapicController() {
-        setViewControllers([goodsDetailGraphicViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
-//        innerScrollView.scrollEnabled = false
+        setViewControllers([goodsDetailGraphicViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: true) { _ in
+//            self.innerScrollView.scrollEnabled = false
+        }
     }
     
     // MARK: - Public
@@ -133,7 +129,7 @@ extension GoodsViewController: GoodsDetailViewControllerDelegate, GoodsDetailGra
         case .pullUp:
             showGoodsGrapicController()
         case .pullLeft:
-            showGoodsController()
+            break
         case .pullDown:
             break
         }
@@ -155,6 +151,17 @@ extension GoodsViewController: GoodsDetailViewControllerDelegate, GoodsDetailGra
 
 extension GoodsViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
+    func setupViewController() {
+        dataSource = self
+        delegate = self
+        for subView in self.view.subviews {
+            if let scrollView = subView as? UIScrollView {
+                innerScrollView = scrollView
+                innerScrollView.scrollEnabled = false
+            }
+        }
+    }
+    
     // MARK: - UIPageViewControllerDataSource
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
@@ -167,7 +174,6 @@ extension GoodsViewController: UIPageViewControllerDataSource, UIPageViewControl
     
     func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if completed {
-            innerScrollView.scrollEnabled = previousViewControllers.first == goodsDetailGraphicViewController ? true : false
         }
     }
 }

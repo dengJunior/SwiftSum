@@ -84,7 +84,6 @@
 		1FAAFBB21BE85C3C007023B7 /* YYBaseDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBB11BE85C3C007023B7 /* YYBaseDemoController.swift */; };
 		1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */; };
 		1FAAFBBB1BE8878A007023B7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */; };
-		1FAAFBBD1BE88829007023B7 /* TheBasicsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBBC1BE88829007023B7 /* TheBasicsDemo.swift */; };
 		1FAF60271CB940AD0046CF3D /* ThreadSafeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60261CB940AD0046CF3D /* ThreadSafeDemo.swift */; };
 		1FAF60361CBA9FC80046CF3D /* YYRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60351CBA9FC80046CF3D /* YYRunLoop.m */; };
 		1FAF60381CBB30BF0046CF3D /* YYLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60371CBB30BF0046CF3D /* YYLogger.swift */; };
@@ -94,6 +93,11 @@
 		1FB394A91CCE096F005C1B0E /* GoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */; };
 		1FB394AB1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */; };
 		1FB394AD1CCE5867005C1B0E /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394AC1CCE5867005C1B0E /* NetworkController.swift */; };
+		1FB8C5621CD083810020E183 /* YYPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5611CD083810020E183 /* YYPresentationAnimator.swift */; };
+		1FB8C5651CD089C50020E183 /* CustomTransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5641CD089C50020E183 /* CustomTransitionDemo.swift */; };
+		1FB8C56D1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C56C1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift */; };
+		1FB8C56F1CD1B4030020E183 /* YYInteractivityTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C56E1CD1B4030020E183 /* YYInteractivityTransitionAnimator.swift */; };
+		1FB8C5711CD1BE8B0020E183 /* YYInteractivityTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5701CD1BE8B0020E183 /* YYInteractivityTransition.swift */; };
 		1FDB55151BF0E60F0048E1F7 /* ClosuresDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDB55141BF0E60F0048E1F7 /* ClosuresDemo.swift */; };
 		1FE864E11CB3819100E013A1 /* RunLoopDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE864E01CB3819100E013A1 /* RunLoopDemo.swift */; };
 		1FF133DA1CCB25F600AD6822 /* ViewControllerGuideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF133D91CCB25F600AD6822 /* ViewControllerGuideDemo.swift */; };
@@ -225,7 +229,6 @@
 		1FAAFBB11BE85C3C007023B7 /* YYBaseDemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseDemoController.swift; sourceTree = "<group>"; };
 		1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLearnDemo.swift; sourceTree = "<group>"; };
 		1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		1FAAFBBC1BE88829007023B7 /* TheBasicsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheBasicsDemo.swift; sourceTree = "<group>"; };
 		1FAF60261CB940AD0046CF3D /* ThreadSafeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSafeDemo.swift; sourceTree = "<group>"; };
 		1FAF60341CBA9FC80046CF3D /* YYRunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRunLoop.h; sourceTree = "<group>"; };
 		1FAF60351CBA9FC80046CF3D /* YYRunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRunLoop.m; sourceTree = "<group>"; };
@@ -236,6 +239,12 @@
 		1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController.swift; sourceTree = "<group>"; };
 		1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailGraphicViewController.swift; sourceTree = "<group>"; };
 		1FB394AC1CCE5867005C1B0E /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		1FB8C5611CD083810020E183 /* YYPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPresentationAnimator.swift; sourceTree = "<group>"; };
+		1FB8C5641CD089C50020E183 /* CustomTransitionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionDemo.swift; sourceTree = "<group>"; };
+		1FB8C5671CD195640020E183 /* 1-基础部分.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1-基础部分.playground"; sourceTree = "<group>"; };
+		1FB8C56C1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYInteractivityTransitionDelegate.swift; sourceTree = "<group>"; };
+		1FB8C56E1CD1B4030020E183 /* YYInteractivityTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYInteractivityTransitionAnimator.swift; sourceTree = "<group>"; };
+		1FB8C5701CD1BE8B0020E183 /* YYInteractivityTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYInteractivityTransition.swift; sourceTree = "<group>"; };
 		1FDB55141BF0E60F0048E1F7 /* ClosuresDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosuresDemo.swift; sourceTree = "<group>"; };
 		1FE864E01CB3819100E013A1 /* RunLoopDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLoopDemo.swift; sourceTree = "<group>"; };
 		1FF133D91CCB25F600AD6822 /* ViewControllerGuideDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerGuideDemo.swift; sourceTree = "<group>"; };
@@ -476,6 +485,7 @@
 				1F5B67C91CACF376003CFD75 /* 事件和手势 */,
 				1F00971D1CB4A4CC003A063F /* 多线程相关 */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
+				1FB8C5631CD089600020E183 /* 自定义转场动画 */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -601,12 +611,12 @@
 			isa = PBXGroup;
 			children = (
 				1F5D19E91BF0366A0049F342 /* 函数 */,
-				1FAAFBBE1BE8883E007023B7 /* 基础部分 */,
 				1FA4A5341BE9D0210076ECAA /* 字符串和字符 */,
 				1FF5D3E81BF9B844007F3766 /* 枚举 */,
 				1FA4A5311BE993110076ECAA /* 运算符和控制流 */,
 				1FDB55161BF0E6130048E1F7 /* 闭包 */,
 				1FA4A5371BEB29520076ECAA /* 集合类型 */,
+				1FB8C5671CD195640020E183 /* 1-基础部分.playground */,
 			);
 			path = "Swift官方指导";
 			sourceTree = "<group>";
@@ -761,14 +771,6 @@
 			path = UITableView;
 			sourceTree = "<group>";
 		};
-		1FAAFBBE1BE8883E007023B7 /* 基础部分 */ = {
-			isa = PBXGroup;
-			children = (
-				1FAAFBBC1BE88829007023B7 /* TheBasicsDemo.swift */,
-			);
-			path = "基础部分";
-			sourceTree = "<group>";
-		};
 		1FAF60391CBB30C70046CF3D /* YYLoggerDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -802,6 +804,42 @@
 				1FB394AC1CCE5867005C1B0E /* NetworkController.swift */,
 			);
 			path = "MVC-N模式";
+			sourceTree = "<group>";
+		};
+		1FB8C5631CD089600020E183 /* 自定义转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8C5641CD089C50020E183 /* CustomTransitionDemo.swift */,
+				1FB8C5661CD089D00020E183 /* Presentation动画 */,
+			);
+			name = "自定义转场动画";
+			sourceTree = "<group>";
+		};
+		1FB8C5661CD089D00020E183 /* Presentation动画 */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8C5721CD1D8180020E183 /* 交互式的 */,
+				1FB8C5741CD1D8300020E183 /* 非交互式的 */,
+			);
+			name = "Presentation动画";
+			sourceTree = "<group>";
+		};
+		1FB8C5721CD1D8180020E183 /* 交互式的 */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8C56C1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift */,
+				1FB8C56E1CD1B4030020E183 /* YYInteractivityTransitionAnimator.swift */,
+				1FB8C5701CD1BE8B0020E183 /* YYInteractivityTransition.swift */,
+			);
+			name = "交互式的";
+			sourceTree = "<group>";
+		};
+		1FB8C5741CD1D8300020E183 /* 非交互式的 */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8C5611CD083810020E183 /* YYPresentationAnimator.swift */,
+			);
+			name = "非交互式的";
 			sourceTree = "<group>";
 		};
 		1FDB55161BF0E6130048E1F7 /* 闭包 */ = {
@@ -1097,7 +1135,6 @@
 				1FAAFB7F1BE85AEA007023B7 /* AppDelegate.swift in Sources */,
 				EEF281711C634EFD0004765A /* UnsafePointer.swift in Sources */,
 				EEF281701C634EFD0004765A /* FoundationAbout.swift in Sources */,
-				1FAAFBBD1BE88829007023B7 /* TheBasicsDemo.swift in Sources */,
 				1F87A29F1CA3B9EB0001519E /* AppManager.swift in Sources */,
 				1F00973A1CB60E0F003A063F /* SecondaryThreadRunLoopSource.swift in Sources */,
 				1F139B4C1C814844005E89EB /* Setting.swift in Sources */,
@@ -1111,6 +1148,7 @@
 				1F289A051CC5C0E000988E82 /* AnimationsDemo.swift in Sources */,
 				1FA4A5301BE993040076ECAA /* BasicOperatorsDemo.swift in Sources */,
 				1F0097331CB60D75003A063F /* MainCollectionViewController.swift in Sources */,
+				1FB8C5651CD089C50020E183 /* CustomTransitionDemo.swift in Sources */,
 				EEF2816E1C634EFD0004765A /* RegularExpression.swift in Sources */,
 				1F00972D1CB5E894003A063F /* AlbumView.swift in Sources */,
 				EEF2816C1C634EFD0004765A /* DemoSingle.swift in Sources */,
@@ -1137,9 +1175,11 @@
 				EEF2816D1C634EFD0004765A /* MemoryManage.swift in Sources */,
 				1F2F69311C9A86D100A3F432 /* TextCellViewData.swift in Sources */,
 				1F87A2A11CA3B9EB0001519E /* AppColor.swift in Sources */,
+				1FB8C5621CD083810020E183 /* YYPresentationAnimator.swift in Sources */,
 				1FAAFBB21BE85C3C007023B7 /* YYBaseDemoController.swift in Sources */,
 				1FB394A61CCE06C0005C1B0E /* GoodsDetailViewController.swift in Sources */,
 				EEB074AA1C6445D6001CB1ED /* Observable+YYNetworking.swift in Sources */,
+				1FB8C5711CD1BE8B0020E183 /* YYInteractivityTransition.swift in Sources */,
 				1F0097451CB8EF71003A063F /* TestTimer.swift in Sources */,
 				EEF2817A1C63567C0004765A /* NetworkDemo.swift in Sources */,
 				1F289A031CC48AE300988E82 /* AutoresizingMaskDemo.swift in Sources */,
@@ -1151,6 +1191,7 @@
 				1FAF60271CB940AD0046CF3D /* ThreadSafeDemo.swift in Sources */,
 				1F288DA21CB1FD0600180316 /* DeliveryTouchesDemo.swift in Sources */,
 				1FAF60381CBB30BF0046CF3D /* YYLogger.swift in Sources */,
+				1FB8C56F1CD1B4030020E183 /* YYInteractivityTransitionAnimator.swift in Sources */,
 				1FF5D3E71BF9B841007F3766 /* EnumerationsDemo.swift in Sources */,
 				1F0097261CB560DB003A063F /* HTTPClient.swift in Sources */,
 				1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */,
@@ -1171,6 +1212,7 @@
 				1FF133DA1CCB25F600AD6822 /* ViewControllerGuideDemo.swift in Sources */,
 				1F00973E1CB60E57003A063F /* RunLoopSourceManager.swift in Sources */,
 				1FAF60361CBA9FC80046CF3D /* YYRunLoop.m in Sources */,
+				1FB8C56D1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift in Sources */,
 				1FB394AD1CCE5867005C1B0E /* NetworkController.swift in Sources */,
 				EEF2816F1C634EFD0004765A /* TypeIntroduction.swift in Sources */,
 				1F0C134A1CB38C050045FCB7 /* TestRunLoop.swift in Sources */,
@@ -1312,6 +1354,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sichuan Dingcheng Forensic Institution";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftSum/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1330,6 +1373,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Sichuan Dingcheng Forensic Institution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sichuan Dingcheng Forensic Institution";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftSum/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
