@@ -27,6 +27,7 @@ class YYInteractivityTransition: UIPercentDrivenInteractiveTransition {
     
     /// 当手势有滑动时触发这个函数
     func gestureRecognizeDidUpdate(gestureRecognizer: UIScreenEdgePanGestureRecognizer) {
+        print(#function)
         switch gestureRecognizer.state {
         case .Began:
             break
@@ -75,9 +76,14 @@ class YYInteractivityTransition: UIPercentDrivenInteractiveTransition {
     
     // MARK: - Override
     
+    /*
+     对于交互式动画，UIKit调用交互式动画对象的 startInteractiveTransition:方法。
+     然后等到调用completeTransition
+     */
     override func startInteractiveTransition(transitionContext: UIViewControllerContextTransitioning) {
         self.transtionContext = transitionContext
         super.startInteractiveTransition(transitionContext)
+        print(#function)
     }
     
 }

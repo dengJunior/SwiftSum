@@ -18,7 +18,11 @@ class YYInteractivityTransitionAnimator: NSObject, UIViewControllerAnimatedTrans
     }
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.35
+        print(#function)
+        if let isAnimated = transitionContext?.isAnimated() {
+            return isAnimated ? 0.35 : 0
+        }
+        return 0
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -34,7 +38,7 @@ class YYInteractivityTransitionAnimator: NSObject, UIViewControllerAnimatedTrans
             let toView = transitionContext.viewForKey(UITransitionContextToViewKey) else {
                 return
         }
-        
+        print(#function)
         /// isPresenting用于判断当前是present还是dismiss
         let isPresenting = (toViewController.presentingViewController == fromViewController)
         let fromFrame = transitionContext.initialFrameForViewController(fromViewController)

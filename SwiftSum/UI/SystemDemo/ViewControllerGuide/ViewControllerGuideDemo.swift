@@ -97,5 +97,57 @@ class ViewControllerGuideDemo: UIViewController {
             
         }
     }
-
 }
+
+// MARK: - ios8后旋转相关
+extension ViewControllerGuideDemo {
+    /**
+     1. 告诉每个相关视图控制器，trait即将改变。
+     */
+    override func willTransitionToTraitCollection(newCollection: UITraitCollection, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        
+    }
+    
+    /**
+     2. 告诉每个相关视图控制器，size即将改变。
+     */
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        
+    }
+    
+    /**
+     3. 告诉每个相关视图控制器，trait已经发生改变。
+     */
+    override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

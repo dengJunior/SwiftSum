@@ -17,12 +17,27 @@ class CustomTransitionDemo: UIViewController {
         return gesture
     }()
     
+    //交互动画代理
     lazy var customTransitionDelegate: YYInteractivityTransitionDelegate = YYInteractivityTransitionDelegate()
+    
+    //iOS 8的改进：UIPresentationController 动画
+    lazy var customPresentationSecondViewController: CustomPresentationSecondViewController = {
+        let customPresentationSecondViewController = CustomPresentationSecondViewController()
+        return customPresentationSecondViewController
+    }()
+    
+    var customPresentationController: YYPresentationController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         addInteractiveGesture()
+        
+        let customPresentationController = YYPresentationController(presentedViewController: self.customPresentationSecondViewController, presentingViewController: self)
+        customPresentationSecondViewController.transitioningDelegate = customPresentationController
+        self.customPresentationController = customPresentationController
+        
+        
         var buttonCount = 2;
         
         self.addButtonToView("自定义present动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
@@ -39,6 +54,14 @@ class CustomTransitionDemo: UIViewController {
         self.addButtonToView("自定义交互式present动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
             self.animationButtonDidClicked(button)
         }
+        
+        buttonCount += 1
+        self.addButtonToView("转场协调器动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
+            
+            self.presentViewController(self.customPresentationSecondViewController, animated: true, completion: {
+                
+            })
+        }
     }
 }
 
@@ -50,9 +73,11 @@ extension CustomTransitionDemo: UIViewControllerTransitioningDelegate {
      有时候一个animator可以同时在present和dismiss时用
      */
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        //如果该方法返回nil，UIKit执行没有交互的动画。
         return YYPresentationAnimator()
     }
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        //如果该方法返回nil，UIKit执行没有交互的动画。
         return YYPresentationAnimator()
     }
 }

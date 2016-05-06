@@ -1,30 +1,21 @@
 //
-//  GoodsViewController.swift
+//  GoodsViewController2.swift
 //  SwiftSum
 //
-//  Created by sihuan on 16/4/25.
+//  Created by sihuan on 16/5/6.
 //  Copyright © 2016年 sihuan. All rights reserved.
 //
 
 import UIKit
 
-public enum GoodsDetailPullEventType {
-    case pullUp
-    case pullLeft
-    case pullDown
-}
+// MARK: - 仿淘宝商品详情交互 使用自定义过度动画
+class GoodsViewController2: UIViewController {
 
-public let GoodsPullEventTriggerdOffset = CGFloat(80)
-
-
-// MARK: - 仿淘宝商品详情交互 UIPageViewController版，不好用
-class GoodsViewController: UIPageViewController {
-    
     // MARK: - Const
     
-    
+    var show = false
     let CellIdentifier = "CellIdentifier"
-
+    
     // MARK: - Property
     lazy var goodsDetailViewController: GoodsDetailViewController = {
         let viewController = GoodsDetailViewController()
@@ -35,7 +26,12 @@ class GoodsViewController: UIPageViewController {
     lazy var goodsDetailGraphicViewController: GoodsDetailGraphicViewController = {
         let viewController = GoodsDetailGraphicViewController()
         viewController.delegate = self
+        viewController.transitioningDelegate = self.percentTransitionDelegate
         return viewController
+    }()
+    
+    lazy var percentTransitionDelegate: YYPercentTransitionDelegate = {
+        return YYPercentTransitionDelegate(targetEdge: .Bottom)
     }()
     
     var dataArray = []
@@ -69,13 +65,6 @@ class GoodsViewController: UIPageViewController {
     }
     
     // MARK: - Initialization
-    init() {
-        super.init(transitionStyle: .Scroll, navigationOrientation: .Vertical, options: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     func setupContext() {
         setupUI()
@@ -83,8 +72,7 @@ class GoodsViewController: UIPageViewController {
     
     func setupUI() {
         self.title = "商品详情"
-        setupViewController()
-        showGoodsController()
+        self.addChildViewControllerWithFillViewConstraint(goodsDetailViewController)
     }
     
     // MARK: - Network
@@ -103,14 +91,16 @@ class GoodsViewController: UIPageViewController {
     // MARK: - Private
     
     func showGoodsController() {
-        setViewControllers([goodsDetailViewController], direction: UIPageViewControllerNavigationDirection.Reverse, animated: true) { _ in
-//            self.innerScrollView.scrollEnabled = true
+        percentTransitionDelegate.targetEdge = .Top
+        self.dismissViewControllerAnimated(true) { 
+            
         }
     }
     
     func showGoodsGrapicController() {
-        setViewControllers([goodsDetailGraphicViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: true) { _ in
-//            self.innerScrollView.scrollEnabled = false
+        percentTransitionDelegate.targetEdge = .Bottom
+        self.presentViewController(goodsDetailGraphicViewController, animated: true) { 
+            
         }
     }
     
@@ -123,16 +113,18 @@ class GoodsViewController: UIPageViewController {
 
 // MARK: - GoodsDetailViewControllerDelegate, GoodsDetailGraphicViewControllerDelegate
 
-extension GoodsViewController: GoodsDetailViewControllerDelegate, GoodsDetailGraphicViewControllerDelegate {
+extension GoodsViewController2: GoodsDetailViewControllerDelegate, GoodsDetailGraphicViewControllerDelegate {
     
     func goodsDetailViewControllerDidBeginDragOver(controller: GoodsDetailViewController) {
+        showGoodsGrapicController()
     }
-    func goodsDetailViewController(controller: GoodsDetailViewController, didDragOver offset:CGFloat) {
-        
+    func goodsDetailViewController(controller: GoodsDetailViewController, didDragOver offset: CGFloat) {
+        percentTransitionDelegate.offset = offset
     }
     func goodsDetailViewControllerDidEndDragOver(controller: GoodsDetailViewController) {
-        
+        percentTransitionDelegate.finish()
     }
+    
     func goodsDetailViewController(controller: GoodsDetailViewController, didTriggerEnent eventType: GoodsDetailPullEventType) {
         switch eventType {
         case .pullUp:
@@ -152,37 +144,6 @@ extension GoodsViewController: GoodsDetailViewControllerDelegate, GoodsDetailGra
             break
         case .pullDown:
             showGoodsController()
-        }
-    }
-}
-
-// MARK: - UIPageViewControllerDataSource, UIPageViewControllerDelegate
-
-extension GoodsViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-    
-    func setupViewController() {
-        dataSource = self
-        delegate = self
-        for subView in self.view.subviews {
-            if let scrollView = subView as? UIScrollView {
-                innerScrollView = scrollView
-                innerScrollView.scrollEnabled = false
-            }
-        }
-    }
-    
-    // MARK: - UIPageViewControllerDataSource
-    
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        return viewController == goodsDetailGraphicViewController ? goodsDetailViewController : nil
-    }
-    
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        return viewController == goodsDetailViewController ? goodsDetailGraphicViewController : nil
-    }
-    
-    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        if completed {
         }
     }
 }

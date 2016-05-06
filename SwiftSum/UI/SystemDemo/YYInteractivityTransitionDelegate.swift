@@ -15,9 +15,11 @@ class YYInteractivityTransitionDelegate: NSObject, UIViewControllerTransitioning
     
     /// 前两个函数和原来demo中的实现一致
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        print(#function)
         return YYInteractivityTransitionAnimator(targetEdge: targetEdge)
     }
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        print(#function)
         return YYInteractivityTransitionAnimator(targetEdge: targetEdge)
     }
     
@@ -29,6 +31,7 @@ class YYInteractivityTransitionDelegate: NSObject, UIViewControllerTransitioning
      如果获取到了不是nil的对象，那么UIKit不会调用animator的animateTransition方法，而是调用交互式控制器(还记得前面介绍动画代理的示意图么，交互式动画控制器和animator是平级关系)的startInteractiveTransition:方法。
      */
     func interactionControllerForPresentation(animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        print(#function)
         if let gestureRecognizer = self.gestureRecognizer {
             return YYInteractivityTransition(gestureRecognizer: gestureRecognizer, edgeForDragging: targetEdge)
         }
@@ -36,6 +39,7 @@ class YYInteractivityTransitionDelegate: NSObject, UIViewControllerTransitioning
     }
     
     func interactionControllerForDismissal(animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        print(#function)
         if let gestureRecognizer = self.gestureRecognizer {
             return YYInteractivityTransition(gestureRecognizer: gestureRecognizer, edgeForDragging: targetEdge)
         }

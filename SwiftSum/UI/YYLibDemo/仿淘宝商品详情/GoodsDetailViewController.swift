@@ -10,6 +10,10 @@ import UIKit
 
 protocol GoodsDetailViewControllerDelegate: NSObjectProtocol {
     func goodsDetailViewController(controller: GoodsDetailViewController, didTriggerEnent eventType:GoodsDetailPullEventType)
+    
+    func goodsDetailViewControllerDidBeginDragOver(controller: GoodsDetailViewController)
+    func goodsDetailViewController(controller: GoodsDetailViewController, didDragOver offset:CGFloat)
+    func goodsDetailViewControllerDidEndDragOver(controller: GoodsDetailViewController)
 }
 
 class GoodsDetailViewController: UIViewController {
@@ -21,6 +25,7 @@ class GoodsDetailViewController: UIViewController {
     
     // MARK: - Property
     
+    var scrollBegin = false
     weak var delegate: GoodsDetailViewControllerDelegate?
     var dataArray = []
     lazy var tableView: UITableView = {
@@ -137,10 +142,30 @@ extension GoodsDetailViewController: UIScrollViewDelegate {
     func trigerEvent(eventType: GoodsDetailPullEventType) {
         delegate?.goodsDetailViewController(self, didTriggerEnent: eventType)
     }
-    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.bounds.size.height + GoodsPullEventTriggerdOffset {
-            trigerEvent(.pullUp)
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        delegate?.goodsDetailViewControllerDidBeginDragOver(self)
+    }
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        let offset = scrollView.contentOffset.y - (scrollView.contentSize.height - scrollView.bounds.size.height)
+        if offset == 0 {
+//            if !scrollBegin {
+//                scrollBegin = true
+//                delegate?.goodsDetailViewControllerDidBeginDragOver(self)
+//            } else {
+//                
+//            }
+            
+        } else if offset > 0 {
+            delegate?.goodsDetailViewController(self, didDragOver: offset)
         }
+    }
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        delegate?.goodsDetailViewControllerDidEndDragOver(self)
+//        scrollBegin = false
+//        if scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.bounds.size.height + GoodsPullEventTriggerdOffset {
+//            trigerEvent(.pullUp)
+//        }
     }
 }
 
