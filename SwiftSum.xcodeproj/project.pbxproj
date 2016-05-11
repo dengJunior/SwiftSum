@@ -87,6 +87,8 @@
 		1FAB22301CE2D5060085EAD3 /* YYHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB222F1CE2D5060085EAD3 /* YYHud.swift */; };
 		1FAB22331CE2D5370085EAD3 /* YYHud.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FAB22321CE2D5370085EAD3 /* YYHud.xib */; };
 		1FAB22351CE305B20085EAD3 /* ContentHugging.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FAB22341CE305B20085EAD3 /* ContentHugging.xib */; };
+		1FAB223A1CE31E500085EAD3 /* YYHud.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAB22391CE31E500085EAD3 /* YYHud.xcassets */; };
+		1FAB223C1CE321560085EAD3 /* YYHudDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB223B1CE321560085EAD3 /* YYHudDemo.swift */; };
 		1FAF60271CB940AD0046CF3D /* ThreadSafeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60261CB940AD0046CF3D /* ThreadSafeDemo.swift */; };
 		1FAF60361CBA9FC80046CF3D /* YYRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60351CBA9FC80046CF3D /* YYRunLoop.m */; };
 		1FAF60381CBB30BF0046CF3D /* YYLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60371CBB30BF0046CF3D /* YYLogger.swift */; };
@@ -247,6 +249,9 @@
 		1FAB222F1CE2D5060085EAD3 /* YYHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHud.swift; sourceTree = "<group>"; };
 		1FAB22321CE2D5370085EAD3 /* YYHud.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYHud.xib; sourceTree = "<group>"; };
 		1FAB22341CE305B20085EAD3 /* ContentHugging.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentHugging.xib; sourceTree = "<group>"; };
+		1FAB22361CE30D040085EAD3 /* 13-继承和析构过程.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "13-继承和析构过程.playground"; sourceTree = "<group>"; };
+		1FAB22391CE31E500085EAD3 /* YYHud.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YYHud.xcassets; sourceTree = "<group>"; };
+		1FAB223B1CE321560085EAD3 /* YYHudDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHudDemo.swift; sourceTree = "<group>"; };
 		1FAF60261CB940AD0046CF3D /* ThreadSafeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSafeDemo.swift; sourceTree = "<group>"; };
 		1FAF60341CBA9FC80046CF3D /* YYRunLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRunLoop.h; sourceTree = "<group>"; };
 		1FAF60351CBA9FC80046CF3D /* YYRunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRunLoop.m; sourceTree = "<group>"; };
@@ -407,6 +412,7 @@
 				1FB394A71CCE06DD005C1B0E /* 仿淘宝商品详情 */,
 				1F2F692A1C9A7FC900A3F432 /* 类型化的TableViewController  */,
 				1F075BDE1C4B4F480013C815 /* YYLibsDemo.swift */,
+				1FAB223D1CE321600085EAD3 /* YYHudDemo */,
 			);
 			path = YYLibDemo;
 			sourceTree = "<group>";
@@ -657,6 +663,7 @@
 				1FAB222C1CE1B6A40085EAD3 /* 10-类和结构体.playground */,
 				1FAB222D1CE1C8EE0085EAD3 /* 11-属性.playground */,
 				1FAB222E1CE2C57A0085EAD3 /* 12-方法和下标.playground */,
+				1FAB22361CE30D040085EAD3 /* 13-继承和析构过程.playground */,
 			);
 			path = "Swift官方指导";
 			sourceTree = "<group>";
@@ -816,10 +823,19 @@
 		1FAB22311CE2D50D0085EAD3 /* YYHud */ = {
 			isa = PBXGroup;
 			children = (
+				1FAB22391CE31E500085EAD3 /* YYHud.xcassets */,
 				1FAB222F1CE2D5060085EAD3 /* YYHud.swift */,
 				1FAB22321CE2D5370085EAD3 /* YYHud.xib */,
 			);
 			name = YYHud;
+			sourceTree = "<group>";
+		};
+		1FAB223D1CE321600085EAD3 /* YYHudDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1FAB223B1CE321560085EAD3 /* YYHudDemo.swift */,
+			);
+			name = YYHudDemo;
 			sourceTree = "<group>";
 		};
 		1FAF60391CBB30C70046CF3D /* YYLoggerDemo */ = {
@@ -1101,6 +1117,7 @@
 				1F5B67C61CACF341003CFD75 /* EventAndGestureDemo.storyboard in Resources */,
 				1F0097241CB5606F003A063F /* Music.storyboard in Resources */,
 				1FAB22331CE2D5370085EAD3 /* YYHud.xib in Resources */,
+				1FAB223A1CE31E500085EAD3 /* YYHud.xcassets in Resources */,
 				1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */,
 				1F288D9D1CAD1FD000180316 /* tap.png in Resources */,
 			);
@@ -1265,6 +1282,7 @@
 				1F288DA41CB216C800180316 /* YYCycleGestureRecognizer.swift in Sources */,
 				1FF133DF1CCB265500AD6822 /* TableViewController1.swift in Sources */,
 				EEC450641C634B4700328F54 /* CommonDataSource.swift in Sources */,
+				1FAB223C1CE321560085EAD3 /* YYHudDemo.swift in Sources */,
 				1F2F69321C9A86D100A3F432 /* TextTableViewCell.swift in Sources */,
 				1F5B67D61CAD05BF003CFD75 /* UIView+YYKit.swift in Sources */,
 				1F00973C1CB60E28003A063F /* SecondaryThreadRunLoopSourceContext.swift in Sources */,
