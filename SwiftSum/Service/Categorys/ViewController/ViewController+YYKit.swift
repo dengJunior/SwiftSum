@@ -27,6 +27,7 @@ extension UIViewController {
     func addChildViewControllerWithView(childController: UIViewController) {
         self.addChildViewController(childController)
         self.view.addSubview(childController.view)
+        childController.view.frame = self.view.frame
         childController.didMoveToParentViewController(self)
     }
 }

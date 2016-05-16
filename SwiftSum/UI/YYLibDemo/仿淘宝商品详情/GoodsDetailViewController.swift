@@ -162,10 +162,9 @@ extension GoodsDetailViewController: UIScrollViewDelegate {
     }
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         delegate?.goodsDetailViewControllerDidEndDragOver(self)
-//        scrollBegin = false
-//        if scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.bounds.size.height + GoodsPullEventTriggerdOffset {
-//            trigerEvent(.pullUp)
-//        }
+        if scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.bounds.size.height + GoodsPullEventTriggerdOffset {
+            trigerEvent(.pullUp)
+        }
     }
 }
 

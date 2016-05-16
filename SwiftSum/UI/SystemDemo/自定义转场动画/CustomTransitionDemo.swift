@@ -41,13 +41,8 @@ class CustomTransitionDemo: UIViewController {
         var buttonCount = 2;
         
         self.addButtonToView("自定义present动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
-            let vc = TableViewController1()
-            vc.modalPresentationStyle = .FullScreen
-            // 设置动画代理，这里的代理就是这个类自己
-            vc.transitioningDelegate = self
-            self.presentViewController(vc, animated: true, completion: { 
-                
-            })
+            let vc = PresentDemo()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         buttonCount += 1
         

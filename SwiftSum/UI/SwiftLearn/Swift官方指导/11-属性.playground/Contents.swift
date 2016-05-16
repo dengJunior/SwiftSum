@@ -131,13 +131,13 @@ class SubRect: Rect {
     //父类的属性在子类的构造器中被赋值时，它在父类中的 willSet 和 didSet 观察器会被调用，随后才会调用子类的观察器。在父类初始化方法调用之前，子类给属性赋值时，观察器不会被调用。
     init() {
         //这里不会触发didSet
-        size2 = Size(width: 10.0, height: 10.0)
+        size2 = Size(width: 19.0, height: 19.0)
         super.init(origin: Point(x: 0.0, y: 0.0),
                    size: Size(width: 10.0, height: 10.0))
         self.origin = Point(x: 0, y: 0)
         
         //这里会触发willSet
-        size = Size(width: 10.0, height: 10.0)
+        size = Size(width: 14.0, height: 14.0)
     }
 }
 

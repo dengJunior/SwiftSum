@@ -47,6 +47,8 @@ class YYPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
          iOS8引入了viewForKey方法，尽可能使用这个方法而不是直接访问controller的view属性
          比如在form sheet样式中，我们为presentedViewController的view添加阴影或其他decoration，animator会对整个decoration view
          添加动画效果，而此时presentedViewController的view只是decoration view的一个子视图
+         
+         viewForKey:方法返回 nil 只有一种情况： UIModalPresentationCustom 模式下的 Modal 转场 ，通过此方法获取 presentingView 时得到的将是 nil
          */
         guard
             /*出现这个问题。。

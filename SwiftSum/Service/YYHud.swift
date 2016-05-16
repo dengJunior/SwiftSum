@@ -16,7 +16,7 @@ struct YYHudOpitions: OptionSetType {
     static var Modal = YYHudOpitions(rawValue: 1 << 1)//模态显示
 }
 
-// MARK: - 显示和隐藏动画
+// MARK: - 一些通用的动画
 enum YYHudAnimationType {
     case None
     case Fade
@@ -63,12 +63,13 @@ extension YYHud {
 class YYHud: UIView {
     // MARK: - Const
     
-    let YYHudRadius = 5
+    let YYHudRadius = CGFloat(5)
     let YYHudAnimationDuration = 0.3
     
     static let YYHudDuration = 2.0
     let YYHudDurationForever = -1.0
     
+    let YYHudImageContainerHeight = CGFloat(50)
     let YYHudImageContainerMarginTopDefault = CGFloat(15)
     let YYHudImageContainerMarginTopWithText = CGFloat(10)
     
@@ -82,6 +83,7 @@ class YYHud: UIView {
     @IBOutlet weak var textLabel: UILabel!
     
     @IBOutlet weak var imageContainerMarginTop: NSLayoutConstraint!
+    @IBOutlet weak var imageContainerHeight: NSLayoutConstraint!
     
     // MARK: - 自定义配置，默认值取自xib中的设置
     var hudBackgroundColor: UIColor! { didSet { hudContainer.backgroundColor = hudBackgroundColor } }
@@ -115,6 +117,7 @@ class YYHud: UIView {
         hudBackgroundColor = hudContainer.backgroundColor
         textColor = textLabel.textColor
         textFont = textLabel.font
+        hudContainer.layer.cornerRadius = YYHudRadius
         self.frame = UIScreen.mainScreen().bounds
     }
     
@@ -178,16 +181,16 @@ extension YYHud {
             if isTip {
                 self.imageView.image = nil
                 self.indicatorView.stopAnimating()
-                self.imageContainer.hidden = true
             } else {
                 //显示自定义图片，或者默认的转圈
                 image != nil ? self.indicatorView.stopAnimating() : self.indicatorView.startAnimating()
                 self.indicatorView.hidden = image != nil
-                self.imageContainer.hidden = false
                 
                 //没有文字显示正中间
                 self.imageContainerMarginTop.constant = text != nil ? self.YYHudImageContainerMarginTopWithText : self.YYHudImageContainerMarginTopDefault
             }
+            self.imageContainer.hidden = isTip
+            self.imageContainerHeight.constant = isTip ? 0 : self.YYHudImageContainerHeight
             
             self.showAnimation(animationType)
         }
