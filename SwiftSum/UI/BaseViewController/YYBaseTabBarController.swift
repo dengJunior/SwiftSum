@@ -10,10 +10,10 @@ import UIKit
 
 class YYBaseTabBarController: UITabBarController {
 
+    let tabBarTransitionDelegate = YYTabBarTransitionDelegate()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.delegate = tabBarTransitionDelegate
     }
 
     override func didReceiveMemoryWarning() {

@@ -53,7 +53,10 @@ class YYTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.3
+        if let isAnimated = transitionContext?.isAnimated() {
+            return isAnimated ? 0.35 : 0
+        }
+        return 0
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {

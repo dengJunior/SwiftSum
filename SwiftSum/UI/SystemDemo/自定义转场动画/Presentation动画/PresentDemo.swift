@@ -11,6 +11,7 @@ import UIKit
 class PresentDemo: UIViewController {
     
     let presentTransitionDelegate = YYPresentationDelegate()
+    let overlayAnimatorDelegate = YYOverlayAnimatorDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,7 @@ class PresentDemo: UIViewController {
         var buttonCount = 1;
         
         buttonCount += 1
-        self.addButtonToView("自定义present动画，正确的处理", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
+        self.addButtonToView("仿系统present动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
             let vc = TableViewController1()
             vc.modalPresentationStyle = .Custom
             // 设置动画代理，
@@ -29,7 +30,7 @@ class PresentDemo: UIViewController {
         }
         
         buttonCount += 1
-        self.addButtonToView("Custom模式，会黑屏", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
+        self.addButtonToView("仿系统present动画，Custom模式，会黑屏", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
             /*
              1. FullScreen 模式：
              - presentation 结束后，presentingView 被主动移出视图结构，不过，在 dismissal 转场中希望其出现在屏幕上并且在对其添加动画怎么办呢？
@@ -41,6 +42,19 @@ class PresentDemo: UIViewController {
              */
             self.presentDemo(.Custom)
         }
+        
+        buttonCount += 1
+        self.addButtonToView("自定义present动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
+            let vc = UIViewController.newInstanceFromStoryboard("CustomTransitionDemo", storyboardId: "PresentedViewController")!
+            
+            //由于需要保持 presentingView 可见，这里的 Modal 转场应该采用 UIModalPresentationCustom 模式
+            vc.modalPresentationStyle = .Custom
+            // 设置动画代理，
+            vc.transitioningDelegate = self.overlayAnimatorDelegate
+            self.presentViewController(vc, animated: true, completion: {
+                
+            })
+        }
     }
 }
 
@@ -49,7 +63,7 @@ extension PresentDemo: UIViewControllerTransitioningDelegate {
         let vc = TableViewController1()
         vc.modalPresentationStyle = style
         // 设置动画代理，
-        vc.transitioningDelegate = self.presentTransitionDelegate
+        vc.transitioningDelegate = self
         self.presentViewController(vc, animated: true, completion: {
             
         })

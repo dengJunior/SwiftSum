@@ -72,7 +72,7 @@ class GoodsViewController2: UIViewController {
     
     func setupUI() {
         self.title = "商品详情"
-        self.addChildViewControllerWithFillViewConstraint(goodsDetailViewController)
+        addChildViewController(goodsDetailViewController, toSubView: true, fillSuperViewConstraint: true)
     }
     
     // MARK: - Network

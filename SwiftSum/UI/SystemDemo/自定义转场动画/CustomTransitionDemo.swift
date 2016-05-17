@@ -46,8 +46,9 @@ class CustomTransitionDemo: UIViewController {
         }
         buttonCount += 1
         
-        self.addButtonToView("自定义交互式present动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
-            self.animationButtonDidClicked(button)
+        self.addButtonToView("自定义Navigation动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
+            let vc = NavigationDemo()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
         
         buttonCount += 1

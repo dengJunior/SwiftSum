@@ -43,9 +43,7 @@ class ViewControllerGuideDemo: UIViewController {
         
         self.view.backgroundColor = UIColor.redColor()
         
-        
-        self.addChildViewControllerWithFillViewConstraint(vc1)
-        
+        self.addChildViewController(vc1, toSubView: true, fillSuperViewConstraint: true)
         let titles = ["vc1", "vc2"];
         let segment = UISegmentedControl(items: titles)
         segment.selectedSegmentIndex = 0;
@@ -68,7 +66,7 @@ class ViewControllerGuideDemo: UIViewController {
         
         self.transitionFromViewController(oldVc, toViewController: newVc, duration: 0.6, options: UIViewAnimationOptions.TransitionFlipFromLeft, animations: {
             //需要重新加约束，因为transitionFromViewController会调用oldVc.view.removeFromSuperView清除约束
-            newVc.view.addConstraintFillParent()
+            newVc.view.addConstraintFillSuperView()
         }) { (finished) in
             oldVc.removeFromParentViewController()
             newVc.didMoveToParentViewController(self)

@@ -82,7 +82,7 @@ class GoodsDetailViewController: UIViewController {
         self.title = "商品详情"
         self.extendedLayoutNone()
         self.view.addSubview(tableView)
-        tableView.addConstraintFillParent()
+        tableView.addConstraintFillSuperView()
     }
     
     // MARK: - Network

@@ -64,15 +64,14 @@ class GoodsViewController3: UIViewController {
     
     func setupUI() {
         title = "商品详情"
-//        addChildViewControllerWithFillViewConstraint(goodsDetailViewController)
-        addChildViewControllerWithView(goodsDetailViewController)
+        self.addChildViewController(goodsDetailViewController, toSubView: true)
     }
     
     func addGoodsDetailGraphicViewController() {
         let viewController = GoodsDetailGraphicViewController()
         viewController.delegate = self
         goodsDetailGraphicViewController = viewController
-        addChildViewControllerWithView(goodsDetailGraphicViewController)
+        self.addChildViewController(goodsDetailGraphicViewController, toSubView: true)
         goodsDetailGraphicViewController.view.frame = frameDown
     }
     

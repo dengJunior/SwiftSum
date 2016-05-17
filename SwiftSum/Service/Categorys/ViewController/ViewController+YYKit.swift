@@ -13,43 +13,31 @@ extension UIViewController {
         self.edgesForExtendedLayout = .None
         self.automaticallyAdjustsScrollViewInsets = false
     }
+    
+    // MARK: - ChildVC相关
+    func addChildViewController(childController: UIViewController, toSubView: Bool = false, fillSuperViewConstraint: Bool = false) {
+        self.addChildViewController(childController)
+        if toSubView {
+            self.view.addSubview(childController.view)
+            childController.view.frame = self.view.frame
+            
+            if fillSuperViewConstraint {
+                childController.view.addConstraintFillSuperView()
+            }
+        }
+        childController.didMoveToParentViewController(self)
+    }
 }
 
-// MARK: - ChildVC相关
-extension UIViewController {
-    func addChildViewControllerWithFillViewConstraint(childController: UIViewController) {
-        //addChildViewController会自动调用willMoveToParentViewController
-        self.addChildViewController(childController)
-        self.view.addSubview(childController.view)
-        childController.didMoveToParentViewController(self)
-        childController.view.addConstraintFillParent()
-    }
-    func addChildViewControllerWithView(childController: UIViewController) {
-        self.addChildViewController(childController)
-        self.view.addSubview(childController.view)
-        childController.view.frame = self.view.frame
-        childController.didMoveToParentViewController(self)
-    }
-}
 
 // MARK: - 初始化相关
 extension UIViewController {
     // MARK: - 根据类名从storyboard中返回对应ViewController
-    static func newInstanceFromStoryboard(isInitial: Bool = true) -> UIViewController? {
-        return newInstanceFromStoryboard(self.classNameString, isInitial: isInitial)
-    }
-    
-    static func newInstanceFromStoryboard(storyboardName: String, isInitial: Bool = true) -> UIViewController? {
-        return newInstanceFromStoryboard(storyboardName, storyboardId: self.classNameString, isInitial: isInitial)
-    }
-    
-    static func newInstanceFromStoryboard(storyboardName: String, storyboardId: String) -> UIViewController? {
-        return newInstanceFromStoryboard(storyboardName, storyboardId: storyboardId, isInitial: false)
-    }
-    
-    static func newInstanceFromStoryboard(storyboardName: String, storyboardId: String, isInitial: Bool) -> UIViewController? {
-        let storyboard = UIStoryboard.init(name: storyboardName, bundle: nil)
-        return isInitial ? storyboard.instantiateInitialViewController() : storyboard.instantiateViewControllerWithIdentifier(storyboardId)
+    static func newInstanceFromStoryboard(storyboardName: String? = nil, storyboardId: String? = nil, isInitial: Bool = false) -> UIViewController? {
+        let classNameString = self.classNameString
+        let storyboard = UIStoryboard.init(name: storyboardName ?? classNameString, bundle: nil)
+        
+        return isInitial ? storyboard.instantiateInitialViewController() : storyboard.instantiateViewControllerWithIdentifier(storyboardId ?? classNameString)
     }
 }
 

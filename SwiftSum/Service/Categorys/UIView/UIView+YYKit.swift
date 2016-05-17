@@ -28,7 +28,7 @@ extension UIView {
     /**
      添加填满父view的约束
      */
-    func addConstraintFillParent() {
+    func addConstraintFillSuperView() {
         if self.superview != nil {
             self.snp_makeConstraints { (make) in
                 make.top.equalTo(0)
