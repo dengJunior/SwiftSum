@@ -9,7 +9,7 @@
 import Foundation
 
 extension String {
-    func yy_base64EncodedString() -> String? {
+    func base64EncodedString() -> String? {
         if let encodedData = self.dataUsingEncoding(NSUTF8StringEncoding) {
             return encodedData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
         }

@@ -8,17 +8,8 @@
 
 import UIKit
 
-// MARK: - UITabBarController子controller信息的模型，
-struct TabBarItemInfo {
-    var storyBoardName: String!
-    var titleTab: String?
-    var titleNav: String?
-    var imageNameDeselected: String?
-    var imageNameSelected: String?
-}
-
 class YYBaseTabBarController: UITabBarController {
-
+    //自定义转场动画
     let tabBarTransitionDelegate = YYTabBarTransitionDelegate()
     override func viewDidLoad() {
         super.viewDidLoad()

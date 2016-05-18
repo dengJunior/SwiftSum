@@ -10,9 +10,9 @@ import UIKit
 
 // MARK: - demoController的模型
 struct LibDemoInfo {
-    var title:String!
-    var desc:String!
-    var controllerName:String!
+    var title: String?
+    var desc: String?
+    var controllerName: String?
     
     init(title:String, desc:String, controllerName:String) {
         self.title = title;
@@ -65,34 +65,13 @@ class YYBaseDemoController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true);
         
         let item = dataArray[indexPath.row]
-        if item.controllerName == nil {
-            return
-        }
-        if let vc:UIViewController = getInstanceFromString(item.controllerName) as? UIViewController {
-            vc.title = item.title
-            vc.view.backgroundColor = UIColor.whiteColor()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
-
-    // MARK: - 根据类名来实例化对象
-    func getInstanceFromString(className: String) ->AnyObject? {
-        let classType:AnyClass = swiftClassFromString(className)
         
-        return (classType as! NSObject.Type).init()
-    }
-    
-    //NSClassFromString 在Swift中已经 no effect
-    func swiftClassFromString(className: String) -> AnyClass! {
-        
-        if  let appName: String? = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleName") as! String? {
-            // generate the full name of your class (take a look into your "SHCC-swift.h" file)
-            let classStringName = "_TtC\(appName!.characters.count)\(appName!)\(className.characters.count)\(className)"
-            let cls: AnyClass?  = NSClassFromString(classStringName)
-            //            cls = NSClassFromString("\(appName).\(className)")
-            assert(cls != nil, "class notfound,please check className")
-            return cls
+        if let controllerName = item.controllerName {
+            if let vc: UIViewController = getInstanceFromString(controllerName) as? UIViewController {
+                vc.title = item.title
+                vc.view.backgroundColor = UIColor.whiteColor()
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
         }
-        return nil;
     }
 }

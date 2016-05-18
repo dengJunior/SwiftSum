@@ -1,14 +1,14 @@
 //
-//  MainController.swift
+//  TabBarDemo.swift
 //  SwiftSum
 //
-//  Created by sihuan on 16/3/31.
+//  Created by sihuan on 16/5/18.
 //  Copyright © 2016年 sihuan. All rights reserved.
 //
 
 import UIKit
 
-class MainController: YYBaseTabBarController {
+class TabBarDemo: YYBaseTabBarController {
 
     let tabBarItemsInfo = [
         TabBarItemInfo(storyBoardName: "SystemDemo", titleTab: "SystemDemo", imageName: nil, imageNameSelected: nil),
@@ -20,7 +20,7 @@ class MainController: YYBaseTabBarController {
         super.viewDidLoad()
         setupContext()
     }
-
+    
     func setupContext() {
         setupUI()
     }
@@ -29,17 +29,3 @@ class MainController: YYBaseTabBarController {
         self.appendViewControllers(tabBarItemsInfo)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

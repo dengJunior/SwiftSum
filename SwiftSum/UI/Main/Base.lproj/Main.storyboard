@@ -55,7 +55,7 @@
         <!--Swift-->
         <scene sceneID="0c6-dl-nwJ">
             <objects>
-                <navigationController id="uFU-w7-Yyb" customClass="BaseNavigationController" customModule="SwiftSum" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="uFU-w7-Yyb" customClass="YYBaseNavigationController" customModule="SwiftSum" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Swift" id="yDE-Dk-8jA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EDj-dP-Ncm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

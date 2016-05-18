@@ -30,4 +30,27 @@ extension NSObject {
          */
         return self.dynamicType.classNameString
     }
+    
+    // MARK: - 根据类名来实例化对象
+    func getInstanceFromString(className: String) ->AnyObject? {
+        if let classType = swiftClassFromString(className) {
+            return (classType as! NSObject.Type).init()
+        }
+        
+        return nil
+    }
+    
+    //NSClassFromString 在Swift中已经 no effect
+    func swiftClassFromString(className: String) -> AnyClass? {
+        
+        if  let appName: String? = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleName") as! String? {
+            // generate the full name of your class (take a look into your "SHCC-swift.h" file)
+            let classStringName = "_TtC\(appName!.characters.count)\(appName!)\(className.characters.count)\(className)"
+            let cls: AnyClass?  = NSClassFromString(classStringName)
+            //            cls = NSClassFromString("\(appName).\(className)")
+            //            assert(cls != nil, "class notfound,please check className")
+            return cls
+        }
+        return nil;
+    }
 }

@@ -51,7 +51,7 @@
 		1F139B4A1C814523005E89EB /* RxSwiftDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F139B481C814523005E89EB /* RxSwiftDemo.xib */; };
 		1F139B4C1C814844005E89EB /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B4B1C814844005E89EB /* Setting.swift */; };
 		1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B4E1C83449E005E89EB /* GitHubAPI.swift */; };
-		1F139B511C873655005E89EB /* String+YYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B501C873655005E89EB /* String+YYKit.swift */; };
+		1F139B511C873655005E89EB /* String+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B501C873655005E89EB /* String+YYExtension.swift */; };
 		1F1656841CBCCF740015F570 /* NSOperationQueueDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */; };
 		1F288D971CAD174500180316 /* SimpleGestureRecognizers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */; };
 		1F288D9B1CAD1FD000180316 /* rotation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D981CAD1FD000180316 /* rotation.png */; };
@@ -77,11 +77,11 @@
 		1F5B67C61CACF341003CFD75 /* EventAndGestureDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5B67C51CACF341003CFD75 /* EventAndGestureDemo.storyboard */; };
 		1F5B67C81CACF36E003CFD75 /* EventAndGestureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67C71CACF36E003CFD75 /* EventAndGestureDemo.swift */; };
 		1F5B67CB1CACF3BC003CFD75 /* GestureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67CA1CACF3BC003CFD75 /* GestureDemo.swift */; };
-		1F5B67CD1CACF41C003CFD75 /* ViewController+YYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67CC1CACF41C003CFD75 /* ViewController+YYKit.swift */; };
+		1F5B67CD1CACF41C003CFD75 /* ViewController+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67CC1CACF41C003CFD75 /* ViewController+YYExtension.swift */; };
 		1F5B67D01CAD019D003CFD75 /* GestureDemoChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67CF1CAD019D003CFD75 /* GestureDemoChild.swift */; };
 		1F5B67D21CAD02FB003CFD75 /* GestureTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67D11CAD02FB003CFD75 /* GestureTestView.swift */; };
-		1F5B67D61CAD05BF003CFD75 /* UIView+YYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67D51CAD05BF003CFD75 /* UIView+YYKit.swift */; };
-		1F5B67D81CAD0773003CFD75 /* NSObject+YYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67D71CAD0773003CFD75 /* NSObject+YYKit.swift */; };
+		1F5B67D61CAD05BF003CFD75 /* UIView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67D51CAD05BF003CFD75 /* UIView+YYExtension.swift */; };
+		1F5B67D81CAD0773003CFD75 /* NSObject+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67D71CAD0773003CFD75 /* NSObject+YYExtension.swift */; };
 		1F5B67DC1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67DB1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift */; };
 		1F792CB61C89716A00EE70D4 /* GithubSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB51C89716A00EE70D4 /* GithubSignupViewModel.swift */; };
 		1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB71C89761A00EE70D4 /* Wireframe.swift */; };
@@ -94,10 +94,10 @@
 		1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFB851BE85AEA007023B7 /* Assets.xcassets */; };
 		1FAAFB941BE85AEB007023B7 /* SwiftSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFB931BE85AEB007023B7 /* SwiftSumTests.swift */; };
 		1FAAFB9F1BE85AEB007023B7 /* SwiftSumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFB9E1BE85AEB007023B7 /* SwiftSumUITests.swift */; };
-		1FAAFBAD1BE85BE5007023B7 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBAC1BE85BE5007023B7 /* BaseNavigationController.swift */; };
+		1FAAFBAD1BE85BE5007023B7 /* YYBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBAC1BE85BE5007023B7 /* YYBaseNavigationController.swift */; };
 		1FAAFBB21BE85C3C007023B7 /* YYBaseDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBB11BE85C3C007023B7 /* YYBaseDemoController.swift */; };
 		1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */; };
-		1FAAFBBB1BE8878A007023B7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */; };
+		1FAAFBBB1BE8878A007023B7 /* UITableView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFBBA1BE8878A007023B7 /* UITableView+YYExtension.swift */; };
 		1FAB22301CE2D5060085EAD3 /* YYHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB222F1CE2D5060085EAD3 /* YYHud.swift */; };
 		1FAB22331CE2D5370085EAD3 /* YYHud.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FAB22321CE2D5370085EAD3 /* YYHud.xib */; };
 		1FAB22351CE305B20085EAD3 /* ContentHugging.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FAB22341CE305B20085EAD3 /* ContentHugging.xib */; };
@@ -107,7 +107,7 @@
 		1FAF60361CBA9FC80046CF3D /* YYRunLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60351CBA9FC80046CF3D /* YYRunLoop.m */; };
 		1FAF60381CBB30BF0046CF3D /* YYLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60371CBB30BF0046CF3D /* YYLogger.swift */; };
 		1FAF603B1CBB30E20046CF3D /* YYLoggerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF603A1CBB30E20046CF3D /* YYLoggerDemo.swift */; };
-		1FB394961CCC6EC0005C1B0E /* NSDate+YYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394951CCC6EC0005C1B0E /* NSDate+YYKit.swift */; };
+		1FB394961CCC6EC0005C1B0E /* NSDate+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394951CCC6EC0005C1B0E /* NSDate+YYExtension.swift */; };
 		1FB394A61CCE06C0005C1B0E /* GoodsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394A51CCE06C0005C1B0E /* GoodsDetailViewController.swift */; };
 		1FB394A91CCE096F005C1B0E /* GoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */; };
 		1FB394AB1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */; };
@@ -122,6 +122,8 @@
 		1FC173FF1CEC4B1300F67B38 /* SystemDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */; };
 		1FC174011CEC4B2100F67B38 /* ThirdLibDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC174001CEC4B2100F67B38 /* ThirdLibDemo.storyboard */; };
 		1FC174031CEC4B2C00F67B38 /* YYLibDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC174021CEC4B2C00F67B38 /* YYLibDemo.storyboard */; };
+		1FC174051CEC57A100F67B38 /* UITabBarController+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC174041CEC57A100F67B38 /* UITabBarController+YYExtension.swift */; };
+		1FC174081CEC593200F67B38 /* TabBarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC174071CEC593200F67B38 /* TabBarDemo.swift */; };
 		1FCE29191CDC691A00DBF2E3 /* GoodsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE29181CDC691A00DBF2E3 /* GoodsViewController2.swift */; };
 		1FCE291D1CDC6C9300DBF2E3 /* YYPercentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE291C1CDC6C9300DBF2E3 /* YYPercentTransition.swift */; };
 		1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE29201CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift */; };
@@ -135,7 +137,7 @@
 		EEB074AE1C644B99001CB1ED /* YYApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB074AD1C644B99001CB1ED /* YYApi.swift */; };
 		EEC450621C634B1D00328F54 /* main1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC450611C634B1D00328F54 /* main1.swift */; };
 		EEC450641C634B4700328F54 /* CommonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC450631C634B4700328F54 /* CommonDataSource.swift */; };
-		EEC450661C634B6400328F54 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC450651C634B6400328F54 /* UIButton+Extension.swift */; };
+		EEC450661C634B6400328F54 /* UIButton+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC450651C634B6400328F54 /* UIButton+YYExtension.swift */; };
 		EEF281621C634EDC0004765A /* FuncProgramingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF281611C634EDC0004765A /* FuncProgramingDemo.swift */; };
 		EEF2816B1C634EFD0004765A /* SwifterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF281641C634EFD0004765A /* SwifterController.swift */; };
 		EEF2816C1C634EFD0004765A /* DemoSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF281651C634EFD0004765A /* DemoSingle.swift */; };
@@ -217,7 +219,7 @@
 		1F139B481C814523005E89EB /* RxSwiftDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RxSwiftDemo.xib; sourceTree = "<group>"; };
 		1F139B4B1C814844005E89EB /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		1F139B4E1C83449E005E89EB /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
-		1F139B501C873655005E89EB /* String+YYKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+YYKit.swift"; sourceTree = "<group>"; };
+		1F139B501C873655005E89EB /* String+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+YYExtension.swift"; sourceTree = "<group>"; };
 		1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOperationQueueDemo.swift; sourceTree = "<group>"; };
 		1F22471D1CE455F3003F826D /* 15-自动引用计数.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "15-自动引用计数.playground"; sourceTree = "<group>"; };
 		1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleGestureRecognizers.xib; sourceTree = "<group>"; };
@@ -244,11 +246,11 @@
 		1F5B67C51CACF341003CFD75 /* EventAndGestureDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EventAndGestureDemo.storyboard; sourceTree = "<group>"; };
 		1F5B67C71CACF36E003CFD75 /* EventAndGestureDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAndGestureDemo.swift; sourceTree = "<group>"; };
 		1F5B67CA1CACF3BC003CFD75 /* GestureDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureDemo.swift; sourceTree = "<group>"; };
-		1F5B67CC1CACF41C003CFD75 /* ViewController+YYKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+YYKit.swift"; sourceTree = "<group>"; };
+		1F5B67CC1CACF41C003CFD75 /* ViewController+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+YYExtension.swift"; sourceTree = "<group>"; };
 		1F5B67CF1CAD019D003CFD75 /* GestureDemoChild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureDemoChild.swift; sourceTree = "<group>"; };
 		1F5B67D11CAD02FB003CFD75 /* GestureTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureTestView.swift; sourceTree = "<group>"; };
-		1F5B67D51CAD05BF003CFD75 /* UIView+YYKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+YYKit.swift"; sourceTree = "<group>"; };
-		1F5B67D71CAD0773003CFD75 /* NSObject+YYKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+YYKit.swift"; sourceTree = "<group>"; };
+		1F5B67D51CAD05BF003CFD75 /* UIView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+YYExtension.swift"; sourceTree = "<group>"; };
+		1F5B67D71CAD0773003CFD75 /* NSObject+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+YYExtension.swift"; sourceTree = "<group>"; };
 		1F5B67DB1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleGestureRecognizers.swift; sourceTree = "<group>"; };
 		1F792CB51C89716A00EE70D4 /* GithubSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSignupViewModel.swift; sourceTree = "<group>"; };
 		1F792CB71C89761A00EE70D4 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
@@ -271,10 +273,10 @@
 		1FAAFB9A1BE85AEB007023B7 /* SwiftSumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAAFB9E1BE85AEB007023B7 /* SwiftSumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSumUITests.swift; sourceTree = "<group>"; };
 		1FAAFBA01BE85AEB007023B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FAAFBAC1BE85BE5007023B7 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		1FAAFBAC1BE85BE5007023B7 /* YYBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseNavigationController.swift; sourceTree = "<group>"; };
 		1FAAFBB11BE85C3C007023B7 /* YYBaseDemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseDemoController.swift; sourceTree = "<group>"; };
 		1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLearnDemo.swift; sourceTree = "<group>"; };
-		1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		1FAAFBBA1BE8878A007023B7 /* UITableView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+YYExtension.swift"; sourceTree = "<group>"; };
 		1FAB220B1CDEE5530085EAD3 /* 6-控制流.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "6-控制流.playground"; sourceTree = "<group>"; };
 		1FAB220C1CDF3B5F0085EAD3 /* 7-函数.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "7-函数.playground"; sourceTree = "<group>"; };
 		1FAB220D1CE028920085EAD3 /* 8-闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "8-闭包.playground"; sourceTree = "<group>"; };
@@ -294,7 +296,7 @@
 		1FAF60351CBA9FC80046CF3D /* YYRunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRunLoop.m; sourceTree = "<group>"; };
 		1FAF60371CBB30BF0046CF3D /* YYLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLogger.swift; sourceTree = "<group>"; };
 		1FAF603A1CBB30E20046CF3D /* YYLoggerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLoggerDemo.swift; sourceTree = "<group>"; };
-		1FB394951CCC6EC0005C1B0E /* NSDate+YYKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+YYKit.swift"; sourceTree = "<group>"; };
+		1FB394951CCC6EC0005C1B0E /* NSDate+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+YYExtension.swift"; sourceTree = "<group>"; };
 		1FB394A51CCE06C0005C1B0E /* GoodsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailViewController.swift; sourceTree = "<group>"; };
 		1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController.swift; sourceTree = "<group>"; };
 		1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailGraphicViewController.swift; sourceTree = "<group>"; };
@@ -313,6 +315,8 @@
 		1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SystemDemo.storyboard; sourceTree = "<group>"; };
 		1FC174001CEC4B2100F67B38 /* ThirdLibDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThirdLibDemo.storyboard; sourceTree = "<group>"; };
 		1FC174021CEC4B2C00F67B38 /* YYLibDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YYLibDemo.storyboard; sourceTree = "<group>"; };
+		1FC174041CEC57A100F67B38 /* UITabBarController+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+YYExtension.swift"; sourceTree = "<group>"; };
+		1FC174071CEC593200F67B38 /* TabBarDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarDemo.swift; sourceTree = "<group>"; };
 		1FCE29161CD9C37900DBF2E3 /* 4-字符串和字符.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-字符串和字符.playground"; sourceTree = "<group>"; };
 		1FCE29171CDC291800DBF2E3 /* 5-集合类型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5-集合类型.playground"; sourceTree = "<group>"; };
 		1FCE29181CDC691A00DBF2E3 /* GoodsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController2.swift; sourceTree = "<group>"; };
@@ -329,7 +333,7 @@
 		EEB074AD1C644B99001CB1ED /* YYApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYApi.swift; sourceTree = "<group>"; };
 		EEC450611C634B1D00328F54 /* main1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main1.swift; sourceTree = "<group>"; };
 		EEC450631C634B4700328F54 /* CommonDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDataSource.swift; sourceTree = "<group>"; };
-		EEC450651C634B6400328F54 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		EEC450651C634B6400328F54 /* UIButton+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+YYExtension.swift"; sourceTree = "<group>"; };
 		EEF281611C634EDC0004765A /* FuncProgramingDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncProgramingDemo.swift; sourceTree = "<group>"; };
 		EEF281641C634EFD0004765A /* SwifterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwifterController.swift; sourceTree = "<group>"; };
 		EEF281651C634EFD0004765A /* DemoSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoSingle.swift; sourceTree = "<group>"; };
@@ -470,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				1F0DD1B31CEAA99F00501767 /* YYTabBarTransitionDelegate.swift */,
+				1FC174071CEC593200F67B38 /* TabBarDemo.swift */,
 			);
 			path = "TabBar动画";
 			sourceTree = "<group>";
@@ -623,7 +628,7 @@
 		1F5B67CE1CACF42C003CFD75 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1F5B67CC1CACF41C003CFD75 /* ViewController+YYKit.swift */,
+				1F5B67CC1CACF41C003CFD75 /* ViewController+YYExtension.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -631,7 +636,7 @@
 		1F5B67D31CAD059D003CFD75 /* String */ = {
 			isa = PBXGroup;
 			children = (
-				1F139B501C873655005E89EB /* String+YYKit.swift */,
+				1F139B501C873655005E89EB /* String+YYExtension.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -639,7 +644,7 @@
 		1F5B67D41CAD05A5003CFD75 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				EEC450651C634B6400328F54 /* UIButton+Extension.swift */,
+				EEC450651C634B6400328F54 /* UIButton+YYExtension.swift */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -647,7 +652,7 @@
 		1F5B67D91CAD0A66003CFD75 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				1F5B67D51CAD05BF003CFD75 /* UIView+YYKit.swift */,
+				1F5B67D51CAD05BF003CFD75 /* UIView+YYExtension.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -655,7 +660,7 @@
 		1F5B67DA1CAD0A6E003CFD75 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				1F5B67D71CAD0773003CFD75 /* NSObject+YYKit.swift */,
+				1F5B67D71CAD0773003CFD75 /* NSObject+YYExtension.swift */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -813,7 +818,7 @@
 		1FAAFBAF1BE85BFE007023B7 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1FAAFBAC1BE85BE5007023B7 /* BaseNavigationController.swift */,
+				1FAAFBAC1BE85BE5007023B7 /* YYBaseNavigationController.swift */,
 				1F139B4B1C814844005E89EB /* Setting.swift */,
 				1FAAFBB11BE85C3C007023B7 /* YYBaseDemoController.swift */,
 				1F5B67C01CACF1A8003CFD75 /* YYBaseTabBarController.swift */,
@@ -837,7 +842,7 @@
 		1FAAFBB71BE8878A007023B7 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				1FAAFBB81BE8878A007023B7 /* Categorys */,
+				1FAAFBB81BE8878A007023B7 /* Category */,
 				1FAB22311CE2D50D0085EAD3 /* YYHud */,
 				EEB074A81C644561001CB1ED /* YYNetworking */,
 				EEC450631C634B4700328F54 /* CommonDataSource.swift */,
@@ -847,7 +852,7 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		1FAAFBB81BE8878A007023B7 /* Categorys */ = {
+		1FAAFBB81BE8878A007023B7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				1FB394971CCC7273005C1B0E /* NSDate */,
@@ -857,14 +862,16 @@
 				1FAAFBB91BE8878A007023B7 /* UITableView */,
 				1F5B67D91CAD0A66003CFD75 /* UIView */,
 				1F5B67CE1CACF42C003CFD75 /* ViewController */,
+				1FC174061CEC57A600F67B38 /* UITabBarController */,
 			);
+			name = Category;
 			path = Categorys;
 			sourceTree = "<group>";
 		};
 		1FAAFBB91BE8878A007023B7 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				1FAAFBBA1BE8878A007023B7 /* UITableView+Extension.swift */,
+				1FAAFBBA1BE8878A007023B7 /* UITableView+YYExtension.swift */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -899,7 +906,7 @@
 		1FB394971CCC7273005C1B0E /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				1FB394951CCC6EC0005C1B0E /* NSDate+YYKit.swift */,
+				1FB394951CCC6EC0005C1B0E /* NSDate+YYExtension.swift */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -973,6 +980,14 @@
 				1F0DD19E1CE5B76F00501767 /* YYTransitionAnimator.swift */,
 			);
 			path = "非交互式的";
+			sourceTree = "<group>";
+		};
+		1FC174061CEC57A600F67B38 /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				1FC174041CEC57A100F67B38 /* UITabBarController+YYExtension.swift */,
+			);
+			name = UITabBarController;
 			sourceTree = "<group>";
 		};
 		1FE864E21CB3819600E013A1 /* Runloop相关 */ = {
@@ -1244,7 +1259,7 @@
 				1F5A731F1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift in Sources */,
 				1F0097211CB56037003A063F /* DesignPatternDemo.swift in Sources */,
 				1F139B491C814523005E89EB /* RxSwiftDemo.swift in Sources */,
-				1F5B67CD1CACF41C003CFD75 /* ViewController+YYKit.swift in Sources */,
+				1F5B67CD1CACF41C003CFD75 /* ViewController+YYExtension.swift in Sources */,
 				1F00972B1CB5E7F0003A063F /* Album.swift in Sources */,
 				1FE864E11CB3819100E013A1 /* RunLoopDemo.swift in Sources */,
 				1F0097421CB6A629003A063F /* HorizontalScroller.swift in Sources */,
@@ -1283,7 +1298,7 @@
 				1F0DD1B41CEAA99F00501767 /* YYTabBarTransitionDelegate.swift in Sources */,
 				1F0DD1BD1CEBF27A00501767 /* CollectionVCTestTwo.swift in Sources */,
 				EEF2816C1C634EFD0004765A /* DemoSingle.swift in Sources */,
-				1F5B67D81CAD0773003CFD75 /* NSObject+YYKit.swift in Sources */,
+				1F5B67D81CAD0773003CFD75 /* NSObject+YYExtension.swift in Sources */,
 				1FF133E11CCB266100AD6822 /* ViewController1.swift in Sources */,
 				1F0097381CB60DF5003A063F /* MainThreadRunLoopSourceContext.swift in Sources */,
 				1F0DD19D1CE5B25500501767 /* PresentDemo.swift in Sources */,
@@ -1291,8 +1306,8 @@
 				EEF281621C634EDC0004765A /* FuncProgramingDemo.swift in Sources */,
 				1F2F69301C9A86D100A3F432 /* ImageTableViewCell.swift in Sources */,
 				1F0DD1A81CE9A54B00501767 /* YYOverlayAnimator.swift in Sources */,
-				EEC450661C634B6400328F54 /* UIButton+Extension.swift in Sources */,
-				1F139B511C873655005E89EB /* String+YYKit.swift in Sources */,
+				EEC450661C634B6400328F54 /* UIButton+YYExtension.swift in Sources */,
+				1F139B511C873655005E89EB /* String+YYExtension.swift in Sources */,
 				1F2F69341C9A86DA00A3F432 /* UITableViewCell+Margins.swift in Sources */,
 				1FAF603B1CBB30E20046CF3D /* YYLoggerDemo.swift in Sources */,
 				1F0DD1B81CEB020400501767 /* PopViewController.swift in Sources */,
@@ -1301,7 +1316,7 @@
 				1F2F69291C9A7FC400A3F432 /* YYConfigurableTableViewController.swift in Sources */,
 				1F139B401C8141CE005E89EB /* ThirdLibDemo.swift in Sources */,
 				1F0097471CB8F2B0003A063F /* NSMachPortDemo.swift in Sources */,
-				1FAAFBAD1BE85BE5007023B7 /* BaseNavigationController.swift in Sources */,
+				1FAAFBAD1BE85BE5007023B7 /* YYBaseNavigationController.swift in Sources */,
 				1F00971F1CB4A4F0003A063F /* TestThread.swift in Sources */,
 				1FB394A91CCE096F005C1B0E /* GoodsViewController.swift in Sources */,
 				EEF2816D1C634EFD0004765A /* MemoryManage.swift in Sources */,
@@ -1311,6 +1326,7 @@
 				1FAB22301CE2D5060085EAD3 /* YYHud.swift in Sources */,
 				1F0DD1AE1CEA16A600501767 /* NavigationDemo.swift in Sources */,
 				1FB8C5621CD083810020E183 /* YYPresentationAnimator.swift in Sources */,
+				1FC174081CEC593200F67B38 /* TabBarDemo.swift in Sources */,
 				1FAAFBB21BE85C3C007023B7 /* YYBaseDemoController.swift in Sources */,
 				1FB394A61CCE06C0005C1B0E /* GoodsDetailViewController.swift in Sources */,
 				1F0DD1B21CEA173100501767 /* YYNavigationDelegate.swift in Sources */,
@@ -1337,14 +1353,15 @@
 				1F5B67CB1CACF3BC003CFD75 /* GestureDemo.swift in Sources */,
 				1F87A2A01CA3B9EB0001519E /* AppConfig.swift in Sources */,
 				1F0DD1AA1CE9AEAE00501767 /* YYOverlayAnimatorDelegate.swift in Sources */,
-				1FAAFBBB1BE8878A007023B7 /* UITableView+Extension.swift in Sources */,
+				1FAAFBBB1BE8878A007023B7 /* UITableView+YYExtension.swift in Sources */,
 				1F5A73231CBE178E002B0D19 /* GCDDemo.swift in Sources */,
 				1F288DA41CB216C800180316 /* YYCycleGestureRecognizer.swift in Sources */,
 				1FF133DF1CCB265500AD6822 /* TableViewController1.swift in Sources */,
+				1FC174051CEC57A100F67B38 /* UITabBarController+YYExtension.swift in Sources */,
 				EEC450641C634B4700328F54 /* CommonDataSource.swift in Sources */,
 				1FAB223C1CE321560085EAD3 /* YYHudDemo.swift in Sources */,
 				1F2F69321C9A86D100A3F432 /* TextTableViewCell.swift in Sources */,
-				1F5B67D61CAD05BF003CFD75 /* UIView+YYKit.swift in Sources */,
+				1F5B67D61CAD05BF003CFD75 /* UIView+YYExtension.swift in Sources */,
 				1F00973C1CB60E28003A063F /* SecondaryThreadRunLoopSourceContext.swift in Sources */,
 				1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */,
 				1F075BDF1C4B4F480013C815 /* YYLibsDemo.swift in Sources */,
@@ -1358,7 +1375,7 @@
 				1F0C134A1CB38C050045FCB7 /* TestRunLoop.swift in Sources */,
 				1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */,
 				1F0DD1A61CE99AB100501767 /* PresentedViewController.swift in Sources */,
-				1FB394961CCC6EC0005C1B0E /* NSDate+YYKit.swift in Sources */,
+				1FB394961CCC6EC0005C1B0E /* NSDate+YYExtension.swift in Sources */,
 				1F288DA01CAE623000180316 /* YYPanGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

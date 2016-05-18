@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIViewController {
+    
     func extendedLayoutNone() {
         self.edgesForExtendedLayout = .None
         self.automaticallyAdjustsScrollViewInsets = false
@@ -46,14 +47,32 @@ extension UIViewController {
 class YYButton: UIButton {
     var action: ((button: UIButton)->Void)! = nil
 }
+
+var AssociatedObjectHandle: UInt8 = 0
+
 extension UIViewController {
+    var buttonCount: Int {
+        get {
+            let value = objc_getAssociatedObject(self, &AssociatedObjectHandle) as? Int
+            return value ?? 0 //初始化为0
+        }
+        
+        set {
+            objc_setAssociatedObject(self, &AssociatedObjectHandle, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    func addButtonToViewWithTitle(title: String, action: (button: UIButton)->Void) -> YYButton {
+        buttonCount += 1
+        return addButtonToView(title, frame: CGRect(x: 0, y: 40*buttonCount, width: Int(view.bounds.size.width), height: 40), action: action)
+    }
     func addButtonToView(title: String, frame: CGRect, action: (button: UIButton)->Void) -> YYButton {
         let button = YYButton.init(type: UIButtonType.System)
         button.action = action
         button.frame = frame
         button.setTitle(title, forState: UIControlState.Normal)
         button.addTarget(self, action: #selector(UIViewController._yyButtonClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-        self.view.addSubview(button)
+        view.addSubview(button)
         return button
     }
     

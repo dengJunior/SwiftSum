@@ -37,7 +37,7 @@
         <!--Base Navigation Controller-->
         <scene sceneID="xr6-FS-049">
             <objects>
-                <navigationController id="1ag-t9-79z" customClass="BaseNavigationController" customModule="SwiftSum" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="1ag-t9-79z" customClass="YYBaseNavigationController" customModule="SwiftSum" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zKj-8R-tPj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
