@@ -52,6 +52,14 @@ class YYTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         super.init()
     }
     
+    /**
+     交互状态结束时并非转场过程的终点(此后动画控制器提供的转场动画根据交互结束时的状态继续或是返回到初始状态)，而是由动画控制器来结束这一切：
+     */
+    func animationEnded(transitionCompleted: Bool) {
+        //将在转场动画结束后调用。@liwenDeng 发现这个方法在 UITabBarController 的转场结束后被调用了两次，检查函数调用帧栈后猜测是 UIKit 的内部实现问题，尚无解决办法
+        print("YYTransitionAnimator animationEnded")
+    }
+    
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         if let isAnimated = transitionContext?.isAnimated() {
             return isAnimated ? 0.35 : 0

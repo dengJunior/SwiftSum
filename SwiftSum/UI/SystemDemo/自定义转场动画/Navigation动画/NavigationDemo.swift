@@ -28,5 +28,11 @@ class NavigationDemo: UIViewController {
             self.navigationController?.delegate = self.navigationDelegate
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        buttonCount += 1
+        self.addButtonToView("替换系统pop交互动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
+            let vc = PopViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

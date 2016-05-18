@@ -19,6 +19,7 @@ class YYTabBarTransitionDelegate: NSObject, UITabBarControllerDelegate {
         let animator = YYTransitionAnimator(transitionType: YYTransitionType.Tab(tabChangeDirection))
         return animator
     }
+    
 }
 
 

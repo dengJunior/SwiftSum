@@ -52,11 +52,10 @@ class CustomTransitionDemo: UIViewController {
         }
         
         buttonCount += 1
-        self.addButtonToView("转场协调器动画", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
+        self.addButtonToView("UICollectionViewController布局转场", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { [unowned self] (button) in
             
-            self.presentViewController(self.customPresentationSecondViewController, animated: true, completion: {
-                
-            })
+            let vc = CollectionViewControllerTransitionDemo.newInstanceFromStoryboard("CustomTransitionDemo")
+            self.navigationController?.pushViewController(vc!, animated: true)
         }
     }
 }
