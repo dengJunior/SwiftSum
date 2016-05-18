@@ -84,8 +84,12 @@ class LibraryAPI: NSObject {
         return persistencyManager.getAlbums()
     }
     
+    // MARK: - 外观模式 - Facade
+    
+    //Facade设计模式为多个子模块或子系统提供统一的、单独的API接口。也就是说，不用给用户暴露一堆乱七八糟的接口，只需要暴露一个简单的、标准的接口即可。
+
     /**
-     添加专辑的方法,在实现时会先更新本地的数据，如果网络连通且需要使用远程服务的时候，再调用远程服务接口更新数据状态。当该模块以外的类调用了LibraryAPI接口的addAlbum方法时，它并不知道添加专辑的具体实现逻辑，并且也不需要知道，这就是Facade设计模式的魅力所在。
+     现在我们用 PersistencyManager 来管理专辑数据，用 HTTPClient 来处理网络请求，项目中的其他类不应该知道这个逻辑。他们只需要知道 LibraryAPI 这个"外观"就可以了。
      */
     func addAlbum(album: Album, index: Int) {
         persistencyManager.addAlbum(album, index: index)

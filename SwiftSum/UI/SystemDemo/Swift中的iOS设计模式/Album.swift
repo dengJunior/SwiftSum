@@ -8,6 +8,13 @@
 
 import Foundation
 
+// MARK: - ## 备忘录模式 - Memento
+
+//备忘录模式捕捉并且具象化一个对象的内在状态。换句话说，它把你的对象存在了某个地方，然后在以后的某个时间再把它恢复出来，而不会打破它本身的封装性，私有数据依旧是私有数据。
+
+// MARK: - ### 归档 - Archiving
+
+//苹果通过归档的方法来实现备忘录模式。它把对象转化成了流然后在不暴露内部属性的情况下存储数据。你可以读一读 《iOS 6 by Tutorials》 这本书的第 16 章，或者看下[苹果的归档和序列化文档][14]。
 class Album: NSObject, NSCoding{
     var title : String!
     var artist : String!

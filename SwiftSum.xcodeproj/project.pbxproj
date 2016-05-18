@@ -119,6 +119,9 @@
 		1FB8C5711CD1BE8B0020E183 /* YYInteractivityTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5701CD1BE8B0020E183 /* YYInteractivityTransition.swift */; };
 		1FB8C5761CD20E010020E183 /* YYPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5751CD20E010020E183 /* YYPresentationController.swift */; };
 		1FB8C57A1CD324670020E183 /* CustomPresentationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5791CD324660020E183 /* CustomPresentationSecondViewController.swift */; };
+		1FC173FF1CEC4B1300F67B38 /* SystemDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */; };
+		1FC174011CEC4B2100F67B38 /* ThirdLibDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC174001CEC4B2100F67B38 /* ThirdLibDemo.storyboard */; };
+		1FC174031CEC4B2C00F67B38 /* YYLibDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC174021CEC4B2C00F67B38 /* YYLibDemo.storyboard */; };
 		1FCE29191CDC691A00DBF2E3 /* GoodsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE29181CDC691A00DBF2E3 /* GoodsViewController2.swift */; };
 		1FCE291D1CDC6C9300DBF2E3 /* YYPercentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE291C1CDC6C9300DBF2E3 /* YYPercentTransition.swift */; };
 		1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE29201CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift */; };
@@ -251,6 +254,7 @@
 		1F792CB71C89761A00EE70D4 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		1F792CB91C8991A900EE70D4 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 		1F7AF3EA1CEC02CB00375F0E /* 20-泛型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "20-泛型.playground"; sourceTree = "<group>"; };
+		1F7AF3EB1CEC396D00375F0E /* 21-访问控制.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "21-访问控制.playground"; sourceTree = "<group>"; };
 		1F87A29C1CA3B9EB0001519E /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		1F87A29D1CA3B9EB0001519E /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		1F87A29E1CA3B9EB0001519E /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
@@ -306,6 +310,9 @@
 		1FB8C5781CD2EE850020E183 /* 3-高级运算符.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "3-高级运算符.playground"; sourceTree = "<group>"; };
 		1FB8C5791CD324660020E183 /* CustomPresentationSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationSecondViewController.swift; sourceTree = "<group>"; };
 		1FB8C57D1CD8A1310020E183 /* SwiftTips.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftTips.playground; sourceTree = "<group>"; };
+		1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SystemDemo.storyboard; sourceTree = "<group>"; };
+		1FC174001CEC4B2100F67B38 /* ThirdLibDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThirdLibDemo.storyboard; sourceTree = "<group>"; };
+		1FC174021CEC4B2C00F67B38 /* YYLibDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YYLibDemo.storyboard; sourceTree = "<group>"; };
 		1FCE29161CD9C37900DBF2E3 /* 4-字符串和字符.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-字符串和字符.playground"; sourceTree = "<group>"; };
 		1FCE29171CDC291800DBF2E3 /* 5-集合类型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5-集合类型.playground"; sourceTree = "<group>"; };
 		1FCE29181CDC691A00DBF2E3 /* GoodsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController2.swift; sourceTree = "<group>"; };
@@ -444,6 +451,7 @@
 				1FB394A71CCE06DD005C1B0E /* 仿淘宝商品详情 */,
 				1F2F692A1C9A7FC900A3F432 /* 类型化的TableViewController  */,
 				1F075BDE1C4B4F480013C815 /* YYLibsDemo.swift */,
+				1FC174021CEC4B2C00F67B38 /* YYLibDemo.storyboard */,
 			);
 			path = YYLibDemo;
 			sourceTree = "<group>";
@@ -504,6 +512,7 @@
 			children = (
 				1F792CB41C89714F00EE70D4 /* GithubSignupDemo */,
 				1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */,
+				1FC174001CEC4B2100F67B38 /* ThirdLibDemo.storyboard */,
 			);
 			path = ThirdLibDemo;
 			sourceTree = "<group>";
@@ -587,6 +596,7 @@
 				1F00971D1CB4A4CC003A063F /* 多线程相关 */,
 				1FB8C5631CD089600020E183 /* 自定义转场动画 */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
+				1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -723,6 +733,7 @@
 				1FAB222B1CE1A43F0085EAD3 /* 9-枚举.playground */,
 				1F0DD1B61CEABE2000501767 /* 19-协议.playground */,
 				1F7AF3EA1CEC02CB00375F0E /* 20-泛型.playground */,
+				1F7AF3EB1CEC396D00375F0E /* 21-访问控制.playground */,
 			);
 			path = "Swift官方指导";
 			sourceTree = "<group>";
@@ -1146,15 +1157,18 @@
 				1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */,
 				1FAB22351CE305B20085EAD3 /* ContentHugging.xib in Resources */,
 				1F288D971CAD174500180316 /* SimpleGestureRecognizers.xib in Resources */,
+				1FC174011CEC4B2100F67B38 /* ThirdLibDemo.storyboard in Resources */,
 				1F288D9C1CAD1FD000180316 /* swipe.png in Resources */,
 				1F288D9B1CAD1FD000180316 /* rotation.png in Resources */,
 				1F0DD1A41CE9997800501767 /* CustomTransitionDemo.storyboard in Resources */,
 				1F5B67C61CACF341003CFD75 /* EventAndGestureDemo.storyboard in Resources */,
 				1F0097241CB5606F003A063F /* Music.storyboard in Resources */,
 				1FAB22331CE2D5370085EAD3 /* YYHud.xib in Resources */,
+				1FC174031CEC4B2C00F67B38 /* YYLibDemo.storyboard in Resources */,
 				1FAB223A1CE31E500085EAD3 /* YYHud.xcassets in Resources */,
 				1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */,
 				1F288D9D1CAD1FD000180316 /* tap.png in Resources */,
+				1FC173FF1CEC4B1300F67B38 /* SystemDemo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

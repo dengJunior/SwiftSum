@@ -40,6 +40,12 @@ class AlbumView: UIView {
         backgroundColor = UIColor.blackColor()
         coverImage = UIImageView(frame: CGRectMake(5, 5, frame.size.width - 10, frame.size.height - 10))
         addSubview(coverImage)
+        
+        // MARK: - ## 观察者模式 - Observer
+        
+//        在观察者模式里，一个对象在状态变化的时候会通知另一个对象。参与者并不需要知道其他对象的具体是干什么的 - 这是一种降低耦合度的设计。这个设计模式常用于在某个属性改变的时候通知关注该属性的对象。
+        
+//        常见的使用方法是观察者注册监听，然后再状态改变的时候，所有观察者们都会收到通知。
         coverImage.addObserver(self, forKeyPath: "image", options: .New, context: nil)
         
         indicator = UIActivityIndicatorView()
