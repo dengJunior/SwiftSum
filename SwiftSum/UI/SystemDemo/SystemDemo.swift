@@ -12,7 +12,7 @@ class SystemDemo: YYBaseDemoController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        testCreateViewInOtherThread()
         self.dataArray = [
             LibDemoInfo(title: "CustomTransitionDemo", desc: "自定义转场动画", controllerName: "CustomTransitionDemo"),
             LibDemoInfo(title: "ViewControllerGuideDemo", desc: "ViewControllerGuideDemo", controllerName: "ViewControllerGuideDemo"),
@@ -22,6 +22,20 @@ class SystemDemo: YYBaseDemoController {
             LibDemoInfo(title: "RunLoopDemo", desc: "RunLoop相关", controllerName: "RunLoopDemo"),
             LibDemoInfo(title: "EventAndGestureDemo", desc: "手势和事件相关", controllerName: "EventAndGestureDemo"),
         ]
+    }
+    
+    /**
+     在其他线程中创建view，主线程中添加，结果没有crash
+     */
+    func testCreateViewInOtherThread() {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            let view = UIView()
+            view.backgroundColor = UIColor.redColor()
+            view.frame = self.view.bounds
+            dispatch_async(dispatch_get_main_queue(), { 
+                self.view.addSubview(view)
+            })
+        }
     }
 
 }

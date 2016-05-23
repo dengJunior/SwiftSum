@@ -10,6 +10,9 @@ import UIKit
 
 class YYTabBarTransitionDelegate: NSObject, UITabBarControllerDelegate {
     
+    var interactive = false
+    let interactionController = UIPercentDrivenInteractiveTransition()
+    
     //在<UITabBarControllerDelegate>对象里，实现该方法提供动画控制器，返回 nil 则没有动画效果。
     func tabBarController(tabBarController: UITabBarController, animationControllerForTransitionFromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let fromIndex = tabBarController.viewControllers?.indexOf(fromVC)
@@ -20,6 +23,10 @@ class YYTabBarTransitionDelegate: NSObject, UITabBarControllerDelegate {
         return animator
     }
     
+    // MARK: - 交互式
+    func tabBarController(tabBarController: UITabBarController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactive ? interactionController : nil
+    }
 }
 
 
