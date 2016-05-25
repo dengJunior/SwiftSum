@@ -16,11 +16,6 @@ class YYLoggerDemo: UIViewController {
         super.viewDidLoad()
         YYLogger.start()
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(giveLog), userInfo: nil, repeats: true)
-        
-        self.addButtonToViewWithTitle("自定义present动画") { [unowned self] (button) in
-            let vc = PresentDemo()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
     }
 
     func giveLog() -> Void {

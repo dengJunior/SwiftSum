@@ -57,7 +57,8 @@ class TabBarDemo: UITabBarController {
              else { //向左滑动 }
              */
             let velocityX = panGesture.velocityInView(view).x
-            if velocityX < 0 {
+            let direction = panGesture.direction
+            if direction == .Left  {
                 if selectedIndex < subViewControllerCount - 1 {
                     selectedIndex += 1
                 }

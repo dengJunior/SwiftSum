@@ -17,13 +17,13 @@ class YYPercentTransitionDelegate: NSObject, UIViewControllerTransitioningDelega
     
     weak var percentTransition: YYPercentTransition? = nil
     //设置百分比
-    var offset = CGFloat(0) {
+    var offset:CGFloat = 0 {
         didSet {
             guard let viewWidth = self.percentTransition?.viewWidth,
                 let viewHeight = self.percentTransition?.viewHeight else {
                     return
             }
-            var maxLength = CGFloat(0)
+            var maxLength:CGFloat = 0
             switch targetEdge {
             case UIRectEdge.Top:
                 maxLength = viewHeight

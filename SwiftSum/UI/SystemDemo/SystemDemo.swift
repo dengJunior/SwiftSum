@@ -14,6 +14,7 @@ class SystemDemo: YYBaseDemoController {
         super.viewDidLoad()
 //        testCreateViewInOtherThread()
         self.dataArray = [
+            LibDemoInfo(title: "GCDDemo", desc: "GCD相关", controllerName: "GCDDemo"),
             LibDemoInfo(title: "CustomTransitionDemo", desc: "自定义转场动画", controllerName: "CustomTransitionDemo"),
             LibDemoInfo(title: "ViewControllerGuideDemo", desc: "ViewControllerGuideDemo", controllerName: "ViewControllerGuideDemo"),
             LibDemoInfo(title: "ViewGuideDemo", desc: "ViewGuide", controllerName: "ViewGuideDemo"),
@@ -21,6 +22,7 @@ class SystemDemo: YYBaseDemoController {
             LibDemoInfo(title: "ThreadDemo", desc: "多线程相关", controllerName: "ThreadDemo"),
             LibDemoInfo(title: "RunLoopDemo", desc: "RunLoop相关", controllerName: "RunLoopDemo"),
             LibDemoInfo(title: "EventAndGestureDemo", desc: "手势和事件相关", controllerName: "EventAndGestureDemo"),
+            LibDemoInfo(title: "SystemControlDemo", desc: "常用系统控件demo", controllerName: "SystemControlDemo"),
         ]
     }
     
