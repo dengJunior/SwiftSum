@@ -10,5 +10,6 @@ pod 'RxCocoa'
 pod 'Argo'
 pod 'Curry'
 pod 'SnapKit'
+pod 'CryptoSwift'
 
 end

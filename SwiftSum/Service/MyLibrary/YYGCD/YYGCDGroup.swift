@@ -23,10 +23,10 @@ class YYGCDGroup: NSObject {
         wait(DISPATCH_TIME_FOREVER)
     }
     
-    //返回ture 表示超时了
+    //返回ture 表示未超时
     func wait(millisecond: UInt64) -> Bool {
-        //如果在所有任务完成前超时了，该函数会返回一个非零值。
-        return dispatch_group_wait(dispatchGroup,  dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_MSEC) * Int64(millisecond))) != 0
+        //dispatch_group_wait返回非零表示超时了
+        return dispatch_group_wait(dispatchGroup,  dispatch_time(DISPATCH_TIME_NOW, Int64(NSEC_PER_MSEC) * Int64(millisecond))) == 0
     }
     
     func notifyInMainQueue(task: () -> Void) {
