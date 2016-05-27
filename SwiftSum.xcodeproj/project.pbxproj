@@ -63,6 +63,11 @@
 		1F289A001CC48A8100988E82 /* ViewGuideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2899FF1CC48A8100988E82 /* ViewGuideDemo.swift */; };
 		1F289A031CC48AE300988E82 /* AutoresizingMaskDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F289A021CC48AE300988E82 /* AutoresizingMaskDemo.swift */; };
 		1F289A051CC5C0E000988E82 /* AnimationsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F289A041CC5C0E000988E82 /* AnimationsDemo.swift */; };
+		1F2A38271CEEB0C400EE316D /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A38261CEEB0C400EE316D /* ExampleApp.html */; };
+		1F2A38291CEED53600EE316D /* ExampleApp.js in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A38281CEED53500EE316D /* ExampleApp.js */; };
+		1F2A382B1CEEF57600EE316D /* UIWebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A382A1CEEF57600EE316D /* UIWebViewDemo.swift */; };
+		1F2A382D1CEEFCBD00EE316D /* UIWebView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A382C1CEEFCBD00EE316D /* UIWebView+YYExtension.swift */; };
+		1F2A38301CEF07CC00EE316D /* JSExportMethodProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A382F1CEF07CC00EE316D /* JSExportMethodProtocol.swift */; };
 		1F2F69291C9A7FC400A3F432 /* YYConfigurableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */; };
 		1F2F692F1C9A86D100A3F432 /* ImageCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */; };
 		1F2F69301C9A86D100A3F432 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */; };
@@ -86,6 +91,9 @@
 		1F792CB61C89716A00EE70D4 /* GithubSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB51C89716A00EE70D4 /* GithubSignupViewModel.swift */; };
 		1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB71C89761A00EE70D4 /* Wireframe.swift */; };
 		1F792CBA1C8991A900EE70D4 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB91C8991A900EE70D4 /* ValidationResult.swift */; };
+		1F8059B31CED52E600CA0936 /* iOS6Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8059B21CED52E600CA0936 /* iOS6Feature.swift */; };
+		1F8059B61CED565A00CA0936 /* iOS7Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8059B51CED565A00CA0936 /* iOS7Feature.swift */; };
+		1F8059B81CED6BB700CA0936 /* WKWebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8059B71CED6BB700CA0936 /* WKWebViewDemo.swift */; };
 		1F87A29F1CA3B9EB0001519E /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87A29C1CA3B9EB0001519E /* AppManager.swift */; };
 		1F87A2A01CA3B9EB0001519E /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87A29D1CA3B9EB0001519E /* AppConfig.swift */; };
 		1F87A2A11CA3B9EB0001519E /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87A29E1CA3B9EB0001519E /* AppColor.swift */; };
@@ -112,6 +120,7 @@
 		1FB394A91CCE096F005C1B0E /* GoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */; };
 		1FB394AB1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */; };
 		1FB394AD1CCE5867005C1B0E /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394AC1CCE5867005C1B0E /* NetworkController.swift */; };
+		1FB4ACEF1CEDB67D0078B92F /* WKWebView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4ACEE1CEDB67D0078B92F /* WKWebView+YYExtension.swift */; };
 		1FB8C5621CD083810020E183 /* YYPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5611CD083810020E183 /* YYPresentationAnimator.swift */; };
 		1FB8C5651CD089C50020E183 /* CustomTransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5641CD089C50020E183 /* CustomTransitionDemo.swift */; };
 		1FB8C56D1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C56C1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift */; };
@@ -232,6 +241,11 @@
 		1F2899FF1CC48A8100988E82 /* ViewGuideDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewGuideDemo.swift; sourceTree = "<group>"; };
 		1F289A021CC48AE300988E82 /* AutoresizingMaskDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoresizingMaskDemo.swift; sourceTree = "<group>"; };
 		1F289A041CC5C0E000988E82 /* AnimationsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsDemo.swift; sourceTree = "<group>"; };
+		1F2A38261CEEB0C400EE316D /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		1F2A38281CEED53500EE316D /* ExampleApp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ExampleApp.js; sourceTree = "<group>"; };
+		1F2A382A1CEEF57600EE316D /* UIWebViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWebViewDemo.swift; sourceTree = "<group>"; };
+		1F2A382C1CEEFCBD00EE316D /* UIWebView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+YYExtension.swift"; sourceTree = "<group>"; };
+		1F2A382F1CEF07CC00EE316D /* JSExportMethodProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSExportMethodProtocol.swift; sourceTree = "<group>"; };
 		1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYConfigurableTableViewController.swift; sourceTree = "<group>"; };
 		1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCellViewData.swift; sourceTree = "<group>"; };
 		1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -257,6 +271,9 @@
 		1F792CB91C8991A900EE70D4 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 		1F7AF3EA1CEC02CB00375F0E /* 20-泛型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "20-泛型.playground"; sourceTree = "<group>"; };
 		1F7AF3EB1CEC396D00375F0E /* 21-访问控制.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "21-访问控制.playground"; sourceTree = "<group>"; };
+		1F8059B21CED52E600CA0936 /* iOS6Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOS6Feature.swift; sourceTree = "<group>"; };
+		1F8059B51CED565A00CA0936 /* iOS7Feature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOS7Feature.swift; sourceTree = "<group>"; };
+		1F8059B71CED6BB700CA0936 /* WKWebViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewDemo.swift; sourceTree = "<group>"; };
 		1F87A29C1CA3B9EB0001519E /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		1F87A29D1CA3B9EB0001519E /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		1F87A29E1CA3B9EB0001519E /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
@@ -301,6 +318,7 @@
 		1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController.swift; sourceTree = "<group>"; };
 		1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailGraphicViewController.swift; sourceTree = "<group>"; };
 		1FB394AC1CCE5867005C1B0E /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		1FB4ACEE1CEDB67D0078B92F /* WKWebView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+YYExtension.swift"; sourceTree = "<group>"; };
 		1FB8C5611CD083810020E183 /* YYPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPresentationAnimator.swift; sourceTree = "<group>"; };
 		1FB8C5641CD089C50020E183 /* CustomTransitionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionDemo.swift; sourceTree = "<group>"; };
 		1FB8C5671CD195640020E183 /* 1-基础部分.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1-基础部分.playground"; sourceTree = "<group>"; };
@@ -543,6 +561,14 @@
 			path = ViewGuide;
 			sourceTree = "<group>";
 		};
+		1F2A382E1CEEFCD700EE316D /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				1F2A382C1CEEFCBD00EE316D /* UIWebView+YYExtension.swift */,
+			);
+			name = UIWebView;
+			sourceTree = "<group>";
+		};
 		1F2F692A1C9A7FC900A3F432 /* 类型化的TableViewController  */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,6 +628,8 @@
 				1FB8C5631CD089600020E183 /* 自定义转场动画 */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
 				1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */,
+				1F8059B41CED530700CA0936 /* 各版本系统改动 */,
+				1F8059B91CED6BBD00CA0936 /* WKWebView相关 */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -692,6 +720,27 @@
 				1F792CB71C89761A00EE70D4 /* Wireframe.swift */,
 			);
 			path = GithubSignupDemo;
+			sourceTree = "<group>";
+		};
+		1F8059B41CED530700CA0936 /* 各版本系统改动 */ = {
+			isa = PBXGroup;
+			children = (
+				1F8059B21CED52E600CA0936 /* iOS6Feature.swift */,
+				1F8059B51CED565A00CA0936 /* iOS7Feature.swift */,
+			);
+			name = "各版本系统改动";
+			sourceTree = "<group>";
+		};
+		1F8059B91CED6BBD00CA0936 /* WKWebView相关 */ = {
+			isa = PBXGroup;
+			children = (
+				1F2A38281CEED53500EE316D /* ExampleApp.js */,
+				1F2A38261CEEB0C400EE316D /* ExampleApp.html */,
+				1F8059B71CED6BB700CA0936 /* WKWebViewDemo.swift */,
+				1F2A382A1CEEF57600EE316D /* UIWebViewDemo.swift */,
+				1F2A382F1CEF07CC00EE316D /* JSExportMethodProtocol.swift */,
+			);
+			name = "WKWebView相关";
 			sourceTree = "<group>";
 		};
 		1F87A2A21CA3B9F30001519E /* App */ = {
@@ -863,6 +912,8 @@
 				1F5B67D91CAD0A66003CFD75 /* UIView */,
 				1F5B67CE1CACF42C003CFD75 /* ViewController */,
 				1FC174061CEC57A600F67B38 /* UITabBarController */,
+				1FB4ACF01CEDB6810078B92F /* WKWebView */,
+				1F2A382E1CEEFCD700EE316D /* UIWebView */,
 			);
 			name = Category;
 			path = Categorys;
@@ -930,6 +981,14 @@
 				1FB394AC1CCE5867005C1B0E /* NetworkController.swift */,
 			);
 			path = "MVC-N模式";
+			sourceTree = "<group>";
+		};
+		1FB4ACF01CEDB6810078B92F /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				1FB4ACEE1CEDB67D0078B92F /* WKWebView+YYExtension.swift */,
+			);
+			name = WKWebView;
 			sourceTree = "<group>";
 		};
 		1FB8C5631CD089600020E183 /* 自定义转场动画 */ = {
@@ -1173,6 +1232,7 @@
 				1FAB22351CE305B20085EAD3 /* ContentHugging.xib in Resources */,
 				1F288D971CAD174500180316 /* SimpleGestureRecognizers.xib in Resources */,
 				1FC174011CEC4B2100F67B38 /* ThirdLibDemo.storyboard in Resources */,
+				1F2A38291CEED53600EE316D /* ExampleApp.js in Resources */,
 				1F288D9C1CAD1FD000180316 /* swipe.png in Resources */,
 				1F288D9B1CAD1FD000180316 /* rotation.png in Resources */,
 				1F0DD1A41CE9997800501767 /* CustomTransitionDemo.storyboard in Resources */,
@@ -1184,6 +1244,7 @@
 				1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */,
 				1F288D9D1CAD1FD000180316 /* tap.png in Resources */,
 				1FC173FF1CEC4B1300F67B38 /* SystemDemo.storyboard in Resources */,
+				1F2A38271CEEB0C400EE316D /* ExampleApp.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1303,6 +1364,7 @@
 				1F0097381CB60DF5003A063F /* MainThreadRunLoopSourceContext.swift in Sources */,
 				1F0DD19D1CE5B25500501767 /* PresentDemo.swift in Sources */,
 				1F5B67BE1CACF0D6003CFD75 /* SystemDemo.swift in Sources */,
+				1FB4ACEF1CEDB67D0078B92F /* WKWebView+YYExtension.swift in Sources */,
 				EEF281621C634EDC0004765A /* FuncProgramingDemo.swift in Sources */,
 				1F2F69301C9A86D100A3F432 /* ImageTableViewCell.swift in Sources */,
 				1F0DD1A81CE9A54B00501767 /* YYOverlayAnimator.swift in Sources */,
@@ -1319,12 +1381,16 @@
 				1FAAFBAD1BE85BE5007023B7 /* YYBaseNavigationController.swift in Sources */,
 				1F00971F1CB4A4F0003A063F /* TestThread.swift in Sources */,
 				1FB394A91CCE096F005C1B0E /* GoodsViewController.swift in Sources */,
+				1F2A382D1CEEFCBD00EE316D /* UIWebView+YYExtension.swift in Sources */,
+				1F2A382B1CEEF57600EE316D /* UIWebViewDemo.swift in Sources */,
 				EEF2816D1C634EFD0004765A /* MemoryManage.swift in Sources */,
 				1FB8C57A1CD324670020E183 /* CustomPresentationSecondViewController.swift in Sources */,
 				1F2F69311C9A86D100A3F432 /* TextCellViewData.swift in Sources */,
 				1F87A2A11CA3B9EB0001519E /* AppColor.swift in Sources */,
 				1FAB22301CE2D5060085EAD3 /* YYHud.swift in Sources */,
+				1F8059B61CED565A00CA0936 /* iOS7Feature.swift in Sources */,
 				1F0DD1AE1CEA16A600501767 /* NavigationDemo.swift in Sources */,
+				1F2A38301CEF07CC00EE316D /* JSExportMethodProtocol.swift in Sources */,
 				1FB8C5621CD083810020E183 /* YYPresentationAnimator.swift in Sources */,
 				1FC174081CEC593200F67B38 /* TabBarDemo.swift in Sources */,
 				1FAAFBB21BE85C3C007023B7 /* YYBaseDemoController.swift in Sources */,
@@ -1370,8 +1436,10 @@
 				1F00973E1CB60E57003A063F /* RunLoopSourceManager.swift in Sources */,
 				1FAF60361CBA9FC80046CF3D /* YYRunLoop.m in Sources */,
 				1FB8C56D1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift in Sources */,
+				1F8059B31CED52E600CA0936 /* iOS6Feature.swift in Sources */,
 				1FB394AD1CCE5867005C1B0E /* NetworkController.swift in Sources */,
 				EEF2816F1C634EFD0004765A /* TypeIntroduction.swift in Sources */,
+				1F8059B81CED6BB700CA0936 /* WKWebViewDemo.swift in Sources */,
 				1F0C134A1CB38C050045FCB7 /* TestRunLoop.swift in Sources */,
 				1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */,
 				1F0DD1A61CE99AB100501767 /* PresentedViewController.swift in Sources */,

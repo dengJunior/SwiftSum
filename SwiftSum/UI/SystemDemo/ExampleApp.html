@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+        function click2() {
+            alert('click2');
+        }
+    </script>
+    <head>
+        <!--显示字符集的设定-->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <!--用于设定禁止浏览器从本地机的缓存中调阅页面内容，设定后一旦离开网页就无法从Cache中再调出 -->
+        <meta http-equiv="Pragma" content="no-cache" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+        
+        <!--自动将网页中的电话号码显示为拨号的超链接-->
+        <meta name="format-detection" content="telephone=yes" />
+        <title>Demo</title>
+        
+        <style type="text/css">
+            button {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42;
+                position: relative;
+                display: inline-block;
+                margin-bottom: 0;
+                padding: 6px 12px;
+                cursor: pointer;
+                -webkit-transition: all;
+                transition: all;
+                -webkit-transition-timing-function: linear;
+                transition-timing-function: linear;
+                -webkit-transition-duration: .2s;
+                transition-duration: .2s;
+                text-align: center;
+                vertical-align: top;
+                white-space: nowrap;
+                color: #333;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                border-bottom-left-radius: 3px;
+                background-color: #fff;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p>调用已实现的click1方法，里面调用alert(getName()); getName未实现，并返回对象<br/>
+        <button type="button" id="btn1" onclick='click1()'>调用已实现的click1方法</button>
+        </p>
+        
+        <p>
+        <button type="button" id="btn2" onclick='click2()'>调用click2方法，实现在文档开始处</button>
+        </p>
+        
+        <p>
+        <button type="button" id="btn3" onclick='click3()'>调用click3方法，实现在文档末尾处</button>
+        </p>
+        
+        <p>
+        <button type="button" id="btn4" onclick='JSExportDemo.test0'>调用JSExportDemo.test0方法，未实现</button>
+        </p>
+        
+        <p>
+        <a href="http://www.baidu.com/">当前窗口中打开baidu</a>
+        </p>
+        
+        <p>
+        <a href="http://www.baidu.com/" target="_blank">新窗口中打开baidu</a>
+        </p>
+    </body>
+    
+    <script type="text/javascript">
+        function click1() {
+            //本地没有提供getName时，下面代码也不会运行。当注入在app中注入js后，就ok了
+            var value = getName(); 
+            alert(value == undefined ? 'default' : value);
+            return {
+                name: "jack",
+                age: 26
+            };
+        }
+    
+    function click3() {
+        alert('click3');
+    }
+    </script>
+    
+</html>
