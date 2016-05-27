@@ -1,37 +1,49 @@
 PODS:
-  - Alamofire (3.3.0)
-  - Argo (2.3.0)
-  - Curry (2.0.0)
-  - Moya/Core (6.3.1):
+  - Alamofire (3.4.0)
+  - Argo (3.0.1)
+  - CryptoSwift (0.4.1)
+  - Curry (2.2.0)
+  - EZSwiftExtensions (1.4)
+  - Kingfisher (2.4.1)
+  - Moya/Core (6.4.0):
     - Alamofire (~> 3.0)
-    - Result (~> 1.0)
-  - Moya/RxSwift (6.3.1):
+    - Result (~> 2.0)
+  - Moya/RxSwift (6.4.0):
     - Moya/Core
     - RxSwift (~> 2.0)
-  - Result (1.0.2)
-  - RxCocoa (2.3.1):
-    - RxSwift (~> 2.3.1)
-  - RxSwift (2.3.1)
-  - SnapKit (0.20.0)
+  - PermissionScope (1.0.2)
+  - Result (2.0.0)
+  - RxCocoa (2.5.0):
+    - RxSwift (~> 2.5)
+  - RxSwift (2.5.0)
+  - SnapKit (0.21.0)
 
 DEPENDENCIES:
   - Argo
+  - CryptoSwift
   - Curry
+  - EZSwiftExtensions
+  - Kingfisher
   - Moya/RxSwift
+  - PermissionScope
   - RxCocoa
   - RxSwift
   - SnapKit
 
 SPEC CHECKSUMS:
-  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
-  Argo: 3dbecf4204b1a3cdd1df88ebd5e23d01b652d34b
-  Curry: 5c5c5887d80fa22ca2133c7ea4d48c4d02283c0a
-  Moya: 852e26948a3771355ddf0f0109ac779b6fc30f28
-  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
-  RxCocoa: a2baaf3462b989559a51dce59d78fbebb8fe0afa
-  RxSwift: 829b2843e9eddc77a02cb3f5117f0d55f8f646f1
-  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  Argo: 22c5d62b7967020a641468c91dc9488bea9523b8
+  CryptoSwift: 25b5aff3f260967391f8fff2e9abe4254d2c6fd5
+  Curry: c22d80fff7f5a4b1bbd531455c3e2dbb099658a3
+  EZSwiftExtensions: db7be0022fce8e92cdfe0fadddaf835fcd9696db
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  Moya: 4d526954c8afd79820991393d40d7d8af756ceee
+  PermissionScope: 860828c5516d349b6f49e5491799cfef33c5ccc7
+  Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
+  RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
+  SnapKit: 2756fe24b706367af224c9c508d2f9166d03354c
 
-PODFILE CHECKSUM: 3abf137bcccf8cd911f7feffc6d187173d461101
+PODFILE CHECKSUM: 1cbde0947a935b1779eca791342d8f7a292ef106
 
-COCOAPODS: 1.0.0.beta.4
+COCOAPODS: 1.0.0

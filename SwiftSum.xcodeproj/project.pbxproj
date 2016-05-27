@@ -85,6 +85,9 @@
 		1F5B67DC1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67DB1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift */; };
 		1F5BE2581CF5771C00E29234 /* YYGCDSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE2571CF5771C00E29234 /* YYGCDSemaphore.swift */; };
 		1F5BE25A1CF5798300E29234 /* YYGCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE2591CF5798300E29234 /* YYGCDTimer.swift */; };
+		1F5BE25C1CF6976000E29234 /* URLSessionGuideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE25B1CF6976000E29234 /* URLSessionGuideDemo.swift */; };
+		1F77A2D91CF6980F0024D3A2 /* NSURLSessionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2D81CF6980F0024D3A2 /* NSURLSessionDemo.swift */; };
+		1F77A2DB1CF6EB6B0024D3A2 /* YYSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2DA1CF6EB6B0024D3A2 /* YYSessionManager.swift */; };
 		1F792CB61C89716A00EE70D4 /* GithubSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB51C89716A00EE70D4 /* GithubSignupViewModel.swift */; };
 		1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB71C89761A00EE70D4 /* Wireframe.swift */; };
 		1F792CBA1C8991A900EE70D4 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB91C8991A900EE70D4 /* ValidationResult.swift */; };
@@ -268,6 +271,9 @@
 		1F5B67DB1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleGestureRecognizers.swift; sourceTree = "<group>"; };
 		1F5BE2571CF5771C00E29234 /* YYGCDSemaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGCDSemaphore.swift; sourceTree = "<group>"; };
 		1F5BE2591CF5798300E29234 /* YYGCDTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGCDTimer.swift; sourceTree = "<group>"; };
+		1F5BE25B1CF6976000E29234 /* URLSessionGuideDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionGuideDemo.swift; sourceTree = "<group>"; };
+		1F77A2D81CF6980F0024D3A2 /* NSURLSessionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionDemo.swift; sourceTree = "<group>"; };
+		1F77A2DA1CF6EB6B0024D3A2 /* YYSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSessionManager.swift; sourceTree = "<group>"; };
 		1F792CB51C89716A00EE70D4 /* GithubSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSignupViewModel.swift; sourceTree = "<group>"; };
 		1F792CB71C89761A00EE70D4 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		1F792CB91C8991A900EE70D4 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
@@ -634,6 +640,7 @@
 				1FB8C5631CD089600020E183 /* 自定义转场动画 */,
 				1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
+				1F5BE25D1CF6976300E29234 /* URLSessionGuide */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -711,6 +718,16 @@
 				1F288D9F1CAE622F00180316 /* YYPanGestureRecognizer.swift */,
 			);
 			path = "手势";
+			sourceTree = "<group>";
+		};
+		1F5BE25D1CF6976300E29234 /* URLSessionGuide */ = {
+			isa = PBXGroup;
+			children = (
+				1F5BE25B1CF6976000E29234 /* URLSessionGuideDemo.swift */,
+				1F77A2D81CF6980F0024D3A2 /* NSURLSessionDemo.swift */,
+				1F77A2DA1CF6EB6B0024D3A2 /* YYSessionManager.swift */,
+			);
+			name = URLSessionGuide;
 			sourceTree = "<group>";
 		};
 		1F792CB41C89714F00EE70D4 /* GithubSignupDemo */ = {
@@ -1157,12 +1174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FAAFBA31BE85AEB007023B7 /* Build configuration list for PBXNativeTarget "SwiftSum" */;
 			buildPhases = (
-				50CAECC1891ED21EBBB547C7 /* Check Pods Manifest.lock */,
+				50CAECC1891ED21EBBB547C7 /* 📦 Check Pods Manifest.lock */,
 				1FAAFB771BE85AEA007023B7 /* Sources */,
 				1FAAFB781BE85AEA007023B7 /* Frameworks */,
 				1FAAFB791BE85AEA007023B7 /* Resources */,
-				5040F177A6ED0051E791495E /* Embed Pods Frameworks */,
-				0ABA56A4EE79FA10145591F1 /* Copy Pods Resources */,
+				5040F177A6ED0051E791495E /* 📦 Embed Pods Frameworks */,
+				0ABA56A4EE79FA10145591F1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1297,14 +1314,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0ABA56A4EE79FA10145591F1 /* Copy Pods Resources */ = {
+		0ABA56A4EE79FA10145591F1 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1312,14 +1329,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSum/Pods-SwiftSum-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5040F177A6ED0051E791495E /* Embed Pods Frameworks */ = {
+		5040F177A6ED0051E791495E /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1327,14 +1344,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSum/Pods-SwiftSum-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		50CAECC1891ED21EBBB547C7 /* Check Pods Manifest.lock */ = {
+		50CAECC1891ED21EBBB547C7 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1367,6 +1384,7 @@
 				1F00971C1CB4A4C6003A063F /* ThreadDemo.swift in Sources */,
 				1F5B67D21CAD02FB003CFD75 /* GestureTestView.swift in Sources */,
 				1F792CB61C89716A00EE70D4 /* GithubSignupViewModel.swift in Sources */,
+				1F5BE25C1CF6976000E29234 /* URLSessionGuideDemo.swift in Sources */,
 				1FF9B2BB1CF437E500AB9D30 /* YYGCDGroup.swift in Sources */,
 				1FAAFB7F1BE85AEA007023B7 /* AppDelegate.swift in Sources */,
 				EEF281711C634EFD0004765A /* UnsafePointer.swift in Sources */,
@@ -1445,6 +1463,7 @@
 				1FAF60271CB940AD0046CF3D /* ThreadSafeDemo.swift in Sources */,
 				1F0DD1791CE484AE00501767 /* YYDim.swift in Sources */,
 				1F288DA21CB1FD0600180316 /* DeliveryTouchesDemo.swift in Sources */,
+				1F77A2D91CF6980F0024D3A2 /* NSURLSessionDemo.swift in Sources */,
 				1F0DD19F1CE5B76F00501767 /* YYTransitionAnimator.swift in Sources */,
 				1FAF60381CBB30BF0046CF3D /* YYLogger.swift in Sources */,
 				1FB8C56F1CD1B4030020E183 /* YYInteractivityTransitionAnimator.swift in Sources */,
@@ -1477,6 +1496,7 @@
 				1FB394AD1CCE5867005C1B0E /* NetworkController.swift in Sources */,
 				1FA6B7761CF536E0007B4122 /* SystemControlDemo.swift in Sources */,
 				EEF2816F1C634EFD0004765A /* TypeIntroduction.swift in Sources */,
+				1F77A2DB1CF6EB6B0024D3A2 /* YYSessionManager.swift in Sources */,
 				1F0C134A1CB38C050045FCB7 /* TestRunLoop.swift in Sources */,
 				1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */,
 				1F0DD1A61CE99AB100501767 /* PresentedViewController.swift in Sources */,

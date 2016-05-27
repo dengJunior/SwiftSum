@@ -14,6 +14,7 @@ class SystemDemo: YYBaseDemoController {
         super.viewDidLoad()
 //        testCreateViewInOtherThread()
         self.dataArray = [
+            LibDemoInfo(title: "URLSessionGuideDemo", desc: "URLSessionGuide", controllerName: "URLSessionGuideDemo"),
             LibDemoInfo(title: "GCDDemo", desc: "GCD相关", controllerName: "GCDDemo"),
             LibDemoInfo(title: "CustomTransitionDemo", desc: "自定义转场动画", controllerName: "CustomTransitionDemo"),
             LibDemoInfo(title: "ViewControllerGuideDemo", desc: "ViewControllerGuideDemo", controllerName: "ViewControllerGuideDemo"),
