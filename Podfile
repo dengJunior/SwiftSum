@@ -10,5 +10,9 @@ pod 'RxCocoa'
 pod 'Argo'
 pod 'Curry'
 pod 'SnapKit'
+pod 'CryptoSwift'
+pod 'Kingfisher'
+pod 'EZSwiftExtensions'
+pod 'PermissionScope'
 
 end

@@ -22,7 +22,22 @@ class SystemDemo: YYBaseDemoController {
             LibDemoInfo(title: "ThreadDemo", desc: "多线程相关", controllerName: "ThreadDemo"),
             LibDemoInfo(title: "RunLoopDemo", desc: "RunLoop相关", controllerName: "RunLoopDemo"),
             LibDemoInfo(title: "EventAndGestureDemo", desc: "手势和事件相关", controllerName: "EventAndGestureDemo"),
+            LibDemoInfo(title: "SystemControlDemo", desc: "常用系统控件demo", controllerName: "SystemControlDemo"),
         ]
+    }
+    
+    /**
+     在其他线程中创建view，主线程中添加，结果没有crash
+     */
+    func testCreateViewInOtherThread() {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            let view = UIView()
+            view.backgroundColor = UIColor.redColor()
+            view.frame = self.view.bounds
+            dispatch_async(dispatch_get_main_queue(), { 
+                self.view.addSubview(view)
+            })
+        }
     }
 
 }

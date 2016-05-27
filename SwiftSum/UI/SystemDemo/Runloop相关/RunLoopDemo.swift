@@ -87,7 +87,7 @@ class RunLoopDemo: UIViewController {
         buttonCount += 1
         
         //仅仅打印两条日志，用来测试UI是否能立即响应的。
-        self.addButtonToView("buttonTestPressed", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { (button) in
+        self.addButtonToView("打印日志测试UI是否能立即响应", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { (button) in
             print("Enter buttonTestPressed")
             print("Exit buttonTestPressed")
         }
