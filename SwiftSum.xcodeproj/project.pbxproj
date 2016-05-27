@@ -39,7 +39,6 @@
 		1F0DD1A81CE9A54B00501767 /* YYOverlayAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1A71CE9A54B00501767 /* YYOverlayAnimator.swift */; };
 		1F0DD1AA1CE9AEAE00501767 /* YYOverlayAnimatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1A91CE9AEAE00501767 /* YYOverlayAnimatorDelegate.swift */; };
 		1F0DD1AC1CE9BC7100501767 /* YYOverlayPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1AB1CE9BC7100501767 /* YYOverlayPresentationController.swift */; };
-		1F0DD1AE1CEA16A600501767 /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1AD1CEA16A600501767 /* NavigationDemo.swift */; };
 		1F0DD1B21CEA173100501767 /* YYNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1B11CEA173100501767 /* YYNavigationDelegate.swift */; };
 		1F0DD1B41CEAA99F00501767 /* YYTabBarTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1B31CEAA99F00501767 /* YYTabBarTransitionDelegate.swift */; };
 		1F0DD1B81CEB020400501767 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1B71CEB020300501767 /* PopViewController.swift */; };
@@ -128,7 +127,6 @@
 		1FB394A91CCE096F005C1B0E /* GoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */; };
 		1FB394AB1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */; };
 		1FB394AD1CCE5867005C1B0E /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394AC1CCE5867005C1B0E /* NetworkController.swift */; };
-		1FB4ACEF1CEDB67D0078B92F /* WKWebView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4ACEE1CEDB67D0078B92F /* WKWebView+YYExtension.swift */; };
 		1FB8C5621CD083810020E183 /* YYPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5611CD083810020E183 /* YYPresentationAnimator.swift */; };
 		1FB8C5651CD089C50020E183 /* CustomTransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C5641CD089C50020E183 /* CustomTransitionDemo.swift */; };
 		1FB8C56D1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8C56C1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift */; };
@@ -141,6 +139,8 @@
 		1FC174031CEC4B2C00F67B38 /* YYLibDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC174021CEC4B2C00F67B38 /* YYLibDemo.storyboard */; };
 		1FC174051CEC57A100F67B38 /* UITabBarController+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC174041CEC57A100F67B38 /* UITabBarController+YYExtension.swift */; };
 		1FC174081CEC593200F67B38 /* TabBarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC174071CEC593200F67B38 /* TabBarDemo.swift */; };
+		1FCE27051CF887B3001F32A5 /* WKWebView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE27031CF887B2001F32A5 /* WKWebView+YYExtension.swift */; };
+		1FCE27071CF88A8F001F32A5 /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE27061CF88A8F001F32A5 /* NavigationDemo.swift */; };
 		1FCE29191CDC691A00DBF2E3 /* GoodsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE29181CDC691A00DBF2E3 /* GoodsViewController2.swift */; };
 		1FCE291D1CDC6C9300DBF2E3 /* YYPercentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE291C1CDC6C9300DBF2E3 /* YYPercentTransition.swift */; };
 		1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE29201CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift */; };
@@ -231,7 +231,6 @@
 		1F0DD1A71CE9A54B00501767 /* YYOverlayAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYOverlayAnimator.swift; sourceTree = "<group>"; };
 		1F0DD1A91CE9AEAE00501767 /* YYOverlayAnimatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYOverlayAnimatorDelegate.swift; sourceTree = "<group>"; };
 		1F0DD1AB1CE9BC7100501767 /* YYOverlayPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYOverlayPresentationController.swift; sourceTree = "<group>"; };
-		1F0DD1AD1CEA16A600501767 /* NavigationDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		1F0DD1B11CEA173100501767 /* YYNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNavigationDelegate.swift; sourceTree = "<group>"; };
 		1F0DD1B31CEAA99F00501767 /* YYTabBarTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYTabBarTransitionDelegate.swift; sourceTree = "<group>"; };
 		1F0DD1B61CEABE2000501767 /* 19-协议.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "19-协议.playground"; sourceTree = "<group>"; };
@@ -344,7 +343,6 @@
 		1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController.swift; sourceTree = "<group>"; };
 		1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailGraphicViewController.swift; sourceTree = "<group>"; };
 		1FB394AC1CCE5867005C1B0E /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
-		1FB4ACEE1CEDB67D0078B92F /* WKWebView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+YYExtension.swift"; sourceTree = "<group>"; };
 		1FB8C5611CD083810020E183 /* YYPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPresentationAnimator.swift; sourceTree = "<group>"; };
 		1FB8C5641CD089C50020E183 /* CustomTransitionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitionDemo.swift; sourceTree = "<group>"; };
 		1FB8C5671CD195640020E183 /* 1-基础部分.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1-基础部分.playground"; sourceTree = "<group>"; };
@@ -361,6 +359,8 @@
 		1FC174021CEC4B2C00F67B38 /* YYLibDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YYLibDemo.storyboard; sourceTree = "<group>"; };
 		1FC174041CEC57A100F67B38 /* UITabBarController+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+YYExtension.swift"; sourceTree = "<group>"; };
 		1FC174071CEC593200F67B38 /* TabBarDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarDemo.swift; sourceTree = "<group>"; };
+		1FCE27031CF887B2001F32A5 /* WKWebView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+YYExtension.swift"; sourceTree = "<group>"; };
+		1FCE27061CF88A8F001F32A5 /* NavigationDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		1FCE29161CD9C37900DBF2E3 /* 4-字符串和字符.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-字符串和字符.playground"; sourceTree = "<group>"; };
 		1FCE29171CDC291800DBF2E3 /* 5-集合类型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5-集合类型.playground"; sourceTree = "<group>"; };
 		1FCE29181CDC691A00DBF2E3 /* GoodsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController2.swift; sourceTree = "<group>"; };
@@ -516,7 +516,7 @@
 		1F0DD1B01CEA16D000501767 /* Navigation动画 */ = {
 			isa = PBXGroup;
 			children = (
-				1F0DD1AD1CEA16A600501767 /* NavigationDemo.swift */,
+				1FCE27061CF88A8F001F32A5 /* NavigationDemo.swift */,
 				1F0DD1B71CEB020300501767 /* PopViewController.swift */,
 				1F0DD1B11CEA173100501767 /* YYNavigationDelegate.swift */,
 			);
@@ -966,17 +966,16 @@
 		1FAAFBB81BE8878A007023B7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1FCE27031CF887B2001F32A5 /* WKWebView+YYExtension.swift */,
 				1FB394971CCC7273005C1B0E /* NSDate */,
 				1F5B67DA1CAD0A6E003CFD75 /* NSObject */,
 				1F5B67D31CAD059D003CFD75 /* String */,
 				1F5B67D41CAD05A5003CFD75 /* UIButton */,
 				1FA6B7771CF546D1007B4122 /* UIPanGestureRecognizer */,
-				1FC174061CEC57A600F67B38 /* UITabBarController */,
 				1FAAFBB91BE8878A007023B7 /* UITableView */,
 				1F5B67D91CAD0A66003CFD75 /* UIView */,
 				1F5B67CE1CACF42C003CFD75 /* ViewController */,
 				1FC174061CEC57A600F67B38 /* UITabBarController */,
-				1FB4ACF01CEDB6810078B92F /* WKWebView */,
 				1F2A382E1CEEFCD700EE316D /* UIWebView */,
 			);
 			path = Category;
@@ -1044,14 +1043,6 @@
 				1FB394AC1CCE5867005C1B0E /* NetworkController.swift */,
 			);
 			path = "MVC-N模式";
-			sourceTree = "<group>";
-		};
-		1FB4ACF01CEDB6810078B92F /* WKWebView */ = {
-			isa = PBXGroup;
-			children = (
-				1FB4ACEE1CEDB67D0078B92F /* WKWebView+YYExtension.swift */,
-			);
-			name = WKWebView;
 			sourceTree = "<group>";
 		};
 		1FB8C5631CD089600020E183 /* 自定义转场动画 */ = {
@@ -1432,6 +1423,7 @@
 				1F0097211CB56037003A063F /* DesignPatternDemo.swift in Sources */,
 				1F139B491C814523005E89EB /* RxSwiftDemo.swift in Sources */,
 				1F5B67CD1CACF41C003CFD75 /* ViewController+YYExtension.swift in Sources */,
+				1FCE27071CF88A8F001F32A5 /* NavigationDemo.swift in Sources */,
 				1F00972B1CB5E7F0003A063F /* Album.swift in Sources */,
 				1FE864E11CB3819100E013A1 /* RunLoopDemo.swift in Sources */,
 				1F0097421CB6A629003A063F /* HorizontalScroller.swift in Sources */,
@@ -1480,7 +1472,6 @@
 				1F0097381CB60DF5003A063F /* MainThreadRunLoopSourceContext.swift in Sources */,
 				1F0DD19D1CE5B25500501767 /* PresentDemo.swift in Sources */,
 				1F5B67BE1CACF0D6003CFD75 /* SystemDemo.swift in Sources */,
-				1FB4ACEF1CEDB67D0078B92F /* WKWebView+YYExtension.swift in Sources */,
 				EEF281621C634EDC0004765A /* FuncProgramingDemo.swift in Sources */,
 				1F2F69301C9A86D100A3F432 /* ImageTableViewCell.swift in Sources */,
 				1F0DD1A81CE9A54B00501767 /* YYOverlayAnimator.swift in Sources */,
@@ -1506,10 +1497,8 @@
 				1F87A2A11CA3B9EB0001519E /* AppColor.swift in Sources */,
 				1FAB22301CE2D5060085EAD3 /* YYHud.swift in Sources */,
 				1F8059B61CED565A00CA0936 /* iOS7Feature.swift in Sources */,
-				1F0DD1AE1CEA16A600501767 /* NavigationDemo.swift in Sources */,
 				1F2A38301CEF07CC00EE316D /* JSExportMethodProtocol.swift in Sources */,
 				1F5BE2581CF5771C00E29234 /* YYGCDSemaphore.swift in Sources */,
-				1F0DD1AE1CEA16A600501767 /* NavigationDemo.swift in Sources */,
 				1FF9B2B91CF4044E00AB9D30 /* YYGCD.swift in Sources */,
 				1FB8C5621CD083810020E183 /* YYPresentationAnimator.swift in Sources */,
 				1FC174081CEC593200F67B38 /* TabBarDemo.swift in Sources */,
@@ -1555,6 +1544,7 @@
 				1F5B67D61CAD05BF003CFD75 /* UIView+YYExtension.swift in Sources */,
 				1F00973C1CB60E28003A063F /* SecondaryThreadRunLoopSourceContext.swift in Sources */,
 				1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */,
+				1FCE27051CF887B3001F32A5 /* WKWebView+YYExtension.swift in Sources */,
 				1FF9B2C11CF4437800AB9D30 /* PhotoCollectionViewController.swift in Sources */,
 				1F075BDF1C4B4F480013C815 /* YYLibsDemo.swift in Sources */,
 				1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */,

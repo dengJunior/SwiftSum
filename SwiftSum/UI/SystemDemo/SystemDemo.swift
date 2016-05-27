@@ -14,6 +14,7 @@ class SystemDemo: YYBaseDemoController {
         super.viewDidLoad()
         
         self.dataArray = [
+            LibDemoInfo(title: "GCDDemo", desc: "GCD相关", controllerName: "GCDDemo"),
             LibDemoInfo(title: "WKWebViewDemo", desc: "WKWebView相关", controllerName: "WKWebViewDemo"),
             LibDemoInfo(title: "CustomTransitionDemo", desc: "自定义转场动画", controllerName: "CustomTransitionDemo"),
             LibDemoInfo(title: "ViewControllerGuideDemo", desc: "ViewControllerGuideDemo", controllerName: "ViewControllerGuideDemo"),
