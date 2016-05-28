@@ -16,6 +16,11 @@ class NetworkDemo: UIViewController {
         YYApi.requestGoodDesignRecommends{  recommends in
             print(recommends);
         }
+        self.addButtonToViewWithTitle("Get 请求") { [unowned self] (button) in
+            if let vc = PhotoCollectionViewController.newInstanceFromStoryboard("GooglyPuff", isInitial: true) {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
 
   

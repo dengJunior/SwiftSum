@@ -88,6 +88,9 @@
 		1F5BE25C1CF6976000E29234 /* URLSessionGuideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE25B1CF6976000E29234 /* URLSessionGuideDemo.swift */; };
 		1F77A2D91CF6980F0024D3A2 /* NSURLSessionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2D81CF6980F0024D3A2 /* NSURLSessionDemo.swift */; };
 		1F77A2DB1CF6EB6B0024D3A2 /* YYSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2DA1CF6EB6B0024D3A2 /* YYSessionManager.swift */; };
+		1F77A2DD1CF82C780024D3A2 /* YYHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2DC1CF82C780024D3A2 /* YYHttp.swift */; };
+		1F77A2E01CF82DB10024D3A2 /* YYHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2DF1CF82DB10024D3A2 /* YYHttpManager.swift */; };
+		1F77A2E21CF83EA20024D3A2 /* YYHttpFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2E11CF83EA20024D3A2 /* YYHttpFoundation.swift */; };
 		1F792CB61C89716A00EE70D4 /* GithubSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB51C89716A00EE70D4 /* GithubSignupViewModel.swift */; };
 		1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB71C89761A00EE70D4 /* Wireframe.swift */; };
 		1F792CBA1C8991A900EE70D4 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB91C8991A900EE70D4 /* ValidationResult.swift */; };
@@ -274,6 +277,9 @@
 		1F5BE25B1CF6976000E29234 /* URLSessionGuideDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionGuideDemo.swift; sourceTree = "<group>"; };
 		1F77A2D81CF6980F0024D3A2 /* NSURLSessionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionDemo.swift; sourceTree = "<group>"; };
 		1F77A2DA1CF6EB6B0024D3A2 /* YYSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSessionManager.swift; sourceTree = "<group>"; };
+		1F77A2DC1CF82C780024D3A2 /* YYHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHttp.swift; sourceTree = "<group>"; };
+		1F77A2DF1CF82DB10024D3A2 /* YYHttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHttpManager.swift; sourceTree = "<group>"; };
+		1F77A2E11CF83EA20024D3A2 /* YYHttpFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHttpFoundation.swift; sourceTree = "<group>"; };
 		1F792CB51C89716A00EE70D4 /* GithubSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSignupViewModel.swift; sourceTree = "<group>"; };
 		1F792CB71C89761A00EE70D4 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		1F792CB91C8991A900EE70D4 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
@@ -730,6 +736,16 @@
 			name = URLSessionGuide;
 			sourceTree = "<group>";
 		};
+		1F77A2DE1CF82C7F0024D3A2 /* YYHttp */ = {
+			isa = PBXGroup;
+			children = (
+				1F77A2DC1CF82C780024D3A2 /* YYHttp.swift */,
+				1F77A2DF1CF82DB10024D3A2 /* YYHttpManager.swift */,
+				1F77A2E11CF83EA20024D3A2 /* YYHttpFoundation.swift */,
+			);
+			name = YYHttp;
+			sourceTree = "<group>";
+		};
 		1F792CB41C89714F00EE70D4 /* GithubSignupDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1085,6 +1101,7 @@
 				EEC450631C634B4700328F54 /* CommonDataSource.swift */,
 				1F0DD1761CE482EA00501767 /* YYAnimation.swift */,
 				1F0DD1781CE484AE00501767 /* YYDim.swift */,
+				1F77A2DE1CF82C7F0024D3A2 /* YYHttp */,
 			);
 			path = MyLibrary;
 			sourceTree = "<group>";
@@ -1445,6 +1462,7 @@
 				1FF9B2B91CF4044E00AB9D30 /* YYGCD.swift in Sources */,
 				1FB8C5621CD083810020E183 /* YYPresentationAnimator.swift in Sources */,
 				1FC174081CEC593200F67B38 /* TabBarDemo.swift in Sources */,
+				1F77A2E21CF83EA20024D3A2 /* YYHttpFoundation.swift in Sources */,
 				1FAAFBB21BE85C3C007023B7 /* YYBaseDemoController.swift in Sources */,
 				1FB394A61CCE06C0005C1B0E /* GoodsDetailViewController.swift in Sources */,
 				1FF9B2B61CF3FCE500AB9D30 /* UIPanGestureRecognizer+YYExtension.swift in Sources */,
@@ -1466,8 +1484,10 @@
 				1F77A2D91CF6980F0024D3A2 /* NSURLSessionDemo.swift in Sources */,
 				1F0DD19F1CE5B76F00501767 /* YYTransitionAnimator.swift in Sources */,
 				1FAF60381CBB30BF0046CF3D /* YYLogger.swift in Sources */,
+				1F77A2DD1CF82C780024D3A2 /* YYHttp.swift in Sources */,
 				1FB8C56F1CD1B4030020E183 /* YYInteractivityTransitionAnimator.swift in Sources */,
 				1FF9B2B41CF2FFFF00AB9D30 /* YYFullscreenPopGesture.swift in Sources */,
+				1F77A2E01CF82DB10024D3A2 /* YYHttpManager.swift in Sources */,
 				1F0097261CB560DB003A063F /* HTTPClient.swift in Sources */,
 				1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */,
 				1F0DD1BB1CEB50C100501767 /* CollectionViewControllerTransitionDemo.swift in Sources */,

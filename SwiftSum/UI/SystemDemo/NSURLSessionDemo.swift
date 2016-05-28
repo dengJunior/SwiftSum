@@ -69,6 +69,7 @@ class NSURLSessionDemo: UIViewController {
         //这里通过回调block的方式创建了一个任务,那么代理方法将不会再被调用.
         dataTask.resume()
         
+        
         //使用自定义的代理
         let dataTask2 = defaultSession.dataTaskWithURL(url)
         dataTask2.resume()

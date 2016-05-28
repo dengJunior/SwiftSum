@@ -41,12 +41,6 @@ extension YYSessionManager: UIApplicationDelegate {
 // MARK: - NSURLSessionDelegate
 extension YYSessionManager: NSURLSessionDelegate {
     
-    //处理认证和安全传输确认
-    func URLSession(session: NSURLSession, didReceiveChallenge challenge: NSURLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void) {
-        //如果app没有提供会话代理,会话对象调用任务得代理方法URLSession:task:didReceiveChallenge:completionHandler:
-        print(#function)
-    }
-    
     func URLSessionDidFinishEventsForBackgroundURLSession(session: NSURLSession) {
         print(#function)
         /*
@@ -57,9 +51,42 @@ extension YYSessionManager: NSURLSessionDelegate {
             handler?()
         }
     }
-    
+
+    /*
+     当不在需要会话的时候,通过方法invalidateAndCancel或者finishTasksAndInvalidate来取消会话
+     
+        - 在取消会话之后,代理方法URLSession:didBecomeInvalidWithError:会调用
+        - 如果任务正在下载而被我们取消了,会话会调用URLSession:task:didCompleteWithError:来报告这个错误.
+     */
     func URLSession(session: NSURLSession, didBecomeInvalidWithError error: NSError?) {
         print(#function)
+        //在取消会话之后,代理方法URLSession:didBecomeInvalidWithError:会调用
+    }
+    
+    //处理认证和安全传输确认
+    func URLSession(session: NSURLSession, didReceiveChallenge challenge: NSURLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void) {
+        print(#function)
+        //如果app没有提供会话代理,会话对象调用任务得代理方法URLSession:task:didReceiveChallenge:completionHandler:
+        
+        // MARK: 尝试在没有证书的情况下继续的2种方式
+        
+        //取决于协议的实现，这种处理方法可能会导致连接失败而以送connectionDidFailWithError:消息，或者返回可选的不需要认证的URL内容。
+        
+        //处理请求，告诉NSURLSession代理没有提供一个方法来处理这个认证
+        completionHandler(.PerformDefaultHandling, nil)
+        
+        //拒绝了这次认证.这个取决于服务器返回的响应类型,URL加载肯可能会调用多次这个方法来获取另外的保护空间.
+        completionHandler(.RejectProtectionSpace, nil)
+        
+        //challenge实例会包含一些信息，包括是什么触发了认证查询、查询的尝试次数、任何先前尝试的证书、请求证书的NSURLProtectionSpace对象，及查询的发送者。
+        if challenge.previousFailureCount == 0 {
+            //使用证书
+            let newCredential = NSURLCredential(user: "", password: "", persistence: .None)
+            completionHandler(.UseCredential, newCredential)
+        } else {
+            // MARK: 取消连接
+            completionHandler(.CancelAuthenticationChallenge, nil)
+        }
     }
 }
 // MARK: - NSURLSessionTaskDelegate
@@ -84,10 +111,23 @@ extension YYSessionManager: NSURLSessionTaskDelegate {
         completionHandler(NSInputStream())
     }
     
+    // MARK: - 认证
+    
     func URLSession(session: NSURLSession, task: NSURLSessionTask, didReceiveChallenge challenge: NSURLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void) {
         //在非会话级别上,URLSession:didReceiveChallenge:completionHandler:不会被调用.
         print(#function)
     }
+    
+    // MARK: - 重定向
+    
+    //当服务器认定一个请求需要客户端重新创建一个新的不同的请求时会产生重定向. 如果所有的重定向相关的代理方法都没有实现,默认允许所有的改变.
+    func URLSession(session: NSURLSession, task: NSURLSessionTask, willPerformHTTPRedirection response: NSHTTPURLResponse, newRequest request: NSURLRequest, completionHandler: (NSURLRequest?) -> Void) {
+        print(#function)
+        
+        let newRequest = request
+        completionHandler(newRequest)
+    }
+    
 }
 
 // MARK: - NSURLSessionDataDelegate
@@ -98,6 +138,34 @@ extension YYSessionManager: NSURLSessionDataDelegate {
         //使用自定义代理来获取数据时，必须实现的方法
         print(#function)
         receivedData.appendData(data)
+    }
+    
+    // MARK: 控制缓存
+    func URLSession(session: NSURLSession, dataTask: NSURLSessionDataTask, willCacheResponse proposedResponse: NSCachedURLResponse, completionHandler: (NSCachedURLResponse?) -> Void) {
+        print(#function)
+        //这个代理方法只用于数据请求和上传任务。而下载任务的缓存由指定的缓存策略来决定。
+        
+        //调用一个完成处理器block来告知会话需要缓存什么东西
+        //必须调用completionHandler.否则,会产生内存泄露.
+        completionHandler(proposedResponse)
+    }
+    
+    // MARK: - 任务转换
+    
+    //对于一个数据任务对象,会话对象会调用URLSession:dataTask:didReceiveResponse:completionHandler:方法来确定是否要将数据任务转换成下载任务转.
+    func URLSession(session: NSURLSession, dataTask: NSURLSessionDataTask, didReceiveResponse response: NSURLResponse, completionHandler: (NSURLSessionResponseDisposition) -> Void) {
+        print(#function)
+        completionHandler(.BecomeDownload)
+    }
+    
+    //如果应用选择转换成下载任务,会话对象会调用URLSession:dataTask:didBecomeDownloadTask:方法并传递一个下载任务的对象.
+    func URLSession(session: NSURLSession, dataTask: NSURLSessionDataTask, didBecomeDownloadTask downloadTask: NSURLSessionDownloadTask) {
+        print(#function)
+    }
+    
+    @available(iOS 9.0, *)
+    func URLSession(session: NSURLSession, dataTask: NSURLSessionDataTask, didBecomeStreamTask streamTask: NSURLSessionStreamTask) {
+        print(#function)
     }
 }
 
