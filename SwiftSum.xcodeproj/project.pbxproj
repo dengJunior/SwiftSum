@@ -147,6 +147,7 @@
 		1FCE29191CDC691A00DBF2E3 /* GoodsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE29181CDC691A00DBF2E3 /* GoodsViewController2.swift */; };
 		1FCE291D1CDC6C9300DBF2E3 /* YYPercentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE291C1CDC6C9300DBF2E3 /* YYPercentTransition.swift */; };
 		1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE29201CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift */; };
+		1FDCEFC11CF998E20039D176 /* Dictionary+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDCEFC01CF998E20039D176 /* Dictionary+YYExtension.swift */; };
 		1FE864E11CB3819100E013A1 /* RunLoopDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE864E01CB3819100E013A1 /* RunLoopDemo.swift */; };
 		1FF133DA1CCB25F600AD6822 /* ViewControllerGuideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF133D91CCB25F600AD6822 /* ViewControllerGuideDemo.swift */; };
 		1FF133DF1CCB265500AD6822 /* TableViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF133DE1CCB265500AD6822 /* TableViewController1.swift */; };
@@ -372,6 +373,7 @@
 		1FCE29181CDC691A00DBF2E3 /* GoodsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController2.swift; sourceTree = "<group>"; };
 		1FCE291C1CDC6C9300DBF2E3 /* YYPercentTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPercentTransition.swift; sourceTree = "<group>"; };
 		1FCE29201CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPercentTransitionDelegate.swift; sourceTree = "<group>"; };
+		1FDCEFC01CF998E20039D176 /* Dictionary+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+YYExtension.swift"; sourceTree = "<group>"; };
 		1FE864E01CB3819100E013A1 /* RunLoopDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLoopDemo.swift; sourceTree = "<group>"; };
 		1FF133D91CCB25F600AD6822 /* ViewControllerGuideDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerGuideDemo.swift; sourceTree = "<group>"; };
 		1FF133DE1CCB265500AD6822 /* TableViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController1.swift; sourceTree = "<group>"; };
@@ -982,17 +984,8 @@
 		1FAAFBB81BE8878A007023B7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				1FCE27031CF887B2001F32A5 /* WKWebView+YYExtension.swift */,
-				1FB394971CCC7273005C1B0E /* NSDate */,
-				1F5B67DA1CAD0A6E003CFD75 /* NSObject */,
-				1F5B67D31CAD059D003CFD75 /* String */,
-				1F5B67D41CAD05A5003CFD75 /* UIButton */,
-				1FA6B7771CF546D1007B4122 /* UIPanGestureRecognizer */,
-				1FAAFBB91BE8878A007023B7 /* UITableView */,
-				1F5B67D91CAD0A66003CFD75 /* UIView */,
-				1F5B67CE1CACF42C003CFD75 /* ViewController */,
-				1FC174061CEC57A600F67B38 /* UITabBarController */,
-				1F2A382E1CEEFCD700EE316D /* UIWebView */,
+				1FDCEFBF1CF998990039D176 /* UIKit */,
+				1FDCEFBE1CF998880039D176 /* Foudation */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1117,6 +1110,48 @@
 				1FC174041CEC57A100F67B38 /* UITabBarController+YYExtension.swift */,
 			);
 			path = UITabBarController;
+			sourceTree = "<group>";
+		};
+		1FDCEFBD1CF98C0D0039D176 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE27031CF887B2001F32A5 /* WKWebView+YYExtension.swift */,
+			);
+			name = WKWebView;
+			sourceTree = "<group>";
+		};
+		1FDCEFBE1CF998880039D176 /* Foudation */ = {
+			isa = PBXGroup;
+			children = (
+				1FB394971CCC7273005C1B0E /* NSDate */,
+				1F5B67DA1CAD0A6E003CFD75 /* NSObject */,
+				1F5B67D31CAD059D003CFD75 /* String */,
+				1FDCEFC21CF998F90039D176 /* Dictionary */,
+			);
+			name = Foudation;
+			sourceTree = "<group>";
+		};
+		1FDCEFBF1CF998990039D176 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1FDCEFBD1CF98C0D0039D176 /* WKWebView */,
+				1F5B67D41CAD05A5003CFD75 /* UIButton */,
+				1FA6B7771CF546D1007B4122 /* UIPanGestureRecognizer */,
+				1FAAFBB91BE8878A007023B7 /* UITableView */,
+				1F5B67D91CAD0A66003CFD75 /* UIView */,
+				1F5B67CE1CACF42C003CFD75 /* ViewController */,
+				1FC174061CEC57A600F67B38 /* UITabBarController */,
+				1F2A382E1CEEFCD700EE316D /* UIWebView */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		1FDCEFC21CF998F90039D176 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				1FDCEFC01CF998E20039D176 /* Dictionary+YYExtension.swift */,
+			);
+			name = Dictionary;
 			sourceTree = "<group>";
 		};
 		1FE864E21CB3819600E013A1 /* Runloop相关 */ = {
@@ -1480,6 +1515,7 @@
 				1F0097331CB60D75003A063F /* MainCollectionViewController.swift in Sources */,
 				1FB8C5651CD089C50020E183 /* CustomTransitionDemo.swift in Sources */,
 				EEF2816E1C634EFD0004765A /* RegularExpression.swift in Sources */,
+				1FDCEFC11CF998E20039D176 /* Dictionary+YYExtension.swift in Sources */,
 				1F00972D1CB5E894003A063F /* AlbumView.swift in Sources */,
 				1F0DD1B41CEAA99F00501767 /* YYTabBarTransitionDelegate.swift in Sources */,
 				1F0DD1BD1CEBF27A00501767 /* CollectionVCTestTwo.swift in Sources */,

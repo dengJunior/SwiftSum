@@ -8,18 +8,19 @@
 
 import UIKit
 
+
 class YYHttpManager: NSObject {
     let boundary = "PitayaUGl0YXlh"
     let errorDomain = "com.yy.http"
     
     let method: YYHttpMethod!
-    var params: [String: String]?
+    var params: [String: AnyObject]?
     var files: [YYHttpFile]?
     var cancelCallback: (() -> Void)?
     var completionCallback: ((data: NSData?, response: NSHTTPURLResponse?, error: NSError?) -> Void)?
     
     var session: NSURLSession!
-    let urlString: String!
+    var urlString: String!
     var mutableRequest: NSMutableURLRequest!
     var task: NSURLSessionTask!
     
@@ -64,6 +65,7 @@ class YYHttpManager: NSObject {
     init(httpMethod: YYHttpMethod, urlString: String) {
         self.method = httpMethod
         self.urlString = urlString
+        session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
         super.init()
     }
     
@@ -72,6 +74,10 @@ class YYHttpManager: NSObject {
         urlString = urlRequest.URL?.absoluteString
         mutableRequest = urlRequest
         super.init()
+    }
+    
+    func addParams(params: [String: AnyObject]) {
+        self.params = params
     }
     
     func fire(completion: ((data: NSData?, response: NSHTTPURLResponse?, error: NSError?) -> Void)? = nil) {
@@ -85,9 +91,9 @@ class YYHttpManager: NSObject {
     
     private func buildRequest() {
         if method == .GET && params?.count > 0 {
-            
+            urlString = urlString + "?" + buildParams(params!)
         }
-        mutableRequest = NSMutableURLRequest(URL: NSURL(string: urlString)!, cachePolicy: .UseProtocolCachePolicy, timeoutInterval: 30)
+        mutableRequest = NSMutableURLRequest(URL: urlString.toNSURL()!, cachePolicy: .UseProtocolCachePolicy, timeoutInterval: 30)
         mutableRequest.HTTPMethod = method.rawValue
     }
     private func buildHeader() {
@@ -104,7 +110,13 @@ class YYHttpManager: NSObject {
         }
     }
     private func buildBody() {
-        
+        let data = NSMutableData()
+        if method != .GET && params?.count > 0 {
+            if let encodedParams = buildParams(params!).toNSData() {
+                data.appendData(encodedParams)
+            }
+            
+        }
     }
     private func fireTask() {
         if YYHttp.YYDebug { print(mutableRequest.allHTTPHeaderFields) }
@@ -116,6 +128,27 @@ class YYHttpManager: NSObject {
         }
         task.resume()
     }
+    
+    
+    
+    func buildParams(parameters: [String: AnyObject]) -> String {
+        var components: [(String, String)] = []
+        for (key, value) in parameters {
+            components += queryComponents(key, value)
+        }
+        
+        return components.map{ "\($0)=\($1)" }.joinWithSeparator("&")
+    }
+    
+    func queryComponents(key: String, _ value: AnyObject) -> [(String, String)] {
+        return [(escape(key), escape("\(value)"))]
+    }
+    
+    func escape(string: String) -> String {
+        let legalURLCharactersToBeEscaped: CFStringRef = ":&=;+!@#$()',*"
+        return CFURLCreateStringByAddingPercentEscapes(nil, string, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
+    }
+
 }
 
 

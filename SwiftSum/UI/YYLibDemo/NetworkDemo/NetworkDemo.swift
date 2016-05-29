@@ -9,19 +9,24 @@
 import UIKit
 
 class NetworkDemo: UIViewController {
-
+    
+    var http: YYHttp?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        YYApi.requestGoodDesignRecommends{  recommends in
-            print(recommends);
-        }
-        self.addButtonToViewWithTitle("Get 请求") { [unowned self] (button) in
-            if let vc = PhotoCollectionViewController.newInstanceFromStoryboard("GooglyPuff", isInitial: true) {
-                self.navigationController?.pushViewController(vc, animated: true)
+        
+//                YYApi.requestGoodDesignRecommends{  recommends in
+        //            print(recommends);
+        //        }
+        let url = "http://www.meilele.com/mll_api/api/app_ybj2_recommend"
+        self.addButtonToViewWithTitle("Get 请求") {  (button) in
+            self.http = YYHttp.build(urlString: url)
+                .addParams(["datarow_need": "5"])
+                .responseJSON{ (dictOrArray, response, error) in
+                    print(dictOrArray)
             }
         }
     }
-
-  
+    
+    
 }

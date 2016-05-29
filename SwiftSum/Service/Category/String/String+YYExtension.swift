@@ -24,6 +24,10 @@ extension String {
         return nil
     }
     
+    func toNSData() -> NSData? {
+        return self.dataUsingEncoding(NSUTF8StringEncoding)
+    }
+    
     func pathForResource() -> String? {
         return NSBundle.mainBundle().pathForResource(self, ofType: nil)
     }

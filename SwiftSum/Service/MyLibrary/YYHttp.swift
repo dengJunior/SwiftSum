@@ -23,15 +23,20 @@ public class YYHttp: NSObject {
         return h
     }
     
-    /**
-     async response the http body in NSData type
-     */
-    public func responseData(completion: (data: NSData?, response: NSHTTPURLResponse?, error: NSError?) -> Void) {
-        httpManager.fire(completion)
+    public func addParams(params: [String: String]) -> YYHttp {
+        httpManager.addParams(params)
+        return self
     }
     
-    public func responseString(completion: (string: String?, response: NSHTTPURLResponse?, error: NSError?) -> Void) {
-        responseData { (data, response, error) in
+    
+    // MARK: - 获取数据3种方式
+    public func responseData(completion: (data: NSData?, response: NSHTTPURLResponse?, error: NSError?) -> Void) -> YYHttp {
+        httpManager.fire(completion)
+        return self
+    }
+    
+    public func responseString(completion: (string: String?, response: NSHTTPURLResponse?, error: NSError?) -> Void) -> YYHttp {
+        return responseData { (data, response, error) in
             var s: String?
             if let d = data {
                 s = String(data: d, encoding: NSUTF8StringEncoding)
@@ -40,8 +45,8 @@ public class YYHttp: NSObject {
         }
     }
     
-    public func responseJSON(completion: (dictOrArray: AnyObject?, response: NSHTTPURLResponse?, error: NSError?) -> Void) {
-        responseData { (data, response, error) in
+    public func responseJSON(completion: (dictOrArray: AnyObject?, response: NSHTTPURLResponse?, error: NSError?) -> Void) -> YYHttp {
+        return responseData { (data, response, error) in
             var obj: AnyObject?
             var finalError = error
             if let d = data {
