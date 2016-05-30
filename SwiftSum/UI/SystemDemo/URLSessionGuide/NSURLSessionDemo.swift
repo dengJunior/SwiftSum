@@ -12,7 +12,7 @@ import UIKit
 
 // MARK: - 创建并配置NSURLSession
 
-class NSURLSessionDemo: UIViewController {
+class NSURLSessionDemo: NSObject {
     let defaultConfiguration: NSURLSessionConfiguration = {
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
         
@@ -141,9 +141,54 @@ class NSURLSessionDemo: UIViewController {
         request.HTTPBodyStream = NSInputStream()
         request.HTTPBody = data
     }
+    
+    // MARK: - SSL Demo
+    
+    var localCertData: NSData?
+    
+    func httpsTask() {
+        let cretData = NSData(contentsOfFile: "lvwenhancom.cer".pathForResource()!)
+        localCertData = cretData
+        
+        defaultSession = NSURLSession(configuration: NSURLSession.sharedSession().configuration, delegate: self, delegateQueue: NSURLSession.sharedSession().delegateQueue)
+        
+        let urlOK = "https://lvwenhan.com/"
+        if urlOK.isEmpty {}
+        let urlOther = "https://www.baidu.com/"
+        let httpsTask = defaultSession.dataTaskWithURL(urlOther.toNSURL()!) { (data, response, error) in
+            print(error)
+        }
+        httpsTask.resume()
+    }
 }
 
-
+// MARK: - 认证
+extension NSURLSessionDemo: NSURLSessionDelegate {
+    func URLSession(session: NSURLSession, didReceiveChallenge challenge: NSURLAuthenticationChallenge, completionHandler: (NSURLSessionAuthChallengeDisposition, NSURLCredential?) -> Void) {
+        print(#function)
+        
+        if let localCertificateData = localCertData {
+            if let serverTrust = challenge.protectionSpace.serverTrust,
+            certificate = SecTrustGetCertificateAtIndex(serverTrust, 0),
+            remoteCertificateData: NSData = SecCertificateCopyData(certificate) {
+                if localCertificateData.isEqualToData(remoteCertificateData) {
+                    let credential = NSURLCredential(forTrust: serverTrust)
+                    challenge.sender?.useCredential(credential, forAuthenticationChallenge: challenge)
+                    completionHandler(.UseCredential, credential)
+                    print("认证ok");
+                } else {
+                    challenge.sender?.cancelAuthenticationChallenge(challenge)
+                    completionHandler(.CancelAuthenticationChallenge, nil)
+                    print("认证失败");
+                }
+            } else {
+                NSLog("Get RemoteCertificateData or LocalCertificateData error!")
+            }
+        } else {
+            completionHandler(NSURLSessionAuthChallengeDisposition.UseCredential, nil)
+        }
+    }
+}
 
 
 
