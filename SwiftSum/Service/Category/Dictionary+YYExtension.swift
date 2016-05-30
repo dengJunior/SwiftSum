@@ -10,7 +10,11 @@ import UIKit
 
 
 extension Dictionary {
-
+    mutating func updateFromDictionary(dict: [Key: Value]) {
+        for (key, value) in dict {
+            updateValue(value, forKey: key)
+        }
+    }
 }
 
 

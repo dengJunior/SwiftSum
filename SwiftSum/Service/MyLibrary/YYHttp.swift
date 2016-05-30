@@ -11,25 +11,42 @@ import UIKit
 public class YYHttp: NSObject {
     /// if set to true, Pitaya will log all information in a NSURLSession lifecycle
     public static var YYDebug = false
-    
     var httpManager: YYHttpManager!
     
-    /**
-     创建请求方式
-     */
+    // MARK: - 创建请求方式
     public static func build(httpMethod method: YYHttpMethod = .GET, urlString: String) -> YYHttp {
         let h = YYHttp()
         h.httpManager = YYHttpManager(httpMethod: method, urlString: urlString)
         return h
     }
     
+    public func cancel(callback: (() -> Void)?) {
+        httpManager.cancelCallback = callback
+        httpManager.task.cancel()
+    }
+}
+
+// MARK: - 向请求中添加额外信息
+public extension YYHttp {
     public func addParams(params: [String: String]) -> YYHttp {
         httpManager.addParams(params)
         return self
     }
     
+    public func addHeaders(headers: [String: String]) -> YYHttp  {
+        httpManager.addHeaders(headers)
+        return self
+    }
     
-    // MARK: - 获取数据3种方式
+    //add files to self, POST only
+    public func addFiles(files: [YYHttpFile]) -> YYHttp {
+        httpManager.addFiles(files)
+        return self
+    }
+}
+
+// MARK: - 发起请求并通过闭包获取数据
+public extension YYHttp {
     public func responseData(completion: (data: NSData?, response: NSHTTPURLResponse?, error: NSError?) -> Void) -> YYHttp {
         httpManager.fire(completion)
         return self
@@ -60,8 +77,6 @@ public class YYHttp: NSObject {
         }
     }
 }
-
-
 
 
 

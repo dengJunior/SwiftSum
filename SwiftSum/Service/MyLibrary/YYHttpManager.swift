@@ -24,7 +24,7 @@ class YYHttpManager: NSObject {
     var mutableRequest: NSMutableURLRequest!
     var task: NSURLSessionTask!
     
-    var httpHeaders = YYHttpManager.defaultHttpHeaders
+    var headers = YYHttpManager.defaultHttpHeaders
     
     static let defaultHttpHeaders: [String: String] = {
         // Accept-Encoding HTTP Header; see https://tools.ietf.org/html/rfc7230#section-4.2.3
@@ -62,6 +62,7 @@ class YYHttpManager: NSObject {
         ]
     }()
 
+    // MARK: - Init
     init(httpMethod: YYHttpMethod, urlString: String) {
         self.method = httpMethod
         self.urlString = urlString
@@ -75,9 +76,20 @@ class YYHttpManager: NSObject {
         mutableRequest = urlRequest
         super.init()
     }
-    
+}
+
+// MARK: - Public
+extension YYHttpManager {
     func addParams(params: [String: AnyObject]) {
         self.params = params
+    }
+    
+    func addHeaders(headers: [String: String]) {
+        self.headers.updateFromDictionary(headers)
+    }
+    
+    func addFiles(files: [YYHttpFile]) {
+        self.files = files
     }
     
     func fire(completion: ((data: NSData?, response: NSHTTPURLResponse?, error: NSError?) -> Void)? = nil) {
@@ -88,6 +100,10 @@ class YYHttpManager: NSObject {
         buildBody()
         fireTask()
     }
+}
+
+// MARK: - Private
+private extension YYHttpManager {
     
     private func buildRequest() {
         if method == .GET && params?.count > 0 {
@@ -99,37 +115,62 @@ class YYHttpManager: NSObject {
     private func buildHeader() {
         // multipart Content-Type; see http://www.rfc-editor.org/rfc/rfc2046.txt
         if params?.count > 0 {
-            httpHeaders["Content-Type"] = "application/x-www-form-urlencoded"
+            headers["Content-Type"] = "application/x-www-form-urlencoded"
         }
         if files?.count > 0 && method != .GET {
-            httpHeaders["Content-Type"] = "multipart/form-data; boundary=" + boundary
+            headers["Content-Type"] = "multipart/form-data; boundary=" + boundary
         }
         
-        for (key, value) in httpHeaders {
+        for (key, value) in headers {
             mutableRequest.setValue(value, forHTTPHeaderField: key)
         }
     }
     private func buildBody() {
         let data = NSMutableData()
-        if method != .GET && params?.count > 0 {
+        
+        if files?.count > 0 {
+            if method == .GET {
+                print("\n\n------------------------\nThe remote server may not accept GET method with HTTP body. But Pitaya will send it anyway.\nBut it looks like iOS 9 SDK has prevented sending http body in GET method.\n------------------------\n\n")
+            } else {
+                if let p = params {
+                    for (key, value) in p {
+                        data.appendData("--\(boundary)\r\n".toNSData()!)
+                        data.appendData("Content-Disposition: form-data; name=\"\(key)\"\r\n\r\n".toNSData()!)
+                        data.appendData("\(value.description)\r\n".toNSData()!)
+                    }
+                }
+                if let f = files {
+                    for file in f {
+                        data.appendData("--\(boundary)\r\n".toNSData()!)
+                        data.appendData("Content-Disposition: form-data; name=\"\(file.name)\"; filename=\(file.url.lastPathComponent!)\r\n\r\n".toNSData()!)
+                        if let fileData = NSData(contentsOfURL: file.url) {
+                            data.appendData(fileData)
+                            data.appendData("\r\n".toNSData()!)
+                        }
+                    }
+                    data.appendData("--\(boundary)\r\n".toNSData()!)
+                }
+            }
+        }else if method != .GET && params?.count > 0 {
             if let encodedParams = buildParams(params!).toNSData() {
                 data.appendData(encodedParams)
             }
-            
         }
     }
     private func fireTask() {
         if YYHttp.YYDebug { print(mutableRequest.allHTTPHeaderFields) }
-        task = session.dataTaskWithRequest(mutableRequest) { (data, response, error) in
+        task = session.dataTaskWithRequest(mutableRequest) {[unowned self] (data, response, error) in
             if YYHttp.YYDebug { print(response) }
             
-            self.completionCallback?(data: data, response: response as? NSHTTPURLResponse, error: error)
-            self.session.invalidateAndCancel()
+            if error?.code == -999 {
+                self.cancelCallback?()
+            } else {
+                self.completionCallback?(data: data, response: response as? NSHTTPURLResponse, error: error)
+                self.session.finishTasksAndInvalidate()
+            }
         }
         task.resume()
     }
-    
-    
     
     func buildParams(parameters: [String: AnyObject]) -> String {
         var components: [(String, String)] = []
@@ -148,10 +189,7 @@ class YYHttpManager: NSObject {
         let legalURLCharactersToBeEscaped: CFStringRef = ":&=;+!@#$()',*"
         return CFURLCreateStringByAddingPercentEscapes(nil, string, nil, legalURLCharactersToBeEscaped, CFStringBuiltInEncodings.UTF8.rawValue) as String
     }
-
 }
-
-
 
 
 

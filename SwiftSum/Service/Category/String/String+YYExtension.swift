@@ -8,26 +8,39 @@
 
 import Foundation
 
-// MARK: - URL相关
+// MARK: - 编码，加密相关
 extension String {
-    func stringByURLEncode() -> String? {
+    func urlEncoded() -> String? {
         return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
     }
-    func stringByURLDecode() -> String? {
+    func urlDecoded() -> String? {
         return self.stringByRemovingPercentEncoding
     }
     
+    func base64Encoded() -> String? {
+        if let encodedData = self.dataUsingEncoding(NSUTF8StringEncoding) {
+            return encodedData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
+        }
+        return nil
+    }
+}
+
+// MARK: - convert 相关
+extension String {
     func toNSURL() -> NSURL? {
-        if let urlString = self.stringByURLEncode() {
+        if let urlString = self.urlEncoded() {
             return NSURL(string: urlString)
         }
         return nil
     }
     
-    func toNSData() -> NSData? {
-        return self.dataUsingEncoding(NSUTF8StringEncoding)
+    func toNSData(encoding: NSStringEncoding = NSUTF8StringEncoding) -> NSData? {
+        return self.dataUsingEncoding(encoding)
     }
-    
+}
+
+// MARK: - path相关
+extension String {
     func pathForResource() -> String? {
         return NSBundle.mainBundle().pathForResource(self, ofType: nil)
     }
@@ -38,22 +51,10 @@ extension String {
         }
         return nil
     }
-}
-
-extension String {
-    
-    func base64EncodedString() -> String? {
-        if let encodedData = self.dataUsingEncoding(NSUTF8StringEncoding) {
-            return encodedData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
-        }
-        return nil
-    }
-    
     static func documentPath() -> String {
         return NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
     }
 }
-
 
 
 
