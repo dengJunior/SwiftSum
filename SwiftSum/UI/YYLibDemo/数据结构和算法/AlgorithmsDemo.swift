@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension Array where Element: Comparable{
+    func test() {
+        
+    }
+}
+
 // MARK: - 各种排序算法
 class AlgorithmsDemo: NSObject {
     
@@ -16,7 +22,7 @@ class AlgorithmsDemo: NSObject {
     }
     
     func launch() {
-        let arr = ["6", "1", "2", "9", "3", "7", "5", "4", "4"]
+        let arr = ["6", "9", "1", "2", "3", "7", "5", "4", "4"]
         var demoArr = arr
         print(demoArr)
         
@@ -48,6 +54,8 @@ class AlgorithmsDemo: NSObject {
             }
         }
     }
+    
+    // MARK: - 2.
 }
 
 

@@ -37,6 +37,14 @@ extension String {
     func toNSData(encoding: NSStringEncoding = NSUTF8StringEncoding) -> NSData? {
         return self.dataUsingEncoding(encoding)
     }
+    
+    func toArray() -> [String] {
+        var arr = [String]()
+        for char in self.unicodeScalars {
+            arr.append(String(char))
+        }
+        return arr
+    }
 }
 
 // MARK: - path相关
