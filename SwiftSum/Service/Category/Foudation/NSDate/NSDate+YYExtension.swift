@@ -15,6 +15,7 @@ struct TimeValues {
     static let defaultLocale = NSLocale.autoupdatingCurrentLocale()
 }
 
+// MARK: - to String
 extension NSDate {
     func stringFromFormatDefault() -> String {
         return self.stringFromFormat(nil, timeZone: nil, locale: nil)
@@ -37,3 +38,17 @@ extension NSDate {
         return formatter.stringFromDate(self)
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

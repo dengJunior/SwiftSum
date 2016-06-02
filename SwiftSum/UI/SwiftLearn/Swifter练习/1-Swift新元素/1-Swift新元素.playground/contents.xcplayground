@@ -3,6 +3,7 @@
     <pages>
         <page name='柯里化 (Currying)'/>
         <page name='Mutating'/>
+        <page name='Sequence'/>
         <page name='Untitled Page'/>
     </pages>
 </playground>

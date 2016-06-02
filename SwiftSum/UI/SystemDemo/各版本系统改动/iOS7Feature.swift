@@ -18,8 +18,12 @@ class iOS7Feature: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.whiteColor()
         network()
-        // Do any additional setup after loading the view.
+        self.addButtonToViewWithTitle("app说话") { [unowned self] (button) in
+            self.speak()
+        }
+        textViewLinkDemo()
     }
 
     func features() {
@@ -130,9 +134,105 @@ class iOS7Feature: UIViewController {
     //以下代码片段显示了如何使用SSKeychain：
     func save() {
     }
+    
+    
+    // MARK: - ### 十四、使用NSAttributedString显示HTML
+    
+    /**
+     你可以从用少量代码在HTML文件中创建一个NSAttributedString，比如：
+     */
+    func attribute() {
+        let html = "<bold>Wow!</bold> Now <em>iOS</em> can create <h3>NSAttributedString</h3> from HTMLs!"
+        //>注意：NSHTMLTextDocumentType 只是NSDocumentTypeDocumentAttribute key一种可能的值。你还可以使用NSPlainTextDocumentType，NSRTFTextDocumentType或是NSRTFDTextDocumentType。
+        let options = [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType]
+        let attrString = try? NSAttributedString(data: html.toNSData()!, options: options, documentAttributes: nil)
+        
+        //你还可以从NSAttributedString中创建一个HTML字符串，如下：
+        if attrString {
+            let htmlData = try? attrString!.dataFromRange(NSRange(location: 0, length: attrString!.length), documentAttributes: options)
+            let htmlString = String(data: htmlData!, encoding: NSUTF8StringEncoding)
+            if htmlString {
+                
+            }
+        }
+    }
+    
+    // MARK: - ### 十五、使用原生的Base64
+    
+    // MARK: - ### 十六、使用UIApplicationUserDidTakeScreenshotNotification来检查截图
+    //iOS7提供一个崭新的推送方法：UIApplicationUserDidTakeScreenshotNotification。只要像往常一样订阅即可知道什么时候截图了。
+    
+    // MARK: - ### 十七、实现多语言语音合成
+    /**
+     如果可以让app说话会不会很好呢？iOS7加入了两个新类：AVSpeechSynthesizer 以及AVSpeechUtterance。这两个类可以给你的app发声。很有意思不是吗？有多种语言可供选择——Siri不会说的语言也有，比如说巴西葡萄牙语。
+     
+     使用这两个类给app提供语言合成的功能非常简单。
+     
+     - AVSpeechUtterance 代表你想说什么，如何说。
+     - AVSpeechSynthesizer 用来发出这些声音，见以下代码片段：
+     */
+    let synthesizer = AVSpeechSynthesizer()
+    func speak() {
+        do{
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            
+            do{
+                try AVAudioSession.sharedInstance().setActive(true)
+            }catch{
+                
+            }
+        }catch{
+            
+        }
+        
+        let utterance = AVSpeechUtterance(string: "哈哈")
+        utterance.rate = AVSpeechUtteranceMaximumSpeechRate / 4.0
+        // defaults to your system language
+        //utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+        
+        synthesizer.speakUtterance(utterance)
+    }
+    
+    // MARK: - ### 十八、使用了新的UIScreenEdgePanGestureRecognizer
+    
+    // MARK: - ### 十九、使用UIScrollViewKeyboardDismissMode实现了Message app的行为
+    
+    // MARK: - ### 二十、使用Core Image来检测眨眼以及微笑
+    
+    
 }
 
-
+extension iOS7Feature: UITextViewDelegate {
+    // MARK: - ### 二十一、给UITextView增加了链接
+    func textViewLinkDemo() {
+        //1. 首先，创建一个NSAttributedString然后增加给它增加一个NSLinkAttributeName 属性
+        let attributedString = NSMutableAttributedString(string: "This is an example by @marcelofabri_")
+        let range = (attributedString.string as NSString).rangeOfString("@marcelofabri_")
+        attributedString.addAttribute(NSLinkAttributeName, value: "username://marcelofabri_", range: range)
+        
+        let linkAttributes: [String: AnyObject] = [
+            NSForegroundColorAttributeName: UIColor.orangeColor(),
+            NSUnderlineColorAttributeName: UIColor.lightGrayColor(),
+            NSUnderlineStyleAttributeName: NSNumber(long: NSUnderlineStyle.PatternSolid.rawValue)
+        ]
+        
+        let textView = UITextView(frame: CGRect(x: 20, y: 200, width: 200, height: 80))
+        textView.linkTextAttributes = linkAttributes
+        textView.attributedText = attributedString
+        textView.delegate = self
+        self.view.addSubview(textView)
+    }
+    
+    //控制当链接被点击的时候会发生什么
+    func textView(textView: UITextView, shouldInteractWithURL URL: NSURL, inRange characterRange: NSRange) -> Bool {
+        if URL.scheme == "username" {
+            let username = URL.host
+            print(username)
+            return false
+        }
+        return true // let the system open this URL
+    }
+}
 
 
 

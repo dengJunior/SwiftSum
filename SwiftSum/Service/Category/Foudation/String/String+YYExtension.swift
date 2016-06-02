@@ -6,7 +6,7 @@
 //  Copyright © 2016年 sihuan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - 编码，加密相关
 extension String {
@@ -44,6 +44,18 @@ extension String {
             arr.append(String(char))
         }
         return arr
+    }
+    
+    func toHtmlAttributedString() -> NSAttributedString? {
+        guard let data = self.toNSData() else {
+            return nil
+        }
+        let options = [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType]
+        return try? NSAttributedString(data: data, options: options, documentAttributes: nil)
+    }
+    
+    func toBase64EncodedData() -> NSData? {
+        return NSData(base64EncodedString: self, options: NSDataBase64DecodingOptions(rawValue: 0))
     }
 }
 
