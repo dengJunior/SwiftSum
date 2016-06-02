@@ -70,7 +70,7 @@ func findIndex<T: Equatable>(array: [T], valueToFind: T) -> Int? {
 // MARK: - ## 关联类型
 //关联类型为协议中的某个类型提供了一个占位名（或者说别名），其代表的实际类型在协议被采纳时才会被指定。
 protocol Container {
-    //定义了一个 Container 协议，该协议定义了一个关联类型 ItemType：
+    //Container 协议声明了一个关联类型 ItemType，写作 associatedtype ItemType。这个协议无法定义 ItemType 是什么类型的别名，这个信息将留给遵从协议的类型来提供。
     associatedtype ItemType
     mutating func append(item: ItemType)
     var count: Int { get }

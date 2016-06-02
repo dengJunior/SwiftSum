@@ -47,6 +47,7 @@
 		1F0DD1C01CEBF4EC00501767 /* ExtensionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1BF1CEBF4EC00501767 /* ExtensionDemo.swift */; };
 		1F105EB11CFEAB0B0052C4BE /* ProtocolDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105EB01CFEAB0B0052C4BE /* ProtocolDemo.swift */; };
 		1F105EB61CFEB7300052C4BE /* BooleanType+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105EB51CFEB7300052C4BE /* BooleanType+YYExtension.swift */; };
+		1F105EBB1CFED5230052C4BE /* Array+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105EBA1CFED5230052C4BE /* Array+YYExtension.swift */; };
 		1F139B401C8141CE005E89EB /* ThirdLibDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */; };
 		1F139B491C814523005E89EB /* RxSwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B471C814523005E89EB /* RxSwiftDemo.swift */; };
 		1F139B4A1C814523005E89EB /* RxSwiftDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F139B481C814523005E89EB /* RxSwiftDemo.xib */; };
@@ -252,6 +253,8 @@
 		1F105EB41CFEB5A50052C4BE /* QuickLooks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QuickLooks.playground; sourceTree = "<group>"; };
 		1F105EB51CFEB7300052C4BE /* BooleanType+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BooleanType+YYExtension.swift"; sourceTree = "<group>"; };
 		1F105EB91CFEC0FF0052C4BE /* 1-Swift新元素.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1-Swift新元素.playground"; sourceTree = "<group>"; };
+		1F105EBA1CFED5230052C4BE /* Array+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+YYExtension.swift"; sourceTree = "<group>"; };
+		1F105EBD1CFFCC150052C4BE /* Swift2.2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift2.2.playground; sourceTree = "<group>"; };
 		1F12662B1C721C6200DD69E6 /* RxSwiftBasic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftBasic.playground; sourceTree = "<group>"; };
 		1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLibDemo.swift; sourceTree = "<group>"; };
 		1F139B471C814523005E89EB /* RxSwiftDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo.swift; sourceTree = "<group>"; };
@@ -594,10 +597,25 @@
 		1F105EB81CFEC0E20052C4BE /* 1-Swift新元素 */ = {
 			isa = PBXGroup;
 			children = (
-				EEF281651C634EFD0004765A /* DemoSingle.swift */,
 				1F105EB91CFEC0FF0052C4BE /* 1-Swift新元素.playground */,
 			);
 			name = "1-Swift新元素";
+			sourceTree = "<group>";
+		};
+		1F105EBC1CFED5260052C4BE /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				1F105EBA1CFED5230052C4BE /* Array+YYExtension.swift */,
+			);
+			name = Array;
+			sourceTree = "<group>";
+		};
+		1F105EBE1CFFCC750052C4BE /* Swift各版本语言变化 */ = {
+			isa = PBXGroup;
+			children = (
+				1F105EBD1CFFCC150052C4BE /* Swift2.2.playground */,
+			);
+			name = "Swift各版本语言变化";
 			sourceTree = "<group>";
 		};
 		1F12662A1C719E3800DD69E6 /* 2-函数式反应型编程FRP */ = {
@@ -1012,6 +1030,7 @@
 				1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */,
 				1FB8C57D1CD8A1310020E183 /* SwiftTips.playground */,
 				1F105EB21CFEAB1A0052C4BE /* 从55个Swift标准库协议中学到了什么 */,
+				1F105EBE1CFFCC750052C4BE /* Swift各版本语言变化 */,
 			);
 			path = SwiftLearn;
 			sourceTree = "<group>";
@@ -1172,6 +1191,7 @@
 				1F5B67DA1CAD0A6E003CFD75 /* NSObject */,
 				1F5B67D31CAD059D003CFD75 /* String */,
 				1F105EB71CFEB7340052C4BE /* BooleanType */,
+				1F105EBC1CFED5260052C4BE /* Array */,
 			);
 			path = Foudation;
 			sourceTree = "<group>";
@@ -1314,6 +1334,7 @@
 		EEF281721C634F020004765A /* Swifter练习 */ = {
 			isa = PBXGroup;
 			children = (
+				EEF281651C634EFD0004765A /* DemoSingle.swift */,
 				1F105EB81CFEC0E20052C4BE /* 1-Swift新元素 */,
 				EEF281691C634EFD0004765A /* FoundationAbout.swift */,
 				EEF281661C634EFD0004765A /* MemoryManage.swift */,
@@ -1658,6 +1679,7 @@
 				1F5B67D61CAD05BF003CFD75 /* UIView+YYExtension.swift in Sources */,
 				1F00973C1CB60E28003A063F /* SecondaryThreadRunLoopSourceContext.swift in Sources */,
 				1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */,
+				1F105EBB1CFED5230052C4BE /* Array+YYExtension.swift in Sources */,
 				1FCE27051CF887B3001F32A5 /* WKWebView+YYExtension.swift in Sources */,
 				1FF9B2C11CF4437800AB9D30 /* PhotoCollectionViewController.swift in Sources */,
 				1F075BDF1C4B4F480013C815 /* YYLibsDemo.swift in Sources */,

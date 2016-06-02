@@ -79,11 +79,13 @@ extension YYKey: RawRepresentable {
     }
 }
 
-
-
-
-
-
+// MARK: - CollectionType
+/*
+ protocol CollectionType : Indexable, SequenceType
+ */
+//extension YYKey: CollectionType {
+//    
+//}
 
 
 
