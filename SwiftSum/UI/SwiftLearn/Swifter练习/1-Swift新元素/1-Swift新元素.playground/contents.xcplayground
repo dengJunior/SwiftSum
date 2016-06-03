@@ -4,6 +4,7 @@
         <page name='柯里化 (Currying)'/>
         <page name='Mutating'/>
         <page name='Sequence'/>
+        <page name='元组'/>
         <page name='Untitled Page'/>
     </pages>
 </playground>
