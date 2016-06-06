@@ -38,7 +38,7 @@ class iOS7Feature: UIViewController {
         //苹果并不希望有人通过MAC地址来分辨用户，所以如果你在iOS7系统上查询MAC地址，它现在只会返回02:00:00:00:00:00。
         
         //identifierForVendor对供应商来说是唯一的一个值，也就是说，由同一个公司发行的的app在相同的设备上运行的时候都会有这个相同的标识符。<mark>然而，如果用户删除了这个供应商的app然后再重新安装的话，这个标识符就会不一致。
-        let identifierForVendor = UIDevice.currentDevice().identifierForVendor?.UUIDString
+        _ = UIDevice.currentDevice().identifierForVendor?.UUIDString
         
         //advertisingIdentifier会返回给在这个设备上所有软件供应商相同的一个值，所以只能在广告的时候使用。这个值会因为很多情况而有所变化，比如说用户初始化设备的时候便会改变。 需导入import AdSupport
         let identifierForAdvertising = ASIdentifierManager.sharedManager().advertisingIdentifier.UUIDString

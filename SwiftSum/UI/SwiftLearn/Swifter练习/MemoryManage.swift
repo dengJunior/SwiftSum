@@ -89,7 +89,7 @@ class Requesting {
 }
 
 class RequestManager: RequestHandler {
-    func requestFinished() {
+    @objc func requestFinished() {
         print("请求完成")
     }
     
@@ -167,7 +167,7 @@ func autoReleaseDemo() {
     let path = NSBundle.mainBundle().pathForResource("big", ofType: "jpg");
     
     //错误版本
-    for i in 1...1000 {
+    for _ in 1...1000 {
         //let data = NSData.dataWithContentsOfFile(path, options: nil, error: nil)
         //dataWithContentsOfFile 返回的是 autorelease 的对象，因为我们一直处在循环中，因此它们将一直没有机会被释放。如果数量太多而且数据太大的时候，很容易因为内存不足而崩溃。
         
@@ -195,7 +195,7 @@ func autoReleaseDemo() {
     //正确版本
     for i in 1...1000 {
         //使用初始化方法的话，我们就不需要面临自动释放的问题了，每次在超过作用域后，自动内存管理都将为我们处理好内存相关的事情。
-        let data = NSData(contentsOfFile: path!)
+        _ = NSData(contentsOfFile: path!)
         NSThread.sleepForTimeInterval(0.5)
     }
 }

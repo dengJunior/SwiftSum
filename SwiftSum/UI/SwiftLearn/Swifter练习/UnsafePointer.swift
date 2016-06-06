@@ -55,7 +55,7 @@ func cfarr() {
     //因为 CFArray 中是可以存放任意对象的，所以这里的返回是一个任意对象的指针，相当于 C 中的 void *。这显然不是我们想要的东西。
     
     //Swift 中为我们提供了一个强制转换的方法 unsafeBitCast，通过下面的代码，我们可以看到应当如何使用类似这样的 API，将一个指针强制按位转成所需类型的对象：
-    let str = unsafeBitCast(CFArrayGetValueAtIndex(arr, 0), CFString.self)
+    _ = unsafeBitCast(CFArrayGetValueAtIndex(arr, 0), CFString.self)
     //unsafeBitCast 会将第一个参数的内容按照第二个参数的类型进行转换，而不去关心实际是不是可行，这也正是 UnsafePointer 的不安全所在
     
     

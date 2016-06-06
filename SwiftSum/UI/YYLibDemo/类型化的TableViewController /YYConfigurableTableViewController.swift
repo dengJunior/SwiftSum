@@ -23,7 +23,7 @@ protocol CellConfiguratorType {
 同时让它和一个类型 ViewData 进行绑定：
 */
 protocol Updatable: class {
-    typealias ViewData
+    associatedtype ViewData
     
     func updateWithViewData(viewdata: ViewData)
 }

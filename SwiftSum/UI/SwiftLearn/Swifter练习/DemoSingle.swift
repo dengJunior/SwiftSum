@@ -215,8 +215,8 @@ class C:A, B {
 func test() {
     let instace = C()
     //只要在调用前进行类型转换就可以了：
-    let num = (instace as A).bar()// 1
-    let str = (instace as B).bar()// "Hi"
+    _ = (instace as A).bar()// 1
+    _ = (instace as B).bar()// "Hi"
 }
 
 

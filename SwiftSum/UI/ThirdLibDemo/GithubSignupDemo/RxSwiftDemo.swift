@@ -98,7 +98,7 @@ class RxSwiftDemo: UIViewController {
         }
         .addDisposableTo(disposeBag)
         
-        let tapBackground = UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard:"))
+        let tapBackground = UITapGestureRecognizer(target: self, action: #selector(RxSwiftDemo.dismissKeyboard(_:)))
         view.addGestureRecognizer(tapBackground)
     }
     
