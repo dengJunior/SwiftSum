@@ -39,15 +39,15 @@ class TodayDemo: UIViewController {
             self.timer.invalidate()
         }
         
+        YYSystemNotification.UIApplication.postNotification(.UIApplicationDidBecomeActiveNotification)
+        
+        
         //程序失去前台的监听
-        NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationWillResignActiveNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (_) in
-            //在应用切到后台时，如果正在计时，我们就将当前的剩余时间和退出时的日期存到了 NSUserDefaults 中。
-            if self.timer.isRunning {
-                self.saveDefaults(self.maxCount - self.count)
-            } else {
-                self.clearDefaults()
-            }
-        }
+//        NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationWillResignActiveNotification, object: nil, queue: NSOperationQueue.mainQueue()) { (_) in
+//            //在应用切到后台时，如果正在计时，我们就将当前的剩余时间和退出时的日期存到了 NSUserDefaults 中。
+//            self.applicationWillResignActive()
+//        }
+        YYSystemNotification.UIApplication.addObserver(self, selector: #selector(applicationWillResignActive), notification: .UIApplicationWillResignActiveNotification)
     }
     
     func updateLabel() {
@@ -74,6 +74,16 @@ class TodayDemo: UIViewController {
 
 
 extension TodayDemo {
+    
+    @objc private func applicationWillResignActive() {
+        //在应用切到后台时，如果正在计时，我们就将当前的剩余时间和退出时的日期存到了 NSUserDefaults 中。
+        if self.timer.isRunning {
+            self.saveDefaults(self.maxCount - self.count)
+        } else {
+            self.clearDefaults()
+        }
+    }
+    
      func saveDefaults(leftTime: Int) {
         
         //这里我们需要这两个数据能够被扩展访问到的话，我们必须使用在 App Groups 中定义的名字来使用 NSUserDefaults。

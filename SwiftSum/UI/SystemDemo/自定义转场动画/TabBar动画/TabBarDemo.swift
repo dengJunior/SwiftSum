@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YYKit
 
 // MARK: - UITabBarController手势左右滑动
 class TabBarDemo: UITabBarController {

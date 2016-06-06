@@ -4,6 +4,7 @@
         <page name='1-冒泡排序'/>
         <page name='2-选择排序'/>
         <page name='3-插入排序'/>
+        <page name='4-快速排序'/>
         <page name='Utinity'/>
     </pages>
 </playground>

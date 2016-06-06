@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YYKit
 
 /// Notification when new photo instances are added
 let PhotoManagerAddedContentNotification = "com.raywenderlich.GooglyPuff.PhotoManagerAddedContent"

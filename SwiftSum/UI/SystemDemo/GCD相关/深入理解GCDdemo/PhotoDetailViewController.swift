@@ -9,6 +9,7 @@
 import UIKit
 import CoreImage
 import QuartzCore
+import YYKit
 
 private let RetinaToEyeScaleFactor: CGFloat = 0.5
 private let FaceBoundsToEyeScaleFactor: CGFloat = 4.0

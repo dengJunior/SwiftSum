@@ -40,7 +40,7 @@ class EventAndGestureDemo: UIViewController {
         var buttonCount = 2;
         
         self.addButtonToView("GestureDemo", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 200, height: 40)) { [unowned self] (button) in
-            if let viewController = GestureDemo.newInstanceFromStoryboard("EventAndGestureDemo") {
+            if let viewController = GestureDemo.newInstanceFromStoryboard("EventAndGestureDemo", isInitial: true) {
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
         }

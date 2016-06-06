@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import YYKit
 class DesignPatternDemo: UIViewController {
 
     override func viewDidLoad() {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YYKit
 
 typealias PhotoDownloadCompletionClosure = (image: UIImage?, error: NSError?) -> Void
 typealias PhotoDownloadProgressClosure = (completed: Int, total: Int) -> Void
