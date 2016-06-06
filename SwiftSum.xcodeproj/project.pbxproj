@@ -98,6 +98,14 @@
 		1F5BE2581CF5771C00E29234 /* YYGCDSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE2571CF5771C00E29234 /* YYGCDSemaphore.swift */; };
 		1F5BE25A1CF5798300E29234 /* YYGCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE2591CF5798300E29234 /* YYGCDTimer.swift */; };
 		1F5BE25C1CF6976000E29234 /* URLSessionGuideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE25B1CF6976000E29234 /* URLSessionGuideDemo.swift */; };
+		1F6FF0F51D04119E008C33E8 /* CollectionViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FF0F41D04119E008C33E8 /* CollectionViewDemo.swift */; };
+		1F6FF0FB1D051FF3008C33E8 /* ExtensionsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FF0FA1D051FF3008C33E8 /* ExtensionsDemo.swift */; };
+		1F6FF0FE1D05208F008C33E8 /* TodayDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FF0FD1D05208F008C33E8 /* TodayDemo.swift */; };
+		1F6FF1001D0520F4008C33E8 /* TodayDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FF0FF1D0520F4008C33E8 /* TodayDemo.xib */; };
+		1F6FF10A1D054F04008C33E8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6FF1091D054F04008C33E8 /* NotificationCenter.framework */; };
+		1F6FF10D1D054F04008C33E8 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FF10C1D054F04008C33E8 /* TodayViewController.swift */; };
+		1F6FF1101D054F04008C33E8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6FF10E1D054F04008C33E8 /* MainInterface.storyboard */; };
+		1F6FF1141D054F04008C33E8 /* SimpleTimerTodayExtenstion.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1F6FF1081D054F04008C33E8 /* SimpleTimerTodayExtenstion.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F77A2D91CF6980F0024D3A2 /* NSURLSessionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2D81CF6980F0024D3A2 /* NSURLSessionDemo.swift */; };
 		1F77A2DB1CF6EB6B0024D3A2 /* YYSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2DA1CF6EB6B0024D3A2 /* YYSessionManager.swift */; };
 		1F77A2DD1CF82C780024D3A2 /* YYHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F77A2DC1CF82C780024D3A2 /* YYHttp.swift */; };
@@ -116,6 +124,10 @@
 		1FA6B7711CF44B8A007B4122 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B7701CF44B89007B4122 /* Photo.swift */; };
 		1FA6B7731CF4569D007B4122 /* UIImagePickerControllerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B7721CF4569D007B4122 /* UIImagePickerControllerDemo.swift */; };
 		1FA6B7761CF536E0007B4122 /* SystemControlDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B7751CF536E0007B4122 /* SystemControlDemo.swift */; };
+		1FA90ECA1D056172008D0DFC /* YYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA90EC91D056172008D0DFC /* YYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FA90ECE1D056172008D0DFC /* YYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA90EC71D056172008D0DFC /* YYKit.framework */; };
+		1FA90ECF1D056172008D0DFC /* YYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA90EC71D056172008D0DFC /* YYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FA90ED51D056228008D0DFC /* YYTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA90ED41D056228008D0DFC /* YYTimer.swift */; };
 		1FAAFB7F1BE85AEA007023B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFB7E1BE85AEA007023B7 /* AppDelegate.swift */; };
 		1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFB821BE85AEA007023B7 /* Main.storyboard */; };
 		1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFB851BE85AEA007023B7 /* Assets.xcassets */; };
@@ -192,6 +204,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F6FF1121D054F04008C33E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FAAFB731BE85AEA007023B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6FF1071D054F04008C33E8;
+			remoteInfo = SimpleTimerTodayExtenstion;
+		};
+		1FA90ECC1D056172008D0DFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FAAFB731BE85AEA007023B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA90EC61D056172008D0DFC;
+			remoteInfo = YYKit;
+		};
 		1FAAFB901BE85AEB007023B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FAAFB731BE85AEA007023B7 /* Project object */;
@@ -207,6 +233,31 @@
 			remoteInfo = SwiftSum;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F6FF1181D054F04008C33E8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F6FF1141D054F04008C33E8 /* SimpleTimerTodayExtenstion.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA90ED31D056173008D0DFC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FA90ECF1D056172008D0DFC /* YYKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0533D2FD75DE83649AAC442D /* Pods-SwiftSum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSum.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSum/Pods-SwiftSum.release.xcconfig"; sourceTree = "<group>"; };
@@ -312,6 +363,17 @@
 		1F5BE2571CF5771C00E29234 /* YYGCDSemaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGCDSemaphore.swift; sourceTree = "<group>"; };
 		1F5BE2591CF5798300E29234 /* YYGCDTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGCDTimer.swift; sourceTree = "<group>"; };
 		1F5BE25B1CF6976000E29234 /* URLSessionGuideDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionGuideDemo.swift; sourceTree = "<group>"; };
+		1F6FF0F41D04119E008C33E8 /* CollectionViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDemo.swift; sourceTree = "<group>"; };
+		1F6FF0FA1D051FF3008C33E8 /* ExtensionsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsDemo.swift; sourceTree = "<group>"; };
+		1F6FF0FD1D05208F008C33E8 /* TodayDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayDemo.swift; sourceTree = "<group>"; };
+		1F6FF0FF1D0520F4008C33E8 /* TodayDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayDemo.xib; sourceTree = "<group>"; };
+		1F6FF1081D054F04008C33E8 /* SimpleTimerTodayExtenstion.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SimpleTimerTodayExtenstion.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6FF1091D054F04008C33E8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1F6FF10C1D054F04008C33E8 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		1F6FF10F1D054F04008C33E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1F6FF1111D054F04008C33E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6FF1191D055140008C33E8 /* SwiftSum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftSum.entitlements; sourceTree = "<group>"; };
+		1F6FF11A1D0551D7008C33E8 /* SimpleTimerTodayExtenstion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimpleTimerTodayExtenstion.entitlements; sourceTree = "<group>"; };
 		1F77A2D81CF6980F0024D3A2 /* NSURLSessionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLSessionDemo.swift; sourceTree = "<group>"; };
 		1F77A2DA1CF6EB6B0024D3A2 /* YYSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSessionManager.swift; sourceTree = "<group>"; };
 		1F77A2DC1CF82C780024D3A2 /* YYHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHttp.swift; sourceTree = "<group>"; };
@@ -334,6 +396,10 @@
 		1FA6B7701CF44B89007B4122 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1FA6B7721CF4569D007B4122 /* UIImagePickerControllerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerDemo.swift; sourceTree = "<group>"; };
 		1FA6B7751CF536E0007B4122 /* SystemControlDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemControlDemo.swift; sourceTree = "<group>"; };
+		1FA90EC71D056172008D0DFC /* YYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA90EC91D056172008D0DFC /* YYKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKit.h; sourceTree = "<group>"; };
+		1FA90ECB1D056172008D0DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA90ED41D056228008D0DFC /* YYTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYTimer.swift; sourceTree = "<group>"; };
 		1FAAFB7B1BE85AEA007023B7 /* SwiftSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FAAFB7E1BE85AEA007023B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FAAFB831BE85AEA007023B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -435,11 +501,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F6FF1051D054F04008C33E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6FF10A1D054F04008C33E8 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA90EC31D056172008D0DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FAAFB781BE85AEA007023B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9165F9A41CF73485039B2659 /* Pods_SwiftSum.framework in Frameworks */,
+				1FA90ECE1D056172008D0DFC /* YYKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,6 +853,7 @@
 				1FB8C5631CD089600020E183 /* 自定义转场动画 */,
 				1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
+				1F6FF0FC1D051FF6008C33E8 /* 扩展相关 */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -860,6 +943,35 @@
 				1FDCEFC41CFC2D6D0039D176 /* lvwenhancom.cer */,
 			);
 			path = URLSessionGuide;
+			sourceTree = "<group>";
+		};
+		1F6FF0F31D041171008C33E8 /* 照相机和相册 */ = {
+			isa = PBXGroup;
+			children = (
+				1FA6B7721CF4569D007B4122 /* UIImagePickerControllerDemo.swift */,
+			);
+			name = "照相机和相册";
+			sourceTree = "<group>";
+		};
+		1F6FF0FC1D051FF6008C33E8 /* 扩展相关 */ = {
+			isa = PBXGroup;
+			children = (
+				1F6FF0FA1D051FF3008C33E8 /* ExtensionsDemo.swift */,
+				1F6FF0FD1D05208F008C33E8 /* TodayDemo.swift */,
+				1F6FF0FF1D0520F4008C33E8 /* TodayDemo.xib */,
+			);
+			name = "扩展相关";
+			sourceTree = "<group>";
+		};
+		1F6FF10B1D054F04008C33E8 /* SimpleTimerTodayExtenstion */ = {
+			isa = PBXGroup;
+			children = (
+				1F6FF11A1D0551D7008C33E8 /* SimpleTimerTodayExtenstion.entitlements */,
+				1F6FF10C1D054F04008C33E8 /* TodayViewController.swift */,
+				1F6FF10E1D054F04008C33E8 /* MainInterface.storyboard */,
+				1F6FF1111D054F04008C33E8 /* Info.plist */,
+			);
+			path = SimpleTimerTodayExtenstion;
 			sourceTree = "<group>";
 		};
 		1F77A2DE1CF82C7F0024D3A2 /* YYHttp */ = {
@@ -968,7 +1080,8 @@
 			isa = PBXGroup;
 			children = (
 				1FA6B7751CF536E0007B4122 /* SystemControlDemo.swift */,
-				1FA6B7721CF4569D007B4122 /* UIImagePickerControllerDemo.swift */,
+				1F6FF0F41D04119E008C33E8 /* CollectionViewDemo.swift */,
+				1F6FF0F31D041171008C33E8 /* 照相机和相册 */,
 			);
 			path = "常用系统控件demo";
 			sourceTree = "<group>";
@@ -981,9 +1094,29 @@
 			path = UIPanGestureRecognizer;
 			sourceTree = "<group>";
 		};
+		1FA90EC81D056172008D0DFC /* YYKit */ = {
+			isa = PBXGroup;
+			children = (
+				1FA90EC91D056172008D0DFC /* YYKit.h */,
+				1FA90ED61D056233008D0DFC /* YYTimer */,
+				1FA90ECB1D056172008D0DFC /* Info.plist */,
+			);
+			path = YYKit;
+			sourceTree = "<group>";
+		};
+		1FA90ED61D056233008D0DFC /* YYTimer */ = {
+			isa = PBXGroup;
+			children = (
+				1FA90ED41D056228008D0DFC /* YYTimer.swift */,
+			);
+			name = YYTimer;
+			sourceTree = "<group>";
+		};
 		1FAAFB721BE85AEA007023B7 = {
 			isa = PBXGroup;
 			children = (
+				1F6FF10B1D054F04008C33E8 /* SimpleTimerTodayExtenstion */,
+				1FA90EC81D056172008D0DFC /* YYKit */,
 				E1DC6F11828EDC66E6227FA9 /* Frameworks */,
 				1E4C500BA0A1E534980EDC51 /* Pods */,
 				1FAAFB7C1BE85AEA007023B7 /* Products */,
@@ -999,6 +1132,8 @@
 				1FAAFB7B1BE85AEA007023B7 /* SwiftSum.app */,
 				1FAAFB8F1BE85AEB007023B7 /* SwiftSumTests.xctest */,
 				1FAAFB9A1BE85AEB007023B7 /* SwiftSumUITests.xctest */,
+				1F6FF1081D054F04008C33E8 /* SimpleTimerTodayExtenstion.appex */,
+				1FA90EC71D056172008D0DFC /* YYKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1006,6 +1141,7 @@
 		1FAAFB7D1BE85AEA007023B7 /* SwiftSum */ = {
 			isa = PBXGroup;
 			children = (
+				1F6FF1191D055140008C33E8 /* SwiftSum.entitlements */,
 				1F87A2A21CA3B9F30001519E /* App */,
 				1F87A2A31CA3BA130001519E /* Resource */,
 				1FAAFBB71BE8878A007023B7 /* Service */,
@@ -1344,6 +1480,7 @@
 			children = (
 				BD4773DCA3BEA69320548ACD /* Pods.framework */,
 				4CA32F90EF6765DEDBDFECA0 /* Pods_SwiftSum.framework */,
+				1F6FF1091D054F04008C33E8 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1387,7 +1524,53 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1FA90EC41D056172008D0DFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA90ECA1D056172008D0DFC /* YYKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		1F6FF1071D054F04008C33E8 /* SimpleTimerTodayExtenstion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6FF1151D054F04008C33E8 /* Build configuration list for PBXNativeTarget "SimpleTimerTodayExtenstion" */;
+			buildPhases = (
+				1F6FF1041D054F04008C33E8 /* Sources */,
+				1F6FF1051D054F04008C33E8 /* Frameworks */,
+				1F6FF1061D054F04008C33E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTimerTodayExtenstion;
+			productName = SimpleTimerTodayExtenstion;
+			productReference = 1F6FF1081D054F04008C33E8 /* SimpleTimerTodayExtenstion.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1FA90EC61D056172008D0DFC /* YYKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FA90ED21D056173008D0DFC /* Build configuration list for PBXNativeTarget "YYKit" */;
+			buildPhases = (
+				1FA90EC21D056172008D0DFC /* Sources */,
+				1FA90EC31D056172008D0DFC /* Frameworks */,
+				1FA90EC41D056172008D0DFC /* Headers */,
+				1FA90EC51D056172008D0DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYKit;
+			productName = YYKit;
+			productReference = 1FA90EC71D056172008D0DFC /* YYKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1FAAFB7A1BE85AEA007023B7 /* SwiftSum */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FAAFBA31BE85AEB007023B7 /* Build configuration list for PBXNativeTarget "SwiftSum" */;
@@ -1398,10 +1581,14 @@
 				1FAAFB791BE85AEA007023B7 /* Resources */,
 				5040F177A6ED0051E791495E /* 📦 Embed Pods Frameworks */,
 				0ABA56A4EE79FA10145591F1 /* 📦 Copy Pods Resources */,
+				1F6FF1181D054F04008C33E8 /* Embed App Extensions */,
+				1FA90ED31D056173008D0DFC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F6FF1131D054F04008C33E8 /* PBXTargetDependency */,
+				1FA90ECD1D056172008D0DFC /* PBXTargetDependency */,
 			);
 			name = SwiftSum;
 			productName = SwiftSum;
@@ -1454,9 +1641,27 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = sihuan;
 				TargetAttributes = {
+					1F6FF1071D054F04008C33E8 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = R6XRM4JTNP;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					1FA90EC61D056172008D0DFC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = R6XRM4JTNP;
+					};
 					1FAAFB7A1BE85AEA007023B7 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = R6XRM4JTNP;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					1FAAFB8E1BE85AEB007023B7 = {
 						CreatedOnToolsVersion = 7.1;
@@ -1484,11 +1689,28 @@
 				1FAAFB7A1BE85AEA007023B7 /* SwiftSum */,
 				1FAAFB8E1BE85AEB007023B7 /* SwiftSumTests */,
 				1FAAFB991BE85AEB007023B7 /* SwiftSumUITests */,
+				1F6FF1071D054F04008C33E8 /* SimpleTimerTodayExtenstion */,
+				1FA90EC61D056172008D0DFC /* YYKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F6FF1061D054F04008C33E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6FF1101D054F04008C33E8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA90EC51D056172008D0DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FAAFB791BE85AEA007023B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1507,6 +1729,7 @@
 				1F0097241CB5606F003A063F /* Music.storyboard in Resources */,
 				1FAB22331CE2D5370085EAD3 /* YYHud.xib in Resources */,
 				1FC174031CEC4B2C00F67B38 /* YYLibDemo.storyboard in Resources */,
+				1F6FF1001D0520F4008C33E8 /* TodayDemo.xib in Resources */,
 				1FAB223A1CE31E500085EAD3 /* YYHud.xcassets in Resources */,
 				1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */,
 				1FF9B2C81CF448B100AB9D30 /* GooglyPuff.xcassets in Resources */,
@@ -1583,6 +1806,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F6FF1041D054F04008C33E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6FF10D1D054F04008C33E8 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA90EC21D056172008D0DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA90ED51D056228008D0DFC /* YYTimer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FAAFB771BE85AEA007023B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1718,8 +1957,10 @@
 				1FC174051CEC57A100F67B38 /* UITabBarController+YYExtension.swift in Sources */,
 				EEC450641C634B4700328F54 /* CommonDataSource.swift in Sources */,
 				1FAB223C1CE321560085EAD3 /* YYHudDemo.swift in Sources */,
+				1F6FF0F51D04119E008C33E8 /* CollectionViewDemo.swift in Sources */,
 				1F2F69321C9A86D100A3F432 /* TextTableViewCell.swift in Sources */,
 				1FA6B76F1CF44A0A007B4122 /* PhotoManager.swift in Sources */,
+				1F6FF0FB1D051FF3008C33E8 /* ExtensionsDemo.swift in Sources */,
 				1F5B67D61CAD05BF003CFD75 /* UIView+YYExtension.swift in Sources */,
 				1F00973C1CB60E28003A063F /* SecondaryThreadRunLoopSourceContext.swift in Sources */,
 				1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */,
@@ -1729,6 +1970,7 @@
 				1F075BDF1C4B4F480013C815 /* YYLibsDemo.swift in Sources */,
 				1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */,
 				1FF133DA1CCB25F600AD6822 /* ViewControllerGuideDemo.swift in Sources */,
+				1F6FF0FE1D05208F008C33E8 /* TodayDemo.swift in Sources */,
 				1F00973E1CB60E57003A063F /* RunLoopSourceManager.swift in Sources */,
 				1FB8C56D1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift in Sources */,
 				1F8059B31CED52E600CA0936 /* iOS6Feature.swift in Sources */,
@@ -1766,6 +2008,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F6FF1131D054F04008C33E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6FF1071D054F04008C33E8 /* SimpleTimerTodayExtenstion */;
+			targetProxy = 1F6FF1121D054F04008C33E8 /* PBXContainerItemProxy */;
+		};
+		1FA90ECD1D056172008D0DFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA90EC61D056172008D0DFC /* YYKit */;
+			targetProxy = 1FA90ECC1D056172008D0DFC /* PBXContainerItemProxy */;
+		};
 		1FAAFB911BE85AEB007023B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1FAAFB7A1BE85AEA007023B7 /* SwiftSum */;
@@ -1779,6 +2031,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1F6FF10E1D054F04008C33E8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F6FF10F1D054F04008C33E8 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		1FAAFB821BE85AEA007023B7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1791,6 +2051,91 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1F6FF1161D054F04008C33E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleTimerTodayExtenstion/SimpleTimerTodayExtenstion.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SimpleTimerTodayExtenstion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huan.SwiftSum.SimpleTimerTodayExtenstion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1F6FF1171D054F04008C33E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_ENTITLEMENTS = SimpleTimerTodayExtenstion/SimpleTimerTodayExtenstion.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SimpleTimerTodayExtenstion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huan.SwiftSum.SimpleTimerTodayExtenstion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1FA90ED01D056173008D0DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YYKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.YYKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1FA90ED11D056173008D0DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YYKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.YYKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1FAAFBA11BE85AEB007023B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1880,8 +2225,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftSum/SwiftSum.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftSum/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1899,8 +2246,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftSum/SwiftSum.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftSum/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1962,6 +2311,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F6FF1151D054F04008C33E8 /* Build configuration list for PBXNativeTarget "SimpleTimerTodayExtenstion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6FF1161D054F04008C33E8 /* Debug */,
+				1F6FF1171D054F04008C33E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FA90ED21D056173008D0DFC /* Build configuration list for PBXNativeTarget "YYKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA90ED01D056173008D0DFC /* Debug */,
+				1FA90ED11D056173008D0DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1FAAFB761BE85AEA007023B7 /* Build configuration list for PBXProject "SwiftSum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

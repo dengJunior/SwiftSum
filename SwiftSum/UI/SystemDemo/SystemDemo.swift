@@ -14,6 +14,7 @@ class SystemDemo: YYBaseDemoController {
         super.viewDidLoad()
         
         self.dataArray = [
+            LibDemoInfo(title: "ExtensionsDemo", desc: "扩展相关", controllerName: "ExtensionsDemo"),
             LibDemoInfo(title: "URLSessionGuideDemo", desc: "NSURLSession测试", controllerName: "URLSessionGuideDemo"),
             LibDemoInfo(title: "NewFeatureDemo", desc: "各版本系统改动", controllerName: "NewFeatureDemo"),
             LibDemoInfo(title: "GCDDemo", desc: "GCD相关", controllerName: "GCDDemo"),

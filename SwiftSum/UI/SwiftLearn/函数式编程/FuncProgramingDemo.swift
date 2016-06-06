@@ -123,7 +123,7 @@ class FuncProgramingDemo: UIViewController {
         }
         
         // MARK: - 最终版，变成一条链了，顺序非常清楚。
-        let satisfy = foreplay(foreplayMinutes) >>> sexualIntercourse(sexualIntercourseMinutes) >>> hug(hugMinutes)(smallTalk: smallTalk) ?? false
+        _ = foreplay(foreplayMinutes) >>> sexualIntercourse(sexualIntercourseMinutes) >>> hug(hugMinutes)(smallTalk: smallTalk) ?? false
         
     }
     
@@ -231,20 +231,20 @@ class Currying
     // 方法类型: () -> Void
     func function(){
         
-        print(__FUNCTION__)
+        print(#function)
     }
     // 方法类型: (Int) -> Void
     func functionParam(a: Int){
-        print(__FUNCTION__)
+        print(#function)
     }
     // 方法类型: (Int, b: Int) -> Void
     func functionParam(a: Int, b: Int){
-        print(__FUNCTION__)
+        print(#function)
     }
     
     // 方法类型: (Int) -> () -> Void
     func functionCur(a: Int)(){
-        print(__FUNCTION__)
+        print(#function)
     }
 }
 

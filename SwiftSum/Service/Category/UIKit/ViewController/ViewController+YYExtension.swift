@@ -70,6 +70,7 @@ extension UIViewController {
         let button = YYButton.init(type: UIButtonType.System)
         button.action = action
         button.frame = frame
+        button.contentHorizontalAlignment = .Center
         button.setTitle(title, forState: UIControlState.Normal)
         button.addTarget(self, action: #selector(UIViewController._yyButtonClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(button)
