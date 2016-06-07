@@ -8,6 +8,25 @@
 
 import UIKit
 
+// MARK: - Cell配置协议
+public protocol YYCellRenderable {
+    func rederWithMode(model: AnyObject, indexPath: NSIndexPath?, containerView: UIView?)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MARK: - 通知相关协议
 public protocol YYNotificationType {
     associatedtype Notification: RawRepresentable
     

@@ -14,6 +14,7 @@ class SystemControlDemo: YYBaseDemoController {
         super.viewDidLoad()
 
         dataArray = [
+            LibDemoInfo(title: "CollectionViewDemo", desc: "CollectionViewDemo", controllerName: "CollectionViewDemo"),
             LibDemoInfo(title: "UIImagePickerControllerDemo", desc: "UIImagePickerControllerDemo", controllerName: "UIImagePickerControllerDemo"),
         ]
     }
