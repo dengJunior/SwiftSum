@@ -50,6 +50,7 @@
 		1F139B4C1C814844005E89EB /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B4B1C814844005E89EB /* Setting.swift */; };
 		1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B4E1C83449E005E89EB /* GitHubAPI.swift */; };
 		1F1656841CBCCF740015F570 /* NSOperationQueueDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */; };
+		1F19B3C61D0915DE00A76367 /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19B3C51D0915DE00A76367 /* SimpleTimer.swift */; };
 		1F288D971CAD174500180316 /* SimpleGestureRecognizers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */; };
 		1F288D9B1CAD1FD000180316 /* rotation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D981CAD1FD000180316 /* rotation.png */; };
 		1F288D9C1CAD1FD000180316 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D991CAD1FD000180316 /* swipe.png */; };
@@ -64,6 +65,7 @@
 		1F2A38291CEED53600EE316D /* ExampleApp.js in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A38281CEED53500EE316D /* ExampleApp.js */; };
 		1F2A382B1CEEF57600EE316D /* UIWebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A382A1CEEF57600EE316D /* UIWebViewDemo.swift */; };
 		1F2A38301CEF07CC00EE316D /* JSExportMethodProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A382F1CEF07CC00EE316D /* JSExportMethodProtocol.swift */; };
+		1F2AA7D41D0CF55A00A5A477 /* 3DTouchDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2AA7D31D0CF55900A5A477 /* 3DTouchDemo.swift */; };
 		1F2F69291C9A7FC400A3F432 /* YYConfigurableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */; };
 		1F2F692F1C9A86D100A3F432 /* ImageCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */; };
 		1F2F69301C9A86D100A3F432 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */; };
@@ -321,6 +323,7 @@
 		1F139B4B1C814844005E89EB /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		1F139B4E1C83449E005E89EB /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOperationQueueDemo.swift; sourceTree = "<group>"; };
+		1F19B3C51D0915DE00A76367 /* SimpleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTimer.swift; sourceTree = "<group>"; };
 		1F22471D1CE455F3003F826D /* 15-自动引用计数.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "15-自动引用计数.playground"; sourceTree = "<group>"; };
 		1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleGestureRecognizers.xib; sourceTree = "<group>"; };
 		1F288D981CAD1FD000180316 /* rotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotation.png; sourceTree = "<group>"; };
@@ -336,6 +339,7 @@
 		1F2A38281CEED53500EE316D /* ExampleApp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ExampleApp.js; sourceTree = "<group>"; };
 		1F2A382A1CEEF57600EE316D /* UIWebViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWebViewDemo.swift; sourceTree = "<group>"; };
 		1F2A382F1CEF07CC00EE316D /* JSExportMethodProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSExportMethodProtocol.swift; sourceTree = "<group>"; };
+		1F2AA7D31D0CF55900A5A477 /* 3DTouchDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 3DTouchDemo.swift; sourceTree = "<group>"; };
 		1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYConfigurableTableViewController.swift; sourceTree = "<group>"; };
 		1F2F692B1C9A86D000A3F432 /* ImageCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCellViewData.swift; sourceTree = "<group>"; };
 		1F2F692C1C9A86D000A3F432 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -735,6 +739,14 @@
 			path = ThirdLibDemo;
 			sourceTree = "<group>";
 		};
+		1F19B3C41D0915A900A76367 /* SimpleTimer */ = {
+			isa = PBXGroup;
+			children = (
+				1F19B3C51D0915DE00A76367 /* SimpleTimer.swift */,
+			);
+			name = SimpleTimer;
+			sourceTree = "<group>";
+		};
 		1F288D9E1CAD1FDC00180316 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -754,6 +766,14 @@
 				1F2899FF1CC48A8100988E82 /* ViewGuideDemo.swift */,
 			);
 			path = ViewGuide;
+			sourceTree = "<group>";
+		};
+		1F2AA7D51D0CF56A00A5A477 /* 3DTouchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1F2AA7D31D0CF55900A5A477 /* 3DTouchDemo.swift */,
+			);
+			name = 3DTouchDemo;
 			sourceTree = "<group>";
 		};
 		1F2F692A1C9A7FC900A3F432 /* 类型化的TableViewController  */ = {
@@ -821,6 +841,7 @@
 				1FB8C5631CD089600020E183 /* 自定义转场动画 */,
 				1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
+				1F2AA7D51D0CF56A00A5A477 /* 3DTouchDemo */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -1224,6 +1245,7 @@
 		1FA90F721D05BE1C008D0DFC /* YYLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				1F19B3C41D0915A900A76367 /* SimpleTimer */,
 				1FA90F741D05BE1C008D0DFC /* YYAlert */,
 				1FA90F781D05BE1C008D0DFC /* YYGCD */,
 				1FA90F7D1D05BE1C008D0DFC /* YYHttp */,
@@ -1913,6 +1935,7 @@
 				1FA90EDF1D057DE6008D0DFC /* YYSystemNotification.swift in Sources */,
 				1FA90F931D05BE1C008D0DFC /* YYGCDTimer.swift in Sources */,
 				1F8ADB0D1D05C4760059C842 /* YYStruct.swift in Sources */,
+				1F19B3C61D0915DE00A76367 /* SimpleTimer.swift in Sources */,
 				1FA90F8F1D05BE1C008D0DFC /* YYDim.swift in Sources */,
 				1FA90F6E1D05BE07008D0DFC /* UIView+YYExtension.swift in Sources */,
 				1FA90F661D05BE07008D0DFC /* NSDate+YYExtension.swift in Sources */,
@@ -1940,6 +1963,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2AA7D41D0CF55A00A5A477 /* 3DTouchDemo.swift in Sources */,
 				1FDCEFC71CFC7E3D0039D176 /* DataStructureAndAlgorithmsDemo.swift in Sources */,
 				1F5A731F1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift in Sources */,
 				1F8ADB061D05C1FF0059C842 /* Observable+YYNetworking.swift in Sources */,
@@ -2315,7 +2339,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftSum/App/SwiftSum.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftSum/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2336,7 +2360,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftSum/App/SwiftSum.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SwiftSum/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

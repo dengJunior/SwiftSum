@@ -64,7 +64,7 @@ extension UIViewController {
     
     public func addButtonToViewWithTitle(title: String, action: (button: UIButton)->Void) -> UIButton {
         buttonCount += 1
-        return addButtonToView(title, frame: CGRect(x: 0, y: 40*buttonCount, width: Int(view.bounds.size.width), height: 40), action: action)
+        return addButtonToView(title, frame: CGRect(x: 0, y: 40*buttonCount, width: 320, height: 40), action: action)
     }
     public func addButtonToView(title: String, frame: CGRect, action: (button: UIButton)->Void) -> UIButton {
         let button = YYButton.init(type: UIButtonType.System)
