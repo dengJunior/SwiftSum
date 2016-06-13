@@ -5,6 +5,7 @@
         <page name='Mutating'/>
         <page name='Sequence'/>
         <page name='元组'/>
+        <page name='字面量转换'/>
         <page name='Untitled Page'/>
     </pages>
 </playground>

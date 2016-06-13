@@ -15,17 +15,6 @@ public protocol YYCellRenderable {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // MARK: - 通知相关协议
 public protocol YYNotificationType {
     associatedtype Notification: RawRepresentable
