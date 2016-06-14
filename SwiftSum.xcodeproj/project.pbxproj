@@ -312,6 +312,7 @@
 		1F0DD1BA1CEB50C100501767 /* CollectionViewControllerTransitionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerTransitionDemo.swift; sourceTree = "<group>"; };
 		1F0DD1BC1CEBF27A00501767 /* CollectionVCTestTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionVCTestTwo.swift; sourceTree = "<group>"; };
 		1F0DD1BF1CEBF4EC00501767 /* ExtensionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDemo.swift; sourceTree = "<group>"; };
+		1F0FBD931D0FA92200C97833 /* FunctorsAndMonads.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctorsAndMonads.playground; sourceTree = "<group>"; };
 		1F105EB31CFEB59D0052C4BE /* BooleanType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BooleanType.playground; sourceTree = "<group>"; };
 		1F105EB41CFEB5A50052C4BE /* QuickLooks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QuickLooks.playground; sourceTree = "<group>"; };
 		1F105EB91CFEC0FF0052C4BE /* 1-Swift新元素.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1-Swift新元素.playground"; sourceTree = "<group>"; };
@@ -690,6 +691,14 @@
 			path = "使用Swift中的Extension";
 			sourceTree = "<group>";
 		};
+		1F0FBD941D0FA92E00C97833 /* 0-FunctorsAndMonads */ = {
+			isa = PBXGroup;
+			children = (
+				1F0FBD931D0FA92200C97833 /* FunctorsAndMonads.playground */,
+			);
+			name = "0-FunctorsAndMonads";
+			sourceTree = "<group>";
+		};
 		1F105EB21CFEAB1A0052C4BE /* 从55个Swift标准库协议中学到了什么 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1055,11 +1064,12 @@
 			path = "Swift官方指导";
 			sourceTree = "<group>";
 		};
-		1F8E96561C6D77670038A6C9 /* 1-Swift数组高阶函数Map等使用 */ = {
+		1F8E96561C6D77670038A6C9 /* 1-Swift数组Map等使用 */ = {
 			isa = PBXGroup;
 			children = (
 				1F8E96551C6D77620038A6C9 /* SwiftFunctional.playground */,
 			);
+			name = "1-Swift数组Map等使用";
 			path = "1-Swift数组高阶函数Map等使用";
 			sourceTree = "<group>";
 		};
@@ -1613,7 +1623,8 @@
 		EEF281631C634EE30004765A /* 函数式编程 */ = {
 			isa = PBXGroup;
 			children = (
-				1F8E96561C6D77670038A6C9 /* 1-Swift数组高阶函数Map等使用 */,
+				1F0FBD941D0FA92E00C97833 /* 0-FunctorsAndMonads */,
+				1F8E96561C6D77670038A6C9 /* 1-Swift数组Map等使用 */,
 				1F12662A1C719E3800DD69E6 /* 2-函数式反应型编程FRP */,
 				1F12662C1C721C6E00DD69E6 /* 3-RxSwift基础概念 */,
 				EEF281611C634EDC0004765A /* FuncProgramingDemo.swift */,
@@ -1624,7 +1635,6 @@
 		EEF281721C634F020004765A /* Swifter练习 */ = {
 			isa = PBXGroup;
 			children = (
-				1F105EB81CFEC0E20052C4BE /* 1-Swift新元素 */,
 				EEF281651C634EFD0004765A /* DemoSingle.swift */,
 				EEF281691C634EFD0004765A /* FoundationAbout.swift */,
 				EEF281661C634EFD0004765A /* MemoryManage.swift */,
@@ -1632,6 +1642,7 @@
 				EEF281641C634EFD0004765A /* SwifterController.swift */,
 				EEF281681C634EFD0004765A /* TypeIntroduction.swift */,
 				EEF2816A1C634EFD0004765A /* UnsafePointer.swift */,
+				1F105EB81CFEC0E20052C4BE /* 1-Swift新元素 */,
 			);
 			path = "Swifter练习";
 			sourceTree = "<group>";
