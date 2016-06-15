@@ -43,6 +43,7 @@
 		1F0DD1BB1CEB50C100501767 /* CollectionViewControllerTransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1BA1CEB50C100501767 /* CollectionViewControllerTransitionDemo.swift */; };
 		1F0DD1BD1CEBF27A00501767 /* CollectionVCTestTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1BC1CEBF27A00501767 /* CollectionVCTestTwo.swift */; };
 		1F0DD1C01CEBF4EC00501767 /* ExtensionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1BF1CEBF4EC00501767 /* ExtensionDemo.swift */; };
+		1F0FBDB11D10DF8800C97833 /* 面向协议的网络请求.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FBDB01D10DF8800C97833 /* 面向协议的网络请求.swift */; };
 		1F105EC51D001A100052C4BE /* NewFeatureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105EC41D001A100052C4BE /* NewFeatureDemo.swift */; };
 		1F139B401C8141CE005E89EB /* ThirdLibDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */; };
 		1F139B491C814523005E89EB /* RxSwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B471C814523005E89EB /* RxSwiftDemo.swift */; };
@@ -313,6 +314,8 @@
 		1F0DD1BC1CEBF27A00501767 /* CollectionVCTestTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionVCTestTwo.swift; sourceTree = "<group>"; };
 		1F0DD1BF1CEBF4EC00501767 /* ExtensionDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDemo.swift; sourceTree = "<group>"; };
 		1F0FBD931D0FA92200C97833 /* FunctorsAndMonads.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FunctorsAndMonads.playground; sourceTree = "<group>"; };
+		1F0FBDAF1D10DC2F00C97833 /* 协议的各种使用经验.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "协议的各种使用经验.playground"; sourceTree = "<group>"; };
+		1F0FBDB01D10DF8800C97833 /* 面向协议的网络请求.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "面向协议的网络请求.swift"; sourceTree = "<group>"; };
 		1F105EB31CFEB59D0052C4BE /* BooleanType.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BooleanType.playground; sourceTree = "<group>"; };
 		1F105EB41CFEB5A50052C4BE /* QuickLooks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = QuickLooks.playground; sourceTree = "<group>"; };
 		1F105EB91CFEC0FF0052C4BE /* 1-Swift新元素.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1-Swift新元素.playground"; sourceTree = "<group>"; };
@@ -697,6 +700,16 @@
 				1F0FBD931D0FA92200C97833 /* FunctorsAndMonads.playground */,
 			);
 			name = "0-FunctorsAndMonads";
+			sourceTree = "<group>";
+		};
+		1F0FBDAE1D10DBB200C97833 /* 协议的各种使用经验 */ = {
+			isa = PBXGroup;
+			children = (
+				1F105EB21CFEAB1A0052C4BE /* 从55个Swift标准库协议中学到了什么 */,
+				1F0FBDAF1D10DC2F00C97833 /* 协议的各种使用经验.playground */,
+				1F0FBDB01D10DF8800C97833 /* 面向协议的网络请求.swift */,
+			);
+			name = "协议的各种使用经验";
 			sourceTree = "<group>";
 		};
 		1F105EB21CFEAB1A0052C4BE /* 从55个Swift标准库协议中学到了什么 */ = {
@@ -1453,14 +1466,14 @@
 		1FAAFBB01BE85C14007023B7 /* SwiftLearn */ = {
 			isa = PBXGroup;
 			children = (
+				1FB8C57D1CD8A1310020E183 /* SwiftTips.playground */,
 				EEF281721C634F020004765A /* Swifter练习 */,
 				1F105EBE1CFFCC750052C4BE /* Swift各版本语言变化 */,
 				1F8E96531C6D74830038A6C9 /* Swift官方指导 */,
-				1F105EB21CFEAB1A0052C4BE /* 从55个Swift标准库协议中学到了什么 */,
 				1F0DD1BE1CEBF4B500501767 /* 使用Swift中的Extension */,
 				EEF281631C634EE30004765A /* 函数式编程 */,
 				1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */,
-				1FB8C57D1CD8A1310020E183 /* SwiftTips.playground */,
+				1F0FBDAE1D10DBB200C97833 /* 协议的各种使用经验 */,
 				1F2AA8071D0E3EF500A5A477 /* Swift编程思想 */,
 			);
 			path = SwiftLearn;
@@ -2108,6 +2121,7 @@
 				1F6FF0FE1D05208F008C33E8 /* TodayDemo.swift in Sources */,
 				1F00973E1CB60E57003A063F /* RunLoopSourceManager.swift in Sources */,
 				1FB8C56D1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift in Sources */,
+				1F0FBDB11D10DF8800C97833 /* 面向协议的网络请求.swift in Sources */,
 				1F8059B31CED52E600CA0936 /* iOS6Feature.swift in Sources */,
 				1FB394AD1CCE5867005C1B0E /* NetworkController.swift in Sources */,
 				1FA6B7761CF536E0007B4122 /* SystemControlDemo.swift in Sources */,
