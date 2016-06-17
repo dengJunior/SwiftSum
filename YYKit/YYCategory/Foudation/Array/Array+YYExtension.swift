@@ -9,7 +9,30 @@
 import UIKit
 
 extension Array {
-    
+    /**
+     一次性取出某几个特定位置的元素的功能
+     var arr = [1,2,3,4,5,6]
+     print(arr[[0, 2, 4]])//[1,3,5]
+     
+     arr[[0, 2, 4]] = [-1,-2,-3]
+     print(arr[[0, 2, 4]])//[-1,-2,-3]
+     */
+    subscript(input: [Int]) -> ArraySlice<Element> {
+        get {
+            var result = ArraySlice<Element>()
+            for i in input {
+                assert(i < self.count, "Index out of range")
+                result.append(self[i])
+            }
+            return result
+        }
+        set {
+            for (index, i) in input.enumerate() {
+                assert(i < self.count, "Index out of range")
+                self[i] = newValue[index]
+            }
+        }
+    }
 }
 
 // MARK: - 取最大最小值

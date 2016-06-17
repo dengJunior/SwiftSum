@@ -26,7 +26,7 @@ class CollectionViewDemo: UIViewController {
         flowLayout.minimumInteritemSpacing = 10
         
         flowLayout.itemSize = CGSizeMake(140, 100)
-        flowLayout.headerReferenceSize = CGSize(width: 200, height: 100)
+        flowLayout.headerReferenceSize = CGSizeZero
         flowLayout.footerReferenceSize = CGSize(width: 200, height: 100)
         flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         
@@ -38,6 +38,7 @@ class CollectionViewDemo: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.registerNib(UINib(nibName: CollectionTextCell.classNameString, bundle: nil), forCellWithReuseIdentifier: CollectionTextCell.classNameString)
+        collectionView.registerNib(UINib(nibName: UICollectionReusableView.classNameString, bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: UICollectionReusableView.classNameString)
         return collectionView
     }()
     
@@ -133,6 +134,10 @@ extension CollectionViewDemo: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier, forIndexPath: indexPath) as! CollectionTextCell
         cell.rederWithMode(text, indexPath: indexPath, containerView: nil)
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        return collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionReusableView.classNameString, withReuseIdentifier: UICollectionReusableView.classNameString, forIndexPath: indexPath)
     }
     
     // MARK: - UICollectionViewDelegate
