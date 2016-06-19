@@ -29,13 +29,13 @@ extension UIView {
      添加填满父view的约束
      */
     public func addConstraintFillSuperView() {
-        if self.superview != nil {
-//            self.snp_makeConstraints { (make) in
-//                make.top.equalTo(0)
-//                make.left.equalTo(0)
-//                make.bottom.equalTo(0)
-//                make.right.equalTo(0)
-//            }
+        if let superview = superview {
+            self.translatesAutoresizingMaskIntoConstraints = false
+            let top = NSLayoutConstraint(item: self, attribute: .Top, relatedBy: .Equal, toItem: superview, attribute: .Top, multiplier: 1, constant: 0)
+            let left = NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: superview, attribute: .Leading, multiplier: 1, constant: 0)
+            let bottom = NSLayoutConstraint(item: self, attribute: .Bottom, relatedBy: .Equal, toItem: superview, attribute: .Bottom, multiplier: 1, constant: 0)
+            let right = NSLayoutConstraint(item: self, attribute: .Trailing, relatedBy: .Equal, toItem: superview, attribute: .Trailing, multiplier: 1, constant: 0)
+            superview.addConstraints([top, left, bottom, right])
         }
     }
 }

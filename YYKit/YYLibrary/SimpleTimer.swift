@@ -39,7 +39,7 @@ extension NSTimeInterval {
     }
 }
 
-public class SimpleTimer: NSObject {
+public class SimpleTimer {
     public var running = false
     public var leftTime: NSTimeInterval {
         didSet {

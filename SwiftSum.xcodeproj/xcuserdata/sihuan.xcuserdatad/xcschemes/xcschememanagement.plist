@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SimpleTimerTodayExtenstion.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
-		</dict>
 		<key>SwiftSum.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>SwiftSumTimerTodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
 		</dict>
 		<key>YYKit.xcscheme</key>
 		<dict>
@@ -22,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1F3B77671D165C2D00FC9678</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F5E16C11D16597D0059399B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1F6FF1071D054F04008C33E8</key>
 		<dict>
 			<key>primary</key>

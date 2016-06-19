@@ -88,7 +88,7 @@ class TodayDemo: UIViewController {
     }
 }
 
-public let userDefaultsSuitName = "group.ExtensionTodayDemo.SimpleTimer"
+public let userDefaultsSuitName = "group.yy.SwiftSum"
 
 extension TodayDemo {
     

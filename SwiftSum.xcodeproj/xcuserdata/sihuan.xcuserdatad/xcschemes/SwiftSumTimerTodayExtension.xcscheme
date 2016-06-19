@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F6FF1071D054F04008C33E8"
-               BuildableName = "SimpleTimerTodayExtenstion.appex"
-               BlueprintName = "SimpleTimerTodayExtenstion"
+               BlueprintIdentifier = "1F5E16C11D16597D0059399B"
+               BuildableName = "SwiftSumTimerTodayExtension.appex"
+               BlueprintName = "SwiftSumTimerTodayExtension"
                ReferencedContainer = "container:SwiftSum.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1F6FF1071D054F04008C33E8"
-            BuildableName = "SimpleTimerTodayExtenstion.appex"
-            BlueprintName = "SimpleTimerTodayExtenstion"
+            BlueprintIdentifier = "1F5E16C11D16597D0059399B"
+            BuildableName = "SwiftSumTimerTodayExtension.appex"
+            BlueprintName = "SwiftSumTimerTodayExtension"
             ReferencedContainer = "container:SwiftSum.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

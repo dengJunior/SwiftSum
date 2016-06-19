@@ -8,5 +8,6 @@
         <page name='字面量转换'/>
         <page name='下标'/>
         <page name='Untitled Page'/>
+        <page name='方法嵌套'/>
     </pages>
 </playground>

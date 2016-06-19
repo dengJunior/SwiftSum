@@ -1,8 +1,8 @@
 //
 //  TodayViewController.swift
-//  SimpleTimerTodayExtenstion
+//  SwiftSumTimerTodayExtension
 //
-//  Created by sihuan on 16/6/6.
+//  Created by sihuan on 2016/6/19.
 //  Copyright © 2016年 sihuan. All rights reserved.
 //
 
@@ -11,10 +11,10 @@ import NotificationCenter
 import YYKit
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-    
+        
     @IBOutlet weak var label: UILabel!
     
-    let userDefaultsSuitName = "group.simpleTimerSharedDefaults"
+    let userDefaultsSuitName = "group.yy.SwiftSum"
     let maxCount = 15
     var count = 0
     
@@ -27,7 +27,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     
     func setupInitData() {
-        let userDefaults = NSUserDefaults(suiteName: "group.simpleTimerSharedDefaults")!
+        let userDefaults = NSUserDefaults(suiteName: userDefaultsSuitName)!
         let leftTimeWhenQuit = userDefaults.integerForKey("com.onevcat.simpleTimer.lefttime")
         let quitDate = userDefaults.integerForKey("com.onevcat.simpleTimer.quitdate")
         
