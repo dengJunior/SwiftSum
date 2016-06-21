@@ -91,7 +91,6 @@
 		1F3B77C51D165C7600FC9678 /* UITableView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77921D165C7500FC9678 /* UITableView+YYExtension.swift */; };
 		1F3B77C61D165C7600FC9678 /* UIView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77941D165C7500FC9678 /* UIView+YYExtension.swift */; };
 		1F3B77C71D165C7600FC9678 /* UIWebView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77961D165C7500FC9678 /* UIWebView+YYExtension.swift */; };
-		1F3B77C81D165C7600FC9678 /* ViewController+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77981D165C7500FC9678 /* ViewController+YYExtension.swift */; };
 		1F3B77C91D165C7600FC9678 /* WKWebView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B779A1D165C7500FC9678 /* WKWebView+YYExtension.swift */; };
 		1F3B77CA1D165C7600FC9678 /* YYEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B779C1D165C7500FC9678 /* YYEnum.swift */; };
 		1F3B77CB1D165C7600FC9678 /* YYProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B779D1D165C7500FC9678 /* YYProtocol.swift */; };
@@ -139,6 +138,7 @@
 		1F792CB61C89716A00EE70D4 /* GithubSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB51C89716A00EE70D4 /* GithubSignupViewModel.swift */; };
 		1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB71C89761A00EE70D4 /* Wireframe.swift */; };
 		1F792CBA1C8991A900EE70D4 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F792CB91C8991A900EE70D4 /* ValidationResult.swift */; };
+		1F79F6FB1D1917EE0068DBA4 /* ViewController+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F79F6FA1D1917EE0068DBA4 /* ViewController+YYExtension.swift */; };
 		1F7B98CA1D12AC700006155E /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7B98C81D12AC700006155E /* CollectionReusableView.swift */; };
 		1F7B98CB1D12AC700006155E /* CollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F7B98C91D12AC700006155E /* CollectionReusableView.xib */; };
 		1F8059B31CED52E600CA0936 /* iOS6Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8059B21CED52E600CA0936 /* iOS6Feature.swift */; };
@@ -380,7 +380,6 @@
 		1F3B77921D165C7500FC9678 /* UITableView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+YYExtension.swift"; sourceTree = "<group>"; };
 		1F3B77941D165C7500FC9678 /* UIView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+YYExtension.swift"; sourceTree = "<group>"; };
 		1F3B77961D165C7500FC9678 /* UIWebView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+YYExtension.swift"; sourceTree = "<group>"; };
-		1F3B77981D165C7500FC9678 /* ViewController+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+YYExtension.swift"; sourceTree = "<group>"; };
 		1F3B779A1D165C7500FC9678 /* WKWebView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+YYExtension.swift"; sourceTree = "<group>"; };
 		1F3B779C1D165C7500FC9678 /* YYEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYEnum.swift; sourceTree = "<group>"; };
 		1F3B779D1D165C7500FC9678 /* YYProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYProtocol.swift; sourceTree = "<group>"; };
@@ -430,6 +429,7 @@
 		1F792CB51C89716A00EE70D4 /* GithubSignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubSignupViewModel.swift; sourceTree = "<group>"; };
 		1F792CB71C89761A00EE70D4 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		1F792CB91C8991A900EE70D4 /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
+		1F79F6FA1D1917EE0068DBA4 /* ViewController+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+YYExtension.swift"; sourceTree = "<group>"; };
 		1F7AF3EA1CEC02CB00375F0E /* 20-泛型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "20-泛型.playground"; sourceTree = "<group>"; };
 		1F7AF3EB1CEC396D00375F0E /* 21-访问控制.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "21-访问控制.playground"; sourceTree = "<group>"; };
 		1F7B98C81D12AC700006155E /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
@@ -713,7 +713,7 @@
 			children = (
 				1F0FBD931D0FA92200C97833 /* FunctorsAndMonads.playground */,
 			);
-			name = "0-FunctorsAndMonads";
+			path = "0-FunctorsAndMonads";
 			sourceTree = "<group>";
 		};
 		1F0FBDAE1D10DBB200C97833 /* 协议的各种使用经验 */ = {
@@ -723,7 +723,7 @@
 				1F0FBDAF1D10DC2F00C97833 /* 协议的各种使用经验.playground */,
 				1F0FBDB01D10DF8800C97833 /* 面向协议的网络请求.swift */,
 			);
-			name = "协议的各种使用经验";
+			path = "协议的各种使用经验";
 			sourceTree = "<group>";
 		};
 		1F105EB21CFEAB1A0052C4BE /* 从55个Swift标准库协议中学到了什么 */ = {
@@ -804,7 +804,7 @@
 			children = (
 				1F2AA7D31D0CF55900A5A477 /* 3DTouchDemo.swift */,
 			);
-			name = 3DTouchDemo;
+			path = 3DTouchDemo;
 			sourceTree = "<group>";
 		};
 		1F2AA8071D0E3EF500A5A477 /* Swift编程思想 */ = {
@@ -812,7 +812,7 @@
 			children = (
 				1F2AA8061D0E3EEF00A5A477 /* SwiftProgramming.playground */,
 			);
-			name = "Swift编程思想";
+			path = "Swift编程思想";
 			sourceTree = "<group>";
 		};
 		1F2F692A1C9A7FC900A3F432 /* 类型化的TableViewController  */ = {
@@ -924,13 +924,13 @@
 			isa = PBXGroup;
 			children = (
 				1F3B778A1D165C7500FC9678 /* UIButton */,
-				1F3B778C1D165C7500FC9678 /* UIColor+YYKit.swift */,
+				1F79F6FC1D1917F20068DBA4 /* UIColor */,
 				1F3B778D1D165C7500FC9678 /* UIPanGestureRecognizer */,
 				1F3B778F1D165C7500FC9678 /* UITabBarController */,
 				1F3B77911D165C7500FC9678 /* UITableView */,
 				1F3B77931D165C7500FC9678 /* UIView */,
+				1F79F6F91D1917EE0068DBA4 /* UIViewController */,
 				1F3B77951D165C7500FC9678 /* UIWebView */,
-				1F3B77971D165C7500FC9678 /* ViewController */,
 				1F3B77991D165C7500FC9678 /* WKWebView */,
 			);
 			path = UIKit;
@@ -984,14 +984,6 @@
 			path = UIWebView;
 			sourceTree = "<group>";
 		};
-		1F3B77971D165C7500FC9678 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1F3B77981D165C7500FC9678 /* ViewController+YYExtension.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
 		1F3B77991D165C7500FC9678 /* WKWebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1014,17 +1006,17 @@
 		1F3B77A01D165C7500FC9678 /* YYLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				1F3B77A11D165C7500FC9678 /* CommonDataSource.swift */,
-				1F3B77A21D165C7500FC9678 /* SimpleTimer.swift */,
 				1F3B77A31D165C7500FC9678 /* YYAlert */,
-				1F3B77A51D165C7500FC9678 /* YYAnimation.swift */,
-				1F3B77A61D165C7500FC9678 /* YYDim.swift */,
 				1F3B77A71D165C7500FC9678 /* YYGCD */,
 				1F3B77AC1D165C7500FC9678 /* YYHttp */,
 				1F3B77B01D165C7500FC9678 /* YYHud */,
-				1F3B77B41D165C7500FC9678 /* YYLinkedMap.swift */,
 				1F3B77B51D165C7500FC9678 /* YYTimer */,
 				1F3B77B71D165C7500FC9678 /* YYTool */,
+				1F3B77A11D165C7500FC9678 /* CommonDataSource.swift */,
+				1F3B77A21D165C7500FC9678 /* SimpleTimer.swift */,
+				1F3B77A51D165C7500FC9678 /* YYAnimation.swift */,
+				1F3B77A61D165C7500FC9678 /* YYDim.swift */,
+				1F3B77B41D165C7500FC9678 /* YYLinkedMap.swift */,
 			);
 			path = YYLibrary;
 			sourceTree = "<group>";
@@ -1121,6 +1113,7 @@
 		1F5B67BF1CACF0DC003CFD75 /* SystemDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F2AA7D51D0CF56A00A5A477 /* 3DTouchDemo */,
 				1FF9B2BF1CF4434F00AB9D30 /* GCD相关 */,
 				1FE864E21CB3819600E013A1 /* Runloop相关 */,
 				1F0097221CB56051003A063F /* Swift中的iOS设计模式 */,
@@ -1136,7 +1129,6 @@
 				1FB8C5631CD089600020E183 /* 自定义转场动画 */,
 				1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
-				1F2AA7D51D0CF56A00A5A477 /* 3DTouchDemo */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -1190,10 +1182,10 @@
 		1F5E16C41D16597D0059399B /* SwiftSumTimerTodayExtension */ = {
 			isa = PBXGroup;
 			children = (
+				1F5E16CA1D16597D0059399B /* Info.plist */,
+				1F5E16C71D16597D0059399B /* MainInterface.storyboard */,
 				1FEB42431D16757E006B3BAF /* SwiftSumTimerTodayExtension.entitlements */,
 				1F5E16C51D16597D0059399B /* TodayViewController.swift */,
-				1F5E16C71D16597D0059399B /* MainInterface.storyboard */,
-				1F5E16CA1D16597D0059399B /* Info.plist */,
 			);
 			path = SwiftSumTimerTodayExtension;
 			sourceTree = "<group>";
@@ -1229,6 +1221,22 @@
 			path = GithubSignupDemo;
 			sourceTree = "<group>";
 		};
+		1F79F6F91D1917EE0068DBA4 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1F79F6FA1D1917EE0068DBA4 /* ViewController+YYExtension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		1F79F6FC1D1917F20068DBA4 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B778C1D165C7500FC9678 /* UIColor+YYKit.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		1F8059B41CED530700CA0936 /* 各版本系统改动 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1254,13 +1262,13 @@
 		1F87A2A21CA3B9F30001519E /* App */ = {
 			isa = PBXGroup;
 			children = (
-				1F6FF1191D055140008C33E8 /* SwiftSum.entitlements */,
 				1F87A29E1CA3B9EB0001519E /* AppColor.swift */,
 				1F87A29D1CA3B9EB0001519E /* AppConfig.swift */,
 				1FAAFB7E1BE85AEA007023B7 /* AppDelegate.swift */,
 				1F87A29C1CA3B9EB0001519E /* AppManager.swift */,
 				1FA90EDC1D057A12008D0DFC /* AppNotification.swift */,
 				1FAAFB8A1BE85AEA007023B7 /* Info.plist */,
+				1F6FF1191D055140008C33E8 /* SwiftSum.entitlements */,
 				EEC450611C634B1D00328F54 /* main1.swift */,
 			);
 			path = App;
@@ -1296,13 +1304,13 @@
 		1F8ADB0E1D06793B0059C842 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				1F8ADB0F1D0679B40059C842 /* CollectionViewDemo.swift */,
-				1F8ADB131D067C440059C842 /* CollectionTextCell.swift */,
-				1F8ADB141D067C440059C842 /* CollectionTextCell.xib */,
 				1F7B98C81D12AC700006155E /* CollectionReusableView.swift */,
 				1F7B98C91D12AC700006155E /* CollectionReusableView.xib */,
+				1F8ADB131D067C440059C842 /* CollectionTextCell.swift */,
+				1F8ADB141D067C440059C842 /* CollectionTextCell.xib */,
+				1F8ADB0F1D0679B40059C842 /* CollectionViewDemo.swift */,
 			);
-			name = CollectionView;
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		1F8E96531C6D74830038A6C9 /* Swift官方指导 */ = {
@@ -1338,15 +1346,14 @@
 			children = (
 				1F8E96551C6D77620038A6C9 /* SwiftFunctional.playground */,
 			);
-			name = "1-Swift数组Map等使用";
-			path = "1-Swift数组高阶函数Map等使用";
+			path = "1-Swift数组Map等使用";
 			sourceTree = "<group>";
 		};
 		1FA6B7741CF456A6007B4122 /* 常用系统控件demo */ = {
 			isa = PBXGroup;
 			children = (
-				1F6FF0F31D041171008C33E8 /* 照相机和相册 */,
 				1F8ADB0E1D06793B0059C842 /* CollectionView */,
+				1F6FF0F31D041171008C33E8 /* 照相机和相册 */,
 				1FA6B7751CF536E0007B4122 /* SystemControlDemo.swift */,
 			);
 			path = "常用系统控件demo";
@@ -1355,8 +1362,8 @@
 		1FA90FA01D05BF26008D0DFC /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				1F8ADB001D05C1FF0059C842 /* YYLibrary */,
 				1FA90FA11D05BF26008D0DFC /* Category */,
+				1F8ADB001D05C1FF0059C842 /* YYLibrary */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -1387,14 +1394,14 @@
 		1FAAFB721BE85AEA007023B7 = {
 			isa = PBXGroup;
 			children = (
-				1F5E16C41D16597D0059399B /* SwiftSumTimerTodayExtension */,
-				1F3B77691D165C2D00FC9678 /* YYKit */,
 				E1DC6F11828EDC66E6227FA9 /* Frameworks */,
 				1E4C500BA0A1E534980EDC51 /* Pods */,
 				1FAAFB7C1BE85AEA007023B7 /* Products */,
 				1FAAFB7D1BE85AEA007023B7 /* SwiftSum */,
 				1FAAFB921BE85AEB007023B7 /* SwiftSumTests */,
+				1F5E16C41D16597D0059399B /* SwiftSumTimerTodayExtension */,
 				1FAAFB9D1BE85AEB007023B7 /* SwiftSumUITests */,
+				1F3B77691D165C2D00FC9678 /* YYKit */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1414,9 +1421,9 @@
 			isa = PBXGroup;
 			children = (
 				1F87A2A21CA3B9F30001519E /* App */,
+				1FAAFBAE1BE85BEB007023B7 /* Module */,
 				1F87A2A31CA3BA130001519E /* Resource */,
 				1FA90FA01D05BF26008D0DFC /* Service */,
-				1FAAFBAE1BE85BEB007023B7 /* Module */,
 			);
 			path = SwiftSum;
 			sourceTree = "<group>";
@@ -1449,8 +1456,7 @@
 				1F139B3C1C8140B0005E89EB /* ThirdLibDemo */,
 				1F075BE01C4B4F560013C815 /* YYLibDemo */,
 			);
-			name = Module;
-			path = UI;
+			path = Module;
 			sourceTree = "<group>";
 		};
 		1FAAFBAF1BE85BFE007023B7 /* BaseViewController */ = {
@@ -1467,15 +1473,15 @@
 		1FAAFBB01BE85C14007023B7 /* SwiftLearn */ = {
 			isa = PBXGroup;
 			children = (
-				1FB8C57D1CD8A1310020E183 /* SwiftTips.playground */,
 				EEF281721C634F020004765A /* Swifter练习 */,
 				1F105EBE1CFFCC750052C4BE /* Swift各版本语言变化 */,
 				1F8E96531C6D74830038A6C9 /* Swift官方指导 */,
+				1F2AA8071D0E3EF500A5A477 /* Swift编程思想 */,
 				1F0DD1BE1CEBF4B500501767 /* 使用Swift中的Extension */,
 				EEF281631C634EE30004765A /* 函数式编程 */,
-				1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */,
 				1F0FBDAE1D10DBB200C97833 /* 协议的各种使用经验 */,
-				1F2AA8071D0E3EF500A5A477 /* Swift编程思想 */,
+				1FAAFBB51BE87B31007023B7 /* SwiftLearnDemo.swift */,
+				1FB8C57D1CD8A1310020E183 /* SwiftTips.playground */,
 			);
 			path = SwiftLearn;
 			sourceTree = "<group>";
@@ -1649,6 +1655,7 @@
 		EEF281721C634F020004765A /* Swifter练习 */ = {
 			isa = PBXGroup;
 			children = (
+				1F105EB81CFEC0E20052C4BE /* 1-Swift新元素 */,
 				EEF281651C634EFD0004765A /* DemoSingle.swift */,
 				EEF281691C634EFD0004765A /* FoundationAbout.swift */,
 				EEF281661C634EFD0004765A /* MemoryManage.swift */,
@@ -1656,7 +1663,6 @@
 				EEF281641C634EFD0004765A /* SwifterController.swift */,
 				EEF281681C634EFD0004765A /* TypeIntroduction.swift */,
 				EEF2816A1C634EFD0004765A /* UnsafePointer.swift */,
-				1F105EB81CFEC0E20052C4BE /* 1-Swift新元素 */,
 			);
 			path = "Swifter练习";
 			sourceTree = "<group>";
@@ -1973,8 +1979,8 @@
 				1F3B77C01D165C7600FC9678 /* String+YYExtension.swift in Sources */,
 				1F3B77DD1D165C7600FC9678 /* YYLinkedMap.swift in Sources */,
 				1F3B77DA1D165C7600FC9678 /* YYHud.swift in Sources */,
+				1F79F6FB1D1917EE0068DBA4 /* ViewController+YYExtension.swift in Sources */,
 				1F3B77CB1D165C7600FC9678 /* YYProtocol.swift in Sources */,
-				1F3B77C81D165C7600FC9678 /* ViewController+YYExtension.swift in Sources */,
 				1F3B77C71D165C7600FC9678 /* UIWebView+YYExtension.swift in Sources */,
 				1F3B77D31D165C7600FC9678 /* YYGCD.swift in Sources */,
 				1F3B77C91D165C7600FC9678 /* WKWebView+YYExtension.swift in Sources */,
@@ -2196,6 +2202,7 @@
 				1F5E16C81D16597D0059399B /* Base */,
 			);
 			name = MainInterface.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		1FAAFB821BE85AEA007023B7 /* Main.storyboard */ = {
