@@ -9,5 +9,6 @@
         <page name='下标'/>
         <page name='Untitled Page'/>
         <page name='方法嵌套'/>
+        <page name='命名空间'/>
     </pages>
 </playground>
