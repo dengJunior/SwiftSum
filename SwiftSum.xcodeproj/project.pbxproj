@@ -154,6 +154,10 @@
 		1F8ADB111D0679B40059C842 /* CollectionViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8ADB0F1D0679B40059C842 /* CollectionViewDemo.swift */; };
 		1F8ADB151D067C440059C842 /* CollectionTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8ADB131D067C440059C842 /* CollectionTextCell.swift */; };
 		1F8ADB161D067C440059C842 /* CollectionTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8ADB141D067C440059C842 /* CollectionTextCell.xib */; };
+		1FA4474F1D1E9E3400DDC3A6 /* HelloScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA4474C1D1E9E3400DDC3A6 /* HelloScene.swift */; };
+		1FA447501D1E9E3400DDC3A6 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA4474D1D1E9E3400DDC3A6 /* Spaceship.swift */; };
+		1FA447511D1E9E3400DDC3A6 /* SpriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA4474E1D1E9E3400DDC3A6 /* SpriteViewController.swift */; };
+		1FA447541D1E9E7100DDC3A6 /* GameDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA447531D1E9E7100DDC3A6 /* GameDemo.swift */; };
 		1FA6B76F1CF44A0A007B4122 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B76E1CF44A0A007B4122 /* PhotoManager.swift */; };
 		1FA6B7711CF44B8A007B4122 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B7701CF44B89007B4122 /* Photo.swift */; };
 		1FA6B7731CF4569D007B4122 /* UIImagePickerControllerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B7721CF4569D007B4122 /* UIImagePickerControllerDemo.swift */; };
@@ -194,6 +198,7 @@
 		1FDCEFC51CFC2D6D0039D176 /* lvwenhancom.cer in Resources */ = {isa = PBXBuildFile; fileRef = 1FDCEFC41CFC2D6D0039D176 /* lvwenhancom.cer */; };
 		1FDCEFC71CFC7E3D0039D176 /* DataStructureAndAlgorithmsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDCEFC61CFC7E3D0039D176 /* DataStructureAndAlgorithmsDemo.swift */; };
 		1FDCEFCA1CFC7E830039D176 /* AlgorithmsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDCEFC91CFC7E830039D176 /* AlgorithmsDemo.swift */; };
+		1FDDC4371D1B739900C3C619 /* SKView+YYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDC4361D1B739900C3C619 /* SKView+YYKit.swift */; };
 		1FE864E11CB3819100E013A1 /* RunLoopDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE864E01CB3819100E013A1 /* RunLoopDemo.swift */; };
 		1FEB42401D1671EF006B3BAF /* YYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B77681D165C2D00FC9678 /* YYKit.framework */; };
 		1FF133DA1CCB25F600AD6822 /* ViewControllerGuideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF133D91CCB25F600AD6822 /* ViewControllerGuideDemo.swift */; };
@@ -449,6 +454,10 @@
 		1F8ADB141D067C440059C842 /* CollectionTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionTextCell.xib; sourceTree = "<group>"; };
 		1F8E96541C6D75C00038A6C9 /* FRP.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FRP.playground; sourceTree = "<group>"; };
 		1F8E96551C6D77620038A6C9 /* SwiftFunctional.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftFunctional.playground; sourceTree = "<group>"; };
+		1FA4474C1D1E9E3400DDC3A6 /* HelloScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloScene.swift; sourceTree = "<group>"; };
+		1FA4474D1D1E9E3400DDC3A6 /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
+		1FA4474E1D1E9E3400DDC3A6 /* SpriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteViewController.swift; sourceTree = "<group>"; };
+		1FA447531D1E9E7100DDC3A6 /* GameDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDemo.swift; sourceTree = "<group>"; };
 		1FA6B76E1CF44A0A007B4122 /* PhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		1FA6B7701CF44B89007B4122 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1FA6B7721CF4569D007B4122 /* UIImagePickerControllerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerDemo.swift; sourceTree = "<group>"; };
@@ -514,6 +523,7 @@
 		1FDCEFC61CFC7E3D0039D176 /* DataStructureAndAlgorithmsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructureAndAlgorithmsDemo.swift; sourceTree = "<group>"; };
 		1FDCEFC91CFC7E830039D176 /* AlgorithmsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmsDemo.swift; sourceTree = "<group>"; };
 		1FDCEFCB1CFD1C680039D176 /* 排序算法.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "排序算法.playground"; sourceTree = "<group>"; };
+		1FDDC4361D1B739900C3C619 /* SKView+YYKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKView+YYKit.swift"; sourceTree = "<group>"; };
 		1FE864E01CB3819100E013A1 /* RunLoopDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLoopDemo.swift; sourceTree = "<group>"; };
 		1FEB42431D16757E006B3BAF /* SwiftSumTimerTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftSumTimerTodayExtension.entitlements; sourceTree = "<group>"; };
 		1FF133D91CCB25F600AD6822 /* ViewControllerGuideDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerGuideDemo.swift; sourceTree = "<group>"; };
@@ -845,6 +855,7 @@
 			children = (
 				1F3B77791D165C7500FC9678 /* Foudation */,
 				1F3B77891D165C7500FC9678 /* UIKit */,
+				1FDDC4381D1B739D00C3C619 /* SpriteKit */,
 			);
 			path = YYCategory;
 			sourceTree = "<group>";
@@ -1349,6 +1360,25 @@
 			path = "1-Swift数组Map等使用";
 			sourceTree = "<group>";
 		};
+		1FA447521D1E9E3A00DDC3A6 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				1FA447551D1E9EAD00DDC3A6 /* SpriteKitGuide */,
+				1FA447531D1E9E7100DDC3A6 /* GameDemo.swift */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		1FA447551D1E9EAD00DDC3A6 /* SpriteKitGuide */ = {
+			isa = PBXGroup;
+			children = (
+				1FA4474C1D1E9E3400DDC3A6 /* HelloScene.swift */,
+				1FA4474D1D1E9E3400DDC3A6 /* Spaceship.swift */,
+				1FA4474E1D1E9E3400DDC3A6 /* SpriteViewController.swift */,
+			);
+			name = SpriteKitGuide;
+			sourceTree = "<group>";
+		};
 		1FA6B7741CF456A6007B4122 /* 常用系统控件demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1449,6 +1479,7 @@
 		1FAAFBAE1BE85BEB007023B7 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				1FA447521D1E9E3A00DDC3A6 /* Game */,
 				1FAAFBAF1BE85BFE007023B7 /* BaseViewController */,
 				1F5B67C41CACF228003CFD75 /* Main */,
 				1FAAFBB01BE85C14007023B7 /* SwiftLearn */,
@@ -1582,6 +1613,22 @@
 				1FDCEFCB1CFD1C680039D176 /* 排序算法.playground */,
 			);
 			path = "数据结构和算法";
+			sourceTree = "<group>";
+		};
+		1FDDC4381D1B739D00C3C619 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				1FDDC4391D1B757300C3C619 /* SKView */,
+			);
+			name = SpriteKit;
+			sourceTree = "<group>";
+		};
+		1FDDC4391D1B757300C3C619 /* SKView */ = {
+			isa = PBXGroup;
+			children = (
+				1FDDC4361D1B739900C3C619 /* SKView+YYKit.swift */,
+			);
+			name = SKView;
 			sourceTree = "<group>";
 		};
 		1FE864E21CB3819600E013A1 /* Runloop相关 */ = {
@@ -1976,6 +2023,7 @@
 				1F3B77DF1D165C7600FC9678 /* YYTool.swift in Sources */,
 				1F3B77BE1D165C7600FC9678 /* NSObject+YYExtension.swift in Sources */,
 				1F3B77BD1D165C7600FC9678 /* NSDate+YYExtension.swift in Sources */,
+				1FDDC4371D1B739900C3C619 /* SKView+YYKit.swift in Sources */,
 				1F3B77C01D165C7600FC9678 /* String+YYExtension.swift in Sources */,
 				1F3B77DD1D165C7600FC9678 /* YYLinkedMap.swift in Sources */,
 				1F3B77DA1D165C7600FC9678 /* YYHud.swift in Sources */,
@@ -2048,6 +2096,7 @@
 				1F0097291CB56130003A063F /* MusicController.swift in Sources */,
 				EEF2816B1C634EFD0004765A /* SwifterController.swift in Sources */,
 				1F792CBA1C8991A900EE70D4 /* ValidationResult.swift in Sources */,
+				1FA4474F1D1E9E3400DDC3A6 /* HelloScene.swift in Sources */,
 				1FCE29191CDC691A00DBF2E3 /* GoodsViewController2.swift in Sources */,
 				1FA6B7731CF4569D007B4122 /* UIImagePickerControllerDemo.swift in Sources */,
 				1F1656841CBCCF740015F570 /* NSOperationQueueDemo.swift in Sources */,
@@ -2101,6 +2150,7 @@
 				1F5B67C31CACF219003CFD75 /* MainController.swift in Sources */,
 				1F5B67C11CACF1A8003CFD75 /* YYBaseTabBarController.swift in Sources */,
 				1F5B67D01CAD019D003CFD75 /* GestureDemoChild.swift in Sources */,
+				1FA447541D1E9E7100DDC3A6 /* GameDemo.swift in Sources */,
 				1FAF60271CB940AD0046CF3D /* ThreadSafeDemo.swift in Sources */,
 				1F288DA21CB1FD0600180316 /* DeliveryTouchesDemo.swift in Sources */,
 				1F77A2D91CF6980F0024D3A2 /* NSURLSessionDemo.swift in Sources */,
@@ -2125,6 +2175,7 @@
 				1F6FF0FB1D051FF3008C33E8 /* ExtensionsDemo.swift in Sources */,
 				1F00973C1CB60E28003A063F /* SecondaryThreadRunLoopSourceContext.swift in Sources */,
 				1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */,
+				1FA447501D1E9E3400DDC3A6 /* Spaceship.swift in Sources */,
 				1FF9B2C11CF4437800AB9D30 /* PhotoCollectionViewController.swift in Sources */,
 				1F075BDF1C4B4F480013C815 /* YYLibsDemo.swift in Sources */,
 				1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */,
@@ -2140,6 +2191,7 @@
 				1F8059B81CED6BB700CA0936 /* WKWebViewDemo.swift in Sources */,
 				1F8ADB151D067C440059C842 /* CollectionTextCell.swift in Sources */,
 				1FA90EDD1D057A12008D0DFC /* AppNotification.swift in Sources */,
+				1FA447511D1E9E3400DDC3A6 /* SpriteViewController.swift in Sources */,
 				1F77A2DB1CF6EB6B0024D3A2 /* YYSessionManager.swift in Sources */,
 				1F0C134A1CB38C050045FCB7 /* TestRunLoop.swift in Sources */,
 				1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */,
