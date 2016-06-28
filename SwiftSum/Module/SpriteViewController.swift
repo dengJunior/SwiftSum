@@ -9,9 +9,24 @@
 import UIKit
 import SpriteKit
 import YYKit
+import AVFoundation
 
 class SpriteViewController: UIViewController {
 
+    var backgroundMusicPlayer: AVAudioPlayer!
+    
+    func playBackgroundMusic(filename: String) {
+        if let url = NSBundle.mainBundle().URLForResource(
+            filename, withExtension: nil) {
+            if let audioPlayer = try? AVAudioPlayer(contentsOfURL: url) {
+                backgroundMusicPlayer = audioPlayer
+                backgroundMusicPlayer.numberOfLoops = -1
+                backgroundMusicPlayer.prepareToPlay()
+                backgroundMusicPlayer.play()
+            }
+        }
+    }
+    
     override func loadView() {
         view = SKView()
     }
@@ -19,6 +34,15 @@ class SpriteViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setupSpriteView()
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            
+        }
+        playBackgroundMusic("BackgroundMusic.mp3")
+        
     }
     
     override func viewWillAppear(animated: Bool) {
