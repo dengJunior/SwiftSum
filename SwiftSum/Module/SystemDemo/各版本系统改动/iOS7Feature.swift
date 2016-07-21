@@ -20,7 +20,7 @@ class iOS7Feature: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
         network()
-        self.addButtonToViewWithTitle("app说话") { [unowned self] (button) in
+        self.addButtonToView(title: "app说话") { [unowned self] (button) in
             self.speak()
         }
         textViewLinkDemo()

@@ -12,7 +12,7 @@ class GCDDemo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.addButtonToViewWithTitle("深入理解GCDdemo") { [unowned self] (button) in
+        self.addButtonToView(title: "深入理解GCDdemo") { [unowned self] (button) in
             if let vc = PhotoCollectionViewController.newInstanceFromStoryboard("GooglyPuff", isInitial: true) {
                 self.navigationController?.pushViewController(vc, animated: true)
             }

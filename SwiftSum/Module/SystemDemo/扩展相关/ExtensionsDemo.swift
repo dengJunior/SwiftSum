@@ -12,7 +12,7 @@ class ExtensionsDemo: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addButtonToViewWithTitle("Today扩展") { [unowned self] (button) in
+        self.addButtonToView(title: "Today扩展") { [unowned self] (button) in
             let vc = TodayDemo()
             self.navigationController?.pushViewController(vc, animated: true)
         }

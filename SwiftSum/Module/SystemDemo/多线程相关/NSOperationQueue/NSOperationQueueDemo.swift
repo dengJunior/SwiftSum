@@ -55,18 +55,23 @@ class TestBlockOperation {
         }
         
         /**有3个任务时候
-         The main thread num is <NSThread: 0x7fda0ac00e80>{number = 1, name = main}
-         Task in first closure. The thread num is <NSThread: 0x7fda0ac00e80>{number = 1, name = main}
-         Task in second closure. The thread num is <NSThread: 0x7fda0af60840>{number = 2, name = (null)}
-         Task in third closure. The thread num is <NSThread: 0x7fda0ae30fa0>{number = 3, name = (null)}
+         The main thread num is <NSThread: 0x7f99be708b40>{number = 1, name = main}
+         Task in first closure. The thread num is <NSThread: 0x7f99be708b40>{number = 1, name = main}
+         Task in second closure. The thread num is <NSThread: 0x7f99be681d80>{number = 2, name = (null)}
+         Task in third closure. The thread num is <NSThread: 0x7f99be66ca40>{number = 3, name = (null)}
+         start finished---------
+         Task completionBlock closure. The thread num is <NSThread: 0x7f99be66ca40>{number = 3, name = (null)}
          start finished---------
          */
         
         /**
          *  通过上面两段代码可以观察到，当NSBlockOperation中只有一个block时，在调用start方法执行任务时不会为其另开线程，而是在当前线程中同步执行，
          只有当NSBlockOperation包含多个block时，才会为其另开二级线程，使任务并发异步执行。
-         另外，当NSBlockOperation执行时，它会等待所有的block都执行完成后才会返回执行完成的状态，所以我们可以用NSBloxkOperation跟踪一组block的执行情况。
+         另外，当NSBlockOperation执行时，它会等待所有的block都执行完成后才会返回执行完成的状态，所以我们可以用NSBloxkOperation跟踪一组block的执行情况。 completionBlock会在最后执行
          */
+        blockOperation.completionBlock = {
+            print("Task completionBlock closure. The thread num is \(NSThread.currentThread())")
+        }
         
         return blockOperation
     }
@@ -80,7 +85,7 @@ class MyNonConcurrentOperation: NSOperation {
     var url: String?
     
     //1.自定义初始化方法：主要用于在初始化自定义Operation对象时传递必要的参数。
-    init(withUrl url: String) {
+    init(url: String) {
         self.url = url
     }
     

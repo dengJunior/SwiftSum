@@ -28,7 +28,7 @@ class ThreadDemo: UIViewController {
         buttonCount += 1
 
         self.addButtonToView("测试自定义非并发Operation对象", frame: CGRect.init(x: 10, y: 40*buttonCount, width: 300, height: 40)) { (button) in
-            let testOperation = MyNonConcurrentOperation.init(withUrl: "http://www.baidu.com/s?wd=ios")
+            let testOperation = MyNonConcurrentOperation(url: "http://www.baidu.com/s?wd=ios")
             testOperation.start()
         }
         buttonCount += 1

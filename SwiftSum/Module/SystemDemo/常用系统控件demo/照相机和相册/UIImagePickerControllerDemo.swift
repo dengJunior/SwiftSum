@@ -15,13 +15,13 @@ class UIImagePickerControllerDemo: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addButtonToViewWithTitle("打开照相机") { [unowned self] (button) in
+        self.addButtonToView(title: "打开照相机") { [unowned self] (button) in
             self.showCamera()
         }
-        self.addButtonToViewWithTitle("打开相册") { [unowned self] (button) in
+        self.addButtonToView(title: "打开相册") { [unowned self] (button) in
             self.showPhotoLibrary()
         }
-        self.addButtonToViewWithTitle("打开照片库") { [unowned self] (button) in
+        self.addButtonToView(title: "打开照片库") { [unowned self] (button) in
             self.showSavedPhotosAlbum()
         }
     }

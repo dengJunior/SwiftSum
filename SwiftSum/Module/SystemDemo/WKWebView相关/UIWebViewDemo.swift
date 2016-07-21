@@ -68,12 +68,12 @@ class UIWebViewDemo: UIViewController {
         injectionNativeMethodToJS()
         
         buttonCount = 6
-        addButtonToViewWithTitle("返回") { [unowned self] (button) in
+        addButtonToView(title: "返回") { [unowned self] (button) in
             if self.webView.canGoBack {
                 self.webView.goBack()
             }
         }
-        addButtonToViewWithTitle("前进") { [unowned self] (button) in
+        addButtonToView(title: "前进") { [unowned self] (button) in
             if self.webView.canGoForward {
                 self.webView.goForward()
             }
@@ -81,7 +81,7 @@ class UIWebViewDemo: UIViewController {
         
         // MARK: - 五、webView 执行JS代码
         //用户调用用JS写过的代码，一般指服务端开发的：
-        addButtonToViewWithTitle("调用js，异步获取返回值") { [unowned self] (button) in
+        addButtonToView(title: "调用js，异步获取返回值") { [unowned self] (button) in
             //Native调用Javascript语言，是通过UIWebView组件的stringByEvaluatingJavaScriptFromString方法来实现的，该方法返回js脚本的执行结果。
 
             let tripleNum: JSValue = self.webView.currentJSContext.evaluateScript("JSExportDemo.test0()")

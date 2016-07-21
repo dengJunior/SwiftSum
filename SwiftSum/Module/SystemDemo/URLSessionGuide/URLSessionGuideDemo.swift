@@ -15,7 +15,7 @@ class URLSessionGuideDemo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.addButtonToViewWithTitle("测试https认证") { [unowned self] (button) in
+        self.addButtonToView(title: "测试https认证") { [unowned self] (button) in
             self.sessionDemo.httpsTask()
         }
     }

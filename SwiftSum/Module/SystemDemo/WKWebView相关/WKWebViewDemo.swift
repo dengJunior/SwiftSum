@@ -73,16 +73,16 @@ class WKWebViewDemo: UIViewController {
         injectionNativeMethodToJS()
         
         buttonCount = 6
-        addButtonToViewWithTitle("UIWebView与js交互") { [unowned self] (button) in
+        addButtonToView(title: "UIWebView与js交互") { [unowned self] (button) in
             self.navigationController?.pushViewController(UIWebViewDemo(), animated: true)
         }
         
-        addButtonToViewWithTitle("返回") { [unowned self] (button) in
+        addButtonToView(title: "返回") { [unowned self] (button) in
             if self.webView.canGoBack {
                 self.webView.goBack()
             }
         }
-        addButtonToViewWithTitle("前进") { [unowned self] (button) in
+        addButtonToView(title: "前进") { [unowned self] (button) in
             if self.webView.canGoForward {
                 self.webView.goForward()
             }
@@ -90,7 +90,7 @@ class WKWebViewDemo: UIViewController {
         
         // MARK: - 五、webView 执行JS代码
         //用户调用用JS写过的代码，一般指服务端开发的：
-        addButtonToViewWithTitle("调用js，异步获取返回值") { [unowned self] (button) in
+        addButtonToView(title: "调用js，异步获取返回值") { [unowned self] (button) in
             //javaScriptString是JS方法名，completionHandler是异步回调block
             self.webView.evaluateJavaScript("click1()", completionHandler: { (obj, error) in
                 print(obj)

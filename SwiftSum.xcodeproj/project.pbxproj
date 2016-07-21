@@ -118,6 +118,11 @@
 		1F3B77DD1D165C7600FC9678 /* YYLinkedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77B41D165C7500FC9678 /* YYLinkedMap.swift */; };
 		1F3B77DE1D165C7600FC9678 /* YYTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77B61D165C7500FC9678 /* YYTimer.swift */; };
 		1F3B77DF1D165C7600FC9678 /* YYTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77B81D165C7500FC9678 /* YYTool.swift */; };
+		1F5237AE1D39EEC700B182D0 /* VedioAudioDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5237AD1D39EEC700B182D0 /* VedioAudioDemo.swift */; };
+		1F5237B11D39F15B00B182D0 /* AudioDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5237B01D39F15B00B182D0 /* AudioDemo.swift */; };
+		1F5237BC1D3BB77F00B182D0 /* UIImageView+YYWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5237BB1D3BB77F00B182D0 /* UIImageView+YYWebImage.swift */; };
+		1F5237BE1D3BBA3500B182D0 /* YYWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5237BD1D3BBA3500B182D0 /* YYWebImage.swift */; };
+		1F5237C01D3BBA9900B182D0 /* YYWebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5237BF1D3BBA9900B182D0 /* YYWebImageManager.swift */; };
 		1F5A731F1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A731E1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift */; };
 		1F5A73231CBE178E002B0D19 /* TestDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A73221CBE178E002B0D19 /* TestDispatchQueue.swift */; };
 		1F5B67BE1CACF0D6003CFD75 /* SystemDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */; };
@@ -167,6 +172,11 @@
 		1FA6B7711CF44B8A007B4122 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B7701CF44B89007B4122 /* Photo.swift */; };
 		1FA6B7731CF4569D007B4122 /* UIImagePickerControllerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B7721CF4569D007B4122 /* UIImagePickerControllerDemo.swift */; };
 		1FA6B7761CF536E0007B4122 /* SystemControlDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6B7751CF536E0007B4122 /* SystemControlDemo.swift */; };
+		1FA8F3071D3F985800130E0B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8F3061D3F985800130E0B /* TableViewController.swift */; };
+		1FA8F30B1D3F9D4F00130E0B /* alphaImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA8F30A1D3F9D4F00130E0B /* alphaImage.png */; };
+		1FA8F3151D3FA4E900130E0B /* UIImage+YYKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8F3141D3FA4E900130E0B /* UIImage+YYKit.swift */; };
+		1FA8F31B1D3FA5F300130E0B /* BlendModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8F3191D3FA5F300130E0B /* BlendModeCell.swift */; };
+		1FA8F31C1D3FA5F300130E0B /* BlendModeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA8F31A1D3FA5F300130E0B /* BlendModeCell.xib */; };
 		1FA90EDD1D057A12008D0DFC /* AppNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA90EDC1D057A12008D0DFC /* AppNotification.swift */; };
 		1FAAFB7F1BE85AEA007023B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAFB7E1BE85AEA007023B7 /* AppDelegate.swift */; };
 		1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAAFB821BE85AEA007023B7 /* Main.storyboard */; };
@@ -417,6 +427,11 @@
 		1F3B77B41D165C7500FC9678 /* YYLinkedMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLinkedMap.swift; sourceTree = "<group>"; };
 		1F3B77B61D165C7500FC9678 /* YYTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYTimer.swift; sourceTree = "<group>"; };
 		1F3B77B81D165C7500FC9678 /* YYTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYTool.swift; sourceTree = "<group>"; };
+		1F5237AD1D39EEC700B182D0 /* VedioAudioDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VedioAudioDemo.swift; sourceTree = "<group>"; };
+		1F5237B01D39F15B00B182D0 /* AudioDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDemo.swift; sourceTree = "<group>"; };
+		1F5237BB1D3BB77F00B182D0 /* UIImageView+YYWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+YYWebImage.swift"; sourceTree = "<group>"; };
+		1F5237BD1D3BBA3500B182D0 /* YYWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWebImage.swift; sourceTree = "<group>"; };
+		1F5237BF1D3BBA9900B182D0 /* YYWebImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWebImageManager.swift; sourceTree = "<group>"; };
 		1F5A731E1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOperationSettingDemo.swift; sourceTree = "<group>"; };
 		1F5A73221CBE178E002B0D19 /* TestDispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDispatchQueue.swift; sourceTree = "<group>"; };
 		1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemDemo.swift; sourceTree = "<group>"; };
@@ -472,6 +487,11 @@
 		1FA6B7701CF44B89007B4122 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1FA6B7721CF4569D007B4122 /* UIImagePickerControllerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerDemo.swift; sourceTree = "<group>"; };
 		1FA6B7751CF536E0007B4122 /* SystemControlDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemControlDemo.swift; sourceTree = "<group>"; };
+		1FA8F3061D3F985800130E0B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1FA8F30A1D3F9D4F00130E0B /* alphaImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alphaImage.png; sourceTree = "<group>"; };
+		1FA8F3141D3FA4E900130E0B /* UIImage+YYKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+YYKit.swift"; sourceTree = "<group>"; };
+		1FA8F3191D3FA5F300130E0B /* BlendModeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlendModeCell.swift; sourceTree = "<group>"; };
+		1FA8F31A1D3FA5F300130E0B /* BlendModeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlendModeCell.xib; sourceTree = "<group>"; };
 		1FA90ED91D056BCF008D0DFC /* 协议总结.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "协议总结.playground"; sourceTree = "<group>"; };
 		1FA90EDC1D057A12008D0DFC /* AppNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNotification.swift; sourceTree = "<group>"; };
 		1FAAFB7B1BE85AEA007023B7 /* SwiftSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -964,6 +984,7 @@
 				1F79F6F91D1917EE0068DBA4 /* UIViewController */,
 				1F3B77951D165C7500FC9678 /* UIWebView */,
 				1F3B77991D165C7500FC9678 /* WKWebView */,
+				1FA8F3161D3FA55900130E0B /* UIImage */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1048,7 +1069,7 @@
 				1F3B77A21D165C7500FC9678 /* SimpleTimer.swift */,
 				1F3B77A51D165C7500FC9678 /* YYAnimation.swift */,
 				1F3B77A61D165C7500FC9678 /* YYDim.swift */,
-				1F3B77B41D165C7500FC9678 /* YYLinkedMap.swift */,
+				1F5237BA1D3BB6A900B182D0 /* YYWebImage */,
 			);
 			path = YYLibrary;
 			sourceTree = "<group>";
@@ -1108,6 +1129,26 @@
 			path = YYTool;
 			sourceTree = "<group>";
 		};
+		1F5237AF1D39EECC00B182D0 /* 视频音频相关 */ = {
+			isa = PBXGroup;
+			children = (
+				1F5237AD1D39EEC700B182D0 /* VedioAudioDemo.swift */,
+				1F5237B01D39F15B00B182D0 /* AudioDemo.swift */,
+			);
+			name = "视频音频相关";
+			sourceTree = "<group>";
+		};
+		1F5237BA1D3BB6A900B182D0 /* YYWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B77B41D165C7500FC9678 /* YYLinkedMap.swift */,
+				1F5237BB1D3BB77F00B182D0 /* UIImageView+YYWebImage.swift */,
+				1F5237BD1D3BBA3500B182D0 /* YYWebImage.swift */,
+				1F5237BF1D3BBA9900B182D0 /* YYWebImageManager.swift */,
+			);
+			name = YYWebImage;
+			sourceTree = "<group>";
+		};
 		1F5A73201CBDDF19002B0D19 /* NSOperationQueue */ = {
 			isa = PBXGroup;
 			children = (
@@ -1161,6 +1202,7 @@
 				1FB8C5631CD089600020E183 /* 自定义转场动画 */,
 				1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
+				1F5237AF1D39EECC00B182D0 /* 视频音频相关 */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -1408,8 +1450,20 @@
 				1F8ADB0E1D06793B0059C842 /* CollectionView */,
 				1F6FF0F31D041171008C33E8 /* 照相机和相册 */,
 				1FA6B7751CF536E0007B4122 /* SystemControlDemo.swift */,
+				1FA8F30A1D3F9D4F00130E0B /* alphaImage.png */,
+				1FA8F3061D3F985800130E0B /* TableViewController.swift */,
+				1FA8F3191D3FA5F300130E0B /* BlendModeCell.swift */,
+				1FA8F31A1D3FA5F300130E0B /* BlendModeCell.xib */,
 			);
 			path = "常用系统控件demo";
+			sourceTree = "<group>";
+		};
+		1FA8F3161D3FA55900130E0B /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				1FA8F3141D3FA4E900130E0B /* UIImage+YYKit.swift */,
+			);
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 		1FA90FA01D05BF26008D0DFC /* Service */ = {
@@ -1938,6 +1992,7 @@
 				1F8ADB161D067C440059C842 /* CollectionTextCell.xib in Resources */,
 				1F364DC01D210E4F006B8412 /* BackgroundMusic.mp3 in Resources */,
 				1F7B98CB1D12AC700006155E /* CollectionReusableView.xib in Resources */,
+				1FA8F30B1D3F9D4F00130E0B /* alphaImage.png in Resources */,
 				1F139B4A1C814523005E89EB /* RxSwiftDemo.xib in Resources */,
 				1F0097401CB622A8003A063F /* MainCollectionViewController.storyboard in Resources */,
 				1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */,
@@ -1953,6 +2008,7 @@
 				1F0097241CB5606F003A063F /* Music.storyboard in Resources */,
 				1FC174031CEC4B2C00F67B38 /* YYLibDemo.storyboard in Resources */,
 				1F6FF1001D0520F4008C33E8 /* TodayDemo.xib in Resources */,
+				1FA8F31C1D3FA5F300130E0B /* BlendModeCell.xib in Resources */,
 				1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */,
 				1FF9B2C81CF448B100AB9D30 /* GooglyPuff.xcassets in Resources */,
 				1FF9B2C61CF4478200AB9D30 /* GooglyPuff.storyboard in Resources */,
@@ -2042,7 +2098,9 @@
 				1F3B77D41D165C7600FC9678 /* YYGCDGroup.swift in Sources */,
 				1F3B77BF1D165C7600FC9678 /* NSAttributedString+YYExtension.swift in Sources */,
 				1F3B77D51D165C7600FC9678 /* YYGCDSemaphore.swift in Sources */,
+				1FA8F3151D3FA4E900130E0B /* UIImage+YYKit.swift in Sources */,
 				1F3B77CE1D165C7600FC9678 /* CommonDataSource.swift in Sources */,
+				1F5237BC1D3BB77F00B182D0 /* UIImageView+YYWebImage.swift in Sources */,
 				1F3B77C51D165C7600FC9678 /* UITableView+YYExtension.swift in Sources */,
 				1F3B77CC1D165C7600FC9678 /* YYStruct.swift in Sources */,
 				1F3B77BC1D165C7600FC9678 /* NSData+YYExtension.swift in Sources */,
@@ -2068,9 +2126,11 @@
 				1F3B77CD1D165C7600FC9678 /* YYSystemNotification.swift in Sources */,
 				1F3B77D81D165C7600FC9678 /* YYHttpFoundation.swift in Sources */,
 				1F3B77C31D165C7600FC9678 /* UIPanGestureRecognizer+YYExtension.swift in Sources */,
+				1F5237C01D3BBA9900B182D0 /* YYWebImageManager.swift in Sources */,
 				1F3B77D21D165C7600FC9678 /* YYDim.swift in Sources */,
 				1F3B77B91D165C7500FC9678 /* Array+YYExtension.swift in Sources */,
 				1F3B77C61D165C7600FC9678 /* UIView+YYExtension.swift in Sources */,
+				1F5237BE1D3BBA3500B182D0 /* YYWebImage.swift in Sources */,
 				1F3B77BB1D165C7600FC9678 /* Dictionary+YYExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2120,6 +2180,8 @@
 				1FB8C5761CD20E010020E183 /* YYPresentationController.swift in Sources */,
 				1F00973A1CB60E0F003A063F /* SecondaryThreadRunLoopSource.swift in Sources */,
 				1F139B4C1C814844005E89EB /* Setting.swift in Sources */,
+				1FA8F3071D3F985800130E0B /* TableViewController.swift in Sources */,
+				1F5237AE1D39EEC700B182D0 /* VedioAudioDemo.swift in Sources */,
 				1F2F692F1C9A86D100A3F432 /* ImageCellViewData.swift in Sources */,
 				1F0097291CB56130003A063F /* MusicController.swift in Sources */,
 				EEF2816B1C634EFD0004765A /* SwifterController.swift in Sources */,
@@ -2187,6 +2249,7 @@
 				1FB8C56F1CD1B4030020E183 /* YYInteractivityTransitionAnimator.swift in Sources */,
 				1FF9B2B41CF2FFFF00AB9D30 /* YYFullscreenPopGesture.swift in Sources */,
 				1F0097261CB560DB003A063F /* HTTPClient.swift in Sources */,
+				1FA8F31B1D3FA5F300130E0B /* BlendModeCell.swift in Sources */,
 				1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */,
 				1F0DD1BB1CEB50C100501767 /* CollectionViewControllerTransitionDemo.swift in Sources */,
 				1F0DD19B1CE5AA9600501767 /* YYPresentationDelegate.swift in Sources */,
@@ -2223,6 +2286,7 @@
 				1F77A2DB1CF6EB6B0024D3A2 /* YYSessionManager.swift in Sources */,
 				1F0C134A1CB38C050045FCB7 /* TestRunLoop.swift in Sources */,
 				1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */,
+				1F5237B11D39F15B00B182D0 /* AudioDemo.swift in Sources */,
 				1F0DD1A61CE99AB100501767 /* PresentedViewController.swift in Sources */,
 				1F288DA01CAE623000180316 /* YYPanGestureRecognizer.swift in Sources */,
 				1FDCEFCA1CFC7E830039D176 /* AlgorithmsDemo.swift in Sources */,

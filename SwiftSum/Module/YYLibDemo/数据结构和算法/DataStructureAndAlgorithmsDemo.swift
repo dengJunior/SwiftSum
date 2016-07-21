@@ -14,7 +14,7 @@ class DataStructureAndAlgorithmsDemo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.addButtonToViewWithTitle("排序demo") {  (button) in
+        self.addButtonToView(title: "排序demo") {  (button) in
             AlgorithmsDemo.launch()
         }
     }

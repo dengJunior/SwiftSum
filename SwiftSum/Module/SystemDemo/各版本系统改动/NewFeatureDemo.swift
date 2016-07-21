@@ -12,7 +12,7 @@ class NewFeatureDemo: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addButtonToViewWithTitle("iOS7改动") { [unowned self] (button) in
+        self.addButtonToView(title: "iOS7改动") { [unowned self] (button) in
             let vc = iOS7Feature()
             self.navigationController?.pushViewController(vc, animated: true)
         }

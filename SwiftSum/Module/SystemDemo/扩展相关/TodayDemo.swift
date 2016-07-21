@@ -36,7 +36,7 @@ class TodayDemo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = "00:00"
-        self.addButtonToViewWithTitle("start") { [unowned self] (button) in
+        self.addButtonToView(title: "start") { [unowned self] (button) in
             //            self.timer.resume()
             let (started, error) =  self.simpleTimer.start(updateTick: { (timeInterval) in
                 self.updateLabel()
@@ -49,10 +49,10 @@ class TodayDemo: UIViewController {
                 print(error)
             }
         }
-        self.addButtonToViewWithTitle("pause") { [unowned self] (button) in
+        self.addButtonToView(title: "pause") { [unowned self] (button) in
             self.simpleTimer.stop(true)
         }
-        self.addButtonToViewWithTitle("stop") { [unowned self] (button) in
+        self.addButtonToView(title: "stop") { [unowned self] (button) in
             //self.timer.invalidate()
             self.simpleTimer.stop(true)
         }
