@@ -13,10 +13,10 @@ class VedioAudioDemo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.addButtonToView(title: "dd") { [weak self] (button) in
-            if self {
+        self.addButtonToView(title: "豆瓣接口音乐app") { [weak self] (button) in
+            self?.presentViewController(YYMusicController(), animated: true, completion: { 
                 
-            }
+            })
         }
     }
 

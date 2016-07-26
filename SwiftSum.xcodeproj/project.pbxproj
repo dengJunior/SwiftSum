@@ -45,6 +45,7 @@
 		1F0DD1C01CEBF4EC00501767 /* ExtensionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DD1BF1CEBF4EC00501767 /* ExtensionDemo.swift */; };
 		1F0FBDB11D10DF8800C97833 /* 面向协议的网络请求.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FBDB01D10DF8800C97833 /* 面向协议的网络请求.swift */; };
 		1F105EC51D001A100052C4BE /* NewFeatureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105EC41D001A100052C4BE /* NewFeatureDemo.swift */; };
+		1F10D6941D45BBA3006AE16B /* YYNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10D6931D45BBA3006AE16B /* YYNetwork.swift */; };
 		1F139B401C8141CE005E89EB /* ThirdLibDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */; };
 		1F139B491C814523005E89EB /* RxSwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B471C814523005E89EB /* RxSwiftDemo.swift */; };
 		1F139B4A1C814523005E89EB /* RxSwiftDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F139B481C814523005E89EB /* RxSwiftDemo.xib */; };
@@ -123,6 +124,10 @@
 		1F5237BC1D3BB77F00B182D0 /* UIImageView+YYWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5237BB1D3BB77F00B182D0 /* UIImageView+YYWebImage.swift */; };
 		1F5237BE1D3BBA3500B182D0 /* YYWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5237BD1D3BBA3500B182D0 /* YYWebImage.swift */; };
 		1F5237C01D3BBA9900B182D0 /* YYWebImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5237BF1D3BBA9900B182D0 /* YYWebImageManager.swift */; };
+		1F548C311D432850002E521B /* YYMusicHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F548C301D432850002E521B /* YYMusicHome.storyboard */; };
+		1F548C341D43296C002E521B /* YYMusicMine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F548C331D43296C002E521B /* YYMusicMine.storyboard */; };
+		1F548C361D43299B002E521B /* YYMusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F548C351D43299B002E521B /* YYMusicController.swift */; };
+		1F548C3B1D435EFB002E521B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F548C3A1D435EFB002E521B /* Provider.swift */; };
 		1F5A731F1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A731E1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift */; };
 		1F5A73231CBE178E002B0D19 /* TestDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A73221CBE178E002B0D19 /* TestDispatchQueue.swift */; };
 		1F5B67BE1CACF0D6003CFD75 /* SystemDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */; };
@@ -352,6 +357,7 @@
 		1F105EB91CFEC0FF0052C4BE /* 1-Swift新元素.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1-Swift新元素.playground"; sourceTree = "<group>"; };
 		1F105EBD1CFFCC150052C4BE /* Swift2.2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift2.2.playground; sourceTree = "<group>"; };
 		1F105EC41D001A100052C4BE /* NewFeatureDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureDemo.swift; sourceTree = "<group>"; };
+		1F10D6931D45BBA3006AE16B /* YYNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNetwork.swift; sourceTree = "<group>"; };
 		1F12662B1C721C6200DD69E6 /* RxSwiftBasic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftBasic.playground; sourceTree = "<group>"; };
 		1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLibDemo.swift; sourceTree = "<group>"; };
 		1F139B471C814523005E89EB /* RxSwiftDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo.swift; sourceTree = "<group>"; };
@@ -432,6 +438,10 @@
 		1F5237BB1D3BB77F00B182D0 /* UIImageView+YYWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+YYWebImage.swift"; sourceTree = "<group>"; };
 		1F5237BD1D3BBA3500B182D0 /* YYWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWebImage.swift; sourceTree = "<group>"; };
 		1F5237BF1D3BBA9900B182D0 /* YYWebImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWebImageManager.swift; sourceTree = "<group>"; };
+		1F548C301D432850002E521B /* YYMusicHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YYMusicHome.storyboard; sourceTree = "<group>"; };
+		1F548C331D43296C002E521B /* YYMusicMine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YYMusicMine.storyboard; sourceTree = "<group>"; };
+		1F548C351D43299B002E521B /* YYMusicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYMusicController.swift; sourceTree = "<group>"; };
+		1F548C3A1D435EFB002E521B /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		1F5A731E1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOperationSettingDemo.swift; sourceTree = "<group>"; };
 		1F5A73221CBE178E002B0D19 /* TestDispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDispatchQueue.swift; sourceTree = "<group>"; };
 		1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemDemo.swift; sourceTree = "<group>"; };
@@ -792,6 +802,15 @@
 			path = "Swift各版本语言变化";
 			sourceTree = "<group>";
 		};
+		1F10D6951D45BBAA006AE16B /* YYNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				1F3B77AC1D165C7500FC9678 /* YYHttp */,
+				1F10D6931D45BBA3006AE16B /* YYNetwork.swift */,
+			);
+			path = YYNetwork;
+			sourceTree = "<group>";
+		};
 		1F12662A1C719E3800DD69E6 /* 2-函数式反应型编程FRP */ = {
 			isa = PBXGroup;
 			children = (
@@ -895,8 +914,8 @@
 			isa = PBXGroup;
 			children = (
 				1F3B77791D165C7500FC9678 /* Foudation */,
-				1F3B77891D165C7500FC9678 /* UIKit */,
 				1FDDC4381D1B739D00C3C619 /* SpriteKit */,
+				1F3B77891D165C7500FC9678 /* UIKit */,
 			);
 			path = YYCategory;
 			sourceTree = "<group>";
@@ -977,6 +996,7 @@
 			children = (
 				1F3B778A1D165C7500FC9678 /* UIButton */,
 				1F79F6FC1D1917F20068DBA4 /* UIColor */,
+				1FA8F3161D3FA55900130E0B /* UIImage */,
 				1F3B778D1D165C7500FC9678 /* UIPanGestureRecognizer */,
 				1F3B778F1D165C7500FC9678 /* UITabBarController */,
 				1F3B77911D165C7500FC9678 /* UITableView */,
@@ -984,7 +1004,6 @@
 				1F79F6F91D1917EE0068DBA4 /* UIViewController */,
 				1F3B77951D165C7500FC9678 /* UIWebView */,
 				1F3B77991D165C7500FC9678 /* WKWebView */,
-				1FA8F3161D3FA55900130E0B /* UIImage */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1061,15 +1080,15 @@
 			children = (
 				1F3B77A31D165C7500FC9678 /* YYAlert */,
 				1F3B77A71D165C7500FC9678 /* YYGCD */,
-				1F3B77AC1D165C7500FC9678 /* YYHttp */,
 				1F3B77B01D165C7500FC9678 /* YYHud */,
+				1F10D6951D45BBAA006AE16B /* YYNetwork */,
 				1F3B77B51D165C7500FC9678 /* YYTimer */,
 				1F3B77B71D165C7500FC9678 /* YYTool */,
+				1F5237BA1D3BB6A900B182D0 /* YYWebImage */,
 				1F3B77A11D165C7500FC9678 /* CommonDataSource.swift */,
 				1F3B77A21D165C7500FC9678 /* SimpleTimer.swift */,
 				1F3B77A51D165C7500FC9678 /* YYAnimation.swift */,
 				1F3B77A61D165C7500FC9678 /* YYDim.swift */,
-				1F5237BA1D3BB6A900B182D0 /* YYWebImage */,
 			);
 			path = YYLibrary;
 			sourceTree = "<group>";
@@ -1132,21 +1151,65 @@
 		1F5237AF1D39EECC00B182D0 /* 视频音频相关 */ = {
 			isa = PBXGroup;
 			children = (
-				1F5237AD1D39EEC700B182D0 /* VedioAudioDemo.swift */,
+				1F548C321D432857002E521B /* YYMusic */,
 				1F5237B01D39F15B00B182D0 /* AudioDemo.swift */,
+				1F5237AD1D39EEC700B182D0 /* VedioAudioDemo.swift */,
 			);
-			name = "视频音频相关";
+			path = "视频音频相关";
 			sourceTree = "<group>";
 		};
 		1F5237BA1D3BB6A900B182D0 /* YYWebImage */ = {
 			isa = PBXGroup;
 			children = (
-				1F3B77B41D165C7500FC9678 /* YYLinkedMap.swift */,
 				1F5237BB1D3BB77F00B182D0 /* UIImageView+YYWebImage.swift */,
+				1F3B77B41D165C7500FC9678 /* YYLinkedMap.swift */,
 				1F5237BD1D3BBA3500B182D0 /* YYWebImage.swift */,
 				1F5237BF1D3BBA9900B182D0 /* YYWebImageManager.swift */,
 			);
-			name = YYWebImage;
+			path = YYWebImage;
+			sourceTree = "<group>";
+		};
+		1F548C321D432857002E521B /* YYMusic */ = {
+			isa = PBXGroup;
+			children = (
+				1F548C391D435E84002E521B /* Module */,
+				1F548C3C1D435F01002E521B /* Provider */,
+				1F548C351D43299B002E521B /* YYMusicController.swift */,
+			);
+			path = YYMusic;
+			sourceTree = "<group>";
+		};
+		1F548C371D433A77002E521B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1F548C301D432850002E521B /* YYMusicHome.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1F548C381D433A7D002E521B /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				1F548C331D43296C002E521B /* YYMusicMine.storyboard */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		1F548C391D435E84002E521B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				1F548C371D433A77002E521B /* Home */,
+				1F548C381D433A7D002E521B /* Mine */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		1F548C3C1D435F01002E521B /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				1F548C3A1D435EFB002E521B /* Provider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		1F5A73201CBDDF19002B0D19 /* NSOperationQueue */ = {
@@ -1200,9 +1263,9 @@
 				1FA6B7741CF456A6007B4122 /* 常用系统控件demo */,
 				1F6FF0FC1D051FF6008C33E8 /* 扩展相关 */,
 				1FB8C5631CD089600020E183 /* 自定义转场动画 */,
+				1F5237AF1D39EECC00B182D0 /* 视频音频相关 */,
 				1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
-				1F5237AF1D39EECC00B182D0 /* 视频音频相关 */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -1426,12 +1489,12 @@
 		1FA447521D1E9E3A00DDC3A6 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				1F9463A91D210BD100C954A8 /* Game.xcassets */,
 				1F364DBB1D210E4F006B8412 /* Sounds */,
 				1FA447551D1E9EAD00DDC3A6 /* SpriteKitGuide */,
+				1F9463A91D210BD100C954A8 /* Game.xcassets */,
 				1FA447531D1E9E7100DDC3A6 /* GameDemo.swift */,
 			);
-			name = Game;
+			path = Game;
 			sourceTree = "<group>";
 		};
 		1FA447551D1E9EAD00DDC3A6 /* SpriteKitGuide */ = {
@@ -1441,19 +1504,16 @@
 				1FA4474D1D1E9E3400DDC3A6 /* Spaceship.swift */,
 				1FA4474E1D1E9E3400DDC3A6 /* SpriteViewController.swift */,
 			);
-			name = SpriteKitGuide;
+			path = SpriteKitGuide;
 			sourceTree = "<group>";
 		};
 		1FA6B7741CF456A6007B4122 /* 常用系统控件demo */ = {
 			isa = PBXGroup;
 			children = (
 				1F8ADB0E1D06793B0059C842 /* CollectionView */,
+				1FA8F31D1D406C9D00130E0B /* 图片混合blendModes */,
 				1F6FF0F31D041171008C33E8 /* 照相机和相册 */,
 				1FA6B7751CF536E0007B4122 /* SystemControlDemo.swift */,
-				1FA8F30A1D3F9D4F00130E0B /* alphaImage.png */,
-				1FA8F3061D3F985800130E0B /* TableViewController.swift */,
-				1FA8F3191D3FA5F300130E0B /* BlendModeCell.swift */,
-				1FA8F31A1D3FA5F300130E0B /* BlendModeCell.xib */,
 			);
 			path = "常用系统控件demo";
 			sourceTree = "<group>";
@@ -1463,7 +1523,18 @@
 			children = (
 				1FA8F3141D3FA4E900130E0B /* UIImage+YYKit.swift */,
 			);
-			name = UIImage;
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		1FA8F31D1D406C9D00130E0B /* 图片混合blendModes */ = {
+			isa = PBXGroup;
+			children = (
+				1FA8F3191D3FA5F300130E0B /* BlendModeCell.swift */,
+				1FA8F31A1D3FA5F300130E0B /* BlendModeCell.xib */,
+				1FA8F3061D3F985800130E0B /* TableViewController.swift */,
+				1FA8F30A1D3F9D4F00130E0B /* alphaImage.png */,
+			);
+			path = "图片混合blendModes";
 			sourceTree = "<group>";
 		};
 		1FA90FA01D05BF26008D0DFC /* Service */ = {
@@ -1556,8 +1627,8 @@
 		1FAAFBAE1BE85BEB007023B7 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				1FA447521D1E9E3A00DDC3A6 /* Game */,
 				1FAAFBAF1BE85BFE007023B7 /* BaseViewController */,
+				1FA447521D1E9E3A00DDC3A6 /* Game */,
 				1F5B67C41CACF228003CFD75 /* Main */,
 				1FAAFBB01BE85C14007023B7 /* SwiftLearn */,
 				1F5B67BF1CACF0DC003CFD75 /* SystemDemo */,
@@ -1697,7 +1768,7 @@
 			children = (
 				1FDDC4391D1B757300C3C619 /* SKView */,
 			);
-			name = SpriteKit;
+			path = SpriteKit;
 			sourceTree = "<group>";
 		};
 		1FDDC4391D1B757300C3C619 /* SKView */ = {
@@ -1705,7 +1776,7 @@
 			children = (
 				1FDDC4361D1B739900C3C619 /* SKView+YYKit.swift */,
 			);
-			name = SKView;
+			path = SKView;
 			sourceTree = "<group>";
 		};
 		1FE864E21CB3819600E013A1 /* Runloop相关 */ = {
@@ -1997,8 +2068,10 @@
 				1F0097401CB622A8003A063F /* MainCollectionViewController.storyboard in Resources */,
 				1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */,
 				1FAB22351CE305B20085EAD3 /* ContentHugging.xib in Resources */,
+				1F548C341D43296C002E521B /* YYMusicMine.storyboard in Resources */,
 				1F288D971CAD174500180316 /* SimpleGestureRecognizers.xib in Resources */,
 				1FC174011CEC4B2100F67B38 /* ThirdLibDemo.storyboard in Resources */,
+				1F548C311D432850002E521B /* YYMusicHome.storyboard in Resources */,
 				1F2A38291CEED53600EE316D /* ExampleApp.js in Resources */,
 				1F288D9C1CAD1FD000180316 /* swipe.png in Resources */,
 				1F364DC21D210E4F006B8412 /* explosion.mp3 in Resources */,
@@ -2091,6 +2164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3B77CA1D165C7600FC9678 /* YYEnum.swift in Sources */,
+				1F10D6941D45BBA3006AE16B /* YYNetwork.swift in Sources */,
 				1F3B77D91D165C7600FC9678 /* YYHttpManager.swift in Sources */,
 				1F3B77C11D165C7600FC9678 /* UIButton+YYExtension.swift in Sources */,
 				1F3B77D11D165C7600FC9678 /* YYAnimation.swift in Sources */,
@@ -2255,6 +2329,7 @@
 				1F0DD19B1CE5AA9600501767 /* YYPresentationDelegate.swift in Sources */,
 				1F5B67CB1CACF3BC003CFD75 /* GestureDemo.swift in Sources */,
 				1F87A2A01CA3B9EB0001519E /* AppConfig.swift in Sources */,
+				1F548C3B1D435EFB002E521B /* Provider.swift in Sources */,
 				1F0DD1AA1CE9AEAE00501767 /* YYOverlayAnimatorDelegate.swift in Sources */,
 				1F5A73231CBE178E002B0D19 /* TestDispatchQueue.swift in Sources */,
 				1F8ADB091D05C1FF0059C842 /* YYAppToken.swift in Sources */,
@@ -2268,6 +2343,7 @@
 				1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */,
 				1FA447501D1E9E3400DDC3A6 /* Spaceship.swift in Sources */,
 				1FF9B2C11CF4437800AB9D30 /* PhotoCollectionViewController.swift in Sources */,
+				1F548C361D43299B002E521B /* YYMusicController.swift in Sources */,
 				1F075BDF1C4B4F480013C815 /* YYLibsDemo.swift in Sources */,
 				1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */,
 				1FF133DA1CCB25F600AD6822 /* ViewControllerGuideDemo.swift in Sources */,

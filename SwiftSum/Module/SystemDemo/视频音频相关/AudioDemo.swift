@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
 
 /**
  ## 引言
@@ -169,7 +170,116 @@ class AudioDemo: UIViewController {
             }
         }
     }
+    
+    // MARK: - ### 5、Remote Control控制音乐的播放
+    /**
+     *  Remote Control可以让你在不打开APP的情况下控制其播放，最常见的出现于锁屏界面、从屏幕底部上拉和耳机线控三种，可以达到增强用户体验的作用。
+     
+     
+     我们在AppDelegate里去设置Remote Control：
+     #### （1）声明接收Remote Control事件
+     
+     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+     #### （2）重写方法，成为第一响应者
+     
+     ```
+     - (BOOL)canBecomeFirstResponder {
+     return YES;
+     }
+     ```
+     #### （3）对事件进行处理
+     
+     ```
+     - (void)remoteControlReceivedWithEvent:(UIEvent *)event {
+     switch (event.subtype)    {
+     case UIEventSubtypeRemoteControlPlay:
+     [self.player startPlay];
+     BASE_INFO_FUN(@“remote_播放");
+     break;
+     case UIEventSubtypeRemoteControlPause:
+     [self.player pausePlay];
+     BASE_INFO_FUN(@"remote_暂停");
+     break;
+     case UIEventSubtypeRemoteControlNextTrack:
+     [self.player playNextSong];
+     BASE_INFO_FUN(@"remote_下一首");
+     break;
+     case UIEventSubtypeRemoteControlTogglePlayPause:
+     self.player.isPlaying ? [self.player pausePlay] : [self.player startPlay];
+     BASE_INFO_FUN(@“remote_耳机的播放/暂停");
+     break;
+     default:
+     break;    }
+     }
+     ```
+     */
+    
+    // MARK: - ### 6、Now Playing Center
+//    Now Playing Center可以在锁屏界面展示音乐的信息，也达到增强用户体验的作用。
+    func configNowPlayingCenter() {
+        /**
+         NSMutableDictionary * info = [NSMutableDictionary dictionary];
+         //音乐的标题
+         [info setObject:_player.currentSong.title forKey:MPMediaItemPropertyTitle];
+         //音乐的艺术家
+         [info setObject:_player.currentSong.artist forKey:MPMediaItemPropertyArtist];
+         //音乐的播放时间
+         [info setObject:@(self.player.playTime.intValue) forKey:MPNowPlayingInfoPropertyElapsedPlaybackTime];
+         //音乐的播放速度
+         [info setObject:@(1) forKey:MPNowPlayingInfoPropertyPlaybackRate];
+         //音乐的总时间
+         [info setObject:@(self.player.playDuration.intValue) forKey:MPMediaItemPropertyPlaybackDuration];
+         //音乐的封面
+         MPMediaItemArtwork * artwork = [[MPMediaItemArtwork alloc] initWithImage:_player.coverImg];
+         [info setObject:artwork forKey:MPMediaItemPropertyArtwork];
+         //完成设置
+         [[MPNowPlayingInfoCenter defaultCenter]setNowPlayingInfo:info];
+         
+         
+         
+         Now Playing Center并不需要每一秒都去刷新（设置），它是根据你设置的PlaybackRate来计算进度条展示的进度，比如你PlaybackRate传1，那就是1秒刷新一次进度显示，当然暂停播放的时候它也会自动暂停。
+         
+         那什么时候设置Now Playing Center比较合适呢？对于播放网络音乐来说，需要刷新的有几个时间点：当前播放的歌曲变化时（如切换到下一首）、当前歌曲信息变化时（如从Unknown到ReadyToPlay）、当前歌曲拖动进度时。
+         
+         如果有读者是使用百度音乐听歌的话，会发现其带有锁屏歌词，其实它是采用“将歌词和封面合成新的图片设置为Now Playing Center的封面 ＋ 歌词跃进时刷新Now Playing Center”来实现的，有兴趣的筒子可以研究一下。
+         */
+    }
+    
+    // MARK: - 关于总体的播放逻辑
+    
+    /**
+     总结一下音乐播放器的播放逻辑：
+     （1) 初始化播放界面
+     （2）从接口获取播放列表、选择第一首为当前播放歌曲
+     （3）根据当前歌曲初始化播放器 、同步歌曲信息到播放界面（此时播放界面应展示歌曲信息，但是播放按钮应不可用且有loading之类的提示表示正在加载歌曲）、同步歌曲信息到Now Playing Center
+     （4）当播放器的status变为ReadyToPlay时，播放歌曲、同步播放信息到播放界面（播放时间、总时间、进度条等等）、同步播放信息到Now Playing Center
+     （5）当用户进行暂停操作时，刷新播放界面
+     （6）当用户进行下一首、上一首操作时，或完成某一首歌曲的播放时，将对应的歌曲设置为当前播放歌曲，重复3-5步骤
+     （7）由于网络情况不好造成播放器自动暂停播放时，应刷新播放界面
+     （8）由于网络情况不好造成播放器不能进入播放状态时，应有所处理（比如提示耐心等待或者播放本地离线的歌曲）
+     
+     原文链接：http://www.jianshu.com/p/32b932f44c9b
+     */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

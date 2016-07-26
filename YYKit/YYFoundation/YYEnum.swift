@@ -9,15 +9,15 @@
 import UIKit
 
 public enum YYDirection {
-    case Up, Left, Down, Right, Unknown
+    case up, left, down, right, unknown
 }
 
 
 // MARK: - 一些通用的动画
 public enum YYHudAnimationType {
-    case None
-    case Fade
-    case Zoom
+    case none
+    case fade
+    case zoom
 }
 
 

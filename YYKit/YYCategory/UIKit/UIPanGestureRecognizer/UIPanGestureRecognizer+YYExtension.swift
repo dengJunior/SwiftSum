@@ -23,11 +23,11 @@ extension UIPanGestureRecognizer {
         let x = velocity.x, y = velocity.y
         print(x, y)
         if fabs(x) > fabs(y) {
-            return x > 0 ? .Right : .Left
+            return x > 0 ? .right : .left
         } else if fabs(x) < fabs(y) {
-            return y > 0 ? .Down : .Up
+            return y > 0 ? .down : .up
         } else {
-            return .Unknown
+            return .unknown
         }
     }
 }

@@ -6,5 +6,6 @@
         <page name='3-插入排序'/>
         <page name='4-快速排序'/>
         <page name='Utinity'/>
+        <page name='5-希尔排序'/>
     </pages>
 </playground>

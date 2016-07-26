@@ -161,7 +161,7 @@ extension YYHud {
         return show(inView: superview, text: text, isTip: true)
     }
     
-    func show(inView superView: UIView?, text: String?, image: UIImage? = nil, isTip: Bool = false, duration:Double = YYHud.YYHudDuration, animationType: YYHudAnimationType = .Fade, options: YYHudOpitions = []) -> YYHud {
+    func show(inView superView: UIView?, text: String?, image: UIImage? = nil, isTip: Bool = false, duration:Double = YYHud.YYHudDuration, animationType: YYHudAnimationType = .fade, options: YYHudOpitions = []) -> YYHud {
         isShowing = true
         dispatch_async(dispatch_get_main_queue()) {
             self.options = options
