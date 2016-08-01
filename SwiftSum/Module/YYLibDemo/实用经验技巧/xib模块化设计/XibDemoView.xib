@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A254g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XibDemoView" customModule="SwiftSum" customModuleProvider="target">
+            <connections>
+                <outlet property="title" destination="hSv-vD-LhU" id="NjZ-ha-TBX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="161"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xib模块化" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSv-vD-LhU">
+                    <rect key="frame" x="0.0" y="0.0" width="448" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WI-ud-Oon">
+                    <rect key="frame" x="0.0" y="21" width="448" height="30"/>
+                    <state key="normal" title="点我"/>
+                    <connections>
+                        <action selector="dianWo:" destination="-1" eventType="touchUpInside" id="bsR-zQ-ab9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9WI-ud-Oon" firstAttribute="top" secondItem="hSv-vD-LhU" secondAttribute="bottom" id="JC7-Qi-KCy"/>
+                <constraint firstAttribute="trailing" secondItem="hSv-vD-LhU" secondAttribute="trailing" id="MsJ-Rc-jMN"/>
+                <constraint firstItem="hSv-vD-LhU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="a39-FU-uPC"/>
+                <constraint firstAttribute="trailing" secondItem="9WI-ud-Oon" secondAttribute="trailing" id="qAW-2n-Goy"/>
+                <constraint firstItem="hSv-vD-LhU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="z0u-Sh-fLu"/>
+                <constraint firstItem="9WI-ud-Oon" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ztH-vt-8bb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="268" y="200.5"/>
+        </view>
+    </objects>
+</document>

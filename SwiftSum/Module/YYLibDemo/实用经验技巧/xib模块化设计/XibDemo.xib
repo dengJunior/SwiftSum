@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A254g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XibDemo" customModule="SwiftSum" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="hJx-h0-oNw" id="bEy-7P-8Dt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hJx-h0-oNw">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-S0-Um6" customClass="XibDemoView" customModule="SwiftSum" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xib中额外添加的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gk-2b-3Vl">
+                            <rect key="frame" x="0.0" y="107" width="600" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.54754762589999995" blue="0.65394765070000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="3Gk-2b-3Vl" firstAttribute="leading" secondItem="cIg-S0-Um6" secondAttribute="leading" id="2cp-I4-8UL"/>
+                        <constraint firstAttribute="trailing" secondItem="3Gk-2b-3Vl" secondAttribute="trailing" id="ZWn-mV-pJu"/>
+                        <constraint firstAttribute="bottom" secondItem="3Gk-2b-3Vl" secondAttribute="bottom" id="fe8-Du-krS"/>
+                        <constraint firstAttribute="height" constant="128" id="tuz-PD-zng"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cIg-S0-Um6" firstAttribute="leading" secondItem="hJx-h0-oNw" secondAttribute="leading" id="DNw-9V-qaJ"/>
+                <constraint firstItem="cIg-S0-Um6" firstAttribute="top" secondItem="hJx-h0-oNw" secondAttribute="top" id="pHn-jy-NJ4"/>
+                <constraint firstAttribute="trailing" secondItem="cIg-S0-Um6" secondAttribute="trailing" id="pdN-y9-riq"/>
+            </constraints>
+            <point key="canvasLocation" x="210" y="265"/>
+        </view>
+    </objects>
+</document>

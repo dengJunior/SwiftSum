@@ -29,34 +29,50 @@ extension Array where Element: Comparable {
     
     // 直接插入排序的一般形式，参数 int dk 为缩小增量，如果是直接插入排序，dk=1
     mutating func shellInsertSort(dk: Int) {
+        
+//        for current in 0 ..< dk {
+//            var next = current + dk
+//            while next < count {
+//                let sentry = self[current]
+//                if <#condition#> {
+//                    <#code#>
+//                }
+//                next += dk
+//            }
+//        }
+        
+        // 若第i个元素大于i-dk元素，直接插入；小于的话，移动有序表后插入
+        for current in dk ..< count {
+            var prev = current - dk
+            if self[current] < self[prev] {
+                let sentry = self[current]
+                self[current] = self[prev]
+                while prev >= 0 && sentry < self[prev] {
+                    self[prev + dk] = self[prev]
+                    prev -= dk
+                }
+                self[prev+dk] = sentry
+            }
+        }
+    }
+    
+    
+    mutating func shellSort() {
         /*
-         1. 整个排序过程共进行n-1趟
-         2. 每次取一个元素插入到前面排好序的数组中
+         我们简单处理增量序列：增量序列d = {n/2 ,n/4, n/8 .....1} n为要排序数的个数即：
+         
+         1. 先将要排序的一组记录按某个增量d（n/2,n为要排序数的个数）分成若干组子序列，每组中记录的下标相差d.
+         2. 对每组中全部元素进行直接插入排序，然后再用一个较小的增量（d/2）对它进行分组，在每组中再进行直接插入排序。
+         3. 继续不断缩小增量直至为1，
+         4. 最后使用直接插入排序完成排序。
          */
         if count < 2 {
             return
         }
-        
-        // 若第i个元素大于i-dk元素，直接插入；小于的话，移动有序表后插入
-        for i in dk ..< count {
-            
-        }
-        
-        //每次取一个元素插入
-        for insert in 1 ..< count {
-            var current = insert
-            while current > 0{
-                let prev = current - 1
-                //如果插入元素小于前一个元素 就交换2者，直到找到合适插入位置
-                if self[current] < self[prev] {
-                    swap(&self[current], &self[prev])
-                    current -= 1
-                } else {
-                    break
-                }
-            }
-            
-            print(self)
+        var dk = count / 2
+        while dk >= 1 {
+            shellInsertSort(dk)
+            dk /= 2
         }
     }
 }
@@ -64,6 +80,24 @@ extension Array where Element: Comparable {
 let arr = ["6", "1", "5", "2", "3", "4"]
 
 var demoArr = arr
-demoArr.insertSort()
+demoArr.shellSort()
 
 //: [Next](@next)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

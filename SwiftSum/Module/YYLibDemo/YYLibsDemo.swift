@@ -19,6 +19,7 @@ class YYLibsDemo: YYBaseDemoController {
             LibDemoInfo(title: "GoodsViewController3", desc: "仿淘宝商品详情", controllerName: "GoodsViewController3"),
             LibDemoInfo(title: "NetworkDemo", desc: "NetworkDemo", controllerName: "NetworkDemo"),
             LibDemoInfo(title: "YYLoggerDemo", desc: "显示日志", controllerName: "YYLoggerDemo"),
+            LibDemoInfo(title: "UsefulExperienceDemo", desc: "实用经验技巧", controllerName: "UsefulExperienceDemo"),
         ]
         
     }

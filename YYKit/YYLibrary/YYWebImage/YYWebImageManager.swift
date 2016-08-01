@@ -74,8 +74,9 @@ public class YYWebImageManager {
     public func requestImage(urlString: String,
                              options: YYWebImageOptions? = nil,
                              progress: YYWebImageProgressCallback? = nil,
-                             completion: YYWebImageCompletionCallback? = nil) {
+                             completion: YYWebImageCompletionCallback? = nil) -> YYWebImageOperation {
         
+        return YYWebImageOperation(request: NSURLRequest(), options: options ?? YYWebImageOptions(rawValue: 1), cacheKey: "xx", progress: progress, completion: completion)!
     }
     
     
@@ -133,6 +134,9 @@ public class YYWebImageOperation: NSOperation {
     
     public let options: YYWebImageOptions
     
+    let lock = NSRecursiveLock()
+    var started = false
+    
     init?(request: NSURLRequest, options: YYWebImageOptions, cacheKey: String, progress: YYWebImageProgressCallback? = nil,
         completion: YYWebImageCompletionCallback? = nil) {
         self.request = request
@@ -141,11 +145,28 @@ public class YYWebImageOperation: NSOperation {
         self.options = options
     }
     
+    func cancelOperation() {
+        endBackgroundTask()
+    }
+    
+    func endBackgroundTask() {
+        lock.lock()
+        UIApplication.sharedApplication().endBackgroundTask(111)
+        lock.unlock()
+    }
+    
     // MARK: - Override
     
     public override func start() {
         autoreleasepool { 
-            
+            lock.lock()
+            started = true
+            if cancelled {
+                
+            } else if ready && !finished && !executing {
+                
+            }
+            //finished = true
         }
     }
     

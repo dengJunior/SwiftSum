@@ -75,7 +75,24 @@ extension UIImageView {
             
             // get the image from memory as quickly as possible
             var imageFromMemory: UIImage?
-            
+            YYGCD.dispatchInGlobalQueue(task: { 
+                var _progress: YYWebImageProgressCallback?
+                if progress {
+                    _progress = { (receivedSize: Int, expectedSize: Int) in
+                        YYGCD.dispatchInMainQueue(task: {
+                            progress?(receivedSize: receivedSize, expectedSize: expectedSize)
+                        })
+                    }
+                }
+                
+                var _completion: YYWebImageCompletionCallback? = { (image: UIImage?, url: NSURL?, from: YYWebImageFromType, stage: YYWebImageStage, error: NSError?) in
+                    YYGCD.dispatchInMainQueue(task: { 
+                        self.image = image
+                        completion?(image: image, url: url, from: from, stage: stage, error: error)
+                    })
+                }
+                self.setter?.setOperation(sentinel!, url: imageUrl!, options: options!, manager: imageManager, progress: _progress!, completion: _completion!)
+            })
         })
     }
     
