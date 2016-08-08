@@ -21,4 +21,61 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return tintedImage
     }
+    
+    public func fitSize(in view: UIView? = nil) -> CGSize {
+        let imageWidth = self.size.width
+        let imageHeight = self.size.width
+        let containerWidth = view != nil ? view!.bounds.size.width : UIScreen.mainScreen().bounds.size.width
+        let containerHeight = view != nil ? view!.bounds.size.height : UIScreen.mainScreen().bounds.size.height
+        
+        let overWidth = imageWidth > containerWidth
+        let overHeight = imageHeight > containerHeight
+        
+        let timesThanScreenWidth = imageWidth / containerWidth
+        let timesThanScreenHeight = imageHeight / containerHeight
+        
+        var fitSize = CGSizeMake(imageWidth, imageHeight)
+        
+        if overWidth && overHeight {
+            fitSize.width = timesThanScreenWidth > timesThanScreenHeight ? containerWidth : imageWidth / timesThanScreenHeight
+            fitSize.height = timesThanScreenWidth > timesThanScreenHeight ? imageHeight / timesThanScreenWidth : containerHeight
+        } else {
+            if overWidth && !overHeight {
+                fitSize.width = containerWidth
+                fitSize.height = containerHeight / timesThanScreenWidth
+            } else if (!overWidth && overHeight) {
+                //fitSize.width = containerWidth / timesThanScreenHeight
+                fitSize.height = containerHeight
+            }
+        }
+        return fitSize
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

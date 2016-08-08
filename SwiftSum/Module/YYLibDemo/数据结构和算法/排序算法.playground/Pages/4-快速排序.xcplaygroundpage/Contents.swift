@@ -32,16 +32,18 @@ extension Array where Element: Comparable {
                 high -= 1
             }
             // 从 high 所指位置向前搜索，至多到 low+1 位置。将比基准元素小的交换到前端
-            if low != high {
+            if low < high {
                 swap(&self[high], &self[low])
+                low += 1
             }
             
             while low < high && self[low] <= sentinel {
                 low += 1
             }
             // 从 low 所指位置向后搜索，至多到 high-1 位置。将比基准元素大的交换到后端
-            if low != high {
+            if low < high {
                 swap(&self[low], &self[high])
+                high -= 1
             }
         }
         //print(self)

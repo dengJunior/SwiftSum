@@ -4,7 +4,7 @@ import Foundation
 
 extension Array where Element: Comparable {
     
-    func minMaxValueIndex(starIndex: Int = 0) -> (min: Int, max: Int)? {
+    func minMaxValueIndex(at starIndex: Int = 0) -> (min: Int, max: Int)? {
         if starIndex < count - 1 {
             var max = starIndex
             var min = starIndex
@@ -23,11 +23,11 @@ extension Array where Element: Comparable {
         return nil
     }
     
-    func maxValueIndex(starIndex: Int = 0) -> Int? {
-        return minMaxValueIndex(starIndex)?.max
+    func maxValueIndex(at starIndex: Int = 0) -> Int? {
+        return minMaxValueIndex(at: starIndex)?.max
     }
     func minValueIndex(starIndex: Int = 0) -> Int? {
-        return minMaxValueIndex(starIndex)?.min
+        return minMaxValueIndex(at: starIndex)?.min
     }
     
     var maxValue: Element? {
@@ -53,12 +53,10 @@ extension Array where Element: Comparable {
          */
         for begin in 0 ..< count - 1 {
             //只需遍历后面未排好的元素
-            for next in begin+1 ..< count {
-                //选出最小的一个数与每次循环开始位置的元素交换；
-                if let min = self.minValueIndex(next) {
-                    if self[min] < self[begin] {
-                        swap(&self[begin], &self[min])
-                    }
+            //选出最小的一个数与每次循环开始位置的元素交换；
+            if let min = self.minValueIndex(begin+1) {
+                if self[min] < self[begin] {
+                    swap(&self[begin], &self[min])
                 }
             }
             print(self)

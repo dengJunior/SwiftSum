@@ -8,8 +8,21 @@
 
 import UIKit
 
-public class YYHttp: NSObject {
-    /// if set to true, Pitaya will log all information in a NSURLSession lifecycle
+public enum YYHttpMethod: String {
+    case DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT
+}
+
+public struct YYHttpFile {
+    public let name: String!
+    public let url: NSURL!
+    public init(name: String, url: NSURL) {
+        self.name = name
+        self.url = url
+    }
+}
+
+public class YYHttp {
+    /// if set to true, YYHttp will log all information in a NSURLSession lifecycle
     public static var YYDebug = false
     var httpManager: YYHttpManager!
     
@@ -20,6 +33,17 @@ public class YYHttp: NSObject {
         return h
     }
     
+    public static func fetch(urlString: String, httpMethod method: YYHttpMethod = .GET) -> YYHttp {
+        let h = YYHttp()
+        h.httpManager = YYHttpManager(httpMethod: method, urlString: urlString)
+        return h
+    }
+    
+    public func fetch(urlString: String, httpMethod method: YYHttpMethod = .GET) -> YYHttp {
+        httpManager = YYHttpManager(httpMethod: method, urlString: urlString)
+        return self
+    }
+    
     public func cancel(callback: (() -> Void)?) {
         httpManager.cancelCallback = callback
         httpManager.task.cancel()
@@ -28,18 +52,18 @@ public class YYHttp: NSObject {
 
 // MARK: - 向请求中添加额外信息
 public extension YYHttp {
-    public func addParams(params: [String: String]) -> YYHttp {
+    public func addParams(params: [String: String]) -> Self {
         httpManager.addParams(params)
         return self
     }
     
-    public func addHeaders(headers: [String: String]) -> YYHttp  {
+    public func addHeaders(headers: [String: String]) -> Self  {
         httpManager.addHeaders(headers)
         return self
     }
     
     //add files to self, POST only
-    public func addFiles(files: [YYHttpFile]) -> YYHttp {
+    public func addFiles(files: [YYHttpFile]) -> Self {
         httpManager.addFiles(files)
         return self
     }

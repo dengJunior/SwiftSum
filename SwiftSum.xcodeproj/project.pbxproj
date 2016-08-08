@@ -52,6 +52,7 @@
 		1F139B4C1C814844005E89EB /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B4B1C814844005E89EB /* Setting.swift */; };
 		1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B4E1C83449E005E89EB /* GitHubAPI.swift */; };
 		1F1656841CBCCF740015F570 /* NSOperationQueueDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */; };
+		1F19E4E31D583347005E730A /* TodoListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19E4E21D583347005E730A /* TodoListDemo.swift */; };
 		1F288D971CAD174500180316 /* SimpleGestureRecognizers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */; };
 		1F288D9B1CAD1FD000180316 /* rotation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D981CAD1FD000180316 /* rotation.png */; };
 		1F288D9C1CAD1FD000180316 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D991CAD1FD000180316 /* swipe.png */; };
@@ -77,6 +78,7 @@
 		1F30EB341D4E4460001559B4 /* XibDemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F30EB331D4E4460001559B4 /* XibDemoView.xib */; };
 		1F30EB361D4E4698001559B4 /* YYXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30EB351D4E4698001559B4 /* YYXibView.swift */; };
 		1F30EB381D4E4A26001559B4 /* XibDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F30EB371D4E4A26001559B4 /* XibDemo.xib */; };
+		1F30EB3A1D4F4D46001559B4 /* YYRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30EB391D4F4D46001559B4 /* YYRefresh.swift */; };
 		1F364DC01D210E4F006B8412 /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F364DBC1D210E4F006B8412 /* BackgroundMusic.mp3 */; };
 		1F364DC11D210E4F006B8412 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F364DBD1D210E4F006B8412 /* coin.wav */; };
 		1F364DC21D210E4F006B8412 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F364DBE1D210E4F006B8412 /* explosion.mp3 */; };
@@ -115,7 +117,6 @@
 		1F3B77D51D165C7600FC9678 /* YYGCDSemaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77AA1D165C7500FC9678 /* YYGCDSemaphore.swift */; };
 		1F3B77D61D165C7600FC9678 /* YYGCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77AB1D165C7500FC9678 /* YYGCDTimer.swift */; };
 		1F3B77D71D165C7600FC9678 /* YYHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77AD1D165C7500FC9678 /* YYHttp.swift */; };
-		1F3B77D81D165C7600FC9678 /* YYHttpFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77AE1D165C7500FC9678 /* YYHttpFoundation.swift */; };
 		1F3B77D91D165C7600FC9678 /* YYHttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77AF1D165C7500FC9678 /* YYHttpManager.swift */; };
 		1F3B77DA1D165C7600FC9678 /* YYHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B77B11D165C7500FC9678 /* YYHud.swift */; };
 		1F3B77DB1D165C7600FC9678 /* YYHud.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B77B21D165C7500FC9678 /* YYHud.xcassets */; };
@@ -200,6 +201,26 @@
 		1FAF60271CB940AD0046CF3D /* ThreadSafeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60261CB940AD0046CF3D /* ThreadSafeDemo.swift */; };
 		1FAF60381CBB30BF0046CF3D /* YYLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF60371CBB30BF0046CF3D /* YYLogger.swift */; };
 		1FAF603B1CBB30E20046CF3D /* YYLoggerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAF603A1CBB30E20046CF3D /* YYLoggerDemo.swift */; };
+		1FB08A581D580FAF00C4C13E /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A481D580FAF00C4C13E /* Action.swift */; };
+		1FB08A591D580FAF00C4C13E /* CombinedReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A491D580FAF00C4C13E /* CombinedReducer.swift */; };
+		1FB08A5A1D580FAF00C4C13E /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A4A1D580FAF00C4C13E /* Middleware.swift */; };
+		1FB08A5B1D580FAF00C4C13E /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A4B1D580FAF00C4C13E /* Reducer.swift */; };
+		1FB08A5C1D580FAF00C4C13E /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A4C1D580FAF00C4C13E /* State.swift */; };
+		1FB08A5D1D580FAF00C4C13E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A4D1D580FAF00C4C13E /* Store.swift */; };
+		1FB08A5E1D580FAF00C4C13E /* StoreSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A4E1D580FAF00C4C13E /* StoreSubscriber.swift */; };
+		1FB08A5F1D580FAF00C4C13E /* StoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A4F1D580FAF00C4C13E /* StoreType.swift */; };
+		1FB08A601D580FAF00C4C13E /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A501D580FAF00C4C13E /* Subscription.swift */; };
+		1FB08A611D580FAF00C4C13E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FB08A511D580FAF00C4C13E /* Info.plist */; };
+		1FB08A621D580FAF00C4C13E /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A541D580FAF00C4C13E /* Assertions.swift */; };
+		1FB08A631D580FAF00C4C13E /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A551D580FAF00C4C13E /* Coding.swift */; };
+		1FB08A641D580FAF00C4C13E /* Swift+Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A561D580FAF00C4C13E /* Swift+Compatibility.swift */; };
+		1FB08A651D580FAF00C4C13E /* TypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A571D580FAF00C4C13E /* TypeHelper.swift */; };
+		1FB08A671D58111E00C4C13E /* ReduxDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A661D58111E00C4C13E /* ReduxDemo.swift */; };
+		1FB08A6A1D58145C00C4C13E /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A691D58145C00C4C13E /* Counter.swift */; };
+		1FB08A6D1D5814FB00C4C13E /* Counter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB08A6C1D5814FB00C4C13E /* Counter.xib */; };
+		1FB08A6F1D5819AB00C4C13E /* CounterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A6E1D5819AB00C4C13E /* CounterActions.swift */; };
+		1FB08A711D581A8400C4C13E /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A701D581A8400C4C13E /* CounterReducer.swift */; };
+		1FB08A731D581FD400C4C13E /* CounterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A721D581FD400C4C13E /* CounterStore.swift */; };
 		1FB394A61CCE06C0005C1B0E /* GoodsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394A51CCE06C0005C1B0E /* GoodsDetailViewController.swift */; };
 		1FB394A91CCE096F005C1B0E /* GoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */; };
 		1FB394AB1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */; };
@@ -371,6 +392,7 @@
 		1F139B4B1C814844005E89EB /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		1F139B4E1C83449E005E89EB /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOperationQueueDemo.swift; sourceTree = "<group>"; };
+		1F19E4E21D583347005E730A /* TodoListDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListDemo.swift; sourceTree = "<group>"; };
 		1F22471D1CE455F3003F826D /* 15-自动引用计数.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "15-自动引用计数.playground"; sourceTree = "<group>"; };
 		1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleGestureRecognizers.xib; sourceTree = "<group>"; };
 		1F288D981CAD1FD000180316 /* rotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotation.png; sourceTree = "<group>"; };
@@ -398,6 +420,8 @@
 		1F30EB331D4E4460001559B4 /* XibDemoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibDemoView.xib; sourceTree = "<group>"; };
 		1F30EB351D4E4698001559B4 /* YYXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYXibView.swift; sourceTree = "<group>"; };
 		1F30EB371D4E4A26001559B4 /* XibDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibDemo.xib; sourceTree = "<group>"; };
+		1F30EB391D4F4D46001559B4 /* YYRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRefresh.swift; sourceTree = "<group>"; };
+		1F30EB761D518A22001559B4 /* 数据结构.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "数据结构.playground"; sourceTree = "<group>"; };
 		1F364DBC1D210E4F006B8412 /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
 		1F364DBD1D210E4F006B8412 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
 		1F364DBE1D210E4F006B8412 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
@@ -435,7 +459,6 @@
 		1F3B77AA1D165C7500FC9678 /* YYGCDSemaphore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGCDSemaphore.swift; sourceTree = "<group>"; };
 		1F3B77AB1D165C7500FC9678 /* YYGCDTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGCDTimer.swift; sourceTree = "<group>"; };
 		1F3B77AD1D165C7500FC9678 /* YYHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHttp.swift; sourceTree = "<group>"; };
-		1F3B77AE1D165C7500FC9678 /* YYHttpFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHttpFoundation.swift; sourceTree = "<group>"; };
 		1F3B77AF1D165C7500FC9678 /* YYHttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHttpManager.swift; sourceTree = "<group>"; };
 		1F3B77B11D165C7500FC9678 /* YYHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHud.swift; sourceTree = "<group>"; };
 		1F3B77B21D165C7500FC9678 /* YYHud.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YYHud.xcassets; sourceTree = "<group>"; };
@@ -544,6 +567,27 @@
 		1FAF60351CBA9FC80046CF3D /* YYRunLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRunLoop.m; sourceTree = "<group>"; };
 		1FAF60371CBB30BF0046CF3D /* YYLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLogger.swift; sourceTree = "<group>"; };
 		1FAF603A1CBB30E20046CF3D /* YYLoggerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLoggerDemo.swift; sourceTree = "<group>"; };
+		1FB08A481D580FAF00C4C13E /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		1FB08A491D580FAF00C4C13E /* CombinedReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedReducer.swift; sourceTree = "<group>"; };
+		1FB08A4A1D580FAF00C4C13E /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		1FB08A4B1D580FAF00C4C13E /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		1FB08A4C1D580FAF00C4C13E /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		1FB08A4D1D580FAF00C4C13E /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1FB08A4E1D580FAF00C4C13E /* StoreSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSubscriber.swift; sourceTree = "<group>"; };
+		1FB08A4F1D580FAF00C4C13E /* StoreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreType.swift; sourceTree = "<group>"; };
+		1FB08A501D580FAF00C4C13E /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		1FB08A511D580FAF00C4C13E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FB08A521D580FAF00C4C13E /* ReSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReSwift.h; sourceTree = "<group>"; };
+		1FB08A541D580FAF00C4C13E /* Assertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
+		1FB08A551D580FAF00C4C13E /* Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coding.swift; sourceTree = "<group>"; };
+		1FB08A561D580FAF00C4C13E /* Swift+Compatibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Compatibility.swift"; sourceTree = "<group>"; };
+		1FB08A571D580FAF00C4C13E /* TypeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeHelper.swift; sourceTree = "<group>"; };
+		1FB08A661D58111E00C4C13E /* ReduxDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxDemo.swift; sourceTree = "<group>"; };
+		1FB08A691D58145C00C4C13E /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		1FB08A6C1D5814FB00C4C13E /* Counter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Counter.xib; sourceTree = "<group>"; };
+		1FB08A6E1D5819AB00C4C13E /* CounterActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterActions.swift; sourceTree = "<group>"; };
+		1FB08A701D581A8400C4C13E /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		1FB08A721D581FD400C4C13E /* CounterStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterStore.swift; sourceTree = "<group>"; };
 		1FB394A51CCE06C0005C1B0E /* GoodsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailViewController.swift; sourceTree = "<group>"; };
 		1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController.swift; sourceTree = "<group>"; };
 		1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailGraphicViewController.swift; sourceTree = "<group>"; };
@@ -846,8 +890,41 @@
 				1F792CB41C89714F00EE70D4 /* GithubSignupDemo */,
 				1FC174001CEC4B2100F67B38 /* ThirdLibDemo.storyboard */,
 				1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */,
+				1FB08A681D58115E00C4C13E /* Redux架构 */,
 			);
 			path = ThirdLibDemo;
+			sourceTree = "<group>";
+		};
+		1F19E4DF1D5831DB005E730A /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				1FB08A6E1D5819AB00C4C13E /* CounterActions.swift */,
+			);
+			name = Action;
+			sourceTree = "<group>";
+		};
+		1F19E4E01D5831E4005E730A /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				1FB08A701D581A8400C4C13E /* CounterReducer.swift */,
+			);
+			name = Reducer;
+			sourceTree = "<group>";
+		};
+		1F19E4E11D5831EB005E730A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				1FB08A721D581FD400C4C13E /* CounterStore.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		1F19E4E41D583350005E730A /* TodoList应用 */ = {
+			isa = PBXGroup;
+			children = (
+				1F19E4E21D583347005E730A /* TodoListDemo.swift */,
+			);
+			name = "TodoList应用";
 			sourceTree = "<group>";
 		};
 		1F288D9E1CAD1FDC00180316 /* images */ = {
@@ -898,6 +975,14 @@
 				1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */,
 			);
 			path = "类型化的TableViewController ";
+			sourceTree = "<group>";
+		};
+		1F30EB3B1D4F4D4F001559B4 /* YYRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				1F30EB391D4F4D46001559B4 /* YYRefresh.swift */,
+			);
+			name = YYRefresh;
 			sourceTree = "<group>";
 		};
 		1F364DBB1D210E4F006B8412 /* Sounds */ = {
@@ -1103,6 +1188,7 @@
 				1F3B77A51D165C7500FC9678 /* YYAnimation.swift */,
 				1F3B77A61D165C7500FC9678 /* YYDim.swift */,
 				1F30EB351D4E4698001559B4 /* YYXibView.swift */,
+				1F30EB3B1D4F4D4F001559B4 /* YYRefresh */,
 			);
 			path = YYLibrary;
 			sourceTree = "<group>";
@@ -1130,7 +1216,6 @@
 			isa = PBXGroup;
 			children = (
 				1F3B77AD1D165C7500FC9678 /* YYHttp.swift */,
-				1F3B77AE1D165C7500FC9678 /* YYHttpFoundation.swift */,
 				1F3B77AF1D165C7500FC9678 /* YYHttpManager.swift */,
 			);
 			path = YYHttp;
@@ -1554,6 +1639,7 @@
 		1FA90FA01D05BF26008D0DFC /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1FB08A461D580FAF00C4C13E /* ReSwift */,
 				1FA90FA11D05BF26008D0DFC /* Category */,
 				1F8ADB001D05C1FF0059C842 /* YYLibrary */,
 			);
@@ -1696,6 +1782,66 @@
 			path = YYLoggerDemo;
 			sourceTree = "<group>";
 		};
+		1FB08A461D580FAF00C4C13E /* ReSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1FB08A471D580FAF00C4C13E /* CoreTypes */,
+				1FB08A511D580FAF00C4C13E /* Info.plist */,
+				1FB08A521D580FAF00C4C13E /* ReSwift.h */,
+				1FB08A531D580FAF00C4C13E /* Utils */,
+			);
+			path = ReSwift;
+			sourceTree = "<group>";
+		};
+		1FB08A471D580FAF00C4C13E /* CoreTypes */ = {
+			isa = PBXGroup;
+			children = (
+				1FB08A481D580FAF00C4C13E /* Action.swift */,
+				1FB08A491D580FAF00C4C13E /* CombinedReducer.swift */,
+				1FB08A4A1D580FAF00C4C13E /* Middleware.swift */,
+				1FB08A4B1D580FAF00C4C13E /* Reducer.swift */,
+				1FB08A4C1D580FAF00C4C13E /* State.swift */,
+				1FB08A4D1D580FAF00C4C13E /* Store.swift */,
+				1FB08A4E1D580FAF00C4C13E /* StoreSubscriber.swift */,
+				1FB08A4F1D580FAF00C4C13E /* StoreType.swift */,
+				1FB08A501D580FAF00C4C13E /* Subscription.swift */,
+			);
+			path = CoreTypes;
+			sourceTree = "<group>";
+		};
+		1FB08A531D580FAF00C4C13E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1FB08A541D580FAF00C4C13E /* Assertions.swift */,
+				1FB08A551D580FAF00C4C13E /* Coding.swift */,
+				1FB08A561D580FAF00C4C13E /* Swift+Compatibility.swift */,
+				1FB08A571D580FAF00C4C13E /* TypeHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1FB08A681D58115E00C4C13E /* Redux架构 */ = {
+			isa = PBXGroup;
+			children = (
+				1FB08A661D58111E00C4C13E /* ReduxDemo.swift */,
+				1F19E4E41D583350005E730A /* TodoList应用 */,
+				1FB08A6B1D58146400C4C13E /* 计数器的应用 */,
+			);
+			name = "Redux架构";
+			sourceTree = "<group>";
+		};
+		1FB08A6B1D58146400C4C13E /* 计数器的应用 */ = {
+			isa = PBXGroup;
+			children = (
+				1FB08A691D58145C00C4C13E /* Counter.swift */,
+				1FB08A6C1D5814FB00C4C13E /* Counter.xib */,
+				1F19E4DF1D5831DB005E730A /* Action */,
+				1F19E4E01D5831E4005E730A /* Reducer */,
+				1F19E4E11D5831EB005E730A /* Store */,
+			);
+			name = "计数器的应用";
+			sourceTree = "<group>";
+		};
 		1FB394A71CCE06DD005C1B0E /* 仿淘宝商品详情 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1792,6 +1938,7 @@
 			children = (
 				1FDCEFC91CFC7E830039D176 /* AlgorithmsDemo.swift */,
 				1FDCEFC61CFC7E3D0039D176 /* DataStructureAndAlgorithmsDemo.swift */,
+				1F30EB761D518A22001559B4 /* 数据结构.playground */,
 				1FDCEFCB1CFD1C680039D176 /* 排序算法.playground */,
 			);
 			path = "数据结构和算法";
@@ -2101,11 +2248,13 @@
 				1F139B4A1C814523005E89EB /* RxSwiftDemo.xib in Resources */,
 				1F0097401CB622A8003A063F /* MainCollectionViewController.storyboard in Resources */,
 				1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */,
+				1FB08A6D1D5814FB00C4C13E /* Counter.xib in Resources */,
 				1FAB22351CE305B20085EAD3 /* ContentHugging.xib in Resources */,
 				1F548C341D43296C002E521B /* YYMusicMine.storyboard in Resources */,
 				1F30EB381D4E4A26001559B4 /* XibDemo.xib in Resources */,
 				1F288D971CAD174500180316 /* SimpleGestureRecognizers.xib in Resources */,
 				1FC174011CEC4B2100F67B38 /* ThirdLibDemo.storyboard in Resources */,
+				1FB08A611D580FAF00C4C13E /* Info.plist in Resources */,
 				1F548C311D432850002E521B /* YYMusicHome.storyboard in Resources */,
 				1F2A38291CEED53600EE316D /* ExampleApp.js in Resources */,
 				1F288D9C1CAD1FD000180316 /* swipe.png in Resources */,
@@ -2220,6 +2369,7 @@
 				1F3B77BE1D165C7600FC9678 /* NSObject+YYExtension.swift in Sources */,
 				1F3B77BD1D165C7600FC9678 /* NSDate+YYExtension.swift in Sources */,
 				1FDDC4371D1B739900C3C619 /* SKView+YYKit.swift in Sources */,
+				1F30EB3A1D4F4D46001559B4 /* YYRefresh.swift in Sources */,
 				1F3B77C01D165C7600FC9678 /* String+YYExtension.swift in Sources */,
 				1F3B77DD1D165C7600FC9678 /* YYLinkedMap.swift in Sources */,
 				1F3B77DA1D165C7600FC9678 /* YYHud.swift in Sources */,
@@ -2235,7 +2385,6 @@
 				1F3B77D01D165C7600FC9678 /* YYAlert.swift in Sources */,
 				1F30EB361D4E4698001559B4 /* YYXibView.swift in Sources */,
 				1F3B77CD1D165C7600FC9678 /* YYSystemNotification.swift in Sources */,
-				1F3B77D81D165C7600FC9678 /* YYHttpFoundation.swift in Sources */,
 				1F3B77C31D165C7600FC9678 /* UIPanGestureRecognizer+YYExtension.swift in Sources */,
 				1F5237C01D3BBA9900B182D0 /* YYWebImageManager.swift in Sources */,
 				1F3B77D21D165C7600FC9678 /* YYDim.swift in Sources */,
@@ -2264,6 +2413,7 @@
 				1F8ADB061D05C1FF0059C842 /* Observable+YYNetworking.swift in Sources */,
 				1F0097211CB56037003A063F /* DesignPatternDemo.swift in Sources */,
 				1F139B491C814523005E89EB /* RxSwiftDemo.swift in Sources */,
+				1FB08A631D580FAF00C4C13E /* Coding.swift in Sources */,
 				1FCE27071CF88A8F001F32A5 /* NavigationDemo.swift in Sources */,
 				1F00972B1CB5E7F0003A063F /* Album.swift in Sources */,
 				1FE864E11CB3819100E013A1 /* RunLoopDemo.swift in Sources */,
@@ -2284,6 +2434,7 @@
 				1F8ADB081D05C1FF0059C842 /* YYApi.swift in Sources */,
 				EEF281711C634EFD0004765A /* UnsafePointer.swift in Sources */,
 				EEF281701C634EFD0004765A /* FoundationAbout.swift in Sources */,
+				1FB08A651D580FAF00C4C13E /* TypeHelper.swift in Sources */,
 				1FF9B2C31CF4439400AB9D30 /* PhotoDetailViewController.swift in Sources */,
 				1F0DD1AC1CE9BC7100501767 /* YYOverlayPresentationController.swift in Sources */,
 				1F0DD1C01CEBF4EC00501767 /* ExtensionDemo.swift in Sources */,
@@ -2297,9 +2448,11 @@
 				1F0097291CB56130003A063F /* MusicController.swift in Sources */,
 				EEF2816B1C634EFD0004765A /* SwifterController.swift in Sources */,
 				1F792CBA1C8991A900EE70D4 /* ValidationResult.swift in Sources */,
+				1FB08A731D581FD400C4C13E /* CounterStore.swift in Sources */,
 				1FA4474F1D1E9E3400DDC3A6 /* HelloScene.swift in Sources */,
 				1FCE29191CDC691A00DBF2E3 /* GoodsViewController2.swift in Sources */,
 				1FA6B7731CF4569D007B4122 /* UIImagePickerControllerDemo.swift in Sources */,
+				1FB08A5B1D580FAF00C4C13E /* Reducer.swift in Sources */,
 				1F1656841CBCCF740015F570 /* NSOperationQueueDemo.swift in Sources */,
 				1F5B67DC1CAD0D40003CFD75 /* SimpleGestureRecognizers.swift in Sources */,
 				1F289A051CC5C0E000988E82 /* AnimationsDemo.swift in Sources */,
@@ -2313,6 +2466,7 @@
 				EEF2816C1C634EFD0004765A /* DemoSingle.swift in Sources */,
 				1FF133E11CCB266100AD6822 /* ViewController1.swift in Sources */,
 				1F0097381CB60DF5003A063F /* MainThreadRunLoopSourceContext.swift in Sources */,
+				1FB08A581D580FAF00C4C13E /* Action.swift in Sources */,
 				1F0DD19D1CE5B25500501767 /* PresentDemo.swift in Sources */,
 				1FB91F5B1D49987E005B9D6C /* XibDemo.swift in Sources */,
 				1F5B67BE1CACF0D6003CFD75 /* SystemDemo.swift in Sources */,
@@ -2330,6 +2484,8 @@
 				1FAAFBAD1BE85BE5007023B7 /* YYBaseNavigationController.swift in Sources */,
 				1F00971F1CB4A4F0003A063F /* TestThread.swift in Sources */,
 				1FB394A91CCE096F005C1B0E /* GoodsViewController.swift in Sources */,
+				1FB08A5A1D580FAF00C4C13E /* Middleware.swift in Sources */,
+				1FB08A601D580FAF00C4C13E /* Subscription.swift in Sources */,
 				1F2A382B1CEEF57600EE316D /* UIWebViewDemo.swift in Sources */,
 				EEF2816D1C634EFD0004765A /* MemoryManage.swift in Sources */,
 				1FB8C57A1CD324670020E183 /* CustomPresentationSecondViewController.swift in Sources */,
@@ -2344,6 +2500,7 @@
 				1FB394A61CCE06C0005C1B0E /* GoodsDetailViewController.swift in Sources */,
 				1F0DD1B21CEA173100501767 /* YYNavigationDelegate.swift in Sources */,
 				1FB8C5711CD1BE8B0020E183 /* YYInteractivityTransition.swift in Sources */,
+				1FB08A5F1D580FAF00C4C13E /* StoreType.swift in Sources */,
 				1F0097451CB8EF71003A063F /* TestTimer.swift in Sources */,
 				EEF2817A1C63567C0004765A /* NetworkDemo.swift in Sources */,
 				1F289A031CC48AE300988E82 /* AutoresizingMaskDemo.swift in Sources */,
@@ -2354,22 +2511,29 @@
 				1F5B67D01CAD019D003CFD75 /* GestureDemoChild.swift in Sources */,
 				1FA447541D1E9E7100DDC3A6 /* GameDemo.swift in Sources */,
 				1FAF60271CB940AD0046CF3D /* ThreadSafeDemo.swift in Sources */,
+				1FB08A641D580FAF00C4C13E /* Swift+Compatibility.swift in Sources */,
 				1F288DA21CB1FD0600180316 /* DeliveryTouchesDemo.swift in Sources */,
 				1F77A2D91CF6980F0024D3A2 /* NSURLSessionDemo.swift in Sources */,
 				1F0DD19F1CE5B76F00501767 /* YYTransitionAnimator.swift in Sources */,
 				1FAF60381CBB30BF0046CF3D /* YYLogger.swift in Sources */,
 				1FB8C56F1CD1B4030020E183 /* YYInteractivityTransitionAnimator.swift in Sources */,
 				1FF9B2B41CF2FFFF00AB9D30 /* YYFullscreenPopGesture.swift in Sources */,
+				1FB08A5D1D580FAF00C4C13E /* Store.swift in Sources */,
 				1F0097261CB560DB003A063F /* HTTPClient.swift in Sources */,
 				1FA8F31B1D3FA5F300130E0B /* BlendModeCell.swift in Sources */,
+				1FB08A711D581A8400C4C13E /* CounterReducer.swift in Sources */,
+				1FB08A6F1D5819AB00C4C13E /* CounterActions.swift in Sources */,
+				1FB08A621D580FAF00C4C13E /* Assertions.swift in Sources */,
 				1FAAFBB61BE87B31007023B7 /* SwiftLearnDemo.swift in Sources */,
 				1F0DD1BB1CEB50C100501767 /* CollectionViewControllerTransitionDemo.swift in Sources */,
 				1F0DD19B1CE5AA9600501767 /* YYPresentationDelegate.swift in Sources */,
 				1F5B67CB1CACF3BC003CFD75 /* GestureDemo.swift in Sources */,
+				1FB08A6A1D58145C00C4C13E /* Counter.swift in Sources */,
 				1F87A2A01CA3B9EB0001519E /* AppConfig.swift in Sources */,
 				1F548C3B1D435EFB002E521B /* Provider.swift in Sources */,
 				1F0DD1AA1CE9AEAE00501767 /* YYOverlayAnimatorDelegate.swift in Sources */,
 				1F5A73231CBE178E002B0D19 /* TestDispatchQueue.swift in Sources */,
+				1F19E4E31D583347005E730A /* TodoListDemo.swift in Sources */,
 				1F8ADB091D05C1FF0059C842 /* YYAppToken.swift in Sources */,
 				1F288DA41CB216C800180316 /* YYCycleGestureRecognizer.swift in Sources */,
 				1FF133DF1CCB265500AD6822 /* TableViewController1.swift in Sources */,
@@ -2381,6 +2545,7 @@
 				1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */,
 				1FB91F5F1D499984005B9D6C /* UsefulExperienceDemo.swift in Sources */,
 				1FA447501D1E9E3400DDC3A6 /* Spaceship.swift in Sources */,
+				1FB08A671D58111E00C4C13E /* ReduxDemo.swift in Sources */,
 				1FF9B2C11CF4437800AB9D30 /* PhotoCollectionViewController.swift in Sources */,
 				1F548C361D43299B002E521B /* YYMusicController.swift in Sources */,
 				1F075BDF1C4B4F480013C815 /* YYLibsDemo.swift in Sources */,
@@ -2394,6 +2559,7 @@
 				1F8059B31CED52E600CA0936 /* iOS6Feature.swift in Sources */,
 				1FB394AD1CCE5867005C1B0E /* NetworkController.swift in Sources */,
 				1FA6B7761CF536E0007B4122 /* SystemControlDemo.swift in Sources */,
+				1FB08A5E1D580FAF00C4C13E /* StoreSubscriber.swift in Sources */,
 				EEF2816F1C634EFD0004765A /* TypeIntroduction.swift in Sources */,
 				1F8059B81CED6BB700CA0936 /* WKWebViewDemo.swift in Sources */,
 				1F8ADB151D067C440059C842 /* CollectionTextCell.swift in Sources */,
@@ -2402,7 +2568,9 @@
 				1F77A2DB1CF6EB6B0024D3A2 /* YYSessionManager.swift in Sources */,
 				1F0C134A1CB38C050045FCB7 /* TestRunLoop.swift in Sources */,
 				1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */,
+				1FB08A591D580FAF00C4C13E /* CombinedReducer.swift in Sources */,
 				1F5237B11D39F15B00B182D0 /* AudioDemo.swift in Sources */,
+				1FB08A5C1D580FAF00C4C13E /* State.swift in Sources */,
 				1F0DD1A61CE99AB100501767 /* PresentedViewController.swift in Sources */,
 				1F288DA01CAE623000180316 /* YYPanGestureRecognizer.swift in Sources */,
 				1FDCEFCA1CFC7E830039D176 /* AlgorithmsDemo.swift in Sources */,

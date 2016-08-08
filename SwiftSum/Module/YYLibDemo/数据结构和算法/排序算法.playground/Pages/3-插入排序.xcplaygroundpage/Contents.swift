@@ -20,7 +20,7 @@ extension Array where Element: Comparable {
         //每次取一个元素插入
         for insert in 1 ..< count {
             var current = insert
-            while current > 0{
+            while current > 0 {
                 let prev = current - 1
                 //如果插入元素小于前一个元素 就交换2者，直到找到合适插入位置
                 if self[current] < self[prev] {

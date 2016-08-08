@@ -27,35 +27,54 @@ extension Array where Element: Comparable {
      4. 最后使用直接插入排序完成排序。
      */
     
-    // 直接插入排序的一般形式，参数 int dk 为缩小增量，如果是直接插入排序，dk=1
+    //参数 int dk 为缩小增量，如果是直接插入排序，dk=1
     mutating func shellInsertSort(dk: Int) {
-        
-//        for current in 0 ..< dk {
-//            var next = current + dk
-//            while next < count {
-//                let sentry = self[current]
-//                if <#condition#> {
-//                    <#code#>
-//                }
-//                next += dk
-//            }
-//        }
-        
-        // 若第i个元素大于i-dk元素，直接插入；小于的话，移动有序表后插入
-        for current in dk ..< count {
-            var prev = current - dk
-            if self[current] < self[prev] {
-                let sentry = self[current]
-                self[current] = self[prev]
-                while prev >= 0 && sentry < self[prev] {
-                    self[prev + dk] = self[prev]
+        for i in 0 ..< dk {
+            /*
+             每次循环，i, i+k, i+k+k, ...为一个分组
+             对该分组使用插入插入排序
+             */
+            var insert = i + dk
+            while insert < count {
+                var current = insert
+                var prev = current - dk
+                while prev >= 0 {
+                    if self[current] < self[prev] {
+                        swap(&self[current], &self[prev])
+                    } else {
+                        break;
+                    }
+                    current = prev
                     prev -= dk
                 }
-                self[prev+dk] = sentry
+                insert += dk
             }
         }
     }
     
+    /**
+     上面的shellsort代码虽然对直观的理解希尔排序有帮助，但代码量太大了，不够简洁清晰。
+     因此进行下改进和优化，以第二次排序为例，
+     原来是每次从1A到1E，从2A到2E，可以改成从1B开始，先和1A比较，然后取2B与2A比较，
+     再取1C与前面自己组内的数据比较…….。
+     这种每次从数组第gap个元素开始，每个元素与自己组内的数据进行直接插入排序显然也是正确的。
+     */
+    mutating func shellInsertSortBetter(dk: Int) {
+        //从数组第dk个元素开始
+        for i in dk ..< count {
+            var insert = i
+            var prev = i - dk
+            while prev >= 0 {
+                if self[insert] < self[prev] {
+                    swap(&self[insert], &self[prev])
+                } else {
+                    break
+                }
+                insert = prev
+                prev -= dk
+            }
+        }
+    }
     
     mutating func shellSort() {
         /*
@@ -71,7 +90,8 @@ extension Array where Element: Comparable {
         }
         var dk = count / 2
         while dk >= 1 {
-            shellInsertSort(dk)
+//            shellInsertSort(dk)
+            shellInsertSortBetter(dk)
             dk /= 2
         }
     }
