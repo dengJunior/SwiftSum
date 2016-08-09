@@ -10,17 +10,24 @@ import UIKit
 import YYKit
 
 struct TodoListItemModel {
-    var hash = 0
+    var hash: Int = 0
     var text = ""
     var completed = false
+    
+    init(text: String, completed: Bool) {
+        self.text = text
+        self.completed = completed
+        
+        //不能用该方式来做hash，因为在比较多的值拷贝的时候，可能会复用这块内存
+        //hash = unsafeAddressOf("\(self)").hashValue
+    }
+    
+    init() {
+    }
 }
 
 class TodoList: YYXibView, UITableViewDataSource, UITableViewDelegate {
-    var model = [TodoListItemModel]()
-    var todoListDidTapItemCallback: ((_ : NSIndexPath) -> Void)?
-    
-    @IBOutlet weak var tableView: UITableView!
-    
+    // MARK: - Initialization
     
     func initialization() {
         tableView.dataSource = self
@@ -34,6 +41,11 @@ class TodoList: YYXibView, UITableViewDataSource, UITableViewDelegate {
         initialization()
     }
     
+    // MARK: - Public
+    
+    var model = [TodoListItemModel]()
+    var todoListDidTapItemCallback: ((_ : NSIndexPath) -> Void)?
+    
     func render(model: Any? = nil) {
         if let outModel = model as? [TodoListItemModel] {
             self.model = outModel
@@ -46,6 +58,10 @@ class TodoList: YYXibView, UITableViewDataSource, UITableViewDelegate {
             tableView.scrollToBottom()
         }
     }
+    
+    // MARK: - Private
+    
+    @IBOutlet private weak var tableView: UITableView!
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.count
@@ -74,7 +90,7 @@ class TodoListItem: UITableViewCell, YYComponent {
         if self.model.completed {
             textLabel?.text = nil
             textLabel?.attributedText = NSAttributedString(string: text, attributes: [NSStrikethroughStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue])
-            textLabel?.textColor = UIColor.darkGrayColor()
+            textLabel?.textColor = UIColor.orangeColor()
         } else {
             textLabel?.attributedText = nil
             textLabel?.text = self.model.text

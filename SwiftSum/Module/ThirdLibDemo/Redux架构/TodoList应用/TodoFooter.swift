@@ -18,15 +18,7 @@ struct TodoFooterModel {
 }
 
 class TodoFooter: YYXibView, YYComponent {
-    var model = TodoFooterModel()
-    var buttons = [UIButton]()
-
-    var buttonDidTapCallback: ((_ : TodoFooterFilter) -> Void)?
-    
-    @IBOutlet weak var textlabel: UILabel!
-    @IBOutlet weak var allButton: UIButton!
-    @IBOutlet weak var completedButton: UIButton!
-    @IBOutlet weak var activeButton: UIButton!
+    // MARK: - Initialization
     
     func initialization() {
         allButton.tag = TodoFooterFilter.all.rawValue
@@ -43,11 +35,10 @@ class TodoFooter: YYXibView, YYComponent {
         updateButtonState()
     }
     
-    func updateButtonState() {
-        for button in buttons {
-            button.enabled = model.filter.rawValue != button.tag
-        }
-    }
+    // MARK: - Public
+    
+    var model = TodoFooterModel()
+    var buttonDidTapCallback: ((_ : TodoFooterFilter) -> Void)?
     
     func render(model: Any? = nil) {
         if let outModel = model as? TodoFooterModel {
@@ -56,7 +47,21 @@ class TodoFooter: YYXibView, YYComponent {
         updateButtonState()
     }
     
-    @IBAction func buttonDidTap(sender: UIButton) {
+    // MARK: - Private
+    
+    private var buttons = [UIButton]()
+    @IBOutlet private weak var textlabel: UILabel!
+    @IBOutlet private weak var allButton: UIButton!
+    @IBOutlet private weak var completedButton: UIButton!
+    @IBOutlet private weak var activeButton: UIButton!
+    
+    private func updateButtonState() {
+        for button in buttons {
+            button.enabled = model.filter.rawValue != button.tag
+        }
+    }
+    
+    @IBAction private func buttonDidTap(sender: UIButton) {
         let filter = TodoFooterFilter(rawValue: sender.tag)!
         model.filter = filter
         updateButtonState()

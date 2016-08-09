@@ -14,8 +14,7 @@ struct TodoHeaderModel {
 }
 
 class TodoHeader: YYXibView, UITextFieldDelegate, YYComponent {
-    var model = TodoHeaderModel()
-    var addButtonDicTapCallback: ((_ : String?) -> Void)?
+    // MARK: - Initialization
     
     func initialization() {
         textField.delegate = self
@@ -29,6 +28,11 @@ class TodoHeader: YYXibView, UITextFieldDelegate, YYComponent {
         initialization()
     }
     
+    // MARK: - Public
+    
+    var model = TodoHeaderModel()
+    var addButtonDicTapCallback: ((_ : String?) -> Void)?
+    
     func render(model: Any? = nil) {
         if let outModel = model as? TodoHeaderModel {
             self.model = outModel
@@ -36,10 +40,12 @@ class TodoHeader: YYXibView, UITextFieldDelegate, YYComponent {
         textField.text = self.model.text
     }
     
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var addButton: UIButton!
+    // MARK: - Private
     
-    @IBAction func addButtonDidTap(sender: UIButton) {
+    @IBOutlet private weak var textField: UITextField!
+    @IBOutlet private weak var addButton: UIButton!
+    
+    @IBAction private func addButtonDidTap(sender: UIButton) {
         if textField.text?.characters.count > 0 {
             addButtonDicTapCallback?(textField.text)
             textField.text = nil

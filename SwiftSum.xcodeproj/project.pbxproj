@@ -902,9 +902,9 @@
 			isa = PBXGroup;
 			children = (
 				1F792CB41C89714F00EE70D4 /* GithubSignupDemo */,
+				1FB08A681D58115E00C4C13E /* Redux架构 */,
 				1FC174001CEC4B2100F67B38 /* ThirdLibDemo.storyboard */,
 				1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */,
-				1FB08A681D58115E00C4C13E /* Redux架构 */,
 			);
 			path = ThirdLibDemo;
 			sourceTree = "<group>";
@@ -914,7 +914,7 @@
 			children = (
 				1FB08A6E1D5819AB00C4C13E /* CounterActions.swift */,
 			);
-			name = Action;
+			path = Action;
 			sourceTree = "<group>";
 		};
 		1F19E4E01D5831E4005E730A /* Reducer */ = {
@@ -922,22 +922,22 @@
 			children = (
 				1FB08A701D581A8400C4C13E /* CounterReducer.swift */,
 			);
-			name = Reducer;
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 		1F19E4E41D583350005E730A /* TodoList应用 */ = {
 			isa = PBXGroup;
 			children = (
-				1F19E4E21D583347005E730A /* TodoListDemo.swift */,
-				1F19E4F91D5884F5005E730A /* TodoListDemo.xib */,
+				1F19E4F51D587B91005E730A /* TodoFooter.swift */,
+				1F19E4F71D587B9F005E730A /* TodoFooter.xib */,
 				1F19E4EF1D584B51005E730A /* TodoHeader.swift */,
 				1F19E4F11D584BD3005E730A /* TodoHeader.xib */,
 				1F19E4F31D585830005E730A /* TodoList.swift */,
 				1F19E4FB1D5887AF005E730A /* TodoList.xib */,
-				1F19E4F51D587B91005E730A /* TodoFooter.swift */,
-				1F19E4F71D587B9F005E730A /* TodoFooter.xib */,
+				1F19E4E21D583347005E730A /* TodoListDemo.swift */,
+				1F19E4F91D5884F5005E730A /* TodoListDemo.xib */,
 			);
-			name = "TodoList应用";
+			path = "TodoList应用";
 			sourceTree = "<group>";
 		};
 		1F288D9E1CAD1FDC00180316 /* images */ = {
@@ -995,7 +995,7 @@
 			children = (
 				1F30EB391D4F4D46001559B4 /* YYRefresh.swift */,
 			);
-			name = YYRefresh;
+			path = YYRefresh;
 			sourceTree = "<group>";
 		};
 		1F364DBB1D210E4F006B8412 /* Sounds */ = {
@@ -1193,6 +1193,7 @@
 				1F3B77A71D165C7500FC9678 /* YYGCD */,
 				1F3B77B01D165C7500FC9678 /* YYHud */,
 				1F10D6951D45BBAA006AE16B /* YYNetwork */,
+				1F30EB3B1D4F4D4F001559B4 /* YYRefresh */,
 				1F3B77B51D165C7500FC9678 /* YYTimer */,
 				1F3B77B71D165C7500FC9678 /* YYTool */,
 				1F5237BA1D3BB6A900B182D0 /* YYWebImage */,
@@ -1201,7 +1202,6 @@
 				1F3B77A51D165C7500FC9678 /* YYAnimation.swift */,
 				1F3B77A61D165C7500FC9678 /* YYDim.swift */,
 				1F30EB351D4E4698001559B4 /* YYXibView.swift */,
-				1F30EB3B1D4F4D4F001559B4 /* YYRefresh */,
 			);
 			path = YYLibrary;
 			sourceTree = "<group>";
@@ -1504,8 +1504,7 @@
 				1F2A382A1CEEF57600EE316D /* UIWebViewDemo.swift */,
 				1F8059B71CED6BB700CA0936 /* WKWebViewDemo.swift */,
 			);
-			name = "WKWebView相关";
-			path = "../WKWebView相关";
+			path = "WKWebView相关";
 			sourceTree = "<group>";
 		};
 		1F87A2A21CA3B9F30001519E /* App */ = {
@@ -1622,8 +1621,8 @@
 		1FA6B7741CF456A6007B4122 /* 常用系统控件demo */ = {
 			isa = PBXGroup;
 			children = (
-				1F8059B91CED6BBD00CA0936 /* WKWebView相关 */,
 				1F8ADB0E1D06793B0059C842 /* CollectionView */,
+				1F8059B91CED6BBD00CA0936 /* WKWebView相关 */,
 				1FA8F31D1D406C9D00130E0B /* 图片混合blendModes */,
 				1F6FF0F31D041171008C33E8 /* 照相机和相册 */,
 				1FA6B7751CF536E0007B4122 /* SystemControlDemo.swift */,
@@ -1653,8 +1652,8 @@
 		1FA90FA01D05BF26008D0DFC /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				1FB08A461D580FAF00C4C13E /* ReSwift */,
 				1FA90FA11D05BF26008D0DFC /* Category */,
+				1FB08A461D580FAF00C4C13E /* ReSwift */,
 				1F8ADB001D05C1FF0059C842 /* YYLibrary */,
 			);
 			path = Service;
@@ -1800,9 +1799,9 @@
 			isa = PBXGroup;
 			children = (
 				1FB08A471D580FAF00C4C13E /* CoreTypes */,
+				1FB08A531D580FAF00C4C13E /* Utils */,
 				1FB08A511D580FAF00C4C13E /* Info.plist */,
 				1FB08A521D580FAF00C4C13E /* ReSwift.h */,
-				1FB08A531D580FAF00C4C13E /* Utils */,
 			);
 			path = ReSwift;
 			sourceTree = "<group>";
@@ -1837,23 +1836,23 @@
 		1FB08A681D58115E00C4C13E /* Redux架构 */ = {
 			isa = PBXGroup;
 			children = (
-				1FB08A661D58111E00C4C13E /* ReduxDemo.swift */,
-				1FB08A721D581FD400C4C13E /* AppStore.swift */,
 				1F19E4E41D583350005E730A /* TodoList应用 */,
 				1FB08A6B1D58146400C4C13E /* 计数器的应用 */,
+				1FB08A721D581FD400C4C13E /* AppStore.swift */,
+				1FB08A661D58111E00C4C13E /* ReduxDemo.swift */,
 			);
-			name = "Redux架构";
+			path = "Redux架构";
 			sourceTree = "<group>";
 		};
 		1FB08A6B1D58146400C4C13E /* 计数器的应用 */ = {
 			isa = PBXGroup;
 			children = (
-				1FB08A691D58145C00C4C13E /* Counter.swift */,
-				1FB08A6C1D5814FB00C4C13E /* Counter.xib */,
 				1F19E4DF1D5831DB005E730A /* Action */,
 				1F19E4E01D5831E4005E730A /* Reducer */,
+				1FB08A691D58145C00C4C13E /* Counter.swift */,
+				1FB08A6C1D5814FB00C4C13E /* Counter.xib */,
 			);
-			name = "计数器的应用";
+			path = "计数器的应用";
 			sourceTree = "<group>";
 		};
 		1FB394A71CCE06DD005C1B0E /* 仿淘宝商品详情 */ = {
@@ -1952,8 +1951,8 @@
 			children = (
 				1FDCEFC91CFC7E830039D176 /* AlgorithmsDemo.swift */,
 				1FDCEFC61CFC7E3D0039D176 /* DataStructureAndAlgorithmsDemo.swift */,
-				1F30EB761D518A22001559B4 /* 数据结构.playground */,
 				1FDCEFCB1CFD1C680039D176 /* 排序算法.playground */,
+				1F30EB761D518A22001559B4 /* 数据结构.playground */,
 			);
 			path = "数据结构和算法";
 			sourceTree = "<group>";

@@ -24,38 +24,46 @@ class TodoListDemo: UIViewController {
             let newModel: [TodoListItemModel]
             switch filter {
             case .all:
-                newModel = self.todoListModel
+                newModel = todoListModel
             case .completed:
-                newModel = self.todoListModel.filter { $0.completed }
+                newModel = todoListModel.filter { $0.completed }
             case .active:
-                newModel = self.todoListModel.flatMap { !$0.completed ? $0 : nil  }
+                newModel = todoListModel.flatMap { !$0.completed ? $0 : nil  }
             }
             todoList.render(newModel)
             if scrollToBottom {
                 todoList.scrollToBottomIfNeeded()
             }
         }
-        
-        todoHeader.addButtonDicTapCallback = { text in
+        todoHeader.addButtonDicTapCallback = { [weak self] text in
+            if self == nil {
+                return
+            }
             if let text = text {
-                let item = TodoListItemModel(hash: self.todoListModel.count, text: text, completed: false)
-                self.todoListModel.append(item)
+                var item = TodoListItemModel(text: text, completed: false)
+                item.hash = self!.todoListModel.count
+                self?.todoListModel.append(item)
                 renderTodoList()
             }
         }
-        todoList.todoListDidTapItemCallback = { indexPath in
-            let hash = self.todoList.model[indexPath.row].hash
-            for index in 0 ..< self.todoListModel.count {
-                let item = self.todoListModel[index]
-                if item.hash == hash {
-                    self.todoListModel[index].completed = !item.completed
+        todoList.todoListDidTapItemCallback = { [weak self] indexPath in
+            if self != nil {
+                let hash = self!.todoList.model[indexPath.row].hash
+                for index in 0 ..< self!.todoListModel.count {
+                    let item = self!.todoListModel[index]
+                    if item.hash == hash {
+                        self!.todoListModel[index].completed = !item.completed
+                        break
+                    }
                 }
+                renderTodoList(false)
             }
-            renderTodoList(false)
         }
-        todoFooter.buttonDidTapCallback = { filter in
-            self.todoFooterModel.filter = filter
-            renderTodoList()
+        todoFooter.buttonDidTapCallback = { [weak self] filter in
+            if self != nil {
+                self!.todoFooterModel.filter = filter
+                renderTodoList()
+            }
         }
         todoHeader.model = todoHeaderModel
         todoList.model = todoListModel
