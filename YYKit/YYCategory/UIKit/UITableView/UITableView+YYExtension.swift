@@ -17,6 +17,12 @@ extension UITableView {
         self.tableFooterView = footerView
     }
     
+    public func scrollToBottom(animated: Bool = true) {
+        dispatch_async(dispatch_get_main_queue()) { 
+            self.setContentOffset(CGPoint(x: 0, y: self.contentSize.height - self.bounds.size.height), animated: animated)
+        }
+    }
+    
     // MARK: - 简化dequeueReusableCellWithIdentifier的使用
     /**
      简化dequeueReusableCellWithIdentifier的使用

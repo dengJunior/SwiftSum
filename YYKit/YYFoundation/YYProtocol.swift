@@ -13,7 +13,12 @@ public protocol YYCellRenderable {
     func rederWithMode(model: AnyObject, indexPath: NSIndexPath?, containerView: UIView?)
 }
 
-
+public protocol YYRenderable {
+    func render(model: Any?)
+}
+public protocol YYComponent: YYRenderable {
+    
+}
 
 // MARK: - 通知相关协议
 public protocol YYNotificationType {

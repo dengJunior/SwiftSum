@@ -8,7 +8,7 @@
 
 import Foundation
 
-let counterStore = Store<CounterState>(
+let AppStore = Store<CounterState>(
     reducer: CounterReducer(),
     state: nil
 )

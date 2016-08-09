@@ -53,6 +53,13 @@
 		1F139B4F1C83449E005E89EB /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B4E1C83449E005E89EB /* GitHubAPI.swift */; };
 		1F1656841CBCCF740015F570 /* NSOperationQueueDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */; };
 		1F19E4E31D583347005E730A /* TodoListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19E4E21D583347005E730A /* TodoListDemo.swift */; };
+		1F19E4F01D584B51005E730A /* TodoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19E4EF1D584B51005E730A /* TodoHeader.swift */; };
+		1F19E4F21D584BD3005E730A /* TodoHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F19E4F11D584BD3005E730A /* TodoHeader.xib */; };
+		1F19E4F41D585830005E730A /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19E4F31D585830005E730A /* TodoList.swift */; };
+		1F19E4F61D587B91005E730A /* TodoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19E4F51D587B91005E730A /* TodoFooter.swift */; };
+		1F19E4F81D587B9F005E730A /* TodoFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F19E4F71D587B9F005E730A /* TodoFooter.xib */; };
+		1F19E4FA1D5884F5005E730A /* TodoListDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F19E4F91D5884F5005E730A /* TodoListDemo.xib */; };
+		1F19E4FC1D5887AF005E730A /* TodoList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F19E4FB1D5887AF005E730A /* TodoList.xib */; };
 		1F288D971CAD174500180316 /* SimpleGestureRecognizers.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */; };
 		1F288D9B1CAD1FD000180316 /* rotation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D981CAD1FD000180316 /* rotation.png */; };
 		1F288D9C1CAD1FD000180316 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F288D991CAD1FD000180316 /* swipe.png */; };
@@ -220,7 +227,7 @@
 		1FB08A6D1D5814FB00C4C13E /* Counter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB08A6C1D5814FB00C4C13E /* Counter.xib */; };
 		1FB08A6F1D5819AB00C4C13E /* CounterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A6E1D5819AB00C4C13E /* CounterActions.swift */; };
 		1FB08A711D581A8400C4C13E /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A701D581A8400C4C13E /* CounterReducer.swift */; };
-		1FB08A731D581FD400C4C13E /* CounterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A721D581FD400C4C13E /* CounterStore.swift */; };
+		1FB08A731D581FD400C4C13E /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB08A721D581FD400C4C13E /* AppStore.swift */; };
 		1FB394A61CCE06C0005C1B0E /* GoodsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394A51CCE06C0005C1B0E /* GoodsDetailViewController.swift */; };
 		1FB394A91CCE096F005C1B0E /* GoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */; };
 		1FB394AB1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */; };
@@ -393,6 +400,13 @@
 		1F139B4E1C83449E005E89EB /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		1F1656831CBCCF740015F570 /* NSOperationQueueDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOperationQueueDemo.swift; sourceTree = "<group>"; };
 		1F19E4E21D583347005E730A /* TodoListDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListDemo.swift; sourceTree = "<group>"; };
+		1F19E4EF1D584B51005E730A /* TodoHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoHeader.swift; sourceTree = "<group>"; };
+		1F19E4F11D584BD3005E730A /* TodoHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodoHeader.xib; sourceTree = "<group>"; };
+		1F19E4F31D585830005E730A /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		1F19E4F51D587B91005E730A /* TodoFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoFooter.swift; sourceTree = "<group>"; };
+		1F19E4F71D587B9F005E730A /* TodoFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodoFooter.xib; sourceTree = "<group>"; };
+		1F19E4F91D5884F5005E730A /* TodoListDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodoListDemo.xib; sourceTree = "<group>"; };
+		1F19E4FB1D5887AF005E730A /* TodoList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodoList.xib; sourceTree = "<group>"; };
 		1F22471D1CE455F3003F826D /* 15-自动引用计数.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "15-自动引用计数.playground"; sourceTree = "<group>"; };
 		1F288D961CAD174500180316 /* SimpleGestureRecognizers.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleGestureRecognizers.xib; sourceTree = "<group>"; };
 		1F288D981CAD1FD000180316 /* rotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotation.png; sourceTree = "<group>"; };
@@ -587,7 +601,7 @@
 		1FB08A6C1D5814FB00C4C13E /* Counter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Counter.xib; sourceTree = "<group>"; };
 		1FB08A6E1D5819AB00C4C13E /* CounterActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterActions.swift; sourceTree = "<group>"; };
 		1FB08A701D581A8400C4C13E /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
-		1FB08A721D581FD400C4C13E /* CounterStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterStore.swift; sourceTree = "<group>"; };
+		1FB08A721D581FD400C4C13E /* AppStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
 		1FB394A51CCE06C0005C1B0E /* GoodsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailViewController.swift; sourceTree = "<group>"; };
 		1FB394A81CCE096F005C1B0E /* GoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsViewController.swift; sourceTree = "<group>"; };
 		1FB394AA1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsDetailGraphicViewController.swift; sourceTree = "<group>"; };
@@ -911,18 +925,17 @@
 			name = Reducer;
 			sourceTree = "<group>";
 		};
-		1F19E4E11D5831EB005E730A /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				1FB08A721D581FD400C4C13E /* CounterStore.swift */,
-			);
-			name = Store;
-			sourceTree = "<group>";
-		};
 		1F19E4E41D583350005E730A /* TodoList应用 */ = {
 			isa = PBXGroup;
 			children = (
 				1F19E4E21D583347005E730A /* TodoListDemo.swift */,
+				1F19E4F91D5884F5005E730A /* TodoListDemo.xib */,
+				1F19E4EF1D584B51005E730A /* TodoHeader.swift */,
+				1F19E4F11D584BD3005E730A /* TodoHeader.xib */,
+				1F19E4F31D585830005E730A /* TodoList.swift */,
+				1F19E4FB1D5887AF005E730A /* TodoList.xib */,
+				1F19E4F51D587B91005E730A /* TodoFooter.swift */,
+				1F19E4F71D587B9F005E730A /* TodoFooter.xib */,
 			);
 			name = "TodoList应用";
 			sourceTree = "<group>";
@@ -1355,7 +1368,6 @@
 				1F5BE25D1CF6976300E29234 /* URLSessionGuide */,
 				1FF133DB1CCB25FC00AD6822 /* ViewControllerGuide */,
 				1F289A011CC48A9600988E82 /* ViewGuide */,
-				1F8059B91CED6BBD00CA0936 /* WKWebView相关 */,
 				1F5B67C91CACF376003CFD75 /* 事件和手势 */,
 				1F8059B41CED530700CA0936 /* 各版本系统改动 */,
 				1F00971D1CB4A4CC003A063F /* 多线程相关 */,
@@ -1492,7 +1504,8 @@
 				1F2A382A1CEEF57600EE316D /* UIWebViewDemo.swift */,
 				1F8059B71CED6BB700CA0936 /* WKWebViewDemo.swift */,
 			);
-			path = "WKWebView相关";
+			name = "WKWebView相关";
+			path = "../WKWebView相关";
 			sourceTree = "<group>";
 		};
 		1F87A2A21CA3B9F30001519E /* App */ = {
@@ -1609,6 +1622,7 @@
 		1FA6B7741CF456A6007B4122 /* 常用系统控件demo */ = {
 			isa = PBXGroup;
 			children = (
+				1F8059B91CED6BBD00CA0936 /* WKWebView相关 */,
 				1F8ADB0E1D06793B0059C842 /* CollectionView */,
 				1FA8F31D1D406C9D00130E0B /* 图片混合blendModes */,
 				1F6FF0F31D041171008C33E8 /* 照相机和相册 */,
@@ -1824,6 +1838,7 @@
 			isa = PBXGroup;
 			children = (
 				1FB08A661D58111E00C4C13E /* ReduxDemo.swift */,
+				1FB08A721D581FD400C4C13E /* AppStore.swift */,
 				1F19E4E41D583350005E730A /* TodoList应用 */,
 				1FB08A6B1D58146400C4C13E /* 计数器的应用 */,
 			);
@@ -1837,7 +1852,6 @@
 				1FB08A6C1D5814FB00C4C13E /* Counter.xib */,
 				1F19E4DF1D5831DB005E730A /* Action */,
 				1F19E4E01D5831E4005E730A /* Reducer */,
-				1F19E4E11D5831EB005E730A /* Store */,
 			);
 			name = "计数器的应用";
 			sourceTree = "<group>";
@@ -2262,18 +2276,22 @@
 				1F288D9B1CAD1FD000180316 /* rotation.png in Resources */,
 				1F0DD1A41CE9997800501767 /* CustomTransitionDemo.storyboard in Resources */,
 				1F5B67C61CACF341003CFD75 /* EventAndGestureDemo.storyboard in Resources */,
+				1F19E4F81D587B9F005E730A /* TodoFooter.xib in Resources */,
 				1F0097241CB5606F003A063F /* Music.storyboard in Resources */,
 				1FC174031CEC4B2C00F67B38 /* YYLibDemo.storyboard in Resources */,
+				1F19E4FA1D5884F5005E730A /* TodoListDemo.xib in Resources */,
 				1F30EB341D4E4460001559B4 /* XibDemoView.xib in Resources */,
 				1F6FF1001D0520F4008C33E8 /* TodayDemo.xib in Resources */,
 				1FA8F31C1D3FA5F300130E0B /* BlendModeCell.xib in Resources */,
 				1FAAFB841BE85AEA007023B7 /* Main.storyboard in Resources */,
 				1FF9B2C81CF448B100AB9D30 /* GooglyPuff.xcassets in Resources */,
+				1F19E4FC1D5887AF005E730A /* TodoList.xib in Resources */,
 				1FF9B2C61CF4478200AB9D30 /* GooglyPuff.storyboard in Resources */,
 				1F288D9D1CAD1FD000180316 /* tap.png in Resources */,
 				1FDCEFC51CFC2D6D0039D176 /* lvwenhancom.cer in Resources */,
 				1F364DC31D210E4F006B8412 /* jump.wav in Resources */,
 				1F364DC11D210E4F006B8412 /* coin.wav in Resources */,
+				1F19E4F21D584BD3005E730A /* TodoHeader.xib in Resources */,
 				1FC173FF1CEC4B1300F67B38 /* SystemDemo.storyboard in Resources */,
 				1F2A38271CEEB0C400EE316D /* ExampleApp.html in Resources */,
 			);
@@ -2407,6 +2425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F19E4F61D587B91005E730A /* TodoFooter.swift in Sources */,
 				1F2AA7D41D0CF55A00A5A477 /* 3DTouchDemo.swift in Sources */,
 				1FDCEFC71CFC7E3D0039D176 /* DataStructureAndAlgorithmsDemo.swift in Sources */,
 				1F5A731F1CBDDF0F002B0D19 /* NSOperationSettingDemo.swift in Sources */,
@@ -2422,6 +2441,7 @@
 				1F0097361CB60DBD003A063F /* MainThreadRunLoopSource.swift in Sources */,
 				1FB394AB1CCE098C005C1B0E /* GoodsDetailGraphicViewController.swift in Sources */,
 				1F5B67C81CACF36E003CFD75 /* EventAndGestureDemo.swift in Sources */,
+				1F19E4F41D585830005E730A /* TodoList.swift in Sources */,
 				1FF9B2BE1CF4430E00AB9D30 /* GCDDemo.swift in Sources */,
 				1F00972F1CB5EBD2003A063F /* LibraryAPI.swift in Sources */,
 				1FCE291D1CDC6C9300DBF2E3 /* YYPercentTransition.swift in Sources */,
@@ -2448,7 +2468,7 @@
 				1F0097291CB56130003A063F /* MusicController.swift in Sources */,
 				EEF2816B1C634EFD0004765A /* SwifterController.swift in Sources */,
 				1F792CBA1C8991A900EE70D4 /* ValidationResult.swift in Sources */,
-				1FB08A731D581FD400C4C13E /* CounterStore.swift in Sources */,
+				1FB08A731D581FD400C4C13E /* AppStore.swift in Sources */,
 				1FA4474F1D1E9E3400DDC3A6 /* HelloScene.swift in Sources */,
 				1FCE29191CDC691A00DBF2E3 /* GoodsViewController2.swift in Sources */,
 				1FA6B7731CF4569D007B4122 /* UIImagePickerControllerDemo.swift in Sources */,
@@ -2574,6 +2594,7 @@
 				1F0DD1A61CE99AB100501767 /* PresentedViewController.swift in Sources */,
 				1F288DA01CAE623000180316 /* YYPanGestureRecognizer.swift in Sources */,
 				1FDCEFCA1CFC7E830039D176 /* AlgorithmsDemo.swift in Sources */,
+				1F19E4F01D584B51005E730A /* TodoHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

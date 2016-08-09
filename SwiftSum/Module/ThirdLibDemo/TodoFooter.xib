@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodoFooter" customModule="SwiftSum" customModuleProvider="target">
+            <connections>
+                <outlet property="activeButton" destination="E6y-Td-0pk" id="Vl5-Zv-Lq7"/>
+                <outlet property="allButton" destination="Rqt-yh-ZQk" id="o1S-Z1-sel"/>
+                <outlet property="completedButton" destination="Mji-Lj-As6" id="O5V-a5-u9F"/>
+                <outlet property="textlabel" destination="Zna-bZ-4u8" id="DJp-m0-70l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zna-bZ-4u8">
+                    <rect key="frame" x="20" y="25" width="47" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqt-yh-ZQk">
+                    <rect key="frame" x="77" y="20.5" width="30" height="30"/>
+                    <state key="normal" title="All"/>
+                    <connections>
+                        <action selector="buttonDidTap:" destination="-1" eventType="touchUpInside" id="drJ-gG-NZ2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6y-Td-0pk">
+                    <rect key="frame" x="203" y="20.5" width="43" height="30"/>
+                    <state key="normal" title="Active"/>
+                    <connections>
+                        <action selector="buttonDidTap:" destination="-1" eventType="touchUpInside" id="nyf-vC-dj5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mji-Lj-As6">
+                    <rect key="frame" x="117" y="21" width="76" height="30"/>
+                    <state key="normal" title="Completed"/>
+                    <connections>
+                        <action selector="buttonDidTap:" destination="-1" eventType="touchUpInside" id="8go-az-a2F"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Rqt-yh-ZQk" firstAttribute="centerY" secondItem="Zna-bZ-4u8" secondAttribute="centerY" id="4g5-As-mNw"/>
+                <constraint firstItem="Mji-Lj-As6" firstAttribute="centerY" secondItem="Rqt-yh-ZQk" secondAttribute="centerY" id="AhZ-fh-fUT"/>
+                <constraint firstItem="Mji-Lj-As6" firstAttribute="leading" secondItem="Rqt-yh-ZQk" secondAttribute="trailing" constant="10" id="O6x-2J-rhR"/>
+                <constraint firstItem="Zna-bZ-4u8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UpV-E7-jP8"/>
+                <constraint firstItem="E6y-Td-0pk" firstAttribute="centerY" secondItem="Mji-Lj-As6" secondAttribute="centerY" id="eVS-2J-FIT"/>
+                <constraint firstItem="Zna-bZ-4u8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="gQv-HN-2xg"/>
+                <constraint firstItem="Rqt-yh-ZQk" firstAttribute="leading" secondItem="Zna-bZ-4u8" secondAttribute="trailing" constant="10" id="hT0-qi-4Ry"/>
+                <constraint firstItem="E6y-Td-0pk" firstAttribute="leading" secondItem="Mji-Lj-As6" secondAttribute="trailing" constant="10" id="izw-nF-Hj1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="171.5" y="349.5"/>
+        </view>
+    </objects>
+</document>

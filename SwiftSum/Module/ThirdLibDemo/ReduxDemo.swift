@@ -16,6 +16,10 @@ class ReduxDemo: UIViewController {
             let vc = Counter()
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        self.addButtonToView(title: "组件模式写的TodoList") {  (button) in
+            let vc = TodoListDemo()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     

@@ -31,14 +31,14 @@ class Counter: UIViewController, StoreSubscriber {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        counterStore.subscribe(self)
+        AppStore.subscribe(self)
     }
     
     
     @IBAction func tapDown(sender: UIButton) {
-        counterStore.dispatch(CounterActionDecrease())
+        AppStore.dispatch(CounterActionDecrease())
     }
     @IBAction func tapUp(sender: UIButton) {
-        counterStore.dispatch(CounterActionIncrease())
+        AppStore.dispatch(CounterActionIncrease())
     }
 }
