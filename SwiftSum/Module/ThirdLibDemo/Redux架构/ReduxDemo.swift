@@ -12,12 +12,16 @@ class ReduxDemo: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addButtonToView(title: "Redux架构写的计数器") {  (button) in
+        self.addButtonToView(title: "Redux架构写的简单计数器") {  (button) in
             let vc = Counter()
             self.navigationController?.pushViewController(vc, animated: true)
         }
         self.addButtonToView(title: "组件模式写的TodoList") {  (button) in
             let vc = TodoListDemo()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        self.addButtonToView(title: "Redux架构写的TodoList") {  (button) in
+            let vc = TodoListReduxDemo()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

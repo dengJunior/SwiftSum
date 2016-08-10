@@ -10,7 +10,7 @@ import UIKit
 import YYKit
 
 struct TodoListItemModel {
-    var hash: Int = 0
+    var id: Int = 0
     var text = ""
     var completed = false
     
@@ -19,7 +19,7 @@ struct TodoListItemModel {
         self.completed = completed
         
         //不能用该方式来做hash，因为在比较多的值拷贝的时候，可能会复用这块内存
-        //hash = unsafeAddressOf("\(self)").hashValue
+        //id = unsafeAddressOf("\(self)").hashValue
     }
     
     init() {
@@ -44,7 +44,7 @@ class TodoList: YYXibView, UITableViewDataSource, UITableViewDelegate {
     // MARK: - Public
     
     var model = [TodoListItemModel]()
-    var todoListDidTapItemCallback: ((_ : NSIndexPath) -> Void)?
+    var todoListDidTapItemCallback: ((itemId : Int) -> Void)?
     
     func render(model: Any? = nil) {
         if let outModel = model as? [TodoListItemModel] {
@@ -75,7 +75,7 @@ class TodoList: YYXibView, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        todoListDidTapItemCallback?(indexPath)
+        todoListDidTapItemCallback?(itemId: model[indexPath.row].id)
     }
 }
 

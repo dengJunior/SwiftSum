@@ -24,7 +24,6 @@ class Counter: UIViewController, StoreSubscriber {
     
     @IBOutlet weak var timeLabel: UILabel!
     
-    
     func newState(state: CounterState) {
         timeLabel.text = "\(state.counter)"
     }

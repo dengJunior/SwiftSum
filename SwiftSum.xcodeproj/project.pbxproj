@@ -81,6 +81,8 @@
 		1F2F69311C9A86D100A3F432 /* TextCellViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692D1C9A86D000A3F432 /* TextCellViewData.swift */; };
 		1F2F69321C9A86D100A3F432 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F692E1C9A86D000A3F432 /* TextTableViewCell.swift */; };
 		1F2F69341C9A86DA00A3F432 /* UITableViewCell+Margins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F69331C9A86DA00A3F432 /* UITableViewCell+Margins.swift */; };
+		1F2F6E1F1D59D8A9000BF987 /* TodoListReduxDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F6E1E1D59D8A9000BF987 /* TodoListReduxDemo.swift */; };
+		1F2F6E211D59D930000BF987 /* TodoListReduxDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2F6E201D59D930000BF987 /* TodoListReduxDemo.xib */; };
 		1F30EB321D4E4440001559B4 /* XibDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30EB311D4E4440001559B4 /* XibDemoView.swift */; };
 		1F30EB341D4E4460001559B4 /* XibDemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F30EB331D4E4460001559B4 /* XibDemoView.xib */; };
 		1F30EB361D4E4698001559B4 /* YYXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30EB351D4E4698001559B4 /* YYXibView.swift */; };
@@ -245,6 +247,8 @@
 		1FC174011CEC4B2100F67B38 /* ThirdLibDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC174001CEC4B2100F67B38 /* ThirdLibDemo.storyboard */; };
 		1FC174031CEC4B2C00F67B38 /* YYLibDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC174021CEC4B2C00F67B38 /* YYLibDemo.storyboard */; };
 		1FC174081CEC593200F67B38 /* TabBarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC174071CEC593200F67B38 /* TabBarDemo.swift */; };
+		1FC550221D59DB7F00A7BC3E /* TodoListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC550211D59DB7F00A7BC3E /* TodoListAction.swift */; };
+		1FC550241D59DB9200A7BC3E /* TodoListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC550231D59DB9200A7BC3E /* TodoListReducer.swift */; };
 		1FCE27071CF88A8F001F32A5 /* NavigationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE27061CF88A8F001F32A5 /* NavigationDemo.swift */; };
 		1FCE29191CDC691A00DBF2E3 /* GoodsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE29181CDC691A00DBF2E3 /* GoodsViewController2.swift */; };
 		1FCE291D1CDC6C9300DBF2E3 /* YYPercentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE291C1CDC6C9300DBF2E3 /* YYPercentTransition.swift */; };
@@ -430,6 +434,8 @@
 		1F2F692D1C9A86D000A3F432 /* TextCellViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCellViewData.swift; sourceTree = "<group>"; };
 		1F2F692E1C9A86D000A3F432 /* TextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		1F2F69331C9A86DA00A3F432 /* UITableViewCell+Margins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Margins.swift"; sourceTree = "<group>"; };
+		1F2F6E1E1D59D8A9000BF987 /* TodoListReduxDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListReduxDemo.swift; sourceTree = "<group>"; };
+		1F2F6E201D59D930000BF987 /* TodoListReduxDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodoListReduxDemo.xib; sourceTree = "<group>"; };
 		1F30EB311D4E4440001559B4 /* XibDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibDemoView.swift; sourceTree = "<group>"; };
 		1F30EB331D4E4460001559B4 /* XibDemoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibDemoView.xib; sourceTree = "<group>"; };
 		1F30EB351D4E4698001559B4 /* YYXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYXibView.swift; sourceTree = "<group>"; };
@@ -623,6 +629,8 @@
 		1FC174001CEC4B2100F67B38 /* ThirdLibDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThirdLibDemo.storyboard; sourceTree = "<group>"; };
 		1FC174021CEC4B2C00F67B38 /* YYLibDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = YYLibDemo.storyboard; sourceTree = "<group>"; };
 		1FC174071CEC593200F67B38 /* TabBarDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarDemo.swift; sourceTree = "<group>"; };
+		1FC550211D59DB7F00A7BC3E /* TodoListAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListAction.swift; sourceTree = "<group>"; };
+		1FC550231D59DB9200A7BC3E /* TodoListReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListReducer.swift; sourceTree = "<group>"; };
 		1FCE27061CF88A8F001F32A5 /* NavigationDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDemo.swift; sourceTree = "<group>"; };
 		1FCE29161CD9C37900DBF2E3 /* 4-字符串和字符.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "4-字符串和字符.playground"; sourceTree = "<group>"; };
 		1FCE29171CDC291800DBF2E3 /* 5-集合类型.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "5-集合类型.playground"; sourceTree = "<group>"; };
@@ -928,14 +936,9 @@
 		1F19E4E41D583350005E730A /* TodoList应用 */ = {
 			isa = PBXGroup;
 			children = (
-				1F19E4F51D587B91005E730A /* TodoFooter.swift */,
-				1F19E4F71D587B9F005E730A /* TodoFooter.xib */,
-				1F19E4EF1D584B51005E730A /* TodoHeader.swift */,
-				1F19E4F11D584BD3005E730A /* TodoHeader.xib */,
-				1F19E4F31D585830005E730A /* TodoList.swift */,
-				1F19E4FB1D5887AF005E730A /* TodoList.xib */,
-				1F19E4E21D583347005E730A /* TodoListDemo.swift */,
-				1F19E4F91D5884F5005E730A /* TodoListDemo.xib */,
+				1F2F6E1C1D59D0DD000BF987 /* Component */,
+				1F2F6E221D59D98F000BF987 /* Redux版本 */,
+				1F2F6E1D1D59D872000BF987 /* 基于组件版本 */,
 			);
 			path = "TodoList应用";
 			sourceTree = "<group>";
@@ -988,6 +991,39 @@
 				1F2F69281C9A7FC400A3F432 /* YYConfigurableTableViewController.swift */,
 			);
 			path = "类型化的TableViewController ";
+			sourceTree = "<group>";
+		};
+		1F2F6E1C1D59D0DD000BF987 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				1F19E4F51D587B91005E730A /* TodoFooter.swift */,
+				1F19E4F71D587B9F005E730A /* TodoFooter.xib */,
+				1F19E4EF1D584B51005E730A /* TodoHeader.swift */,
+				1F19E4F11D584BD3005E730A /* TodoHeader.xib */,
+				1F19E4F31D585830005E730A /* TodoList.swift */,
+				1F19E4FB1D5887AF005E730A /* TodoList.xib */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		1F2F6E1D1D59D872000BF987 /* 基于组件版本 */ = {
+			isa = PBXGroup;
+			children = (
+				1F19E4E21D583347005E730A /* TodoListDemo.swift */,
+				1F19E4F91D5884F5005E730A /* TodoListDemo.xib */,
+			);
+			path = "基于组件版本";
+			sourceTree = "<group>";
+		};
+		1F2F6E221D59D98F000BF987 /* Redux版本 */ = {
+			isa = PBXGroup;
+			children = (
+				1FC5502C1D5A28BE00A7BC3E /* Action */,
+				1FC5502D1D5A28C700A7BC3E /* Reducer */,
+				1F2F6E1E1D59D8A9000BF987 /* TodoListReduxDemo.swift */,
+				1F2F6E201D59D930000BF987 /* TodoListReduxDemo.xib */,
+			);
+			path = "Redux版本";
 			sourceTree = "<group>";
 		};
 		1F30EB3B1D4F4D4F001559B4 /* YYRefresh */ = {
@@ -1946,6 +1982,22 @@
 			path = "实用经验技巧";
 			sourceTree = "<group>";
 		};
+		1FC5502C1D5A28BE00A7BC3E /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				1FC550211D59DB7F00A7BC3E /* TodoListAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		1FC5502D1D5A28C700A7BC3E /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				1FC550231D59DB9200A7BC3E /* TodoListReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
 		1FDCEFC81CFC7E420039D176 /* 数据结构和算法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2291,6 +2343,7 @@
 				1F364DC31D210E4F006B8412 /* jump.wav in Resources */,
 				1F364DC11D210E4F006B8412 /* coin.wav in Resources */,
 				1F19E4F21D584BD3005E730A /* TodoHeader.xib in Resources */,
+				1F2F6E211D59D930000BF987 /* TodoListReduxDemo.xib in Resources */,
 				1FC173FF1CEC4B1300F67B38 /* SystemDemo.storyboard in Resources */,
 				1F2A38271CEEB0C400EE316D /* ExampleApp.html in Resources */,
 			);
@@ -2447,6 +2500,7 @@
 				1F00971C1CB4A4C6003A063F /* ThreadDemo.swift in Sources */,
 				1F5B67D21CAD02FB003CFD75 /* GestureTestView.swift in Sources */,
 				1F792CB61C89716A00EE70D4 /* GithubSignupViewModel.swift in Sources */,
+				1FC550221D59DB7F00A7BC3E /* TodoListAction.swift in Sources */,
 				1F5BE25C1CF6976000E29234 /* URLSessionGuideDemo.swift in Sources */,
 				1FAAFB7F1BE85AEA007023B7 /* AppDelegate.swift in Sources */,
 				1F105EC51D001A100052C4BE /* NewFeatureDemo.swift in Sources */,
@@ -2527,6 +2581,7 @@
 				EEC450621C634B1D00328F54 /* main1.swift in Sources */,
 				1F5B67C31CACF219003CFD75 /* MainController.swift in Sources */,
 				1F5B67C11CACF1A8003CFD75 /* YYBaseTabBarController.swift in Sources */,
+				1FC550241D59DB9200A7BC3E /* TodoListReducer.swift in Sources */,
 				1F5B67D01CAD019D003CFD75 /* GestureDemoChild.swift in Sources */,
 				1FA447541D1E9E7100DDC3A6 /* GameDemo.swift in Sources */,
 				1FAF60271CB940AD0046CF3D /* ThreadSafeDemo.swift in Sources */,
@@ -2573,6 +2628,7 @@
 				1F6FF0FE1D05208F008C33E8 /* TodayDemo.swift in Sources */,
 				1F00973E1CB60E57003A063F /* RunLoopSourceManager.swift in Sources */,
 				1FB8C56D1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift in Sources */,
+				1F2F6E1F1D59D8A9000BF987 /* TodoListReduxDemo.swift in Sources */,
 				1F30EB321D4E4440001559B4 /* XibDemoView.swift in Sources */,
 				1F0FBDB11D10DF8800C97833 /* 面向协议的网络请求.swift in Sources */,
 				1F8059B31CED52E600CA0936 /* iOS6Feature.swift in Sources */,

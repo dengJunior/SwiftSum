@@ -41,17 +41,16 @@ class TodoListDemo: UIViewController {
             }
             if let text = text {
                 var item = TodoListItemModel(text: text, completed: false)
-                item.hash = self!.todoListModel.count
+                item.id = self!.todoListModel.count
                 self?.todoListModel.append(item)
                 renderTodoList()
             }
         }
-        todoList.todoListDidTapItemCallback = { [weak self] indexPath in
+        todoList.todoListDidTapItemCallback = { [weak self] itemId in
             if self != nil {
-                let hash = self!.todoList.model[indexPath.row].hash
                 for index in 0 ..< self!.todoListModel.count {
                     let item = self!.todoListModel[index]
-                    if item.hash == hash {
+                    if item.id == itemId {
                         self!.todoListModel[index].completed = !item.completed
                         break
                     }
@@ -65,9 +64,6 @@ class TodoListDemo: UIViewController {
                 renderTodoList()
             }
         }
-        todoHeader.model = todoHeaderModel
-        todoList.model = todoListModel
-        todoFooter.model = todoFooterModel
     }
     
     override func viewDidLoad() {
