@@ -4,6 +4,19 @@ import Foundation
 
 extension Array where Element: Comparable {
     
+    /**
+     二叉堆的定义
+     
+     二叉堆是完全二叉树或者是近似完全二叉树。
+     
+     二叉堆满足二个特性：
+     
+     1．父结点的键值总是大于或等于（小于或等于）任何一个子节点的键值。
+     
+     2．每个结点的左子树和右子树都是一个二叉堆（都是最大堆或最小堆）。
+     
+     当父结点的键值总是大于或等于任何一个子节点的键值时为最大堆。当父结点的键值总是小于或等于任何一个子节点的键值时为最小堆。
+     */
     //插入一个新数据时堆的调整代码
     mutating func minHeadFixup(at index: Int) {
         var i = index

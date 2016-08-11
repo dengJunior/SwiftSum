@@ -152,7 +152,11 @@ class BinaryTree<T where T: Comparable> {
                 continue
             } else {
                 //如果pCur的左孩子为空，则输出pCur节点，并将其右孩子设为当前节点，看其是否为空
-                print(currentNode?.value)
+                //可能有多个相同的值
+                for _ in 0 ..< currentNode!.frequence {
+                    print(currentNode?.value)      //输出根节点
+                }
+                
                 currentNode = currentNode?.rightChild
                 
                 //如果为空，且栈不空，则将栈顶节点出栈，并输出该节点，
@@ -170,7 +174,10 @@ class BinaryTree<T where T: Comparable> {
     func travel(node: TreeNode<T>?) {
         if node != nil {
             travel(node?.leftChild) //先遍历左子树
-            print(node?.value)      //输出根节点
+            //可能有多个相同的值
+            for _ in 0 ..< node!.frequence {
+                print(node?.value)      //输出根节点
+            }
             travel(node?.rightChild)//再遍历右子树
         }
     }

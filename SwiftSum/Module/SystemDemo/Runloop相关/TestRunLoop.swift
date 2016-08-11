@@ -82,7 +82,10 @@ class TestRunLoop: NSObject {
             /*
              version：结构体版本号，必须设置为0。
              info：上下文中retain、release、copyDescription三个回调函数以及Run Loop观察者的回调函数所有者对象的指针。
-             在Swift中，UnsafePointer结构体代表C系语言中申明为常量的指针，UnsafeMutablePoinger结构体代表C系语言中申明为非常量的指针，比如说：
+             
+             在Swift中，UnsafePointer结构体代表C系语言中申明为常量的指针，
+             UnsafeMutablePoinger结构体代表C系语言中申明为非常量的指针，比如说：
+             
              C:
              void functionWithConstArg(const int *constIntPointer);
              
