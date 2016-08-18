@@ -47,6 +47,7 @@ class YYList<T where T: Comparable> {
     func delete(value: T) -> Bool {
         if let node = search(value) {
             deleteNode(node)
+            return true
         }
         return false
     }

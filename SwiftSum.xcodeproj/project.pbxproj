@@ -446,6 +446,8 @@
 		1F364DBD1D210E4F006B8412 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
 		1F364DBE1D210E4F006B8412 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
 		1F364DBF1D210E4F006B8412 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		1F399DBC1D620E1800DF6908 /* 1-创建型(Creational).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1-创建型(Creational).playground"; sourceTree = "<group>"; };
+		1F399E0E1D640E8400DF6908 /* 2-结构型(Structural).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "2-结构型(Structural).playground"; sourceTree = "<group>"; };
 		1F3B77681D165C2D00FC9678 /* YYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3B77741D165C6800FC9678 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F3B77751D165C6800FC9678 /* YYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKit.h; sourceTree = "<group>"; };
@@ -739,6 +741,8 @@
 				1F0097201CB56037003A063F /* DesignPatternDemo.swift */,
 				1F0097231CB5606F003A063F /* Music.storyboard */,
 				1F0097281CB56130003A063F /* MusicController.swift */,
+				1F399E0E1D640E8400DF6908 /* 2-结构型(Structural).playground */,
+				1F399DBC1D620E1800DF6908 /* 1-创建型(Creational).playground */,
 			);
 			path = "Swift中的iOS设计模式";
 			sourceTree = "<group>";
