@@ -92,6 +92,8 @@
 		1F364DC11D210E4F006B8412 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F364DBD1D210E4F006B8412 /* coin.wav */; };
 		1F364DC21D210E4F006B8412 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F364DBE1D210E4F006B8412 /* explosion.mp3 */; };
 		1F364DC31D210E4F006B8412 /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F364DBF1D210E4F006B8412 /* jump.wav */; };
+		1F3A0BC01D66B571001F3F87 /* NavigationBarHideDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A0BBF1D66B571001F3F87 /* NavigationBarHideDemo.swift */; };
+		1F3A0BC31D66CC75001F3F87 /* UIScrollView+YYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A0BC21D66CC75001F3F87 /* UIScrollView+YYExtension.swift */; };
 		1F3B776F1D165C2D00FC9678 /* YYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B77681D165C2D00FC9678 /* YYKit.framework */; };
 		1F3B77701D165C2D00FC9678 /* YYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3B77681D165C2D00FC9678 /* YYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1F3B77761D165C6800FC9678 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F3B77741D165C6800FC9678 /* Info.plist */; };
@@ -448,6 +450,8 @@
 		1F364DBF1D210E4F006B8412 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
 		1F399DBC1D620E1800DF6908 /* 1-创建型(Creational).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "1-创建型(Creational).playground"; sourceTree = "<group>"; };
 		1F399E0E1D640E8400DF6908 /* 2-结构型(Structural).playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "2-结构型(Structural).playground"; sourceTree = "<group>"; };
+		1F3A0BBF1D66B571001F3F87 /* NavigationBarHideDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarHideDemo.swift; sourceTree = "<group>"; };
+		1F3A0BC21D66CC75001F3F87 /* UIScrollView+YYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+YYExtension.swift"; sourceTree = "<group>"; };
 		1F3B77681D165C2D00FC9678 /* YYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3B77741D165C6800FC9678 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F3B77751D165C6800FC9678 /* YYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKit.h; sourceTree = "<group>"; };
@@ -1049,6 +1053,22 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		1F3A0BC11D66B574001F3F87 /* UINavigationBar逐渐显示和隐藏 */ = {
+			isa = PBXGroup;
+			children = (
+				1F3A0BBF1D66B571001F3F87 /* NavigationBarHideDemo.swift */,
+			);
+			name = "UINavigationBar逐渐显示和隐藏";
+			sourceTree = "<group>";
+		};
+		1F3A0BC41D66CC98001F3F87 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				1F3A0BC21D66CC75001F3F87 /* UIScrollView+YYExtension.swift */,
+			);
+			name = UIScrollView;
+			sourceTree = "<group>";
+		};
 		1F3B77691D165C2D00FC9678 /* YYKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1155,6 +1175,7 @@
 				1F79F6F91D1917EE0068DBA4 /* UIViewController */,
 				1F3B77951D165C7500FC9678 /* UIWebView */,
 				1F3B77991D165C7500FC9678 /* WKWebView */,
+				1F3A0BC41D66CC98001F3F87 /* UIScrollView */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1982,6 +2003,7 @@
 			children = (
 				1FB91F5C1D49988A005B9D6C /* xib模块化设计 */,
 				1FB91F5E1D499984005B9D6C /* UsefulExperienceDemo.swift */,
+				1F3A0BC11D66B574001F3F87 /* UINavigationBar逐渐显示和隐藏 */,
 			);
 			path = "实用经验技巧";
 			sourceTree = "<group>";
@@ -2427,6 +2449,7 @@
 				1F3B77D91D165C7600FC9678 /* YYHttpManager.swift in Sources */,
 				1F3B77C11D165C7600FC9678 /* UIButton+YYExtension.swift in Sources */,
 				1F3B77D11D165C7600FC9678 /* YYAnimation.swift in Sources */,
+				1F3A0BC31D66CC75001F3F87 /* UIScrollView+YYExtension.swift in Sources */,
 				1F3B77CF1D165C7600FC9678 /* SimpleTimer.swift in Sources */,
 				1F3B77D41D165C7600FC9678 /* YYGCDGroup.swift in Sources */,
 				1F3B77BF1D165C7600FC9678 /* NSAttributedString+YYExtension.swift in Sources */,
@@ -2535,6 +2558,7 @@
 				1F289A051CC5C0E000988E82 /* AnimationsDemo.swift in Sources */,
 				1F0097331CB60D75003A063F /* MainCollectionViewController.swift in Sources */,
 				1F8ADB071D05C1FF0059C842 /* Recommend.swift in Sources */,
+				1F3A0BC01D66B571001F3F87 /* NavigationBarHideDemo.swift in Sources */,
 				1FB8C5651CD089C50020E183 /* CustomTransitionDemo.swift in Sources */,
 				EEF2816E1C634EFD0004765A /* RegularExpression.swift in Sources */,
 				1F00972D1CB5E894003A063F /* AlbumView.swift in Sources */,

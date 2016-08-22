@@ -14,7 +14,7 @@ struct LibDemoInfo {
     var desc: String?
     var controllerName: String?
     
-    init(title:String, desc:String, controllerName:String) {
+    init(title:String?, desc:String?, controllerName:String?) {
         self.title = title;
         self.desc = desc;
         self.controllerName = controllerName;

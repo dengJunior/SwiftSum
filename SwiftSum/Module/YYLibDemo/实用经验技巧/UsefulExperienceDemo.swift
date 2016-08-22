@@ -15,7 +15,10 @@ class UsefulExperienceDemo: UIViewController {
         super.viewDidLoad()
         self.addButtonToView(title: "xib模块化设计") {  (button) in
             let vc = XibDemo(nibName: "XibDemo", bundle: nil)
-            //            let vc = XibDemo.newInstanceFromStoryboard("YYLibDemo", storyboardId: "XibDemo", isInitial: false)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        self.addButtonToView(title: "UINavigationBar逐渐显示和隐藏") {  (button) in
+            let vc = NavigationBarHideDemo()
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
