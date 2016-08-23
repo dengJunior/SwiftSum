@@ -47,10 +47,11 @@ extension NavigationBarHideDemo {
     }
     
     func setNavigationBar(offset: CGFloat) {
+        //初始frame = (0 20; 375 44);
         var frame = navigationController!.navigationBar.frame
         frame.origin.y += offset
-        if frame.origin.y <= 20 - 44 {
-            frame.origin.y = 20 - 44
+        if frame.origin.y <= 0 - 44 {
+            frame.origin.y = 0 - 44
         } else if(frame.origin.y > 20) {
             frame.origin.y = 20
         }
@@ -63,7 +64,15 @@ class NavigationBarHideDemo: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        edgesForExtendedLayout = .Top
+        edgesForExtendedLayout = .All
+        
+        /*
+         这个属性在状态栏不透明（translucent = false）的状态下才生效
+         为false时，view.frame = (0 64; 375 603);
+         为true时，view.frame = (0 0; 375 667);
+         */
+        extendedLayoutIncludesOpaqueBars = false
+        automaticallyAdjustsScrollViewInsets = true
         tabBarController?.tabBar.hidden = false
         navigationController?.navigationBar.barTintColor = UIColor(red:0.91, green:0.3, blue:0.24, alpha:1)
         

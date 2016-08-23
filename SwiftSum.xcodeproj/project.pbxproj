@@ -736,7 +736,7 @@
 			path = "多线程相关";
 			sourceTree = "<group>";
 		};
-		1F0097221CB56051003A063F /* Swift中的iOS设计模式 */ = {
+		1F0097221CB56051003A063F /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
 				1F0097271CB560E1003A063F /* API */,
@@ -748,7 +748,8 @@
 				1F399E0E1D640E8400DF6908 /* 2-结构型(Structural).playground */,
 				1F399DBC1D620E1800DF6908 /* 1-创建型(Creational).playground */,
 			);
-			path = "Swift中的iOS设计模式";
+			name = "设计模式";
+			path = "../SystemDemo/Swift中的iOS设计模式";
 			sourceTree = "<group>";
 		};
 		1F0097271CB560E1003A063F /* API */ = {
@@ -794,6 +795,7 @@
 		1F075BE01C4B4F560013C815 /* YYLibDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F0097221CB56051003A063F /* 设计模式 */,
 				1FB394AE1CCEF4F0005C1B0E /* MVC-N模式 */,
 				1F5B67BC1CACF08C003CFD75 /* NetworkDemo */,
 				1FAB223D1CE321600085EAD3 /* YYHudDemo */,
@@ -1425,7 +1427,6 @@
 				1F2AA7D51D0CF56A00A5A477 /* 3DTouchDemo */,
 				1FF9B2BF1CF4434F00AB9D30 /* GCD相关 */,
 				1FE864E21CB3819600E013A1 /* Runloop相关 */,
-				1F0097221CB56051003A063F /* Swift中的iOS设计模式 */,
 				1F5BE25D1CF6976300E29234 /* URLSessionGuide */,
 				1FF133DB1CCB25FC00AD6822 /* ViewControllerGuide */,
 				1F289A011CC48A9600988E82 /* ViewGuide */,
