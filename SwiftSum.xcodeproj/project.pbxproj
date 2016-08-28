@@ -46,6 +46,7 @@
 		1F0FBDB11D10DF8800C97833 /* 面向协议的网络请求.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0FBDB01D10DF8800C97833 /* 面向协议的网络请求.swift */; };
 		1F105EC51D001A100052C4BE /* NewFeatureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F105EC41D001A100052C4BE /* NewFeatureDemo.swift */; };
 		1F10D6941D45BBA3006AE16B /* YYNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10D6931D45BBA3006AE16B /* YYNetwork.swift */; };
+		1F121BB41D70149400EFC003 /* IsIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F121BB31D70149400EFC003 /* IsIn.swift */; };
 		1F139B401C8141CE005E89EB /* ThirdLibDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */; };
 		1F139B491C814523005E89EB /* RxSwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F139B471C814523005E89EB /* RxSwiftDemo.swift */; };
 		1F139B4A1C814523005E89EB /* RxSwiftDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F139B481C814523005E89EB /* RxSwiftDemo.xib */; };
@@ -398,6 +399,7 @@
 		1F105EBD1CFFCC150052C4BE /* Swift2.2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift2.2.playground; sourceTree = "<group>"; };
 		1F105EC41D001A100052C4BE /* NewFeatureDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFeatureDemo.swift; sourceTree = "<group>"; };
 		1F10D6931D45BBA3006AE16B /* YYNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNetwork.swift; sourceTree = "<group>"; };
+		1F121BB31D70149400EFC003 /* IsIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsIn.swift; sourceTree = "<group>"; };
 		1F12662B1C721C6200DD69E6 /* RxSwiftBasic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftBasic.playground; sourceTree = "<group>"; };
 		1F139B3F1C8141CE005E89EB /* ThirdLibDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLibDemo.swift; sourceTree = "<group>"; };
 		1F139B471C814523005E89EB /* RxSwiftDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo.swift; sourceTree = "<group>"; };
@@ -2005,6 +2007,7 @@
 				1FB91F5C1D49988A005B9D6C /* xib模块化设计 */,
 				1FB91F5E1D499984005B9D6C /* UsefulExperienceDemo.swift */,
 				1F3A0BC11D66B574001F3F87 /* UINavigationBar逐渐显示和隐藏 */,
+				1F121BB31D70149400EFC003 /* IsIn.swift */,
 			);
 			path = "实用经验技巧";
 			sourceTree = "<group>";
@@ -2673,6 +2676,7 @@
 				1F0C134A1CB38C050045FCB7 /* TestRunLoop.swift in Sources */,
 				1FCE29211CDC7A0D00DBF2E3 /* YYPercentTransitionDelegate.swift in Sources */,
 				1FB08A591D580FAF00C4C13E /* CombinedReducer.swift in Sources */,
+				1F121BB41D70149400EFC003 /* IsIn.swift in Sources */,
 				1F5237B11D39F15B00B182D0 /* AudioDemo.swift in Sources */,
 				1FB08A5C1D580FAF00C4C13E /* State.swift in Sources */,
 				1F0DD1A61CE99AB100501767 /* PresentedViewController.swift in Sources */,
