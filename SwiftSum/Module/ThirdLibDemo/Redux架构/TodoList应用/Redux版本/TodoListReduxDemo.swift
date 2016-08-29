@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import YYKit
 
 let TodoStore = Store<TodoState>(
     reducer: TodoReducer(),
@@ -70,6 +71,11 @@ class TodoListReduxDemo: UIViewController, StoreSubscriber {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        extendedLayoutNone()
         initialization()
+    }
+    
+    deinit {
+        print("TodoListReduxDemo deinit")
     }
 }

@@ -6,7 +6,7 @@
 //  Copyright © 2016 Arkadiusz Holko. All rights reserved.
 //
 
-NSIndexPath
+import UIKit
 
 class TextTableViewCell: UITableViewCell {
 

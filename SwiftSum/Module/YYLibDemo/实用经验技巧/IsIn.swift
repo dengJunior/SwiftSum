@@ -9,7 +9,7 @@
 import UIKit
 
 
-func test() {
+func testtt() {
     /**
      大家应该常遇到在table view的delegate里处理若干个cell的问题.
      很多人的条件语句是这样的:

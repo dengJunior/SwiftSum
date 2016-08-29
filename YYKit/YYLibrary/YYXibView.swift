@@ -9,31 +9,32 @@
 import UIKit
 
 public class YYXibView: UIView {
-    @IBOutlet public var xibView: UIView!
+    @IBOutlet public weak var xibView: UIView?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        loadXibView()
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        loadXibView()
-    }
-    
-    override public func layoutSubviews() {
-        xibView.frame = self.bounds
+    public override func willMoveToSuperview(newSuperview: UIView?) {
+        if newSuperview != nil && xibView == nil {
+            loadXibView()
+        }
+        super.willMoveToSuperview(newSuperview)
     }
     
     func loadXibView() {
-        xibView = NSBundle.mainBundle().loadNibNamed(self.classNameString, owner: self, options: nil).first as? UIView
+        guard let xibView = NSBundle.mainBundle().loadNibNamed(self.classNameString, owner: self, options: nil).first as? UIView else {
+            return
+        }
         xibView.backgroundColor = UIColor.clearColor()
+        xibView.translatesAutoresizingMaskIntoConstraints = true
+        xibView.autoresizingMask = [
+            .FlexibleHeight,
+            .FlexibleWidth,
+            .FlexibleTopMargin,
+            .FlexibleLeftMargin,
+            .FlexibleBottomMargin,
+            .FlexibleRightMargin
+        ]
         xibView.frame = self.bounds
         addSubview(xibView)
+        self.xibView = xibView
     }
-
+    
 }
