@@ -14,6 +14,7 @@ class SystemDemo: YYBaseDemoController {
         super.viewDidLoad()
         
         self.dataArray = [
+            LibDemoInfo(title: "CoreAnimationDemo", desc: "核心动画高级技巧", controllerName: "CoreAnimationDemo"),
             LibDemoInfo(title: "VedioAudioDemo", desc: "视频音频相关", controllerName: "VedioAudioDemo"),
             LibDemoInfo(title: "ExtensionsDemo", desc: "扩展相关", controllerName: "ExtensionsDemo"),
             LibDemoInfo(title: "URLSessionGuideDemo", desc: "NSURLSession测试", controllerName: "URLSessionGuideDemo"),

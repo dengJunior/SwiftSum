@@ -272,6 +272,14 @@
 		1FF9B2C61CF4478200AB9D30 /* GooglyPuff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF9B2C51CF4478200AB9D30 /* GooglyPuff.storyboard */; };
 		1FF9B2C81CF448B100AB9D30 /* GooglyPuff.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF9B2C71CF448B100AB9D30 /* GooglyPuff.xcassets */; };
 		9165F9A41CF73485039B2659 /* Pods_SwiftSum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA32F90EF6765DEDBDFECA0 /* Pods_SwiftSum.framework */; };
+		EE7E48341D77C9D700576A90 /* CoreAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48331D77C9D700576A90 /* CoreAnimationDemo.swift */; };
+		EE7E48371D77CA4C00576A90 /* BackingImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48361D77CA4C00576A90 /* BackingImageDemo.swift */; };
+		EE7E48391D77FBAB00576A90 /* BackingImageDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7E48381D77FBAB00576A90 /* BackingImageDemo.xib */; };
+		EE7E48421D790D0F00576A90 /* AssertDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48411D790D0F00576A90 /* AssertDemo.swift */; };
+		EE7E487E1D79600F00576A90 /* LayerGeometryDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E487D1D79600F00576A90 /* LayerGeometryDemo.swift */; };
+		EE7E48811D796D3700576A90 /* LayerGeometryDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7E48801D796D3700576A90 /* LayerGeometryDemo.xib */; };
+		EE962E0D1D7D07BF00967AD6 /* VisualEffectsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE962E0B1D7D07BF00967AD6 /* VisualEffectsDemo.swift */; };
+		EE962E0E1D7D07BF00967AD6 /* VisualEffectsDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE962E0C1D7D07BF00967AD6 /* VisualEffectsDemo.xib */; };
 		EEC450621C634B1D00328F54 /* main1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC450611C634B1D00328F54 /* main1.swift */; };
 		EEF281621C634EDC0004765A /* FuncProgramingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF281611C634EDC0004765A /* FuncProgramingDemo.swift */; };
 		EEF2816B1C634EFD0004765A /* SwifterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF281641C634EFD0004765A /* SwifterController.swift */; };
@@ -663,6 +671,14 @@
 		1FF9B2C71CF448B100AB9D30 /* GooglyPuff.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GooglyPuff.xcassets; sourceTree = "<group>"; };
 		4CA32F90EF6765DEDBDFECA0 /* Pods_SwiftSum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4773DCA3BEA69320548ACD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7E48331D77C9D700576A90 /* CoreAnimationDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAnimationDemo.swift; sourceTree = "<group>"; };
+		EE7E48361D77CA4C00576A90 /* BackingImageDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackingImageDemo.swift; sourceTree = "<group>"; };
+		EE7E48381D77FBAB00576A90 /* BackingImageDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackingImageDemo.xib; sourceTree = "<group>"; };
+		EE7E48411D790D0F00576A90 /* AssertDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssertDemo.swift; sourceTree = "<group>"; };
+		EE7E487D1D79600F00576A90 /* LayerGeometryDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerGeometryDemo.swift; sourceTree = "<group>"; };
+		EE7E48801D796D3700576A90 /* LayerGeometryDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LayerGeometryDemo.xib; sourceTree = "<group>"; };
+		EE962E0B1D7D07BF00967AD6 /* VisualEffectsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectsDemo.swift; sourceTree = "<group>"; };
+		EE962E0C1D7D07BF00967AD6 /* VisualEffectsDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisualEffectsDemo.xib; sourceTree = "<group>"; };
 		EEC450611C634B1D00328F54 /* main1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main1.swift; sourceTree = "<group>"; };
 		EEF281611C634EDC0004765A /* FuncProgramingDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncProgramingDemo.swift; sourceTree = "<group>"; };
 		EEF281641C634EFD0004765A /* SwifterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwifterController.swift; sourceTree = "<group>"; };
@@ -1457,6 +1473,7 @@
 				1F5237AF1D39EECC00B182D0 /* 视频音频相关 */,
 				1FC173FE1CEC4B1300F67B38 /* SystemDemo.storyboard */,
 				1F5B67BD1CACF0D5003CFD75 /* SystemDemo.swift */,
+				EE7E48351D77C9DA00576A90 /* 核心动画高级技巧 */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -2024,6 +2041,7 @@
 				1FB91F5E1D499984005B9D6C /* UsefulExperienceDemo.swift */,
 				1F3A0BC11D66B574001F3F87 /* UINavigationBar逐渐显示和隐藏 */,
 				1F121BB31D70149400EFC003 /* IsIn.swift */,
+				EE7E48411D790D0F00576A90 /* AssertDemo.swift */,
 			);
 			path = "实用经验技巧";
 			sourceTree = "<group>";
@@ -2109,6 +2127,44 @@
 				1F6FF1091D054F04008C33E8 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE7E48351D77C9DA00576A90 /* 核心动画高级技巧 */ = {
+			isa = PBXGroup;
+			children = (
+				EE7E48331D77C9D700576A90 /* CoreAnimationDemo.swift */,
+				EE962E0A1D7D07A100967AD6 /* 4-视觉效果 */,
+				EE7E48821D79732A00576A90 /* 2-寄宿图 */,
+				EE7E487F1D796CC200576A90 /* 3-图层几何学 */,
+			);
+			name = "核心动画高级技巧";
+			sourceTree = "<group>";
+		};
+		EE7E487F1D796CC200576A90 /* 3-图层几何学 */ = {
+			isa = PBXGroup;
+			children = (
+				EE7E487D1D79600F00576A90 /* LayerGeometryDemo.swift */,
+				EE7E48801D796D3700576A90 /* LayerGeometryDemo.xib */,
+			);
+			name = "3-图层几何学";
+			sourceTree = "<group>";
+		};
+		EE7E48821D79732A00576A90 /* 2-寄宿图 */ = {
+			isa = PBXGroup;
+			children = (
+				EE7E48361D77CA4C00576A90 /* BackingImageDemo.swift */,
+				EE7E48381D77FBAB00576A90 /* BackingImageDemo.xib */,
+			);
+			name = "2-寄宿图";
+			sourceTree = "<group>";
+		};
+		EE962E0A1D7D07A100967AD6 /* 4-视觉效果 */ = {
+			isa = PBXGroup;
+			children = (
+				EE962E0B1D7D07BF00967AD6 /* VisualEffectsDemo.swift */,
+				EE962E0C1D7D07BF00967AD6 /* VisualEffectsDemo.xib */,
+			);
+			name = "4-视觉效果";
 			sourceTree = "<group>";
 		};
 		EEF281631C634EE30004765A /* 函数式编程 */ = {
@@ -2355,9 +2411,12 @@
 				1FB08A611D580FAF00C4C13E /* Info.plist in Resources */,
 				1F548C311D432850002E521B /* YYMusicHome.storyboard in Resources */,
 				1F1C07461D741C6800DE6929 /* TodoListDemo.xib in Resources */,
+				EE7E48391D77FBAB00576A90 /* BackingImageDemo.xib in Resources */,
 				1F2A38291CEED53600EE316D /* ExampleApp.js in Resources */,
 				1F288D9C1CAD1FD000180316 /* swipe.png in Resources */,
+				EE962E0E1D7D07BF00967AD6 /* VisualEffectsDemo.xib in Resources */,
 				1F364DC21D210E4F006B8412 /* explosion.mp3 in Resources */,
+				EE7E48811D796D3700576A90 /* LayerGeometryDemo.xib in Resources */,
 				1F288D9B1CAD1FD000180316 /* rotation.png in Resources */,
 				1F0DD1A41CE9997800501767 /* CustomTransitionDemo.storyboard in Resources */,
 				1F5B67C61CACF341003CFD75 /* EventAndGestureDemo.storyboard in Resources */,
@@ -2526,6 +2585,7 @@
 				1FF9B2BE1CF4430E00AB9D30 /* GCDDemo.swift in Sources */,
 				1F00972F1CB5EBD2003A063F /* LibraryAPI.swift in Sources */,
 				1FCE291D1CDC6C9300DBF2E3 /* YYPercentTransition.swift in Sources */,
+				EE7E487E1D79600F00576A90 /* LayerGeometryDemo.swift in Sources */,
 				1F1C073F1D741C6800DE6929 /* TodoList.swift in Sources */,
 				1F00971C1CB4A4C6003A063F /* ThreadDemo.swift in Sources */,
 				1F5B67D21CAD02FB003CFD75 /* GestureTestView.swift in Sources */,
@@ -2540,6 +2600,7 @@
 				1FB08A651D580FAF00C4C13E /* TypeHelper.swift in Sources */,
 				1FF9B2C31CF4439400AB9D30 /* PhotoDetailViewController.swift in Sources */,
 				1F0DD1AC1CE9BC7100501767 /* YYOverlayPresentationController.swift in Sources */,
+				EE7E48341D77C9D700576A90 /* CoreAnimationDemo.swift in Sources */,
 				1F0DD1C01CEBF4EC00501767 /* ExtensionDemo.swift in Sources */,
 				1F87A29F1CA3B9EB0001519E /* AppManager.swift in Sources */,
 				1FB8C5761CD20E010020E183 /* YYPresentationController.swift in Sources */,
@@ -2569,6 +2630,7 @@
 				1F0DD1B41CEAA99F00501767 /* YYTabBarTransitionDelegate.swift in Sources */,
 				1F0DD1BD1CEBF27A00501767 /* CollectionVCTestTwo.swift in Sources */,
 				EEF2816C1C634EFD0004765A /* DemoSingle.swift in Sources */,
+				EE962E0D1D7D07BF00967AD6 /* VisualEffectsDemo.swift in Sources */,
 				1FF133E11CCB266100AD6822 /* ViewController1.swift in Sources */,
 				1F0097381CB60DF5003A063F /* MainThreadRunLoopSourceContext.swift in Sources */,
 				1FB08A581D580FAF00C4C13E /* Action.swift in Sources */,
@@ -2651,6 +2713,7 @@
 				1F792CB81C89761A00EE70D4 /* Wireframe.swift in Sources */,
 				1FB91F5F1D499984005B9D6C /* UsefulExperienceDemo.swift in Sources */,
 				1FA447501D1E9E3400DDC3A6 /* Spaceship.swift in Sources */,
+				EE7E48421D790D0F00576A90 /* AssertDemo.swift in Sources */,
 				1F1C07431D741C6800DE6929 /* TodoListReduxDemo.swift in Sources */,
 				1FB08A671D58111E00C4C13E /* ReduxDemo.swift in Sources */,
 				1FF9B2C11CF4437800AB9D30 /* PhotoCollectionViewController.swift in Sources */,
@@ -2661,6 +2724,7 @@
 				1F6FF0FE1D05208F008C33E8 /* TodayDemo.swift in Sources */,
 				1F00973E1CB60E57003A063F /* RunLoopSourceManager.swift in Sources */,
 				1FB8C56D1CD1B3460020E183 /* YYInteractivityTransitionDelegate.swift in Sources */,
+				EE7E48371D77CA4C00576A90 /* BackingImageDemo.swift in Sources */,
 				1F30EB321D4E4440001559B4 /* XibDemoView.swift in Sources */,
 				1F0FBDB11D10DF8800C97833 /* 面向协议的网络请求.swift in Sources */,
 				1F8059B31CED52E600CA0936 /* iOS6Feature.swift in Sources */,

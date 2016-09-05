@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>SwiftSum.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>SwiftSumTimerTodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>YYKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1F3B77671D165C2D00FC9678</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F5E16C11D16597D0059399B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FAAFB7A1BE85AEA007023B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FAAFB8E1BE85AEB007023B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FAAFB991BE85AEB007023B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

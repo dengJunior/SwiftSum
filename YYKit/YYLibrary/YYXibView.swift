@@ -9,10 +9,10 @@
 import UIKit
 
 public class YYXibView: UIView {
-    @IBOutlet public weak var xibView: UIView?
+    public weak var xibContentView: UIView?
     
     public override func willMoveToSuperview(newSuperview: UIView?) {
-        if newSuperview != nil && xibView == nil {
+        if newSuperview != nil && xibContentView == nil {
             loadXibView()
         }
         super.willMoveToSuperview(newSuperview)
@@ -34,7 +34,7 @@ public class YYXibView: UIView {
         ]
         xibView.frame = self.bounds
         addSubview(xibView)
-        self.xibView = xibView
+        xibContentView = xibView
     }
     
 }
