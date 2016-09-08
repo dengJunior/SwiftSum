@@ -8,20 +8,16 @@
 
 import UIKit
 
-class CoreAnimationDemo: UIViewController {
-    
+class CoreAnimationDemo: YYBaseDemoController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.addButtonToView(title: "2-寄宿图相关") { [weak self] (button) in
-            self?.navigationController?.pushViewController(BackingImageDemo(), animated: true)
-        }
-        self.addButtonToView(title: "3-图层几何学") { [weak self] (button) in
-            self?.navigationController?.pushViewController(LayerGeometryDemo(), animated: true)
-        }
-        self.addButtonToView(title: "4-视觉效果") { [weak self] (button) in
-            self?.navigationController?.pushViewController(VisualEffectsDemo(), animated: true)
-        }
+        self.dataArray = [
+            LibDemoInfo(title: "2-寄宿图相关", desc: "BackingImageDemo", controllerName: "BackingImageDemo"),
+            LibDemoInfo(title: "3-图层几何学", desc: "LayerGeometryDemo", controllerName: "LayerGeometryDemo"),
+            LibDemoInfo(title: "4-视觉效果", desc: "VisualEffectsDemo", controllerName: "VisualEffectsDemo"),
+            LibDemoInfo(title: "5-转换", desc: "TransformDemo", controllerName: "TransformDemo"),
+        ]
     }
 }
 

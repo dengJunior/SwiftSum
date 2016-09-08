@@ -272,6 +272,10 @@
 		1FF9B2C61CF4478200AB9D30 /* GooglyPuff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF9B2C51CF4478200AB9D30 /* GooglyPuff.storyboard */; };
 		1FF9B2C81CF448B100AB9D30 /* GooglyPuff.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF9B2C71CF448B100AB9D30 /* GooglyPuff.xcassets */; };
 		9165F9A41CF73485039B2659 /* Pods_SwiftSum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA32F90EF6765DEDBDFECA0 /* Pods_SwiftSum.framework */; };
+		EE2F8E0B1D7EA3A000185322 /* TransformDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2F8E091D7EA3A000185322 /* TransformDemo.swift */; };
+		EE2F8E0C1D7EA3A000185322 /* TransformDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2F8E0A1D7EA3A000185322 /* TransformDemo.xib */; };
+		EE2F8E121D7FB4B300185322 /* CubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2F8E101D7FB4B300185322 /* CubeView.swift */; };
+		EE2F8E131D7FB4B300185322 /* CubeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2F8E111D7FB4B300185322 /* CubeView.xib */; };
 		EE7E48341D77C9D700576A90 /* CoreAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48331D77C9D700576A90 /* CoreAnimationDemo.swift */; };
 		EE7E48371D77CA4C00576A90 /* BackingImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48361D77CA4C00576A90 /* BackingImageDemo.swift */; };
 		EE7E48391D77FBAB00576A90 /* BackingImageDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7E48381D77FBAB00576A90 /* BackingImageDemo.xib */; };
@@ -671,6 +675,10 @@
 		1FF9B2C71CF448B100AB9D30 /* GooglyPuff.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GooglyPuff.xcassets; sourceTree = "<group>"; };
 		4CA32F90EF6765DEDBDFECA0 /* Pods_SwiftSum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4773DCA3BEA69320548ACD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2F8E091D7EA3A000185322 /* TransformDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformDemo.swift; sourceTree = "<group>"; };
+		EE2F8E0A1D7EA3A000185322 /* TransformDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformDemo.xib; sourceTree = "<group>"; };
+		EE2F8E101D7FB4B300185322 /* CubeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeView.swift; sourceTree = "<group>"; };
+		EE2F8E111D7FB4B300185322 /* CubeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CubeView.xib; sourceTree = "<group>"; };
 		EE7E48331D77C9D700576A90 /* CoreAnimationDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAnimationDemo.swift; sourceTree = "<group>"; };
 		EE7E48361D77CA4C00576A90 /* BackingImageDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackingImageDemo.swift; sourceTree = "<group>"; };
 		EE7E48381D77FBAB00576A90 /* BackingImageDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BackingImageDemo.xib; sourceTree = "<group>"; };
@@ -2129,10 +2137,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE2F8E0D1D7EA3A400185322 /* 5-转换 */ = {
+			isa = PBXGroup;
+			children = (
+				EE2F8E091D7EA3A000185322 /* TransformDemo.swift */,
+				EE2F8E0A1D7EA3A000185322 /* TransformDemo.xib */,
+				EE2F8E101D7FB4B300185322 /* CubeView.swift */,
+				EE2F8E111D7FB4B300185322 /* CubeView.xib */,
+			);
+			name = "5-转换";
+			sourceTree = "<group>";
+		};
 		EE7E48351D77C9DA00576A90 /* 核心动画高级技巧 */ = {
 			isa = PBXGroup;
 			children = (
 				EE7E48331D77C9D700576A90 /* CoreAnimationDemo.swift */,
+				EE2F8E0D1D7EA3A400185322 /* 5-转换 */,
 				EE962E0A1D7D07A100967AD6 /* 4-视觉效果 */,
 				EE7E48821D79732A00576A90 /* 2-寄宿图 */,
 				EE7E487F1D796CC200576A90 /* 3-图层几何学 */,
@@ -2398,11 +2418,13 @@
 				1FA8F30B1D3F9D4F00130E0B /* alphaImage.png in Resources */,
 				1F1C07441D741C6800DE6929 /* TodoListReduxDemo.xib in Resources */,
 				1F139B4A1C814523005E89EB /* RxSwiftDemo.xib in Resources */,
+				EE2F8E131D7FB4B300185322 /* CubeView.xib in Resources */,
 				1F0097401CB622A8003A063F /* MainCollectionViewController.storyboard in Resources */,
 				1F1C073C1D741C6800DE6929 /* TodoFooter.xib in Resources */,
 				1FAAFB861BE85AEA007023B7 /* Assets.xcassets in Resources */,
 				1FB08A6D1D5814FB00C4C13E /* Counter.xib in Resources */,
 				1F1C073E1D741C6800DE6929 /* TodoHeader.xib in Resources */,
+				EE2F8E0C1D7EA3A000185322 /* TransformDemo.xib in Resources */,
 				1FAB22351CE305B20085EAD3 /* ContentHugging.xib in Resources */,
 				1F548C341D43296C002E521B /* YYMusicMine.storyboard in Resources */,
 				1F30EB381D4E4A26001559B4 /* XibDemo.xib in Resources */,
@@ -2607,6 +2629,7 @@
 				1F00973A1CB60E0F003A063F /* SecondaryThreadRunLoopSource.swift in Sources */,
 				1F139B4C1C814844005E89EB /* Setting.swift in Sources */,
 				1FA8F3071D3F985800130E0B /* TableViewController.swift in Sources */,
+				EE2F8E0B1D7EA3A000185322 /* TransformDemo.swift in Sources */,
 				1F1C073B1D741C6800DE6929 /* TodoFooter.swift in Sources */,
 				1F5237AE1D39EEC700B182D0 /* VedioAudioDemo.swift in Sources */,
 				1F2F692F1C9A86D100A3F432 /* ImageCellViewData.swift in Sources */,
@@ -2699,6 +2722,7 @@
 				1FB08A6A1D58145C00C4C13E /* Counter.swift in Sources */,
 				1F87A2A01CA3B9EB0001519E /* AppConfig.swift in Sources */,
 				1F548C3B1D435EFB002E521B /* Provider.swift in Sources */,
+				EE2F8E121D7FB4B300185322 /* CubeView.swift in Sources */,
 				1F1C073D1D741C6800DE6929 /* TodoHeader.swift in Sources */,
 				1F0DD1AA1CE9AEAE00501767 /* YYOverlayAnimatorDelegate.swift in Sources */,
 				1F5A73231CBE178E002B0D19 /* TestDispatchQueue.swift in Sources */,

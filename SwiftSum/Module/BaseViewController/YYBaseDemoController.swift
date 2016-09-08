@@ -69,7 +69,10 @@ class YYBaseDemoController: UITableViewController {
         if let controllerName = item.controllerName {
             if let vc: UIViewController = getInstanceFromString(controllerName) as? UIViewController {
                 vc.title = item.title
-                vc.view.backgroundColor = UIColor.whiteColor()
+                if vc.view.backgroundColor == nil {
+                    vc.view.backgroundColor = UIColor.whiteColor()
+                }
+                
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }
